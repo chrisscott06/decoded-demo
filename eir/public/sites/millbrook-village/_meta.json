@@ -1,0 +1,34 @@
+{
+  "site_id": "millbrook-village",
+  "hero": {
+    "source_page": "https://www.inspiredvillages.co.uk/villages/millbrook",
+    "source_image_url": "https://www.inspiredvillages.co.uk/img/http/images/village-header-images/millbrook/web_header_m_0001_carousel-1.jpg/4d94091df86a491e579b82ec1ff84d15/web_header_m_0001_carousel-1.jpg",
+    "captured_at": "2026-05-21",
+    "attribution": "\u00a9 Inspired Villages Group \u2014 used internally for ESG tool",
+    "file": "hero.jpg",
+    "bytes": 401071,
+    "note": "Header carousel exterior shot; small IVG logo lockup. Chosen for showing the actual village buildings at full (1600px) resolution."
+  },
+  "aerial": {
+    "source": "Esri World Imagery",
+    "lat": 50.707,
+    "lon": -3.5076,
+    "zoom": 18,
+    "captured_at": "2026-05-22",
+    "file": "aerial.png",
+    "bytes": 1631727,
+    "note": "1024x1024 centred crop. (c) Esri, Maxar, Earthstar Geographics."
+  },
+  "site_plan": {
+    "source_filename": "Milbrook.pdf",
+    "source_modified": "2024-01-30",
+    "file": "site-plan.png",
+    "rendered_dpi": 200,
+    "final_px": [
+      2000,
+      1403
+    ],
+    "captured_at": "2026-05-22",
+    "notes": "Barton Willmore site layout, full village, legend + accommodation schedule."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "site_id": "blendworth-hills",
+  "hero": {
+    "source_page": "https://www.inspiredvillages.co.uk/villages/blendworth-hills",
+    "source_image_url": "https://www.inspiredvillages.co.uk/img/http/images/village-header-images/blendworth-hills/web_header_bh_0001_carousel-1.jpg/2e71082c59d05a356a4f4dd651a801b1/web_header_bh_0001_carousel-1.jpg",
+    "captured_at": "2026-05-21",
+    "attribution": "\u00a9 Inspired Villages Group \u2014 used internally for ESG tool",
+    "file": "hero.jpg",
+    "bytes": 351761,
+    "note": "Header carousel exterior shot; small IVG logo lockup. Chosen for showing the actual village buildings at full (1600px) resolution."
+  },
+  "aerial": {
+    "source": "Esri World Imagery",
+    "lat": 50.91034,
+    "lon": -0.987415,
+    "zoom": 18,
+    "captured_at": "2026-05-22",
+    "file": "aerial.png",
+    "bytes": 1505718,
+    "note": "1024x1024 centred crop. (c) Esri, Maxar, Earthstar Geographics."
+  }
+}

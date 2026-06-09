@@ -1,0 +1,3954 @@
+@import "./fonts.css";
+
+/* ===== NZA Design System - Tier 1 anchors + Tier 2 theme + Tier 3 methodology =====
+   Forklifted from nzai-demo in Brief 6 Part 1. Source: nzai-demo/src/index.css @theme.
+   IVG uses plain CSS (no Tailwind), so tokens live as :root custom properties
+   rather than Tailwind @theme directives. Names and values are identical to
+   nzai-demo so a future Tailwind migration is a mechanical lift. */
+
+:root {
+  /* === Fonts === */
+  --font-heading: 'Stolzl', sans-serif;
+  --font-hero: 'Stolzl', sans-serif;
+  /* Brief 14 Part 5 - editorial serif scoped STRICTLY to site/village
+     names. Source Serif 4 (Adobe, SIL OFL), self-hosted in
+     eir/src/fonts/source-serif-4/. Georgia/Cambria are the FOUT fallback
+     until the @font-face loads. Falsifiability gate: this token may be
+     used ONLY where a site display_name is rendered. */
+  --font-site: 'Source Serif 4', Georgia, 'Cambria', serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  /* Chris ask 2026-06-03: --font-display reinstated for narrative
+     subsection titles ("The portfolio in one line.", "Where the
+     consumption sits.", etc). DM Serif Display matches the EOC report's
+     editorial banner feel - chunkier display serif with strong
+     contrast, distinct from --font-site (Source Serif 4, which is a
+     text-grade humanist serif scoped to site names). Loaded via
+     Google Fonts in index.html; Georgia is the FOUT/no-network
+     fallback. NOTE: --font-site stays scoped to site display names;
+     --font-display is the new home for editorial subsection titles. */
+  --font-display: 'DM Serif Display', Georgia, 'Cambria', serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  /* === Type scale: 6 role-based fluid tokens (Brief 17.5.3 Part 1) ===
+   *
+   *   Closed scale. After Brief 17.5.3 lands, every text element in
+   *   the tool references one of these six role tokens. Arbitrary
+   *   font-size: Npx in components is forbidden.
+   *
+   *   Each role uses CSS clamp() to scale linearly between viewport
+   *   widths 1440 (min) and 2560 (max). Below 1440 → uses min.
+   *   Above 2560 → uses max. Same fluid function, no media queries.
+   *
+   *   Verification (computed values at known viewports - see Part 4 close):
+   *     1440:  body=14.00 / subsection-title=16.00 / page-title=28.00
+   *     1920:  body=15.71 / subsection-title=17.71 / page-title=31.43
+   *     2560:  body=18.00 / subsection-title=20.00 / page-title=36.00
+   *     4K:    body=18.00 / subsection-title=20.00 / page-title=36.00 (capped)
+   */
+  --text-page-title:       clamp(28px, 17.71px + 0.714vw, 36px);
+  --text-page-title-lh: 1.15;
+  --text-section-title:    clamp(20px, 12.29px + 0.536vw, 26px);
+  --text-section-title-lh: 1.25;
+  --text-subsection-title: clamp(16px, 10.86px + 0.357vw, 20px);
+  --text-subsection-title-lh: 1.3;
+  --text-body:             clamp(14px,  8.86px + 0.357vw, 18px);
+  --text-body-lh: 1.55;
+  --text-body-small:       clamp(12px,  8.14px + 0.268vw, 15px);
+  --text-body-small-lh: 1.5;
+  --text-caption:          clamp(11px,  8.43px + 0.179vw, 13px);
+  --text-caption-lh: 1.4;
+
+  /* === Legacy type tokens - kept as fixed-px aliases for any callers
+        not yet migrated. Brief 17.5.3 Part 2 sweeps consumers onto the
+        role tokens above; the aliases below stay until the sweep is
+        complete (then either point at a role token or get deleted).
+        New code MUST NOT reference these. === */
+  --text-micro: 10px;
+  --text-micro-lh: 1.4;
+  --text-xs: 12px;
+  --text-xs-lh: 1.5;
+  --text-sm: 14px;
+  --text-sm-lh: 1.55;
+  --text-base: 16px;
+  --text-base-lh: 1.7;
+  --text-lg: 18px;
+  --text-lg-lh: 1.6;
+  --text-h4: 20px;
+  --text-h4-lh: 1.3;
+  --text-h3: 24px;
+  --text-h3-lh: 1.25;
+  --text-h2: 28px;
+  --text-h2-lh: 1.2;
+  --text-h1: 36px;
+  --text-h1-lh: 1.15;
+  --text-display: 64px;
+  --text-display-lh: 1.05;
+  --text-chapter: 40px;
+  --text-chapter-lh: 1.15;
+  --text-chapter-sub: 18px;
+  --text-chapter-sub-lh: 1.6;
+  --text-page-heading: 28px;
+  --text-page-heading-lh: 1.2;
+  --text-subheading: 18px;
+  --text-subheading-lh: 1.3;
+
+  /* === Tier 1 - anchors === */
+  --color-nza-coral: #E8725C;
+  --color-nza-cream: #EDE5D8;
+  /* Chris ask 8 Jun - lighter cream for the main content area on
+     site pages so the page register reads softer than the nav
+     strips. Sits roughly halfway between --color-nza-cream and
+     pure white; keeps a hint of warmth so it doesn't drift cool.
+     Currently consumed only by `.theme-cream-page .dashboard-main`
+     below. */
+  --color-nza-cream-light: #F6F1E7;
+
+  /* === Tier 2 - Active theme: NZA Core === */
+  /* Brief 10 Part 4: deepened from #1A2440 to #0F1629 so white + coral pop. */
+  --color-theme-base: #0F1629;
+  --color-theme-accent-primary: #F08080;
+  --color-theme-accent-secondary: #A896C4;
+  --color-theme-cta: #E8725C;
+  --color-theme-body: #EDE5D8;
+
+  /* === Brief 10 Part 5 - Portfolio Map theme accents (Chris inline palette) ===
+   *   Energy → blue, Water → teal (kept), Waste → green, Carbon → orange,
+   *   Meters → pink. Overview/Data quality kept. Sub-metric overrides:
+   *   Electricity → yellow, Gas → red.
+   * These tokens drive the pill tint + leaderboard bar fill + map dot colour
+   * for non-gridBar metrics. Hex mirrors live in tokens/chart-colors.js. */
+  --theme-overview:    #5B7B9A;
+  /* Map theme accents - NZA inline palette (Brief 10 Part 5) with two
+     further rotations:
+       Chris ask 2026-06-02: Energy ⇄ Carbon (Energy orange, Carbon teal),
+         Water rotated to blue. Water + Energy kept here unchanged.
+       Chris ask 4 Jun 2026: Waste ⇄ Carbon (Waste takes teal, Carbon
+         takes green - classic carbon-footprint-reduction = green
+         semantic). Meters pink → NZA-family purple (sibling of
+         accent-secondary lilac #A896C4, one step deeper so the
+         heating-matrix "Mixed" pill at #A896C4 stays distinguishable
+         on the only surface where the two colours could co-occur).
+       Chris ask 8 Jun 2026: Waste ⇄ Meters. Bright teal was carrying
+         too much page weight on the Waste tab when the whole site-
+         waste page is tinted to that hue; purple settles it. Meters
+         picks up the teal - works for the Sankey ribbons and the
+         metering header colour story. */
+  --theme-energy:      #E5732A;  /* orange */
+  --theme-water:       #5BA3D9;  /* blue */
+  --theme-waste:       #8B6FB8;  /* purple (Chris ask 8 Jun - swapped with meters) */
+  --theme-carbon:      #7CC470;  /* green (was teal; swapped with waste) */
+  --theme-meters:      #5BBFB5;  /* teal (Chris ask 8 Jun - swapped with waste) */
+  --theme-dq:          #347373;  /* dark teal - distinct from waste's lighter teal */
+  /* Chris ask 4 Jun: electricity rotated from lemon #E8C547 to a richer
+     amber/gold #D4A017. The lemon was reading playful/cheap against the
+     dark navy register and not pairing harmoniously with the coral-red
+     gas - both warm, but at different saturations and value steps.
+     The new gold sits at roughly the same value as the coral so they
+     read as two siblings of a single warm palette, not as
+     "infographic-yellow + infographic-red." Cascades through:
+       --color-energy-elec-landlord            (alias)
+       --color-energy-elec-resident-estimated  (alias + hatch base)
+       --metering-* electricity tokens (manual, see below)
+     Map-marker hue for the Electricity metric updates automatically. */
+  --metric-electricity: #D4A017;
+  /* Chris ask 4 Jun (round 2): gas rotated from coral #D85F4D to the NZA
+     deep red #B8443A - already vetted in the codebase as the heating-
+     matrix HN-gas hex ("deeper red, distinct from CHP"). Now that gas
+     is rich brand-red rather than coral, the pairing with the new
+     amber-gold electricity reads as a serious, premium dyad (deep red
+     + rich gold = "fossil resource family"). The HN-gas heating-matrix
+     entry is pushed one step deeper to maintain its sibling distinction
+     from CHP/landlord-gas (see PortfolioEnergy heating palette). */
+  --metric-gas:         #B8443A;
+
+  /* === Tier 3 - methodology (risk) === */
+  --color-risk-low: #8FCB85;
+  --color-risk-moderate: #E8A13C;
+  --color-risk-major: #D9464B;
+  --color-risk-severe: #4C3D6B;
+  --color-risk-no-data: #A9C5DA;
+
+  /* === Tier 3 - methodology (scopes) === */
+  --color-scope-12: #5BBFB5;
+  --color-scope-3: #534E86;
+
+  /* === Tier 3 - methodology (data quality) === */
+  --color-dq-activity-based: #22C55E;
+  --color-dq-supplier-specific: #3B82F6;
+  --color-dq-industry-average: #F2A93B;
+  --color-dq-proxy: #EF4444;
+
+  /* === Tier 3 - categorical themes === */
+  --color-categorical-estate: #5B7B9A;
+  --color-categorical-travel: #F2A93B;
+  --color-categorical-supply-chain: #347373;
+  --color-categorical-commuting: #D4891F;
+
+  /* === Motion === */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-gentle: cubic-bezier(0.4, 0, 0.6, 1);
+  --duration-instant: 150ms;
+  --duration-entry: 250ms;
+  --duration-cascade: 350ms;
+  --duration-transition: 500ms;
+  --duration-chapter: 700ms;
+
+  /* === IVG-specific layout (preserved from Phase 1B) === */
+  --app-content-max-width: 1600px;
+  /* Brief 17.5.3 Part 3 - nav-strip content container width. Set to
+     match Brief 17.5.2's `.thematic-page-container` (1280px) so the
+     three nav strips' inner labels share the body's left edge. The
+     .page wrapper keeps --app-content-max-width (1600) because Site
+     Detail's sidebar + main content depends on that breadth (Site
+     Detail is out of scope for Brief 17.5.3). */
+  --nav-content-max-width: 1280px;
+  /* Brief 17.5 Part 1 - slim ribbon discipline lifted from EOC reference
+     (see docs/audit/17.5_references/01_top_ribbon.md + 02_sub_ribbon.md).
+     Three-tier descending visual weight: primary 44 → secondary 36 →
+     tertiary pills ~26 (page-local, see PortfolioEnergy). EOC uses
+     49 / 36 / 26 - IVG's primary is a touch slimmer so the secondary
+     register sits closer visually. Old values: 56 / 48. */
+  /* Chris ask 2026-06-03 (post-17.5.3): secondary nav strip dropped
+     36 → 30 to claw back vertical space that wasn't earning its keep.
+     Primary stays 44 (logo lockup on the right anchors it). */
+  --topnav-height: 44px;
+  --subnav-height: 30px;
+  /* Brief 17.5 Part 1 - canonical horizontal gutter shared by every
+     surface that spans the page width: top nav, sub-nav, page content.
+     One token = the "continuous left edge" the EOC reference relies on
+     (primary nav label, sub-nav tab label, page H1 and body all align
+     to the same x-coordinate). Old per-surface values: topnav-primary
+     32px / .page 60px / PortfolioEnergy 28px - that's why the Energy
+     page title and pill row indented right of the nav. */
+  /* Chris ask 9 Jun: Site area was tuned for 1920x1080 with graceful
+     scale-down to 1440x900. Below 1440 (e.g. 13" MBA at 1280) content
+     clipped. Convert hard layout numbers to fluid clamp() that scales
+     between 1280-1920 baseline (same pattern Brief 17.5.3 set for the
+     type scale). One @media (max-width: 900px) breakpoint stacks the
+     2-col grids for accidental tablet/phone access. Cap each clamp at
+     its prior design value so existing 1920 walkthroughs are
+     pixel-identical. */
+  --page-edge-x:           clamp(16px, 2vw, 32px);    /* was 32px fixed */
+  --sidebar-width:         clamp(180px, 14vw, 240px);  /* was 240px fixed */
+  --site-tile-col-w:       clamp(340px, 26vw, 460px);  /* SiteOverview left col */
+  --site-2col-gap:         clamp(20px, 1.6vw, 28px);   /* SiteOverview tiles<->image */
+  --site-imagery-min-h:    clamp(380px, 32vw, 540px);  /* image floor */
+  --site-chart-bar-h:      clamp(360px, 28vw, 460px);  /* Energy bar chart height */
+  --site-donut-col-w:      clamp(320px, 26vw, 420px);  /* Energy donut column */
+  --site-energy-gutter:    clamp(40px, 4.5vw, 88px);   /* Energy bars<->donut */
+  --site-donut-px:         clamp(280px, 22vw, 380px);  /* donut PieChart size */
+  --panel-radius: 12px;
+  --panel-padding: 24px;
+
+  /* === Brief 17.5 Part 1 - Energy palette tokens ===
+   *   Six colour tokens for the Consumption chart v2 (Part 3). Sourced
+   *   from the Map view's metric tokens (--metric-electricity /
+   *   --metric-gas, declared above) so the Energy chart and the Map's
+   *   metric overlay paint with the SAME palette. Landlord tokens alias
+   *   the canonical Brief 14 hex; resident-submetered is a lighter
+   *   tone for the second stack layer; resident-estimated keeps the
+   *   base hex but is paired with a hatched SVG <pattern> fill in
+   *   PortfolioEnergy so "derived, methodology unpublished" provenance
+   *   is encoded visually. No new hex declared for landlords.
+   *
+   *   Falsifiability gate (Part 3 close): any hardcoded electricity-
+   *   yellow or gas-red hex inside eir/src/components/portfolio/
+   *   Energy* should be removed by Part 3 close. */
+  --color-energy-elec-landlord:            var(--metric-electricity); /* #D4A017 - rich gold */
+  /* Chris ask 4 Jun: resident-submetered yellow re-derived as a paler
+     sibling of the new richer gold (was #F4E08E lemon-pale, now a
+     warm pale gold) so the submetered swatch sits visibly in the same
+     family as the landlord above it. */
+  --color-energy-elec-resident-submetered: #E5C76B;                   /* pale warm gold */
+  --color-energy-elec-resident-estimated:  var(--metric-electricity); /* base + <pattern> fill */
+  --color-energy-gas-landlord:             var(--metric-gas);         /* #B8443A - NZA deep red */
+  /* Chris ask 4 Jun (round 2): gas-resident-submetered re-derived as a
+     paler sibling of the new deep-red base (was #E89A8E paler-coral,
+     now a warmer pale brand-red) so the submetered swatch stays in the
+     same family as the landlord above it. */
+  --color-energy-gas-resident-submetered:  #D78D7F;                   /* pale brand-red */
+  --color-energy-gas-resident-estimated:   var(--metric-gas);         /* base + <pattern> fill */
+  --opacity-in-scope:        1;
+  --opacity-out-of-scope:  0.4;
+
+  /* Brief 17.5 Amendment 1 Part 5 - GRESB-26 (out-of-scope) palette.
+     Darker shades of the landlord red and yellow so out-of-scope sites
+     read as visually present and clearly different from in-scope,
+     rather than washed-out at 0.4 opacity. Sonning Common + Edwalton
+     Office render as 2-segment bars (total gas + total elec) using
+     these tokens - no internal party-type breakdown. */
+  --color-gresb26-gas:  #7A2417;  /* darker than --metric-gas #B8443A - still distinct after the gas rotation */
+  /* Chris ask 4 Jun: stepped down from #8A7320 → #6B500B so the OOS
+     elec swatch stays distinctly darker than the new richer-gold
+     landlord base (#D4A017). Same proportional value drop the gas
+     family uses (D85F4D → 7A2417). */
+  --color-gresb26-elec: #6B500B;  /* darker than --metric-electricity #D4A017 */
+
+  /* === Brief 20 (BR-13) Task 2 - GRESB-specific tokens.
+        Teal palette evokes the GRESB digital guide (gitbook) aesthetic
+        per the brief's Appendix B. NOT GRESB brand assets - we match
+        the look, not the IP. Tokens tuned for dark register (the IVG
+        tool's primary mode); the indicator/aspect badge contrast pair
+        uses teal-500 at low opacity for bg + teal-500 at full for text.
+        Status + confidence pills reuse the existing risk tokens
+        (--color-risk-low / -moderate / -major). === */
+  --gresb-teal-500:    #14B8A6;  /* primary accent - badges, stars */
+  --gresb-teal-700:    #0F766E;  /* darker teal - strong text on light bg */
+  --gresb-teal-900:    #134E4A;  /* deepest - page titles on light bg */
+  --gresb-band-management:   var(--gresb-teal-500);
+  --gresb-band-performance:  #5B7B9A;  /* NZA blue (matches existing palette) */
+  --gresb-band-residential:  #10B981;  /* green (matches GRESB residential mark) */
+
+  /* === Brief 21 - Metering Sankey commodity palette.
+        Eleven commodity ribbons (5 landlord MPAN buckets + 5 Sycous service
+        types + the DNO/BNO invisible-resident channel). Hex values lifted
+        verbatim from the Sankey prototype Chris authorised on 4 Jun, tuned
+        for the dark register (#0F1729 base). Gas + electricity inherit the
+        existing Map metric hues so the Energy chapter reads consistently
+        across Consumption (Brief 17.5) and this Metering Sankey. === */
+  --metering-gas:           #C44A2C;  /* gas MPRN ribbon */
+  --metering-gas-dim:       #6E2A18;
+  --metering-elec-hh:       #E8A632;  /* Landlord HH */
+  --metering-elec-nhh:      #C48820;  /* Landlord NHH */
+  --metering-elec-void:     #6A6055;  /* Void / between-residents */
+  --metering-elec-other:    #4A4A52;  /* Inactive / unclear */
+  --metering-sycous-elec:   #E8C870;  /* Sycous sub-metered electricity */
+  --metering-sycous-heat:   #C4625C;  /* Sycous sub-metered heat */
+  --metering-sycous-hhw:    #B4584C;  /* Sycous sub-metered heat & hot water */
+  --metering-sycous-hw:     #D86C5A;  /* Sycous sub-metered hot water - red family, matches the heating cluster (Chris ask 4 Jun #4) */
+  --metering-sycous-cw:     #4A7BA0;  /* Sycous sub-metered cold water */
+  --metering-invisible:     #3D4860;  /* Resident MPANs invisible to IVG */
+
+  /* === Legacy aliases - point old Phase 1A/1B token names at the new tokens
+        so existing component code keeps working during the Part 2 sweep.
+        Aliases deleted in Part 2 once consumers are updated. === */
+  --bg-dark: var(--color-theme-base);
+  --bg-cream: var(--color-nza-cream);
+  /* --bg-forest removed Brief 7 Part 0 (zero remaining usages; speculative) */
+  --text-on-dark: var(--color-theme-body);
+  --text-on-cream: var(--color-theme-base);
+  --text-muted-on-dark: rgba(237, 229, 216, 0.6);
+  --text-muted-on-cream: rgba(26, 36, 64, 0.65);
+  --coral: var(--color-nza-coral);
+  --coral-dark: var(--color-theme-accent-primary);
+  /* --coral-soft removed Brief 7 Part 0 (zero remaining usages) */
+  --navy: var(--color-theme-base);
+  --sage: var(--color-scope-12);
+  --sage-on-dark: var(--color-scope-12);
+  --sage-on-cream: var(--color-categorical-supply-chain);
+
+  --surface-on-dark: rgba(255, 255, 255, 0.04);
+  --surface-on-cream: rgba(0, 0, 0, 0.03);
+  --rule-on-dark: rgba(255, 255, 255, 0.06);
+  --rule-on-cream: rgba(0, 0, 0, 0.06);
+
+  --status-confirmed: var(--color-risk-low);
+  --status-partial: var(--color-risk-moderate);
+  --status-missing: var(--color-risk-major);
+  --status-not-applicable: var(--color-risk-no-data);
+
+  /* Old --serif token deprecated; aliases to --font-heading because
+     Playfair-Display removed. The Part 2 sweep replaces consumers. */
+  --serif: var(--font-heading);
+  --sans: var(--font-body);
+
+  /* Phase 1B: panels */
+  --panel-bg-on-dark: rgba(255, 255, 255, 0.03);
+  --panel-bg-on-cream: rgba(0, 0, 0, 0.02);
+  --panel-border-on-dark: rgba(255, 255, 255, 0.06);
+  --panel-border-on-cream: rgba(0, 0, 0, 0.06);
+
+  /* Phase 1B: sidebar */
+  --sidebar-bg-on-dark: rgba(0, 0, 0, 0.25);
+  --sidebar-item-active: rgba(232, 114, 92, 0.15);
+
+  /* Phase 1B: sub-nav */
+  --subnav-bg-on-dark: rgba(255, 255, 255, 0.04);
+  --subnav-bg-on-cream: rgba(0, 0, 0, 0.04);
+}
+
+/* motion.entry - opacity 0→1, y 8→0, 250ms ease-standard */
+@keyframes nza-entry {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.nza-entry {
+  animation: nza-entry var(--duration-entry) var(--ease-standard) both;
+}
+
+/* === Chris ask 2026-06-03 - sleek scroll utility (EOC pattern) ===
+ *   Hide the native scrollbar entirely (cross-browser) AND apply a
+ *   bottom-fade mask so the content gently dissolves into the page
+ *   background where there's more to read below. Far cleaner than a
+ *   visible scrollbar lurking on the side. Pair with `overflow-y:
+ *   auto` on the container. Reference: docs/audit/17.5_references/
+ *   04_page_layout.md §"Scroll affordance" - the EOC report uses
+ *   exactly this pattern across every scrolling narrative pane.
+ *
+ *   Note: the bottom fade is implemented via mask-image so it works
+ *   on top of any page background colour without needing a
+ *   per-register overlay. Last ~48 px of the container fade to
+ *   transparent. The mask reveals a hint of "more content below"
+ *   without any visible affordance until you scroll.
+ */
+.scroll-fade-y {
+  /* Hide WebKit/Chromium scrollbar */
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE/Edge legacy */
+  /* Chris ask 2026-06-03 (more obvious): bottom fade widened
+     48 → 96px and starts earlier so the text fades through more of
+     the column. Reads as a clear "more below" gradient rather than a
+     subtle hint. Pair with a floating chevron in JSX. */
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black calc(100% - 96px), transparent 100%);
+  mask-image:         linear-gradient(to bottom, black 0%, black calc(100% - 96px), transparent 100%);
+}
+.scroll-fade-y::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+/* Chris ask 2026-06-03 - floating scroll chevron. Pulses gently
+   downward to hint "more content below"; only visible when the
+   parent container is scrollable AND not at the bottom. The chevron
+   itself is positioned over the fade area; its container handles
+   the bouncing motion via animation. */
+@keyframes scroll-hint-bounce {
+  0%, 100% { transform: translateY(0); opacity: 0.7; }
+  50%      { transform: translateY(4px); opacity: 1; }
+}
+.scroll-hint {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  color: var(--color-nza-coral);
+  animation: scroll-hint-bounce 1.6s ease-in-out infinite;
+  z-index: 5;
+}
+.scroll-hint svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Brief 7 Part 2 - Leaderboard reorder CSS fallback. Brief 14 Part 2
+   superseded this with framer-motion `layout`; keyframes retained as a
+   no-cost fallback for any future caller that wants the simpler animation. */
+@keyframes nza-row-shift {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Brief 14 Part 3 - site-icon mask. The site icon SVGs at
+   /sites/<id>/icon.svg are used as mask-images; the host element's
+   background-color = currentColor drives the actual rendered fill so
+   icons inherit the row's text colour (cream on dark, navy on cream).
+   Edwalton fallback uses `.site-icon-fallback` instead. */
+.site-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  background-color: currentColor;
+  -webkit-mask-image: var(--site-icon-url);
+  mask-image: var(--site-icon-url);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+.site-icon-fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  /* Override .site-icon's mask + currentColor background - fallback is a
+     bordered text glyph, not a masked SVG. */
+  background-color: transparent;
+  -webkit-mask-image: none;
+  mask-image: none;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+  opacity: 0.7;
+}
+
+/* Chris ask 2026-05-24: hero-sized site icon for Site Detail h1. ~62 px
+   square, sits alongside the 40 px Source Serif name. Falls back to the
+   bordered iv glyph on Edwalton (no square site mark exists). */
+.site-icon-hero {
+  width: 62px;
+  height: 62px;
+  flex: 0 0 62px;
+}
+.site-icon-fallback.site-icon-hero {
+  font-size: 26px;
+  border-width: 2px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+/* Brief 7 Part 3 - Map marker pulse. Replaces Tailwind's animate-ping
+   (IVG has no Tailwind). The dot scales from 1 → 2.4 while fading to 0
+   so the halo appears to expand outwards. Use on the halo span only;
+   the inner dot stays still. */
+@keyframes nza-pulse {
+  0%   { transform: scale(0.6); opacity: 0.55; }
+  100% { transform: scale(2.4); opacity: 0;    }
+}
+.nza-pulse {
+  animation: nza-pulse 2.4s var(--ease-gentle) infinite;
+}
+
+/* ===== Brief 24.6 Part 2 - site chapter fade-in =====
+   Runs a 200 ms opacity 0→1 keyframe whenever the site chapter
+   re-mounts (sidebar nav or sub-tab click in App.jsx SitePage →
+   SiteChapterFade). Initial cold-open and `prefers-reduced-motion`
+   skip the class entirely so there's no fade - only user-driven
+   navigation triggers it. */
+@keyframes site-chapter-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.site-chapter-fade {
+  animation: site-chapter-fade-in 0.2s ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-chapter-fade { animation: none; }
+}
+
+/* ===== Brief 24.6 Part 3d - heat map row stagger =====
+   Each `<g.hm-row>` group fades in as a unit on first mount; the
+   per-row inline `animation-delay` puts a 12 ms stagger between
+   rows so the heat map paints top-to-bottom over ~580 ms.
+   `animation-fill-mode: backwards` keeps the row invisible during
+   the delay (otherwise rows below the first would flash visible
+   before their delay elapses). `prefers-reduced-motion` skips. */
+@keyframes hm-row-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.hm-row {
+  animation: hm-row-fade-in 0.32s ease-out backwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hm-row { animation: none; }
+}
+
+/* (Brief 24.6 Part 4 `.time-series-morph` removed 8 Jun - Recharts
+   native data-update tween took over after StrictMode was dropped.
+   The keyed-remount + opacity cross-fade is no longer needed.) */
+
+/* ===== Chris ask 8 Jun - section-level fade =====
+   Wraps the App's route output in `<div key={sectionKey}
+   className="app-section-fade">`. The keyframe runs a 220 ms
+   opacity 0→1 with a tiny upward translate whenever the user moves
+   between Home / Portfolio / Site / GRESB. Subtle by design - the
+   page should feel like it's transitioning, not popping. */
+@keyframes app-section-fade-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.app-section-fade {
+  animation: app-section-fade-in 0.22s ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .app-section-fade { animation: none; }
+}
+
+/* ===== Chris ask 8 Jun - Home tile staggered entrance =====
+   The six Home tiles pop in one by one on initial Home mount via
+   the `:nth-child(n)` selector. Each tile starts at opacity 0 and
+   translated up 10 px, then a 500 ms ease-out keyframe fades +
+   lifts them into place; per-tile `animation-delay` produces a
+   140 ms stagger across the six. Total entrance ~1.4 s - slow
+   enough that the user actually sees it happen, while still
+   feeling tasteful rather than laboured.
+   v1 (8 Jun) used 70 ms / 280 ms = ~700 ms total and Chris said
+   "you can barely notice it" - both numbers doubled here.
+   Each tile fires once on mount and stays; data updates within
+   the tile don't replay. */
+@keyframes landing-tile-pop-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.landing-tiles-grid > * {
+  animation: landing-tile-pop-in 0.5s ease-out backwards;
+}
+.landing-tiles-grid > *:nth-child(1) { animation-delay: 0ms; }
+.landing-tiles-grid > *:nth-child(2) { animation-delay: 140ms; }
+.landing-tiles-grid > *:nth-child(3) { animation-delay: 280ms; }
+.landing-tiles-grid > *:nth-child(4) { animation-delay: 420ms; }
+.landing-tiles-grid > *:nth-child(5) { animation-delay: 560ms; }
+.landing-tiles-grid > *:nth-child(6) { animation-delay: 700ms; }
+@media (prefers-reduced-motion: reduce) {
+  .landing-tiles-grid > * { animation: none; }
+}
+
+/* ===== Brief 24.6 Part 3e - Sankey entrance =====
+   Two-phase entrance:
+   1. `.sankey-nodes-fade` - nodes (left/mid/right rectangles) fade
+      in over 400 ms ease-out. The structure appears first.
+   2. `.sankey-link-draw` - ribbons draw left-to-right via
+      stroke-dashoffset 1→0. Each path carries `pathLength="1"`
+      (Recharts-free; lets us animate dashoffset on a normalised
+      scale) so a single keyframe works for all path lengths.
+      Per-ribbon stagger is set inline via `animationDelay` based
+      on link index, starting 300 ms after nodes start so the
+      structure is visible before the connections grow in.
+   Both animations are `forwards` so the final state holds after
+   the keyframe ends (otherwise the ribbon's stroke-dashoffset
+   would snap back to 1 and the link would disappear). */
+@keyframes sankey-nodes-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.sankey-nodes-fade {
+  animation: sankey-nodes-fade-in 0.4s ease-out;
+}
+@keyframes sankey-link-draw-in {
+  from { stroke-dashoffset: 1; }
+  to   { stroke-dashoffset: 0; }
+}
+.sankey-link-draw {
+  /* Duration is set inline per-path (see SiteMetering.jsx) so the
+     two-phase entrance can tune left vs right timing independently.
+     Default here is just a fallback for any path that doesn't set
+     one. `forwards` fill-mode holds the final dashoffset of 0,
+     otherwise the ribbon would snap back to invisible. */
+  animation: sankey-link-draw-in 0.6s ease-out forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .sankey-nodes-fade { animation: none; }
+  .sankey-link-draw  { animation: none; stroke-dashoffset: 0; }
+}
+
+/* ===== Brief 6 Part 3 - Two-bar nav (Brief 17.5 Part 1 - slimmed) =====
+   Primary 44px / Secondary 36px. Both use --page-edge-x so the primary
+   nav label, sub-nav tab label, and page H1 share one continuous left
+   edge - see docs/audit/17.5_references/02_sub_ribbon.md "left-alignment
+   grid". Secondary text drops from --text-sm (14) to --text-xs (12) so
+   the second tier reads visually lighter than the first; same Stolzl
+   Medium 500 throughout. */
+
+.topnav-primary {
+  display: flex;
+  align-items: center;
+  padding: 0 var(--page-edge-x);
+  flex-shrink: 0;
+}
+.topnav-primary-inner {
+  /* Brief 17.5.3 Part 3 - share left edge with body via
+     --nav-content-max-width (1280, matches .thematic-page-container). */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  width: 100%;
+  max-width: var(--nav-content-max-width);
+  margin: 0 auto;
+}
+.topnav-primary-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.topnav-primary-link {
+  /* Chris ask 2026-06-03: drop primary nav text from --text-body
+     (15.71 at 1920) → --text-body-small (13.29 at 1920) to match the
+     EOC report's slimmer nav read. */
+  font-family: var(--font-heading);
+  font-size: var(--text-body-small);
+  font-weight: 500;
+  text-decoration: none;
+  padding: 4px 0;
+  transition: color 0.15s ease;
+}
+.topnav-primary-link:hover:not(.disabled) {
+  opacity: 1;
+}
+
+.topnav-secondary {
+  display: flex;
+  align-items: center;
+  padding: 0 var(--page-edge-x);
+  flex-shrink: 0;
+}
+.topnav-secondary-inner {
+  /* Brief 17.5.3 Part 3 - share left edge with body via
+     --nav-content-max-width (1280, matches .thematic-page-container).
+     Centred via margin: 0 auto. The 12px transform shifts the strip
+     visually left so the first tab's TEXT (after its own 12px left
+     padding) lands exactly on the body left edge at x=320 - matches
+     the EOC SubNav's -ml-3 trick documented in
+     docs/audit/17.5_references/02_sub_ribbon.md, just expressed with
+     a transform instead of a width hack so it composes with the new
+     centred 1280 container. */
+  display: flex;
+  align-items: stretch;
+  gap: 4px;
+  width: 100%;
+  max-width: var(--nav-content-max-width);
+  margin: 0 auto;
+  /* Transform offset MUST match the secondary-link's horizontal
+     padding so the first tab's TEXT lands on x=320. Updated 2026-06-03
+     when padding changed 12 → 10 px. */
+  transform: translateX(-10px);
+  overflow-x: auto;
+}
+.topnav-secondary-link {
+  /* Chris ask 2026-06-03: drop secondary nav text from --text-body-small
+     (13.29 at 1920) → --text-caption (11.87 at 1920) and tighten the
+     pill padding 8/12 → 4/10 so the strip can sit at 30px without the
+     pill background clipping the text. */
+  font-family: var(--font-heading);
+  font-size: var(--text-caption);
+  font-weight: 500;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: color 0.15s ease, background 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+}
+.topnav-secondary-link.active {
+  background: rgba(232, 114, 92, 0.10);
+}
+
+/* Brief 19.5 (Chris extension 4 Jun) - GRESB secondary nav adopts the
+   tertiary's Pattern A underline-on-active treatment so the GRESB
+   workflow + the Portfolio thematic sub-sub-tabs share one design
+   grammar. Modifier class --underline applied by TopNav.jsx only when
+   activePrimary === 'gresb'. Portfolio Map/Energy + Insights secondary
+   navs are unaffected. */
+.topnav-secondary--underline .topnav-secondary-inner {
+  /* Pill padding was 10 px horizontal → transform offset compensated
+     -10 px to land text at x=320. With pill stripped the offset
+     becomes 0. */
+  transform: translateX(0);
+  /* Brief 19.5 spec: 28px gap between tabs. */
+  gap: 28px;
+}
+.topnav-secondary--underline .topnav-secondary-link {
+  /* Drop pill: no horizontal padding, no border-radius, no background
+     in any state. Bottom padding + 2px underline matches the tertiary
+     treatment in PortfolioEnergy. Inactive border-bottom stays
+     transparent so layout doesn't shift on state flip. */
+  padding: 4px 0 4px 0;
+  border-radius: 0;
+  background: transparent;
+  border-bottom: 2px solid transparent;
+  transition:
+    color 180ms var(--ease-standard),
+    border-color 180ms var(--ease-standard);
+}
+.topnav-secondary--underline .topnav-secondary-link.active {
+  background: transparent;
+  border-bottom-color: var(--color-nza-coral);
+}
+.topnav-secondary--underline .topnav-secondary-link:hover {
+  color: var(--color-theme-body);
+}
+.topnav-secondary--underline .topnav-secondary-link.active:hover {
+  color: var(--color-nza-coral);
+}
+
+/* ===== Cream-register page overrides ===== */
+.theme-cream-page {
+  background: var(--color-nza-cream);
+  color: var(--color-theme-base);
+}
+.theme-cream-page .dashboard-body {
+  background: var(--color-nza-cream);
+}
+.theme-cream-page .dashboard-main {
+  /* Chris ask 8 Jun - main content area lighter than nav strips
+     so the page register reads softer. Nav stays at
+     `--color-nza-cream`; content reads `--color-nza-cream-light`. */
+  background: var(--color-nza-cream-light);
+  color: var(--color-theme-base);
+}
+
+/* ===== Page narrative block (Brief 6 Part 3) ===== */
+.page-narrative {
+  max-width: 720px;
+  margin: 0 auto 32px;
+  padding: 32px 0 8px;
+}
+.page-narrative-eyebrow {
+  font-family: var(--font-heading);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-nza-coral);
+  margin: 0 0 12px;
+}
+.page-narrative-heading {
+  font-family: var(--font-heading);
+  font-size: var(--text-page-heading);
+  font-weight: 500;
+  line-height: var(--text-page-heading-lh);
+  color: var(--color-theme-body);
+  margin: 0 0 12px;
+}
+.theme-cream-page .page-narrative-heading { color: var(--color-theme-base); }
+.page-narrative-body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--text-body-lh);
+  color: rgba(237, 229, 216, 0.7);
+  margin: 0;
+  max-width: 560px;
+}
+.theme-cream-page .page-narrative-body { color: rgba(26, 36, 64, 0.7); }
+
+/* ===== Base ===== */
+
+html, body, #root {
+  margin: 0;
+  background: var(--bg-dark);
+  color: var(--text-on-dark);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color-scheme: dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body.theme-cream {
+  background: var(--bg-cream);
+  color: var(--text-on-cream);
+  color-scheme: light;
+}
+
+a {
+  color: var(--coral);
+  text-decoration: none;
+}
+a:hover { color: var(--coral-dark); }
+
+h1, h2, h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  color: var(--coral);
+}
+.theme-cream h1 { color: var(--navy); }
+
+h2 {
+  font-size: 24px;
+  color: var(--sage-on-dark);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.theme-cream h2 { color: var(--sage-on-cream); }
+
+h3 { font-size: 18px; }
+
+@media (max-width: 640px) {
+  h1 { font-size: 36px; }
+  h2 { font-size: 20px; }
+}
+
+/* ===== DataStatusBadge ===== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 24px;
+  padding: 0 12px;
+  border-radius: 12px;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+.badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+}
+.badge.no-dot::before { display: none; }
+.badge-confirmed       { background: var(--status-confirmed); }
+.badge-partial         { background: var(--status-partial); color: #2a2415; }
+.badge-partial::before { background: rgba(0, 0, 0, 0.5); }
+.badge-missing         { background: var(--status-missing); }
+.badge-not_applicable  { background: var(--status-not-applicable); }
+
+/* ===== MetricTile ===== */
+
+.tile {
+  background: var(--surface-on-dark);
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.theme-cream .tile { background: var(--surface-on-cream); }
+.tile.clickable {
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.tile.clickable:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+.theme-cream .tile.clickable:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.tile-label {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted-on-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.theme-cream .tile-label { color: var(--text-muted-on-cream); }
+
+.tile-value {
+  font-family: var(--serif);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--text-on-dark);
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.theme-cream .tile-value { color: var(--text-on-cream); }
+.tile-value-big { font-size: 64px; }
+
+.tile-unit {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted-on-dark);
+}
+.theme-cream .tile-unit { color: var(--text-muted-on-cream); }
+
+.tile-status {
+  display: inline-flex;
+}
+
+.tile-why {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--text-muted-on-dark);
+  font-style: italic;
+  border-left: 3px solid var(--coral);
+  padding: 8px 12px;
+  background: rgba(227, 93, 74, 0.06);
+  border-radius: 0 4px 4px 0;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+.theme-cream .tile-why { color: var(--text-muted-on-cream); }
+
+/* ===== Layout primitives ===== */
+
+.shell {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px 80px;
+}
+@media (max-width: 640px) {
+  .shell { padding: 0 20px 40px; }
+}
+
+/* ===== Top nav (kept simple for Phase 1A; full design later) ===== */
+
+.topnav {
+  background: #e5e5e0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 500;
+}
+@media (max-width: 640px) {
+  .topnav { padding: 0 20px; }
+}
+.topnav-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.topnav a {
+  color: #1a1a1a;
+  padding: 6px 14px;
+  border-radius: 16px;
+  transition: background 0.2s ease;
+}
+.topnav a:hover { color: var(--coral); }
+.topnav a.active {
+  background: rgba(227, 93, 74, 0.12);
+  color: var(--coral);
+}
+.topnav a.disabled {
+  color: #9a9588;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.topnav a.disabled:hover { color: #9a9588; }
+
+/* ===== Dashboard layout (Phase 1B chunk 9) ===== */
+
+html, body {
+  overflow: hidden;
+}
+
+.dashboard {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.dashboard-body {
+  flex: 1;
+  display: flex;
+  min-height: 0;  /* allow children to size correctly inside flex */
+  overflow: hidden;
+}
+
+.dashboard-main {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* ===== SubNav ===== */
+
+.subnav {
+  height: var(--subnav-height);
+  background: var(--subnav-bg-on-dark);
+  border-bottom: 1px solid var(--rule-on-dark);
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  flex-shrink: 0;
+}
+.subnav-cream { background: var(--subnav-bg-on-cream); border-bottom-color: var(--rule-on-cream); }
+@media (max-width: 640px) { .subnav { padding: 0 20px; } }
+
+.subnav-inner {
+  /* Brief 17.5.3 Part 3 - legacy subnav (used by Insights / GRESB).
+     Aligned to the same 1280 container as the body for consistency. */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: var(--nav-content-max-width);
+  margin: 0 auto;
+}
+
+.subnav-tabs {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.subnav-tab {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted-on-dark);
+  text-decoration: none;
+  border: none;
+  padding: 14px 0;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.15s ease;
+}
+.subnav-cream .subnav-tab { color: var(--text-muted-on-cream); }
+.subnav-tab:hover { color: var(--text-on-dark); }
+.subnav-cream .subnav-tab:hover { color: var(--text-on-cream); }
+.subnav-tab.active {
+  color: var(--coral);
+}
+.subnav-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--coral);
+}
+
+/* ===== Sidebar ===== */
+
+.sidebar {
+  width: var(--sidebar-width);
+  background: var(--sidebar-bg-on-dark);
+  border-right: 1px solid var(--rule-on-dark);
+  overflow-y: auto;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  padding: 16px 20px 12px;
+  /* Brief 10 Part 5: Stolzl Medium 500 for the SITES header (more
+     editorial); Stolzl Book 400 for the row labels below. */
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted-on-dark);
+  border-bottom: 1px solid var(--rule-on-dark);
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  /* Brief 10 Part 5 (Chris inline): Stolzl Book - set font-weight 400 on
+     the existing --font-heading Stolzl family. */
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-on-dark);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+.sidebar-item.active {
+  background: var(--sidebar-item-active);
+  border-left-color: var(--coral);
+  color: var(--coral);
+  font-weight: 500;
+}
+
+.sidebar-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.sidebar-dot.status-confirmed { background: var(--status-confirmed); }
+.sidebar-dot.status-partial { background: var(--status-partial); }
+.sidebar-dot.status-missing { background: var(--status-missing); }
+.sidebar-dot.status-not_applicable { background: var(--status-not-applicable); }
+
+/* ===== Site page header banner - Chris ask 5 Jun r3 =====
+   "I like that it's nice and big on Overview. There's no reason why
+   we can't use the exact same placement, size, and colour on every
+   other page, but they're all different at the moment."
+
+   Unified across Energy / Carbon / Water / Waste so the site icon +
+   name read in the same position, size, and colour on every page
+   (Meters keeps its own SiteBanner per Chris). Mirrors the
+   .site-overview-h1-big treatment used on the Overview page:
+     - 62 px navy site icon (inherits currentColor from .site-icon)
+     - 40 px Source Serif 4 H1
+     - eyebrow ABOVE the icon+name row
+   The right-slot (Energy's view pill row) sits in the eyebrow row so
+   it doesn't crowd the name. */
+.site-page-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 4px 0 18px 0;
+  margin-bottom: 14px;
+  border-bottom: 1px solid rgba(26, 36, 64, 0.08);
+  color: var(--text-on-cream);
+}
+.site-page-header-eyebrow-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  /* Chris ask 5 Jun r4: "I want the icon in the same place on every
+     page." Energy has a 41 px pill row in the `right` slot which
+     stretches this row; Carbon / Water / Waste have no right slot so
+     the row would collapse to ~14 px (just the eyebrow's intrinsic
+     height) and push the icon row 27 px higher. Reserve 40 px so the
+     icon lands at the same y on every page. */
+  min-height: 40px;
+}
+.site-page-header-right {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+}
+.site-page-header-name-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: -4px;
+}
+.site-page-header-eyebrow {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--color-nza-coral);
+}
+.site-page-header-name {
+  margin: 0;
+  font-family: var(--font-site);
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--text-on-cream);
+  letter-spacing: -0.5px;
+  line-height: 1.05;
+}
+
+/* ===== Brief 25 (BR-13 v1.4) - Aspects page two-column layout =====
+   320px narrative column on the left, 60px gap, 1fr toggle+accordion
+   on the right. Chris ask 5 Jun: wider narrative + frozen
+   toggle - narrative + component toggle stay put, only the indicator
+   cards scroll within their own bounding box. Stacks on mobile
+   (<768px) so narrative reads first and toggle/cards revert to
+   page-scroll behaviour. */
+.gresb-aspects-layout {
+  grid-template-columns: 320px minmax(0, 1fr);
+  column-gap: 60px;
+}
+@media (max-width: 767px) {
+  .gresb-aspects-layout {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+}
+
+/* ===== Brief 24 Part 2 - Sidebar overhaul ===== */
+/* Sidebar opt-in via `.sidebar--brief24`. Chris ask iteration 4 Jun:
+   "go somewhere in between the grey before and this dark thing" +
+   "make it so we don't have to scroll" + "wash them up a little."
+   Background lifted to a mid-navy slate (#1A2440 - the original Phase
+   1B base) so it sits between cream and the deep #0F1629 body. Pills
+   pulled inline next to the site name so row height compresses and all
+   13 sites fit without scroll. Footer key folded into a single subtle
+   line so it earns its keep without claiming vertical space. */
+
+.sidebar.sidebar--brief24 {
+  /* Chris ask 4 Jun r3: "I just want grey, not blue, please, but about
+     the same darkness as you're currently showing." Was #1A2440
+     (bluey-navy, hue 224 sat 45%). Now #262626 - pure neutral dark
+     grey at roughly the same perceived luminance, no chroma.
+     Hover/active states already use coral, so the neutral grey
+     surrounds the colour cues instead of competing with them. */
+  background: #262626;
+  border-right: 1px solid rgba(255,255,255,0.08);
+  overflow: hidden;  /* no scroll - rows are sized to fit */
+}
+
+.sidebar.sidebar--brief24 .sidebar-header {
+  padding: 12px 18px 10px;
+  color: rgba(237,229,216,0.7);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.sidebar.sidebar--brief24 .sidebar-nav {
+  padding: 4px 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.sidebar-item--brief24 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 16px 6px 14px;
+  border-left: 2px solid transparent;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 12.5px;
+  color: rgba(237,229,216,0.85);
+  text-decoration: none;
+  cursor: pointer;
+  min-height: 30px;
+  transition: background 140ms ease, color 140ms ease, border-color 140ms ease;
+}
+.sidebar-item--brief24:hover {
+  background: rgba(255,255,255,0.04);
+  color: rgba(237,229,216,1);
+}
+.sidebar-item--brief24.active {
+  background: rgba(232,114,92,0.10);
+  border-left-color: var(--coral);
+  color: var(--coral);
+}
+
+.sidebar-pills-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  flex: 0 0 auto;
+  margin-left: 4px;
+}
+.sidebar-pill {
+  display: inline-block;
+  border-radius: 2px;
+  opacity: 0.9;
+  transition: opacity 120ms ease, transform 120ms ease;
+}
+.sidebar-pill--inline {
+  width: 10px;
+  height: 3px;
+  flex: 0 0 10px;
+}
+.sidebar-pill:hover {
+  opacity: 1;
+  transform: scaleY(1.6);
+}
+
+.sidebar-key {
+  padding: 8px 16px 12px 16px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  font-family: var(--font-body);
+  font-size: 9.5px;
+  color: rgba(237,229,216,0.5);
+  display: flex; flex-direction: column; gap: 4px;
+  flex: 0 0 auto;
+}
+.sidebar-key-title {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  font-size: 9px;
+  color: rgba(237,229,216,0.7);
+}
+.sidebar-key-line { display: none; }  /* compact mode - title + swatches only */
+.sidebar-key-swatches {
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+.sidebar-key-swatch {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 9px;
+}
+.sidebar-key-swatch i {
+  display: inline-block;
+  width: 10px; height: 3px;
+  border-radius: 2px;
+}
+
+/* ===== Panel ===== */
+
+.panel {
+  background: var(--panel-bg-on-dark);
+  border: 1px solid var(--panel-border-on-dark);
+  border-radius: var(--panel-radius);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+.panel-cream {
+  background: var(--panel-bg-on-cream);
+  border-color: var(--panel-border-on-cream);
+}
+.panel-pad-normal .panel-body { padding: var(--panel-padding); }
+.panel-pad-tight .panel-body { padding: 16px; }
+.panel-pad-none .panel-body { padding: 0; }
+.panel-fullheight { height: 100%; }
+.panel-scroll .panel-body { overflow-y: auto; }
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px var(--panel-padding) 0;
+  gap: 16px;
+  flex-shrink: 0;
+}
+.panel-pad-tight .panel-header { padding: 12px 16px 0; }
+.panel-pad-none .panel-header { padding: 16px 20px 0; }
+
+.panel-title {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--coral);
+  margin: 0;
+}
+.panel-cream .panel-title { color: var(--navy); }
+
+.panel-subtitle {
+  font-size: 12px;
+  color: var(--text-muted-on-dark);
+  margin-top: 4px;
+}
+.panel-cream .panel-subtitle { color: var(--text-muted-on-cream); }
+
+.panel-body {
+  flex: 1;
+  min-height: 0;
+}
+
+/* Page container for dashboard pages - fills main, scrollable inside.
+   Brief 17.5 Part 1: horizontal padding switched from a 60px fixed value
+   to --page-edge-x (32px) so the page body shares its left edge with
+   the nav ribbons above. Vertical padding kept (24px top, 48px bottom). */
+.page {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px var(--page-edge-x) 48px;
+  max-width: var(--app-content-max-width);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* =================================================================
+   Rule 11.x - Body-text alignment foundation (Chris ask 4 Jun 2026).
+   Every thematic / GRESB / future top-level page MUST wrap its body in:
+
+     <div class="thematic-page-outer">
+       <div class="thematic-page-container">
+         …body content…
+       </div>
+     </div>
+
+   These two classes guarantee - without any inline styling, without any
+   page-author thought - that every body element (H1, narrative text,
+   subsection titles, graphics) starts at the same x-coordinate:
+
+     • At 1920 viewport: text edge sits at x=320
+     • At 1440 viewport: text edge sits at x=80
+     • At ≤1280 viewport: collapses to 32px breathing room each side
+
+   Both edges match the primary nav, secondary nav, and tertiary sub-tab
+   text edges (via --nav-content-max-width: 1280px). The result: a
+   continuous vertical line down the left side of every page, from the
+   first nav label through every paragraph below.
+
+   Page authors NEVER set max-width / margin-auto / padding-left /
+   padding-right on the body wrapper. Page authors MAY layer on
+   padding-bottom, gap (between sections), flex direction - these compose
+   without breaking the horizontal alignment foundation.
+
+   If a page needs to break out of the 1280 band (e.g. full-bleed map),
+   it explicitly opts out by NOT using these classes - but it MUST then
+   document the deviation at the call site. Default behaviour is in-band.
+   =================================================================*/
+
+/* ---- Outer scroller. Hosts the .thematic-page-container child.
+   box-sizing: border-box ensures the --page-edge-x padding doesn't
+   expand the outer beyond the viewport (this was the bug that broke
+   `.page` at 1440). scrollbar-gutter: stable both-edges reserves the
+   vertical-scrollbar gutter on both sides so the centred child stays
+   geometrically aligned to the nav whether the page scrolls or not. */
+.thematic-page-outer {
+  box-sizing: border-box;
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: 4px var(--page-edge-x) 0 var(--page-edge-x);
+  scrollbar-gutter: stable both-edges;
+}
+
+/* ---- Inner body container. 1280 max-width centred via margin auto.
+   CRITICAL: no horizontal padding on this element. The breathing room
+   comes from .thematic-page-outer's --page-edge-x padding. Adding
+   inner padding here would push body text RIGHT of the nav strips'
+   text edge (because the nav strips' inner [.topnav-primary-inner]
+   has no inner padding either - its first label sits flush against
+   its 1280 box left edge). At 1920: nav-inner.x = 320, container.x =
+   320, both first-glyphs at x=320. At 1440: both at x=80. */
+.thematic-page-container {
+  max-width: var(--nav-content-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+}
+@media (max-width: 900px) { .page { padding: 20px 20px 32px; } }
+
+/* 2-column layout used on Overview / Carbon / Reconciliation pages */
+.page-2col {
+  display: grid;
+  grid-template-columns: 40fr 55fr;
+  gap: 24px;
+  min-height: 0;
+  flex: 1;
+}
+@media (max-width: 900px) {
+  .page-2col {
+    grid-template-columns: 1fr;
+    overflow-y: auto;
+  }
+}
+
+/* ===== Landing page (Brief 16 / Brief 8 layout) =====
+   Chris ask 2026-06-02: responsive reshuffle so the page reads at
+   1440 (logo+narrative LEFT, 2×3 tiles RIGHT), then stacks cleanly
+   at narrower widths. Container query / media query split. */
+
+.landing-grid {
+  /* Chris ask 2026-06-03: align body content to the same left edge
+     every page agrees on (x=320 at 1920×1080, matching Brief 17.5.3
+     +nav-content-max-width=1280 + Brief 17.5.2 .thematic-page-container).
+     Mechanism: max-width 1280 + width calc(100% - 64px) gives the
+     1280 container centred via margin auto at viewports ≥ 1344, and
+     a viewport-edge-minus-32 container at narrower widths - the same
+     32px breathing rule the rest of the tool uses. With zero
+     horizontal padding the content edge IS the container edge at
+     x=320. */
+  height: 100%;
+  max-width: 1280px;
+  width: calc(100% - 64px);
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 48px 0;
+  display: grid;
+  grid-template-columns: minmax(420px, 480px) 680px;
+  justify-content: space-between;
+  align-items: center;
+}
+/* < 1100px: page stacks. Logo+narrative on top, tiles below - keeps
+   each tile wide enough that meanings don't truncate. */
+@media (max-width: 1100px) {
+  .landing-grid {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    padding: 32px 48px;
+    gap: 32px;
+  }
+}
+@media (max-width: 600px) {
+  .landing-grid { padding: 24px; }
+}
+
+.landing-tiles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 14px;
+  min-width: 0;
+  /* Width comes from the parent grid column (fixed 680 px on the
+     landing-grid) so each tile lands ~333 px wide. No max-width or
+     justify-self needed now that the parent grid handles the
+     positioning via justify-content: space-between. */
+}
+/* < 560px: tile grid collapses to 1 column (tiles get plenty of width
+   for the headline + meaning to read on one line). */
+@media (max-width: 560px) {
+  .landing-tiles-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.landing-quadrant {
+  background: var(--panel-bg-on-dark);
+  border: 1px solid var(--panel-border-on-dark);
+  border-radius: var(--panel-radius);
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+  position: relative;
+  min-height: 240px;
+}
+.landing-quadrant:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(227, 93, 74, 0.3);
+}
+
+.landing-q-icon {
+  color: var(--coral);
+  margin-bottom: 16px;
+}
+
+.landing-q-value {
+  font-family: var(--serif);
+  font-size: 72px;
+  font-weight: 400;
+  color: var(--coral);
+  line-height: 1;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.landing-q-unit {
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-muted-on-dark);
+}
+@media (max-width: 1100px) {
+  .landing-q-value { font-size: 56px; }
+}
+
+.landing-q-title {
+  margin-top: 12px;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-on-dark);
+}
+
+.landing-q-tagline {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--text-muted-on-dark);
+  flex: 1;
+}
+
+.landing-q-status {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--coral);
+}
+.landing-q-arrow {
+  transition: transform 0.15s ease;
+}
+.landing-quadrant:hover .landing-q-arrow {
+  transform: translateX(3px);
+}
+
+.landing-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  padding: 12px 0 0;
+  font-size: 13px;
+  color: var(--text-muted-on-dark);
+  border-top: 1px solid var(--rule-on-dark);
+}
+.landing-footer strong { color: var(--text-on-dark); font-weight: 500; }
+
+/* ===== Site hero (smaller - in-page now) ===== */
+
+.site-hero {
+  padding: 24px 0 16px;
+  border-bottom: 1px solid var(--rule-on-dark);
+}
+.site-hero h1 {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+/* ===== Carbon view ===== */
+
+.carbon-scopes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.carbon-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.scope-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+.carbon-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted-on-dark);
+}
+.carbon-value {
+  font-family: var(--serif);
+  font-size: 28px;
+  color: var(--text-on-dark);
+}
+.carbon-unit {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--text-muted-on-dark);
+}
+.carbon-total {
+  border-top: 1px solid var(--rule-on-dark);
+  padding-top: 16px;
+}
+.carbon-total .carbon-value { color: var(--coral); }
+.carbon-intensity {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule-on-dark);
+}
+.carbon-il { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted-on-dark); }
+.carbon-iv { font-family: var(--serif); font-size: 22px; color: var(--text-on-dark); margin-top: 4px; }
+.carbon-iv span { font-family: var(--sans); font-size: 12px; color: var(--text-muted-on-dark); margin-left: 4px; }
+
+/* Brief 13 Part 3 - Carbon view on cream register.
+   Site Detail wraps in body.theme-cream (set by BodyPageLayout), so override
+   every -on-dark token to its -on-cream counterpart so the labels/values are
+   legible against the cream background. No new tokens introduced. */
+body.theme-cream .carbon-label    { color: var(--text-muted-on-cream); }
+body.theme-cream .carbon-value    { color: var(--text-on-cream); }
+body.theme-cream .carbon-unit     { color: var(--text-muted-on-cream); }
+body.theme-cream .carbon-total    { border-top-color: var(--rule-on-cream); }
+body.theme-cream .carbon-intensity { border-top-color: var(--rule-on-cream); }
+body.theme-cream .carbon-il       { color: var(--text-muted-on-cream); }
+body.theme-cream .carbon-iv       { color: var(--text-on-cream); }
+body.theme-cream .carbon-iv span  { color: var(--text-muted-on-cream); }
+
+/* Brief 13 Part 3 - callout-card cream variant (used by Carbon's
+   "Portfolio median intensity is …" comparison strip and any future
+   cream-register callouts). */
+body.theme-cream .callout-card {
+  background: rgba(26, 36, 64, 0.04);
+  color: var(--text-on-cream);
+}
+
+/* ===== Comparisons view ===== */
+
+.comp-pickers {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.comp-pickers label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted-on-dark);
+}
+.comp-pickers select {
+  background: var(--panel-bg-on-dark);
+  border: 1px solid var(--panel-border-on-dark);
+  color: var(--text-on-dark);
+  font-family: var(--sans);
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  min-width: 200px;
+}
+
+.comp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 900px) { .comp-grid { grid-template-columns: 1fr; } }
+
+.comp-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.comp-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 14px;
+}
+.comp-row span:first-child { color: var(--text-muted-on-dark); }
+.comp-row strong { color: var(--text-on-dark); font-weight: 500; }
+
+/* Compact 3×2 stat grid for Comparisons cards (saves vertical space) */
+.comp-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px 16px;
+}
+.comp-stat-wide { grid-column: span 3; }
+.comp-stat-label {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted-on-dark);
+  margin-bottom: 2px;
+}
+.comp-stat-value {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--text-on-dark);
+  font-weight: 500;
+}
+
+/* ===== Toggle group (Appendix C.7) ===== */
+
+.toggle-group {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  padding: 4px;
+  gap: 4px;
+}
+.toggle-pill {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted-on-dark);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.toggle-pill.active { background: var(--coral); color: white; }
+.toggle-pill:disabled { color: rgba(138, 138, 138, 0.5); cursor: not-allowed; }
+.toggle-pill:not(:disabled):not(.active):hover { color: var(--text-on-dark); }
+
+/* Brief 11 - cream-register override for Site Detail > Energy toggle.
+   The default styles use --text-muted-on-dark (cream-on-cream → invisible
+   on cream pages); on cream we need navy text + a navy-tinted track. */
+body.theme-cream .toggle-group {
+  background: rgba(26, 36, 64, 0.05);
+}
+body.theme-cream .toggle-pill {
+  color: rgba(26, 36, 64, 0.55);
+}
+body.theme-cream .toggle-pill.active {
+  background: var(--coral);
+  color: var(--color-nza-cream);
+}
+body.theme-cream .toggle-pill:not(:disabled):not(.active):hover {
+  color: var(--color-theme-base);
+}
+body.theme-cream .toggle-pill:disabled {
+  color: rgba(26, 36, 64, 0.25);
+}
+
+/* ===== GRESB stub ===== */
+
+.gresb-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+@media (max-width: 720px) { .gresb-stats { grid-template-columns: 1fr; } }
+
+.gresb-stat {
+  text-align: center;
+  padding: 16px 8px;
+}
+.gresb-stat-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted-on-dark);
+}
+.gresb-stat-value {
+  font-family: var(--serif);
+  font-size: 64px;
+  color: var(--coral);
+  margin: 8px 0;
+  line-height: 1;
+}
+.gresb-stat-sub {
+  font-size: 13px;
+  color: var(--text-muted-on-dark);
+}
+
+.gresb-indicators {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.gresb-indicator {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.gresb-ind-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 16px;
+  align-items: center;
+  font-size: 14px;
+}
+.gresb-ind-label { color: var(--text-on-dark); font-weight: 500; }
+.gresb-ind-pts { color: var(--coral); font-size: 13px; font-weight: 500; }
+.gresb-ind-pct { color: var(--text-muted-on-dark); font-variant-numeric: tabular-nums; }
+.gresb-ind-bar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.gresb-ind-fill {
+  height: 100%;
+  background: var(--coral);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+.gresb-ind-status {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted-on-dark);
+}
+
+/* ===== RFI list (Insights data-quality) ===== */
+
+.rfi-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.rfi-theme {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.rfi-theme-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: none;
+  color: var(--text-on-dark);
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+}
+.rfi-letter {
+  font-family: var(--serif);
+  color: var(--coral);
+  font-size: 18px;
+  width: 24px;
+}
+.rfi-theme-name { flex: 1; }
+.rfi-count {
+  font-size: 11px;
+  background: rgba(227, 93, 74, 0.15);
+  color: var(--coral);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+.rfi-items {
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+}
+.rfi-items li {
+  display: flex;
+  gap: 12px;
+  padding: 8px 16px;
+  border-top: 1px solid var(--rule-on-dark);
+}
+.rfi-ref {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 12px;
+  color: var(--coral);
+  width: 32px;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+.rfi-sub {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-on-dark);
+  margin-bottom: 2px;
+}
+.rfi-summary {
+  font-size: 12px;
+  color: var(--text-muted-on-dark);
+  line-height: 1.4;
+}
+
+/* ===== Void callout (re-styled for Panel context in Insights > Voids) ===== */
+.void-callout-inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+@media (max-width: 900px) { .void-callout-inner { grid-template-columns: 1fr; } }
+.void-callout-number {
+  font-family: var(--serif);
+  font-size: 72px;
+  color: var(--coral);
+  line-height: 1;
+}
+.void-callout-per {
+  font-family: var(--sans);
+  font-size: 16px;
+  color: var(--text-muted-on-dark);
+  margin-left: 8px;
+}
+.void-callout-sub {
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--text-on-dark);
+  max-width: 480px;
+}
+.void-callout-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.void-callout-site {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 6px;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+.void-callout-site:hover { background: rgba(255, 255, 255, 0.08); }
+.void-callout-site-name {
+  font-family: var(--serif);
+  font-size: 18px;
+  color: var(--coral);
+  margin-bottom: 4px;
+}
+.void-callout-site-stat { font-size: 12px; color: var(--text-muted-on-dark); }
+.void-callout-site-stat strong { color: var(--text-on-dark); font-weight: 500; }
+
+/* ===== Meters tab - water info row ===== */
+
+.meters-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 24px;
+}
+@media (max-width: 720px) { .meters-row { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .meters-row { grid-template-columns: 1fr; } }
+.meters-cell { display: flex; flex-direction: column; gap: 4px; }
+.meters-label {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted-on-dark);
+}
+.meters-value {
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--text-on-dark);
+  font-weight: 500;
+}
+
+/* ===== Site Overview data quality narrative strip (QW3) ===== */
+
+.dq-narrative {
+  border-top: 1px solid var(--rule-on-dark);
+  margin-top: 24px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.dq-narrative-header {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted-on-dark);
+  margin-bottom: 4px;
+}
+.dq-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-muted-on-dark);
+  line-height: 1.5;
+}
+.dq-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.dq-dot.status-confirmed { background: var(--status-confirmed); }
+.dq-dot.status-partial { background: var(--status-partial); }
+.dq-dot.status-missing { background: var(--status-missing); }
+.dq-dot.status-not_applicable { background: var(--status-not-applicable); }
+.dq-line strong { color: var(--text-on-dark); font-weight: 500; }
+
+/* Brief 15 Part 1 - cream-register overrides for any dq-narrative
+   surface (Site Overview retired this block but Site Data quality + a
+   few other Site Detail callouts still use these classes). Same family
+   as Brief 13's Carbon -on-dark → -on-cream fix. */
+body.theme-cream .dq-narrative { border-top-color: var(--rule-on-cream); }
+body.theme-cream .dq-narrative-header { color: var(--text-muted-on-cream); }
+body.theme-cream .dq-line { color: var(--text-muted-on-cream); }
+body.theme-cream .dq-line strong { color: var(--text-on-cream); }
+
+/* Brief 15 Part 1 - Site Overview vertical-stack layout.
+   LEFT column: 4 MetricTiles stacked vertically (~340 px wide).
+   RIGHT column: Site facts panel filling the remaining width.
+   Replaces the wide horizontal stat-grid that violated the layout
+   principle (tiles/figures/badges should stack down a narrow left
+   column; right is for charts or wider content). */
+.site-hero-tight {
+  padding: 16px 0 12px;
+  border-bottom: 1px solid var(--rule-on-cream);
+  margin-bottom: 18px;
+}
+.site-overview-grid {
+  display: grid;
+  grid-template-columns: minmax(320px, 360px) 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.site-overview-left { min-width: 0; }
+.site-overview-tiles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* Override .tile-value 48 px → 30 px in the stacked left column so 4 tiles
+   fit within the 1440×900 viewport without scroll. */
+.site-overview-tiles .tile { padding: 12px 16px; gap: 6px; }
+.site-overview-tiles .tile-value { font-size: 30px; }
+.site-overview-tiles .tile-unit { font-size: 12px; }
+.site-overview-tiles .tile-label { font-size: 11px; }
+.site-overview-tiles .tile-why {
+  font-size: 11px;
+  color: var(--text-muted-on-cream);
+  margin-top: 2px;
+}
+
+.site-overview-right { min-width: 0; }
+.site-facts-panel {
+  background: var(--panel-bg-on-cream);
+  border: 1px solid var(--panel-border-on-cream);
+  border-radius: var(--panel-radius);
+  padding: 18px 20px;
+}
+.site-facts-header {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--text-on-cream);
+  margin-bottom: 14px;
+}
+.site-facts-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+.site-facts-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 7px 14px 7px 0;
+  border-bottom: 1px dashed var(--rule-on-cream);
+}
+.site-facts-list .site-facts-row:nth-child(even) { padding-right: 0; padding-left: 14px; }
+.site-facts-list .site-facts-row:nth-last-child(-n+2) { border-bottom: 0; }
+.site-facts-label {
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: var(--text-muted-on-cream);
+  margin: 0;
+}
+.site-facts-value {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-on-cream);
+  margin: 0;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.site-facts-notes {
+  margin: 14px 0 0;
+  padding: 10px 12px;
+  background: var(--surface-on-cream);
+  border-left: 3px solid var(--color-nza-coral);
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-muted-on-cream);
+}
+
+/* Chris ask 2026-05-24: per-site imagery panel on Site Overview right
+   column. Replaces the verbose 14-field Site facts dl with a hero/aerial/
+   site-plan image + a compact 8-field facts strip below. */
+.site-imagery-panel {
+  background: var(--panel-bg-on-cream);
+  border: 1px solid var(--panel-border-on-cream);
+  border-radius: var(--panel-radius);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+  min-height: 0;
+}
+.site-imagery-toggle {
+  display: flex;
+  gap: 4px;
+  align-self: flex-start;
+  padding: 3px;
+  background: var(--surface-on-cream);
+  border-radius: 6px;
+}
+.site-imagery-pill {
+  padding: 4px 12px;
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: var(--text-muted-on-cream);
+  cursor: pointer;
+  transition: background var(--duration-instant) var(--ease-standard),
+              color var(--duration-instant) var(--ease-standard);
+}
+.site-imagery-pill:hover { color: var(--text-on-cream); }
+.site-imagery-pill.active {
+  background: var(--color-nza-cream);
+  color: var(--color-nza-coral);
+  box-shadow: 0 1px 2px rgba(26, 36, 64, 0.06);
+}
+
+.site-imagery-figure {
+  position: relative;
+  /* Constrain to 16:9 aspect so the photo doesn't push the facts
+     strip below the viewport. The left column with 4 tiles + facts
+     strip dictates the panel height; image fills the remaining
+     vertical inside that. 320 max keeps the 8-field facts strip
+     comfortably within 1440×900 no-scroll. */
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-height: 320px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(26, 36, 64, 0.04);
+}
+.site-imagery-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.site-imagery-empty {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-height: 320px;
+  border-radius: 8px;
+  background: rgba(26, 36, 64, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-muted-on-cream);
+}
+
+/* Chris ask 2026-05-24 (image-up-top revision):
+   Site Overview is now a 2-col body - LEFT column holds eyebrow,
+   big H1 + icon (back to Brief 14 hero size), and 4 utility tiles
+   stacked vertically with breathing room. RIGHT column is the big
+   image pushed flush to the TOP of the page. The image carries all
+   metadata in overlays: Photo/Aerial/Plan toggle, View details pill,
+   and the metadata chip strip - plus the slide-over panel on demand. */
+.site-overview-body {
+  display: grid;
+  /* Chris ask 9 Jun: tile-col floor was 420px which crowded on 13" MBA
+     (1280 viewport). Now fluid via --site-tile-col-w (clamp 340-460);
+     minmax floor lowered to 280 so the column can absorb the last bit
+     of squeeze without overflow. */
+  grid-template-columns: minmax(280px, var(--site-tile-col-w)) minmax(0, 1fr);
+  gap: var(--site-2col-gap);
+  align-items: stretch;
+}
+.site-overview-left {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+}
+.site-overview-h1-big {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: -4px;
+}
+.site-overview-h1-big h1 {
+  margin: 0;
+  font-family: var(--font-site);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  color: var(--text-on-cream);
+}
+.site-overview-tiles-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+/* Site Overview tile recipe - compact proportions per Chris's reference
+   screenshot (~110 px tiles, not the chunky 180 px default that's tuned
+   for the Carbon / Insights pages). Smaller padding, smaller value font,
+   why-row reads as a single muted line instead of a coral-trim callout. */
+.site-overview-tiles-col .tile {
+  padding: 14px 16px;
+  gap: 6px;
+  border-radius: 10px;
+}
+.site-overview-tiles-col .tile-value {
+  font-size: 34px;
+  line-height: 1.05;
+}
+.site-overview-tiles-col .tile-why {
+  padding: 6px 10px;
+  margin-top: 2px;
+  background: transparent;
+  border-left: 2px solid rgba(232, 114, 92, 0.55);
+  border-radius: 0;
+  font-size: 11px;
+  font-style: normal;
+  line-height: 1.4;
+}
+
+/* The big imagery panel - fills the right grid cell. Image (and all
+   overlays) are absolutely positioned inside, so the panel's height
+   is driven by the LEFT column's natural height via `align-items:
+   stretch`. min-height floors it on extra-short viewports. */
+.site-imagery-big {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(26, 36, 64, 0.04);
+  /* Chris ask 9 Jun: was 540px fixed; now fluid clamp 380-540 so the
+     image breathes at 13" MBA without towering at 1920. */
+  min-height: var(--site-imagery-min-h);
+}
+.site-imagery-big .site-imagery-img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+/* Chris ask 2026-06-02 (revised): hero photos fill the panel
+   (object-fit: cover) - they're 3:2 promo shots that look great with
+   a mild edge-crop, and the panel reads better full-bleed than with
+   visible matting bars. Aerials and site plans use `contain` because
+   any crop loses spatial meaning - we need to see every meter. The
+   fit class is set in JSX per view-type. */
+.site-imagery-big .site-imagery-img-cover   { object-fit: cover; }
+.site-imagery-big .site-imagery-img-contain { object-fit: contain; }
+
+/* ===== Site Energy bars + donut layout (Chris ask 9 Jun) =====
+   Was inline `gridTemplateColumns: 'minmax(0, 1fr) 420px'` + `gap: 88`
+   + `height: 460` hardcoded in App.jsx SiteEnergyMonthlyOverview.
+   Hoisted to CSS so the fluid tokens above carry through cleanly +
+   the 900 px breakpoint can stack the grid. */
+.site-energy-bars-donut {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, var(--site-donut-col-w));
+  gap: var(--site-energy-gutter);
+  align-items: center;
+}
+.site-energy-bars-wrap {
+  height: var(--site-chart-bar-h);
+}
+.site-energy-donut-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--site-chart-bar-h);
+}
+
+/* ===== Stacking breakpoint (Chris ask 9 Jun) =====
+   Single 900px breakpoint that collapses the 2-col Site grids into
+   single-column for accidental tablet/phone access. Macbooks (1280
+   smallest 13" MBA) sit above this breakpoint so the fluid clamps
+   above carry the load; this is the graceful fallback only. */
+@media (max-width: 900px) {
+  .site-overview-body { grid-template-columns: minmax(0, 1fr); }
+  .site-imagery-big { min-height: 320px; }
+  .site-energy-bars-donut { grid-template-columns: 1fr; }
+  .site-energy-bars-wrap,
+  .site-energy-donut-wrap { height: clamp(280px, 60vw, 360px); }
+}
+
+.site-imagery-empty-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-muted-on-cream);
+}
+
+/* Top-left overlay - Photo / Aerial / Site plan pill toggle. Sits
+   above the image but below the slide-over (z-index 1) so the
+   metadata panel covers it cleanly when open. */
+.site-imagery-toggle-overlay {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 1;
+  display: flex;
+  gap: 4px;
+  padding: 3px;
+  background: rgba(248, 243, 234, 0.92);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 7px;
+  box-shadow: 0 1px 4px rgba(15, 22, 41, 0.18);
+}
+
+/* Bottom overlay - metadata icon chip strip. Gradient backdrop fades
+   the photo into a darker band so the chips read; chips themselves
+   are translucent pills with icon + 2-line label/value. */
+.site-imagery-meta-strip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  gap: 8px;
+  padding: 36px 12px 12px 12px;
+  background: linear-gradient(to top,
+    rgba(15, 22, 41, 0.68) 0%,
+    rgba(15, 22, 41, 0.50) 55%,
+    rgba(15, 22, 41, 0) 100%);
+}
+.meta-chip {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  background: rgba(248, 243, 234, 0.96);
+  border-radius: 7px;
+  min-width: 0;
+}
+.meta-chip-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+  border-radius: 5px;
+  background: rgba(232, 114, 92, 0.12);
+  color: var(--color-nza-coral);
+}
+.meta-chip.dim .meta-chip-icon {
+  background: rgba(26, 36, 64, 0.06);
+  color: var(--text-muted-on-cream);
+}
+.meta-chip-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+.meta-chip-label {
+  font-family: var(--font-body);
+  font-size: 9px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: var(--text-muted-on-cream);
+  margin: 0;
+}
+.meta-chip-value {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-on-cream);
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.meta-chip.dim .meta-chip-value { color: var(--text-muted-on-cream); }
+
+/* "View details" toggle - sits above the image, top-right. Same
+   chip-on-photo treatment as the heat-strategy badges; stays visible
+   over both image and slide-over overlay (z above both). */
+.site-imagery-info-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px 5px 8px;
+  background: rgba(15, 22, 41, 0.78);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: var(--color-nza-cream);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: background var(--duration-instant) var(--ease-standard);
+}
+.site-imagery-info-btn:hover { background: rgba(15, 22, 41, 0.92); }
+
+/* Slide-over metadata overlay - Chris ask 2026-05-24 (revised):
+   narrow card pinned to the right side of the imagery panel, sized
+   to its content (~340 px) rather than full image width. Slides in
+   from the right via a CSS transform transition driven by `.is-open`.
+   pointer-events:none while closed so the image stays clickable. */
+.site-imagery-meta-overlay {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  bottom: 12px;
+  width: 340px;
+  z-index: 2;
+  background: var(--color-nza-cream);
+  border-radius: 10px;
+  padding: 50px 16px 16px 18px; /* top padding clears the info button */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: -8px 0 24px rgba(15, 22, 41, 0.18);
+  transform: translateX(calc(100% + 12px));
+  transition: transform 0.28s cubic-bezier(0.32, 0.72, 0, 1);
+  pointer-events: none;
+}
+.site-imagery-meta-overlay.is-open {
+  transform: translateX(0);
+  pointer-events: auto;
+}
+.site-imagery-meta-overlay::-webkit-scrollbar { width: 6px; }
+.site-imagery-meta-overlay::-webkit-scrollbar-thumb {
+  background: rgba(26, 36, 64, 0.18);
+  border-radius: 3px;
+}
+
+/* Metadata panel content - four small sections (Identity, Phasing,
+   Systems, Amenities) with a compact dl row layout. */
+.site-meta-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.site-meta-panel-eyebrow {
+  font-family: var(--font-body);
+  font-size: 9px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--text-muted-on-cream);
+  margin-bottom: -4px;
+}
+
+/* 6 metadata chips at the top of the slide-over panel - 3×2 grid,
+   icon + 2-line label/value stack. Replaces the previous bottom-of-
+   image chip strip; folding them in here makes the panel feel like
+   a visual dashboard rather than a wall of dl rows. */
+.site-meta-panel-chips {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(26, 36, 64, 0.08);
+}
+.panel-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 4px;
+  min-width: 0;
+}
+.panel-chip-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+  border-radius: 6px;
+  background: rgba(232, 114, 92, 0.12);
+  color: var(--color-nza-coral);
+}
+.panel-chip.dim .panel-chip-icon {
+  background: rgba(26, 36, 64, 0.06);
+  color: var(--text-muted-on-cream);
+}
+.panel-chip-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+.panel-chip-label {
+  font-family: var(--font-body);
+  font-size: 9px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--text-muted-on-cream);
+  margin: 0;
+  line-height: 1.2;
+}
+.panel-chip-value {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--text-on-cream);
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.panel-chip.dim .panel-chip-value { color: var(--text-muted-on-cream); }
+.site-meta-panel-section h4 {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--color-nza-coral);
+  margin: 0 0 6px 0;
+}
+.site-meta-panel-section dl {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.site-meta-panel-row {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  line-height: 1.35;
+}
+.site-meta-panel-row dt {
+  color: var(--text-muted-on-cream);
+  margin: 0;
+}
+.site-meta-panel-row dd {
+  color: var(--text-on-cream);
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+.site-meta-panel-phases {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.site-meta-panel-phases li {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--text-on-cream);
+  padding: 2px 6px;
+  background: rgba(26, 36, 64, 0.04);
+  border-radius: 4px;
+}
+.site-meta-panel-phases li span:first-child {
+  color: var(--text-muted-on-cream);
+}
+
+/* Compressed Site facts - 4 rows of 2 fields. Visible at a glance,
+   no scroll-required. */
+.site-facts-compact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 18px;
+  row-gap: 6px;
+  margin: 0;
+  padding-top: 4px;
+}
+.site-facts-compact-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.site-facts-compact-label {
+  font-family: var(--font-body);
+  font-size: 10px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--text-muted-on-cream);
+  margin: 0;
+}
+.site-facts-compact-value {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-on-cream);
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Brief 15 Part 2 - Sycous opt-in toggle strip on Site Energy.
+   One-line strip; chevron toggles expansion to the full SycousPanel
+   below. Cream register (Site Detail). */
+.sycous-toggle-strip {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px;
+  background: var(--panel-bg-on-cream);
+  border: 1px solid var(--panel-border-on-cream);
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  text-align: left;
+  transition: background var(--duration-instant) var(--ease-standard);
+}
+.sycous-toggle-strip:hover {
+  background: var(--surface-on-cream);
+}
+.sycous-toggle-label {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--text-on-cream);
+  letter-spacing: 0.2px;
+}
+.sycous-toggle-meta {
+  flex: 1;
+  font-size: 12px;
+  color: var(--text-muted-on-cream);
+}
+.sycous-toggle-chevron {
+  font-size: 14px;
+  color: var(--color-nza-coral);
+  font-weight: 500;
+}
+
+/* Brief 15 Part 3 - Site Carbon vertical-stack layout. Replaces the
+   balanced .page-2col (40fr / 55fr) with narrow LEFT for scope
+   figures + intensity table + median callout, and wider RIGHT for the
+   donut chart at near-full-height. */
+.site-carbon-grid {
+  display: grid;
+  grid-template-columns: minmax(340px, 400px) 1fr;
+  gap: 24px;
+  align-items: start;
+  min-height: 0;
+  flex: 1;
+}
+@media (max-width: 900px) {
+  .site-carbon-grid { grid-template-columns: 1fr; }
+}
+
+/* ================ Brief 15 Part 4 - Phasing reference table ================ */
+
+.phasing-page {
+  /* page background already cream via theme-cream wrapper */
+}
+.phasing-header { margin-bottom: 18px; }
+.phasing-h1 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.15;
+  color: var(--text-on-cream);
+  margin: 4px 0 10px;
+}
+.phasing-narrative {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--text-muted-on-cream);
+  max-width: 920px;
+  margin: 0;
+}
+.phasing-narrative strong { color: var(--text-on-cream); font-weight: 500; }
+
+.phasing-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--panel-border-on-cream);
+  border-radius: 8px;
+  background: var(--panel-bg-on-cream);
+}
+.phasing-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-body);
+  font-size: 12.5px;
+}
+.phasing-table thead th {
+  text-align: left;
+  padding: 10px 12px;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--text-muted-on-cream);
+  border-bottom: 1px solid var(--rule-on-cream);
+  background: rgba(26, 36, 64, 0.025);
+  white-space: nowrap;
+}
+.phasing-table thead th.phasing-th-gap {
+  color: var(--color-nza-coral);
+  background: rgba(232, 114, 92, 0.06);
+}
+.phasing-table tbody td {
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--rule-on-cream);
+  vertical-align: top;
+  color: var(--text-on-cream);
+}
+.phasing-row-first td { border-top: 1px solid rgba(26, 36, 64, 0.10); }
+.phasing-cell-site {
+  background: var(--surface-on-cream);
+  border-right: 1px solid var(--rule-on-cream);
+  min-width: 160px;
+}
+.phasing-site-name {
+  font-family: var(--font-site);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-on-cream);
+  line-height: 1.25;
+}
+.phasing-site-ref {
+  font-size: 11px;
+  color: var(--text-muted-on-cream);
+  margin-top: 2px;
+}
+.phasing-cell-num {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+}
+.phasing-cell-text { color: var(--text-on-cream); }
+.phasing-meta { color: var(--text-muted-on-cream); }
+.phasing-cell-gap {
+  background: rgba(232, 114, 92, 0.04);
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--color-nza-coral);
+  font-style: italic;
+}
+
+.phasing-footnote {
+  margin-top: 18px;
+  padding: 12px 16px;
+  background: var(--surface-on-cream);
+  border-left: 3px solid var(--color-nza-coral);
+  border-radius: 4px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--text-muted-on-cream);
+  max-width: 920px;
+}
+.phasing-footnote-label {
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--color-nza-coral);
+  flex: 0 0 auto;
+}
+
+/* ===== Page with no internal scroll (used on Comparisons so chart fills remaining viewport) ===== */
+.page-noscroll {
+  overflow: hidden;
+  padding-bottom: 24px;
+}
+.page-noscroll .comp-chart-panel {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.page-noscroll .comp-chart-panel .panel-body {
+  flex: 1;
+  /* Brief 13 Part 1: explicit min-height floor for the chart wrapper.
+     The flex chain to the ResponsiveContainer is technically complete
+     (.dashboard → .page-noscroll → .comp-chart-panel → .panel-body →
+     inner div → height="100%"), but with PageNarrative + two stat
+     Cards above the chart, the remaining height collapses to ~140px
+     and Recharts squeezes the bars to zero. Giving the chart a 280px
+     floor guarantees usable rendering even when siblings are tall;
+     flex:1 still lets it grow above 280px on roomier viewports. */
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+.topnav-logos {
+  font-size: 13px;
+  color: #555;
+  letter-spacing: 0.06em;
+}
+
+/* ===== Sub-nav ===== */
+
+.subnav {
+  background: var(--bg-dark);
+  height: 48px;
+  border-bottom: 1px solid var(--rule-on-dark);
+}
+
+/* ===== Back link ===== */
+
+.back-link {
+  display: inline-block;
+  margin: 24px 0 16px;
+  font-size: 14px;
+  color: var(--text-muted-on-dark);
+  border-bottom: none;
+}
+.back-link:hover { color: var(--coral); }
+
+/* ===== Eyebrow ===== */
+
+.eyebrow {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--coral);
+  margin: 0 0 12px;
+}
+
+/* ===== Hero layout (Appendix C.5) ===== */
+
+.hero {
+  display: grid;
+  grid-template-columns: 40fr 55fr;
+  gap: 5%;
+  padding: 80px 0 64px;
+}
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 40px 0 32px;
+  }
+}
+
+.hero-left h1 {
+  margin-bottom: 16px;
+}
+.hero-intro {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-on-dark);
+  max-width: 480px;
+  margin: 0 0 32px;
+}
+.theme-cream .hero-intro { color: var(--text-on-cream); }
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  font-size: 13px;
+  color: var(--text-muted-on-dark);
+  margin: 0 0 24px;
+}
+.hero-meta strong {
+  color: var(--text-on-dark);
+  font-weight: 500;
+  display: block;
+}
+.theme-cream .hero-meta { color: var(--text-muted-on-cream); }
+.theme-cream .hero-meta strong { color: var(--text-on-cream); }
+
+.hero-right h2 {
+  margin-bottom: 16px;
+}
+
+/* ===== Stat grid (2×2 metric tiles) ===== */
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  max-width: 520px;
+}
+@media (max-width: 480px) {
+  .stat-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== All-sites section ===== */
+
+.all-sites {
+  margin-top: 32px;
+}
+
+/* ===== Site table (Appendix C.10) ===== */
+
+.site-table-wrap {
+  background: var(--surface-on-dark);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.theme-cream .site-table-wrap { background: var(--surface-on-cream); }
+
+.site-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.site-table thead th {
+  text-align: left;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--rule-on-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--text-muted-on-dark);
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  background: transparent;
+}
+.theme-cream .site-table thead th { border-bottom-color: var(--rule-on-cream); color: var(--text-muted-on-cream); }
+.site-table thead th:hover { color: var(--text-on-dark); }
+.theme-cream .site-table thead th:hover { color: var(--text-on-cream); }
+.site-table thead th.active { color: var(--coral); }
+.sort-indicator { display: inline-block; width: 10px; margin-left: 4px; color: var(--coral); }
+.site-table tbody tr { cursor: pointer; transition: background 0.15s ease; }
+.site-table tbody tr:hover { background: rgba(255,255,255,0.03); }
+.theme-cream .site-table tbody tr:hover { background: rgba(0,0,0,0.03); }
+.site-table tbody td {
+  padding: 16px;
+  border-bottom: 1px solid var(--rule-on-dark);
+  color: var(--text-on-dark);
+}
+.theme-cream .site-table tbody td { border-bottom-color: var(--rule-on-cream); color: var(--text-on-cream); }
+.site-table tbody tr:last-child td { border-bottom: none; }
+.site-table .num { text-align: right; font-variant-numeric: tabular-nums; }
+.site-table .site-name { font-weight: 500; }
+.void-toggle-row td:hover { background: rgba(227, 93, 74, 0.06); }
+.void-row td { color: var(--text-muted-on-dark); }
+.theme-cream .void-row td { color: var(--text-muted-on-cream); }
+
+/* ===== Mobile site cards (under 640px) ===== */
+
+.site-cards { display: none; flex-direction: column; gap: 12px; margin-top: 16px; }
+.site-card {
+  background: var(--surface-on-dark);
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+}
+.site-card-name {
+  font-family: var(--serif);
+  font-size: 20px;
+  color: var(--coral);
+  margin: 0 0 12px;
+  font-weight: 400;
+}
+.site-card-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+  font-size: 13px;
+  color: var(--text-muted-on-dark);
+  margin-bottom: 12px;
+}
+.site-card-meta span strong { display: block; color: var(--text-on-dark); font-weight: 500; }
+.site-card-badges { display: flex; gap: 8px; flex-wrap: wrap; }
+
+@media (max-width: 640px) {
+  .site-table-wrap { display: none; }
+  .site-cards { display: flex; }
+}
+
+/* ===== Detail sections ===== */
+
+.detail-section { margin-top: 48px; }
+.detail-section h2 { margin-bottom: 16px; }
+.empty-state {
+  background: var(--surface-on-dark);
+  border-radius: 8px;
+  padding: 32px;
+  text-align: center;
+  color: var(--text-muted-on-dark);
+  font-size: 14px;
+}
+
+/* ===== Insights: callout card (under hero text) ===== */
+
+.callout-card {
+  background: rgba(255,255,255,0.04);
+  border-left: 3px solid var(--coral);
+  border-radius: 0 6px 6px 0;
+  padding: 16px 20px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-on-dark);
+  max-width: 480px;
+}
+
+/* ===== Insights: void £49k callout (Appendix C.13) ===== */
+
+.void-callout {
+  margin: 64px -60px 0;
+  padding: 64px 60px;
+  background: rgba(227, 93, 74, 0.06);
+}
+@media (max-width: 640px) {
+  .void-callout { margin: 40px -20px 0; padding: 40px 20px; }
+}
+
+.void-callout-inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .void-callout-inner { grid-template-columns: 1fr; gap: 32px; }
+}
+
+.void-callout-number {
+  font-family: var(--serif);
+  font-size: 96px;
+  font-weight: 400;
+  color: var(--coral);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 640px) {
+  .void-callout-number { font-size: 56px; }
+}
+.void-callout-per {
+  font-family: var(--sans);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-muted-on-dark);
+  margin-left: 12px;
+}
+.void-callout-sub {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-on-dark);
+  max-width: 560px;
+}
+.void-callout-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.void-callout-site {
+  background: rgba(255,255,255,0.04);
+  border-radius: 6px;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.void-callout-site:hover {
+  background: rgba(255,255,255,0.07);
+}
+.void-callout-site-name {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--coral);
+  margin-bottom: 6px;
+}
+.void-callout-site-stat {
+  font-size: 13px;
+  color: var(--text-muted-on-dark);
+}
+.void-callout-site-stat strong {
+  color: var(--text-on-dark);
+  font-weight: 500;
+}
+
+/* ===== Insights: data completeness heatmap ===== */
+
+.heatmap {
+  display: grid;
+  gap: 4px;
+  background: var(--surface-on-dark);
+  border-radius: 8px;
+  padding: 16px;
+}
+.heatmap-headerrow, .heatmap-row {
+  display: grid;
+  grid-template-columns: 160px repeat(4, 1fr);
+  gap: 4px;
+}
+@media (max-width: 640px) {
+  .heatmap-headerrow, .heatmap-row {
+    grid-template-columns: 96px repeat(4, 1fr);
+    gap: 3px;
+  }
+  .heatmap-rowlabel { font-size: 12px; }
+  .heatmap-cell { height: 48px; font-size: 10px; }
+}
+.heatmap-corner {}
+.heatmap-colhead {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted-on-dark);
+  text-align: center;
+  padding: 8px 0;
+}
+.heatmap-rowlabel {
+  font-size: 13px;
+  color: var(--text-on-dark);
+  display: flex;
+  align-items: center;
+  padding-right: 12px;
+  cursor: pointer;
+}
+.heatmap-rowlabel:hover { color: var(--coral); }
+.heatmap-cell {
+  height: 56px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.heatmap-cell:hover {
+  transform: scale(1.04);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+.heatmap-cell.status-confirmed { background: var(--status-confirmed); }
+.heatmap-cell.status-partial { background: var(--status-partial); color: #2a2415; }
+.heatmap-cell.status-missing { background: var(--status-missing); }
+.heatmap-cell.status-not_applicable { background: var(--status-not-applicable); }
+
+/* ================ Brief 12 - Site Detail Waste tab ================ */
+
+.waste-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 8px 0 18px;
+  border-bottom: 1px solid var(--rule-on-cream);
+  margin-bottom: 18px;
+}
+.waste-h1 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.05;
+  color: var(--text-on-cream);
+  margin: 6px 0 8px;
+}
+.waste-h1-unit {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-muted-on-cream);
+  margin-left: 6px;
+}
+.waste-context {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-muted-on-cream);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.waste-context strong {
+  color: var(--text-on-cream);
+  font-weight: 500;
+}
+
+/* Diversion ring - conic gradient + centred big % */
+.waste-ring {
+  flex: 0 0 auto;
+}
+.waste-ring-disc {
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px rgba(26,36,64,0.06);
+}
+.waste-ring-inner {
+  width: 116px;
+  height: 116px;
+  background: var(--color-nza-cream);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.waste-ring-pct {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  color: var(--text-on-cream);
+}
+.waste-ring-label {
+  font-family: var(--font-body);
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--text-muted-on-cream);
+  margin-top: 6px;
+  line-height: 1.3;
+}
+
+/* 3-up grid - by-stream / disposal / emissions */
+.waste-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+.waste-panel {
+  background: var(--panel-bg-on-cream);
+  border: 1px solid var(--panel-border-on-cream);
+  border-radius: var(--panel-radius);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+}
+.waste-panel .panel-head {
+  margin-bottom: 2px;
+}
+.waste-panel .panel-title {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--text-on-cream);
+  letter-spacing: 0.2px;
+}
+.waste-panel .panel-subtitle {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-muted-on-cream);
+  margin-top: 2px;
+}
+
+.waste-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.waste-bar-row {
+  display: grid;
+  grid-template-columns: 110px 1fr 68px;
+  align-items: center;
+  gap: 10px;
+}
+.waste-bar-label {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-on-cream);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.waste-bar-track {
+  height: 12px;
+  background: rgba(26, 36, 64, 0.06);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.waste-bar-fill {
+  height: 100%;
+  border-radius: 6px;
+  transition: width var(--duration-entry) var(--ease-standard);
+}
+.waste-bar-value {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.waste-bar-num {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-on-cream);
+}
+.waste-bar-unit {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--text-muted-on-cream);
+  margin-left: 3px;
+}
+
+.waste-emissions-panel {
+  justify-content: space-between;
+}
+.waste-emissions-big {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin: 6px 0 2px;
+}
+.waste-emissions-num {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 1;
+  color: var(--text-on-cream);
+}
+.waste-emissions-unit {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-muted-on-cream);
+}
+.waste-emissions-narrative {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--text-muted-on-cream);
+  margin: 2px 0 0;
+}
+
+.waste-notes {
+  margin-top: 14px;
+  padding: 10px 14px;
+  background: var(--surface-on-cream);
+  border-left: 3px solid var(--color-nza-coral);
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--text-muted-on-cream);
+}
+.waste-notes-label {
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--color-nza-coral);
+  margin-right: 10px;
+}
+
+/* Empty-state card (shared with future tabs) */
+.empty-state-card {
+  background: var(--panel-bg-on-cream);
+  border: 1px solid var(--panel-border-on-cream);
+  border-radius: var(--panel-radius);
+  padding: 24px 28px;
+  max-width: 640px;
+}
+.empty-state-headline {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--text-on-cream);
+  margin: 0 0 6px;
+}
+.empty-state-body {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text-muted-on-cream);
+  margin: 0;
+}
+
+.hero-meta-sub {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  color: var(--text-muted-on-cream);
+  margin: 4px 0 0;
+}
+
+/* ================ Brief 12 - Site Detail Water tab ================ */
+
+.water-header {
+  padding: 8px 0 18px;
+  border-bottom: 1px solid var(--rule-on-cream);
+  margin-bottom: 18px;
+}
+.water-h1 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.15;
+  color: var(--text-on-cream);
+  margin: 4px 0 0;
+}
+
+.water-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.water-panel {
+  background: var(--panel-bg-on-cream);
+  border: 1px solid var(--panel-border-on-cream);
+  border-radius: var(--panel-radius);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.water-panel .panel-head { margin-bottom: 2px; }
+.water-panel .panel-title {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--text-on-cream);
+  letter-spacing: 0.2px;
+}
+.water-panel .panel-subtitle {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  color: var(--text-muted-on-cream);
+  margin-top: 3px;
+}
+
+.water-headline {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+.water-headline-num {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1;
+  color: var(--text-on-cream);
+}
+.water-headline-unit {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--text-muted-on-cream);
+}
+.water-headline-empty {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--color-risk-major);
+}
+
+.water-meta {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 13px;
+}
+.water-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 5px 0;
+  border-bottom: 1px dashed var(--rule-on-cream);
+}
+.water-meta-row:last-child { border-bottom: 0; }
+.water-meta-label {
+  color: var(--text-muted-on-cream);
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+.water-meta-value {
+  color: var(--text-on-cream);
+  font-size: 13px;
+  text-align: right;
+}
+
+.water-gaps {
+  display: block;
+  margin-top: 4px;
+  padding: 10px 14px;
+  background: var(--surface-on-cream);
+  border-left: 3px solid var(--color-risk-moderate);
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--text-muted-on-cream);
+}
+.water-gaps-label {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--color-risk-moderate);
+  margin-bottom: 4px;
+}
+.water-gaps-body {
+  color: var(--text-on-cream);
+  font-size: 12.5px;
+}
+
+/* Sycous resident-water card */
+.water-sycous-panel {
+  background: var(--panel-bg-on-cream);
+}
+.water-sycous-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 10px 12px;
+  background: var(--surface-on-cream);
+  border-radius: 8px;
+}
+.water-sycous-stat-label {
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted-on-cream);
+}
+.water-sycous-stat-value {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--text-on-cream);
+  margin-top: 2px;
+}
+.water-sycous-services {
+  font-size: 13px;
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+.water-sycous-services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.water-sycous-service {
+  padding: 10px 12px;
+  background: var(--surface-on-cream);
+  border-radius: 8px;
+}
+.water-sycous-service-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.water-sycous-service-name {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--text-on-cream);
+}
+.water-sycous-service-dq {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--color-risk-low);
+  font-weight: 500;
+  padding: 2px 8px;
+  background: rgba(143, 203, 133, 0.15);
+  border-radius: 999px;
+}
+.water-sycous-service-num {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  font-family: var(--font-body);
+  font-size: 13px;
+}
+.water-sycous-service-value {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--text-on-cream);
+}
+.water-sycous-service-unit {
+  font-size: 13px;
+  color: var(--text-muted-on-cream);
+}
+.water-sycous-service-meta {
+  font-size: 12px;
+  color: var(--text-muted-on-cream);
+  margin-left: 4px;
+}
+
+.water-sycous-note {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-muted-on-cream);
+  margin: 0;
+}
+.water-sycous-recon {
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-muted-on-cream);
+  margin: 6px 0 0;
+  padding-top: 8px;
+  border-top: 1px dashed var(--rule-on-cream);
+  font-style: italic;
+}
+
+/* ================ Brief 12 Part 3 - shared SycousPanel ================ */
+
+.sycous-panel {
+  background: var(--panel-bg-on-cream);
+  border: 1px solid var(--panel-border-on-cream);
+  border-radius: var(--panel-radius);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.sycous-panel-empty .sycous-services-grid { display: none; }
+
+.sycous-panel-head { display: flex; flex-direction: column; gap: 3px; }
+.sycous-panel-title {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--text-on-cream);
+}
+.sycous-panel-subtitle {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  color: var(--text-muted-on-cream);
+}
+.sycous-panel-subtitle strong {
+  color: var(--text-on-cream);
+  font-weight: 500;
+}
+
+.sycous-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+.sycous-service-tile {
+  padding: 12px 14px;
+  background: var(--surface-on-cream);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.sycous-service-name {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--text-on-cream);
+  letter-spacing: 0.2px;
+}
+.sycous-service-figure {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-top: 2px;
+}
+.sycous-service-value {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--text-on-cream);
+}
+.sycous-service-unit {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-muted-on-cream);
+}
+.sycous-service-meta {
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  color: var(--text-muted-on-cream);
+}
+.sycous-service-dq {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 4px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 11px;
+}
+.sycous-service-dq-num {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 13px;
+}
+.sycous-service-dq-label {
+  font-size: 10.5px;
+  letter-spacing: 0.2px;
+}
+.sycous-dq-good {
+  background: rgba(143, 203, 133, 0.18);
+  color: var(--color-risk-low);
+}
+.sycous-dq-good .sycous-service-dq-label { color: var(--text-muted-on-cream); }
+.sycous-dq-mid {
+  background: rgba(232, 161, 60, 0.18);
+  color: var(--color-risk-moderate);
+}
+.sycous-dq-mid .sycous-service-dq-label { color: var(--text-muted-on-cream); }
+.sycous-dq-low {
+  background: rgba(217, 70, 75, 0.16);
+  color: var(--color-risk-major);
+}
+.sycous-dq-low .sycous-service-dq-label { color: var(--text-muted-on-cream); }
+
+.sycous-empty-note {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-muted-on-cream);
+  margin: 0;
+}
+.sycous-empty-note strong {
+  color: var(--text-on-cream);
+  font-weight: 500;
+}
+
+.sycous-recon-note {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--text-muted-on-cream);
+  margin: 4px 0 0;
+  padding: 10px 14px;
+  background: var(--surface-on-cream);
+  border-left: 3px solid var(--color-nza-coral);
+  border-radius: 4px;
+  font-style: italic;
+}
+
+/* ================ Brief 12 Part 4 - DataVintageBadge ================ */
+
+.topnav-primary-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.data-vintage-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  white-space: nowrap;
+  letter-spacing: 0.1px;
+}
+.data-vintage-badge strong {
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+.data-vintage-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-risk-low);
+  flex: 0 0 auto;
+  box-shadow: 0 0 0 2px rgba(143, 203, 133, 0.15);
+}
+.data-vintage-sep {
+  opacity: 0.6;
+}
+@media (max-width: 900px) {
+  .data-vintage-badge { display: none; }
+}

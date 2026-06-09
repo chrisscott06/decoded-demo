@@ -1,0 +1,619 @@
+{
+  "brief": "BR-16-v1.1",
+  "supersedes": "BR-16-v1.0",
+  "sourceOfTruth": "26003-NZA-IVG-XX-SH-2000_P12_-_GRESB_2026_Master_Matrix.xlsx",
+  "date": "2026-06-09",
+  "meta": {
+    "score2025": 52,
+    "defendable2026": 46,
+    "target2026": 62,
+    "stretch2026": 75,
+    "starBand2026": "2-star",
+    "targetStarBand2026": "3-star floor (stretch crosses 67)",
+    "lastUpdated": "2026-06-09",
+    "sourceVersion": "P12 / v1.5.0",
+    "criticalRisks": [
+      {
+        "code": "SE2.1",
+        "label": "Employee survey vintage",
+        "ptsAtStake": 1.0,
+        "question": "Was a 3rd-party employee survey distributed before 31-Dec-2025?",
+        "owner": "HR (Stephane)",
+        "consequence": "If no, indicator structurally locks at 0"
+      },
+      {
+        "code": "TC2.1",
+        "label": "Fuze tenant survey vintage",
+        "ptsAtStake": 2.0,
+        "question": "Did Fuze distribute the tenant survey in CY2025 before 31-Dec-2025?",
+        "owner": "Rob / Operations",
+        "consequence": "Gates TC2.2 \u2014 2pt combined at risk"
+      },
+      {
+        "code": "LE6",
+        "label": "ESG-linked bonus criteria vintage",
+        "ptsAtStake": 1.0,
+        "question": "Did ESG-linked bonus criteria exist for all named personnel groups during CY2025?",
+        "owner": "HR + Jez",
+        "consequence": "Cannot retroactively create"
+      },
+      {
+        "code": "T1.2",
+        "label": "NWPF Net Zero target",
+        "ptsAtStake": 2.0,
+        "question": "Does L&G/SBTi 2021 target carry to IVG under NWPF?",
+        "owner": "Jez",
+        "consequence": "+1pt automatic if defendable at 2026 doubled weight"
+      }
+    ]
+  },
+  "indicators": {
+    "LE2": {
+      "defendable": 1.0,
+      "target": 1.0,
+      "stretch": 1.0,
+      "max2026": 1,
+      "status": "BANKED"
+    },
+    "LE3": {
+      "defendable": 0,
+      "target": 0,
+      "stretch": 0,
+      "max2026": 0,
+      "status": "RETIRED"
+    },
+    "LE4": {
+      "defendable": 1.0,
+      "target": 1.0,
+      "stretch": 1.0,
+      "max2026": 1,
+      "status": "BANKED"
+    },
+    "LE5": {
+      "defendable": 1.0,
+      "target": 1.0,
+      "stretch": 1.0,
+      "max2026": 1,
+      "status": "BANKED"
+    },
+    "LE6": {
+      "defendable": 0,
+      "target": 0.7,
+      "stretch": 1.0,
+      "max2026": 2,
+      "status": "AMBER"
+    },
+    "PO1": {
+      "defendable": 0.17,
+      "target": 0.4,
+      "stretch": 0.7,
+      "max2026": 1.5,
+      "status": "AMBER"
+    },
+    "PO2": {
+      "defendable": 0.3,
+      "target": 1.3,
+      "stretch": 1.5,
+      "max2026": 1.5,
+      "status": "AMBER"
+    },
+    "PO3": {
+      "defendable": 0.3,
+      "target": 1.3,
+      "stretch": 1.5,
+      "max2026": 1.5,
+      "status": "AMBER"
+    },
+    "RP1": {
+      "defendable": 0,
+      "target": 2.0,
+      "stretch": 2.5,
+      "max2026": 3.5,
+      "status": "AMBER"
+    },
+    "RP2.1": {
+      "defendable": 0.12,
+      "target": 0.22,
+      "stretch": 0.25,
+      "max2026": 0.25,
+      "status": "BANKED"
+    },
+    "RM1": {
+      "defendable": 0.6,
+      "target": 1.0,
+      "stretch": 1.25,
+      "max2026": 1.25,
+      "status": "BANKED"
+    },
+    "RM2": {
+      "defendable": 0.22,
+      "target": 0.25,
+      "stretch": 0.25,
+      "max2026": 0.25,
+      "status": "BANKED"
+    },
+    "RM3.1": {
+      "defendable": 0.25,
+      "target": 0.25,
+      "stretch": 0.25,
+      "max2026": 0.25,
+      "status": "BANKED"
+    },
+    "RM3.2": {
+      "defendable": 0.17,
+      "target": 0.25,
+      "stretch": 0.25,
+      "max2026": 0.25,
+      "status": "BANKED"
+    },
+    "RM4.1": {
+      "defendable": 0.25,
+      "target": 0.25,
+      "stretch": 0.25,
+      "max2026": 0.25,
+      "status": "BANKED"
+    },
+    "RM5": {
+      "defendable": 0.25,
+      "target": 0.5,
+      "stretch": 0.5,
+      "max2026": 0.5,
+      "status": "AMBER"
+    },
+    "RM6.1": {
+      "defendable": 0.5,
+      "target": 1.0,
+      "stretch": 1.0,
+      "max2026": 1.0,
+      "status": "BANKED"
+    },
+    "RM6.2": {
+      "defendable": 0.5,
+      "target": 1.0,
+      "stretch": 1.0,
+      "max2026": 1.0,
+      "status": "BANKED"
+    },
+    "RM6.3": {
+      "defendable": 0.5,
+      "target": 1.0,
+      "stretch": 1.0,
+      "max2026": 1.0,
+      "status": "BANKED"
+    },
+    "RM6.4": {
+      "defendable": 0.5,
+      "target": 1.0,
+      "stretch": 1.0,
+      "max2026": 1.0,
+      "status": "BANKED"
+    },
+    "SE1": {
+      "defendable": 0.5,
+      "target": 0.7,
+      "stretch": 1.0,
+      "max2026": 1,
+      "status": "AMBER"
+    },
+    "SE2.1": {
+      "defendable": 0,
+      "target": 0.5,
+      "stretch": 0.7,
+      "max2026": 1,
+      "status": "RED"
+    },
+    "SE2.2": {
+      "defendable": 0,
+      "target": 0,
+      "stretch": 0,
+      "max2026": 0,
+      "status": "RETIRED"
+    },
+    "SE3.1": {
+      "defendable": 0.56,
+      "target": 0.75,
+      "stretch": 0.75,
+      "max2026": 0.75,
+      "status": "BANKED"
+    },
+    "SE3.2": {
+      "defendable": 1.25,
+      "target": 1.25,
+      "stretch": 1.25,
+      "max2026": 1.25,
+      "status": "BANKED"
+    },
+    "SE4": {
+      "defendable": 0.25,
+      "target": 0.4,
+      "stretch": 0.5,
+      "max2026": 0.5,
+      "status": "BANKED"
+    },
+    "SE5": {
+      "defendable": 0.25,
+      "target": 0.8,
+      "stretch": 1.2,
+      "max2026": 1.5,
+      "status": "AMBER"
+    },
+    "SE6": {
+      "defendable": 1.12,
+      "target": 1.4,
+      "stretch": 1.5,
+      "max2026": 1.5,
+      "status": "BANKED"
+    },
+    "SE7.1": {
+      "defendable": 0.7,
+      "target": 1.0,
+      "stretch": 1.0,
+      "max2026": 1,
+      "status": "BANKED"
+    },
+    "SE7.2": {
+      "defendable": 0.5,
+      "target": 0.8,
+      "stretch": 1.0,
+      "max2026": 1,
+      "status": "BANKED"
+    },
+    "SE8": {
+      "defendable": 0.5,
+      "target": 0.5,
+      "stretch": 0.5,
+      "max2026": 0.5,
+      "status": "BANKED"
+    },
+    "RA1": {
+      "defendable": 2.0,
+      "target": 2.6,
+      "stretch": 3.0,
+      "max2026": 3,
+      "status": "BANKED"
+    },
+    "RA2": {
+      "defendable": 0.5,
+      "target": 1.5,
+      "stretch": 2.0,
+      "max2026": 2,
+      "status": "AMBER"
+    },
+    "RA3": {
+      "defendable": 0.3,
+      "target": 0.4,
+      "stretch": 0.5,
+      "max2026": 0.5,
+      "status": "BANKED"
+    },
+    "RA4": {
+      "defendable": 0.1,
+      "target": 0.2,
+      "stretch": 0.25,
+      "max2026": 0.25,
+      "status": "BANKED"
+    },
+    "RA5": {
+      "defendable": 0.25,
+      "target": 0.25,
+      "stretch": 0.25,
+      "max2026": 0.25,
+      "status": "BANKED"
+    },
+    "T1.1": {
+      "defendable": 0.6,
+      "target": 0.8,
+      "stretch": 1.0,
+      "max2026": 1,
+      "status": "BANKED"
+    },
+    "T1.2": {
+      "defendable": 0.5,
+      "target": 1.8,
+      "stretch": 2.0,
+      "max2026": 2,
+      "status": "AMBER"
+    },
+    "TC1": {
+      "defendable": 0.5,
+      "target": 0.8,
+      "stretch": 1.0,
+      "max2026": 1,
+      "status": "AMBER"
+    },
+    "TC2.1": {
+      "defendable": 0,
+      "target": 0.7,
+      "stretch": 1.0,
+      "max2026": 1,
+      "status": "RED"
+    },
+    "TC2.2": {
+      "defendable": 0,
+      "target": 0.7,
+      "stretch": 1.0,
+      "max2026": 1,
+      "status": "RED"
+    },
+    "TC3": {
+      "defendable": 0,
+      "target": 0,
+      "stretch": 0,
+      "max2026": 2.5,
+      "status": "PARKED"
+    },
+    "TC4": {
+      "defendable": 0,
+      "target": 0,
+      "stretch": 0,
+      "max2026": 2.5,
+      "status": "PARKED"
+    },
+    "TC5.1": {
+      "defendable": 0.56,
+      "target": 0.7,
+      "stretch": 0.75,
+      "max2026": 0.75,
+      "status": "BANKED"
+    },
+    "TC5.2": {
+      "defendable": 0.5,
+      "target": 1.0,
+      "stretch": 1.25,
+      "max2026": 1.25,
+      "status": "AMBER"
+    },
+    "TC6.1": {
+      "defendable": 2.0,
+      "target": 2.0,
+      "stretch": 2.0,
+      "max2026": 2,
+      "status": "AMBER"
+    },
+    "TC6.2": {
+      "defendable": 0.6,
+      "target": 1.0,
+      "stretch": 1.0,
+      "max2026": 1,
+      "status": "BANKED"
+    },
+    "EN1": {
+      "defendable": 11.0,
+      "target": 12.5,
+      "stretch": 13.5,
+      "max2026": 14,
+      "status": "BANKED"
+    },
+    "GH1": {
+      "defendable": 6.0,
+      "target": 6.7,
+      "stretch": 7.0,
+      "max2026": 7,
+      "status": "BANKED"
+    },
+    "WT1": {
+      "defendable": 3.0,
+      "target": 3.5,
+      "stretch": 4.5,
+      "max2026": 7,
+      "status": "AMBER"
+    },
+    "WS1": {
+      "defendable": 3.0,
+      "target": 3.7,
+      "stretch": 4.0,
+      "max2026": 4,
+      "status": "BANKED"
+    },
+    "MR1": {
+      "defendable": 0,
+      "target": 0,
+      "stretch": 0,
+      "max2026": 1.75,
+      "status": "PARKED"
+    },
+    "MR2": {
+      "defendable": 0,
+      "target": 0,
+      "stretch": 0,
+      "max2026": 1.25,
+      "status": "PARKED"
+    },
+    "MR3": {
+      "defendable": 0,
+      "target": 0,
+      "stretch": 0,
+      "max2026": 1.25,
+      "status": "PARKED"
+    },
+    "MR4": {
+      "defendable": 0,
+      "target": 0,
+      "stretch": 0,
+      "max2026": 1.25,
+      "status": "PARKED"
+    },
+    "BC1.1": {
+      "defendable": 0,
+      "target": 0,
+      "stretch": 0,
+      "max2026": 7,
+      "status": "PARKED"
+    },
+    "BC1.2": {
+      "defendable": 0,
+      "target": 0,
+      "stretch": 0,
+      "max2026": 8.5,
+      "status": "PARKED"
+    },
+    "BC2": {
+      "defendable": 1.0,
+      "target": 1.5,
+      "stretch": 2.0,
+      "max2026": 2,
+      "status": "AMBER"
+    }
+  },
+  "totals": {
+    "defendable": 45.67,
+    "target": 65.87,
+    "stretch": 74.6,
+    "checkSum": "Defendable + structural changes (-1.34) + WS1 (+1.96) + climate workstream (+3.5) + NZA-drafted (+4.55) + IVG confirmations (+8.6) + vintage-conditional (+1.95) \u2248 65.87 (rounding)"
+  },
+  "forwardPlanning": {
+    "cycle2027": {
+      "score": 72,
+      "starBand": "3-star confident",
+      "deltaFromPriorCycle": 7,
+      "items": [
+        {
+          "label": "Limited assurance pathway (MR1-4)",
+          "delta": 5.5
+        },
+        {
+          "label": "NZA-drafted Environmental Policy in force CY2026",
+          "delta": 1.1
+        },
+        {
+          "label": "Full ESG training year across all employees CY2026",
+          "delta": 0.4
+        },
+        {
+          "label": "Expanded tenant engagement methods",
+          "delta": 0.3
+        },
+        {
+          "label": "BREEAM In-Use pilot (Millfield Green)",
+          "delta": 1.0
+        },
+        {
+          "label": "Asset-level LFL improvements + renewable",
+          "delta": 0.8
+        },
+        {
+          "label": "Consolidated Social + Governance policies further uplift",
+          "delta": 0.5
+        }
+      ]
+    },
+    "cycle2028": {
+      "score": 80,
+      "starBand": "4-star floor",
+      "deltaFromPriorCycle": 8,
+      "items": [
+        {
+          "label": "BREEAM In-Use expanded to 4-5 sites (~50% GFA)",
+          "delta": 3.0
+        },
+        {
+          "label": "Full assurance scope + reasonable assurance pathway",
+          "delta": 1.5
+        },
+        {
+          "label": "Asset-level LFL improvements crystallise from CY2026-27 data",
+          "delta": 2.5
+        },
+        {
+          "label": "Sustainability clauses in tenancy templates (Residential Standalone path)",
+          "delta": 0,
+          "conditional": true
+        },
+        {
+          "label": "Mature community impact monitoring with quantified metrics",
+          "delta": 0.5
+        },
+        {
+          "label": "Annual survey rhythm fully established",
+          "delta": 0.5
+        }
+      ]
+    }
+  },
+  "aspects": {
+    "Leadership": {
+      "defendable": 3.0,
+      "target": 3.7,
+      "stretch": 4.0,
+      "max2026": 5
+    },
+    "Policies": {
+      "defendable": 0.77,
+      "target": 3.0,
+      "stretch": 3.7,
+      "max2026": 4.5
+    },
+    "Reporting": {
+      "defendable": 0.12,
+      "target": 2.22,
+      "stretch": 2.75,
+      "max2026": 3.8
+    },
+    "Risk Management": {
+      "defendable": 3.74,
+      "target": 6.5,
+      "stretch": 6.75,
+      "max2026": 6.8
+    },
+    "Stakeholder Engagement": {
+      "defendable": 5.63,
+      "target": 8.1,
+      "stretch": 9.4,
+      "max2026": 10.0
+    },
+    "Risk Assessment": {
+      "defendable": 3.15,
+      "target": 4.95,
+      "stretch": 6.0,
+      "max2026": 6.0
+    },
+    "Targets": {
+      "defendable": 1.1,
+      "target": 2.6,
+      "stretch": 3.0,
+      "max2026": 3
+    },
+    "Tenants & Community": {
+      "defendable": 4.16,
+      "target": 6.9,
+      "stretch": 8.0,
+      "max2026": 13.0
+    },
+    "Energy": {
+      "defendable": 11.0,
+      "target": 12.5,
+      "stretch": 13.5,
+      "max2026": 14
+    },
+    "GHG": {
+      "defendable": 6.0,
+      "target": 6.7,
+      "stretch": 7.0,
+      "max2026": 7
+    },
+    "Water": {
+      "defendable": 3.0,
+      "target": 3.5,
+      "stretch": 4.5,
+      "max2026": 7
+    },
+    "Waste": {
+      "defendable": 3.0,
+      "target": 3.7,
+      "stretch": 4.0,
+      "max2026": 4
+    },
+    "Data Monitoring & Review": {
+      "defendable": 0,
+      "target": 0,
+      "stretch": 0,
+      "max2026": 5.5
+    },
+    "Building Certifications": {
+      "defendable": 1.0,
+      "target": 1.5,
+      "stretch": 2.0,
+      "max2026": 17.5
+    }
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "TC3": {
+    "field_changes": {
+      "max2026": {
+        "from": "`0 (Residential)`",
+        "to": 2.5,
+        "note": "TC3 max2026 increased from 1.5 to 2.5 in Main Assessment per 2026 Standard Updates (extra 1p for sustainability topics). Previously wrongly labelled '0 (Residential)' on the assumption residential reweightings applied \u2014 they don't."
+      },
+      "floor2026": {
+        "from": 0,
+        "to": 0,
+        "note": "IVG scored 0/1.5 in 2025 (no response); floor stays 0"
+      },
+      "ceiling2026": {
+        "from": 0,
+        "to": 0,
+        "note": "Not realistically achievable in 2026 \u2014 residential portfolio has limited fit-out programmes"
+      }
+    },
+    "source": "GRESB 2026 RE Standard Updates p.16; IVG 2025 Benchmark p.13"
+  },
+  "TC4": {
+    "field_changes": {
+      "max2026": {
+        "from": "`0 (Residential)`",
+        "to": 2.5,
+        "note": "TC4 max2026 increased from 1.5 to 2.5 in Main Assessment (extra 1p for data sharing & metering clause). Previously wrongly labelled '0 (Residential)'."
+      },
+      "floor2026": {
+        "from": 0,
+        "to": 0,
+        "note": "IVG scored 0/1.5 in 2025"
+      },
+      "ceiling2026": {
+        "from": 0,
+        "to": 0,
+        "note": "RES6 was 2027 play \u2014 green leases similar timing"
+      }
+    },
+    "source": "GRESB 2026 RE Standard Updates p.16; IVG 2025 Benchmark p.13"
+  },
+  "TC5.1": {
+    "field_changes": {
+      "max2026": {
+        "from": "`1.75 (Residential)`",
+        "to": 0.75,
+        "note": "Main Assessment max stays 0.75 \u2014 the 1.75 figure is Residential Standalone Report ONLY, which IVG does not submit to."
+      },
+      "floor2026": {
+        "from": 1.31,
+        "to": 0.56,
+        "note": "Floor at 2025 selections \u00d7 new max = 0.56/0.75 (same as 2025 score, since max unchanged in Main)"
+      },
+      "ceiling2026": {
+        "from": 1.75,
+        "to": 0.75,
+        "note": "Max is 0.75 in Main Assessment"
+      }
+    },
+    "source": "GRESB 2026 RE Standard Updates Performance table; IVG benchmark p.14"
+  },
+  "TC5.2": {
+    "field_changes": {
+      "max2026": {
+        "from": "`3.25 (Residential)`",
+        "to": 1.25,
+        "note": "Main Assessment max stays 1.25 \u2014 3.25 is Residential Standalone only."
+      },
+      "floor2026": {
+        "from": 2.99,
+        "to": 1.15,
+        "note": "Defendable = 1.15/1.25 (2025 score holds)"
+      },
+      "ceiling2026": {
+        "from": 3.25,
+        "to": 1.25,
+        "note": "Max is 1.25 in Main"
+      }
+    },
+    "source": "GRESB 2026 RE Standard Updates"
+  },
+  "TC6.1": {
+    "field_changes": {
+      "max2026": {
+        "from": "`4.0 (Residential)`",
+        "to": 2,
+        "note": "Main max stays 2 \u2014 4 is Residential Standalone only."
+      },
+      "floor2026": {
+        "from": 4,
+        "to": 2,
+        "note": "IVG scored 2/2 maxed in 2025; floor & ceiling both 2"
+      },
+      "ceiling2026": {
+        "from": 4,
+        "to": 2,
+        "note": "Max is 2 in Main"
+      }
+    },
+    "source": "GRESB 2026 RE Standard Updates"
+  },
+  "TC6.2": {
+    "field_changes": {
+      "max2026": {
+        "from": "`1.5 (Residential)`",
+        "to": 1,
+        "note": "Main max stays 1 \u2014 1.5 is Residential Standalone only."
+      },
+      "floor2026": {
+        "from": 0,
+        "to": 0,
+        "note": "IVG scored 0/1 in 2025"
+      },
+      "ceiling2026": {
+        "from": 1.5,
+        "to": 1,
+        "note": "Max is 1 in Main; achievable with community monitoring framework"
+      }
+    },
+    "source": "GRESB 2026 RE Standard Updates"
+  },
+  "RES6": {
+    "field_changes": {
+      "max2026": {
+        "from": 3.5,
+        "to": 0,
+        "note": "RES6 max is 1.5pt and applies ONLY to Residential Standalone Report. IVG does not submit to Standalone, so RES6 = 0 in IVG's actual scored Main Assessment. Per Chris: 'we didn't do it last time because it was voluntary'."
+      },
+      "floor2026": {
+        "from": 0,
+        "to": 0,
+        "note": "Not scored in Main Assessment"
+      },
+      "ceiling2026": {
+        "from": 2.5,
+        "to": 0,
+        "note": "Not scored in Main Assessment"
+      },
+      "scoring": {
+        "from": "scored",
+        "to": "not-applicable",
+        "note": "RES6 is Residential Standalone only; IVG submits only to Main Assessment"
+      }
+    },
+    "source": "GRESB 2025 RE Scoring Document Residential section; confirmed by Chris (didn't submit to Standalone in 2025)"
+  },
+  "RM6.2": {
+    "field_changes": {
+      "max2026": {
+        "from": 1,
+        "to": 1,
+        "note": "Already correct at 1 (doubled from 0.5)"
+      },
+      "floor2026": {
+        "from": 0,
+        "to": 1,
+        "note": "IVG scored 0.5/0.5 in 2025 (ACCEPTED \u2014 Hydrock). At 2026 weight of 1.0, defendable = 1.0 (assumes evidence carries forward)."
+      },
+      "ceiling2026": {
+        "from": 0,
+        "to": 1,
+        "note": "Already maxed in 2025; ceiling = max"
+      }
+    },
+    "source": "IVG 2025 Benchmark p.11 shows RM6.2 = 0.5/0.5 ACCEPTED"
+  },
+  "PO1": {
+    "field_changes": {
+      "floor2026": {
+        "from": 0,
+        "to": 0.17,
+        "note": "Defendable = same as 2025 (0.17) since Environmental Statement scored partial Net Zero element only"
+      },
+      "ceiling2026": {
+        "from": 0.5,
+        "to": 0.5,
+        "note": "Limited 2026 ceiling \u2014 IVG has no dedicated Environmental Policy. Only Procurement Policy + Mould & Damp may add small uplift. Full env policy is 2027 play."
+      },
+      "forecastRationale": {
+        "from": null,
+        "to": "Floor: defending 2025 Net Zero partial credit; Ceiling: small uplift from Procurement + Mould & Damp policies if accepted. No dedicated Environmental Policy until 2027."
+      },
+      "nextYear": {
+        "from": null,
+        "to": "2027: NZA-drafted Environmental Policy reshaping the Environmental Statement into a formal policy with topic clauses (biodiversity, climate adaptation, energy, GHG, water, waste, pollution prevention)."
+      }
+    },
+    "source": "Audit-trail Policy Mapping P04; IVG Benchmark p.36 PARTIALLY ACCEPTED"
+  },
+  "PO2": {
+    "field_changes": {
+      "floor2026": {
+        "from": 0,
+        "to": 0.3,
+        "note": "Defendable = 0.3 worst-case if validator strict on HR-vs-ESG policy distinction"
+      },
+      "ceiling2026": {
+        "from": 0.5,
+        "to": 1.3,
+        "note": "If we submit existing CY2025 policies (Bullying & Harassment, H&S, Modern Slavery, Equality & Diversity, Customer Conduct Risk, Sickness, etc.) covering 6+ of 16 PO2 sub-options. Pending Anna's evidence delivery."
+      },
+      "forecastRationale": {
+        "from": null,
+        "to": "Floor: validator may reject HR procedures as ESG policy; Ceiling: 6+ sub-options covered by formal dated PDFs IVG already has. Awaiting Anna delivery to confirm."
+      },
+      "nextYear": {
+        "from": null,
+        "to": "Defend 2026 lift; tidy/consolidate fragmented social-pillar policies into a single dedicated Social Policy for 2027."
+      }
+    },
+    "source": "Audit-trail Policy Mapping P04 (15 PO2 policies SUPPLY AS-IS); IVG Benchmark p.30 NOT ACCEPTED 2025"
+  },
+  "PO3": {
+    "field_changes": {
+      "floor2026": {
+        "from": 0,
+        "to": 0.3,
+        "note": "Defendable = 0.3 worst-case"
+      },
+      "ceiling2026": {
+        "from": 0.5,
+        "to": 1.3,
+        "note": "If we submit existing CY2025 governance policies (Bribery & Corruption, Conflicts of Interest, Data Protection, Cyber Security, Whistleblowing, Fraud, Internal Control) covering 6+ of 9 PO3 sub-options. Pending Anna's evidence delivery."
+      },
+      "forecastRationale": {
+        "from": null,
+        "to": "Floor: validator may reject. Ceiling: 6+ sub-options covered by formal dated PDFs IVG already has."
+      },
+      "nextYear": {
+        "from": null,
+        "to": "Defend 2026 lift; consolidate into single dedicated Governance Policy for 2027."
+      }
+    },
+    "source": "Audit-trail Policy Mapping P04 (13 PO3 policies SUPPLY AS-IS); IVG Benchmark p.30 NOT ACCEPTED 2025"
+  }
+}

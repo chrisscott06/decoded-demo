@@ -1,0 +1,34 @@
+{
+  "site_id": "austin-heath",
+  "hero": {
+    "source_page": "https://www.inspiredvillages.co.uk/villages/austin-heath",
+    "source_image_url": "https://www.inspiredvillages.co.uk/img/http/images/village-header-images/austin-heath/web_header_ah_0002_carousel-2.jpg/dff9cf39b330b26652183d76ea76a437/web_header_ah_0002_carousel-2.jpg",
+    "captured_at": "2026-05-21",
+    "attribution": "\u00a9 Inspired Villages Group \u2014 used internally for ESG tool",
+    "file": "hero.jpg",
+    "bytes": 313422,
+    "note": "Header carousel exterior shot; small IVG logo lockup. Chosen for showing the actual village buildings at full (1600px) resolution."
+  },
+  "aerial": {
+    "source": "Esri World Imagery",
+    "lat": 52.267866,
+    "lon": -1.549234,
+    "zoom": 18,
+    "captured_at": "2026-05-22",
+    "file": "aerial.png",
+    "bytes": 1934656,
+    "note": "1024x1024 centred crop. (c) Esri, Maxar, Earthstar Geographics."
+  },
+  "site_plan": {
+    "source_filename": "Warwick Phase 2.pdf",
+    "source_modified": "2023-08-02",
+    "file": "site-plan.png",
+    "rendered_dpi": 200,
+    "final_px": [
+      2000,
+      1387
+    ],
+    "captured_at": "2026-05-22",
+    "notes": "Landscape masterplan, all phases, colour render."
+  }
+}

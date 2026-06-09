@@ -1,0 +1,72 @@
+/* Stolzl @font-face declarations. The six weights match the .otf files
+   in eir/src/fonts/stolzl/. font-display: swap so text renders in
+   Inter (Google-fallback) until Stolzl loads - prevents flash of
+   invisible text. */
+
+@font-face {
+  font-family: 'Stolzl';
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  src: url('./fonts/stolzl/stolzl_thin.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Stolzl';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url('./fonts/stolzl/stolzl_light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Stolzl';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('./fonts/stolzl/stolzl_book.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Stolzl';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('./fonts/stolzl/stolzl_medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Stolzl';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('./fonts/stolzl/stolzl_regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Stolzl';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('./fonts/stolzl/stolzl_bold.otf') format('opentype');
+}
+
+/* Brief 14 Part 5 - Source Serif 4 (Adobe via Google Fonts API, SIL OFL).
+   The FOURTH family in the design system, scoped STRICTLY to site/village
+   names. Falsifiability: any non-site-name use is a regression
+   (grep for --font-site / 'Source Serif 4' in eir/src/*.jsx - every
+   hit must render a site display_name). */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('./fonts/source-serif-4/source-serif-4-regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Source Serif 4';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('./fonts/source-serif-4/source-serif-4-medium.ttf') format('truetype');
+}

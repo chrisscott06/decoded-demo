@@ -1,0 +1,34 @@
+{
+  "site_id": "bramshott-place",
+  "hero": {
+    "source_page": "https://www.inspiredvillages.co.uk/villages/bramshott-place",
+    "source_image_url": "https://www.inspiredvillages.co.uk/img/http/images/village-header-images/bramshott-place/web_header_bp_0001_carousel-1.jpg/5fa5a64f575afe4e0ef2f65def899aa7/web_header_bp_0001_carousel-1.jpg",
+    "captured_at": "2026-05-21",
+    "attribution": "\u00a9 Inspired Villages Group \u2014 used internally for ESG tool",
+    "file": "hero.jpg",
+    "bytes": 453778,
+    "note": "Header carousel exterior shot; small IVG logo lockup. Chosen for showing the actual village buildings at full (1600px) resolution."
+  },
+  "aerial": {
+    "source": "Esri World Imagery",
+    "lat": 51.0872,
+    "lon": -0.824,
+    "zoom": 18,
+    "captured_at": "2026-05-22",
+    "file": "aerial.png",
+    "bytes": 1527262,
+    "note": "Centre nudged ~180m west of the IVG registered-office coordinate (51.0867,-0.8214), which sits in woodland, to frame the estate buildings. sites.json keeps the official coordinate. (c) Esri, Maxar, Earthstar Geographics."
+  },
+  "site_plan": {
+    "source_filename": "Bramshott.pdf",
+    "source_modified": "2023-08-02",
+    "file": "site-plan.png",
+    "rendered_dpi": 200,
+    "final_px": [
+      2000,
+      1838
+    ],
+    "captured_at": "2026-05-22",
+    "notes": "'Bramshott Place Phase 4 - Extent of Site' line drawing; only architectural site plan in folder."
+  }
+}

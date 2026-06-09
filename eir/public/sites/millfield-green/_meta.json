@@ -1,0 +1,22 @@
+{
+  "site_id": "millfield-green",
+  "hero": {
+    "source_page": "https://www.inspiredvillages.co.uk/villages/millfield-green",
+    "source_image_url": "https://www.inspiredvillages.co.uk/img/http/images/village-header-images/millfield-green-1/web_header_mg_0001_carousel-1.jpg/b66f3b505bf4e20cbdfbcbfe66b7366e/web_header_mg_0001_carousel-1.jpg",
+    "captured_at": "2026-05-21",
+    "attribution": "\u00a9 Inspired Villages Group \u2014 used internally for ESG tool",
+    "file": "hero.jpg",
+    "bytes": 541636,
+    "note": "Header carousel exterior shot; small IVG logo lockup. Chosen for showing the actual village buildings at full (1600px) resolution."
+  },
+  "aerial": {
+    "source": "Esri World Imagery",
+    "lat": 51.857026,
+    "lon": -0.46814,
+    "zoom": 18,
+    "captured_at": "2026-05-22",
+    "file": "aerial.png",
+    "bytes": 1582559,
+    "note": "1024x1024 centred crop. (c) Esri, Maxar, Earthstar Geographics."
+  }
+}

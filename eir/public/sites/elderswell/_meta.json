@@ -1,0 +1,34 @@
+{
+  "site_id": "elderswell",
+  "hero": {
+    "source_page": "https://www.inspiredvillages.co.uk/villages/elderswell",
+    "source_image_url": "https://www.inspiredvillages.co.uk/img/http/images/village-header-images/elderswell-1/web_header_e_0001_carousel-1.jpg/417103053b69b8abe787b0b88e1bd4da/web_header_e_0001_carousel-1.jpg",
+    "captured_at": "2026-05-21",
+    "attribution": "\u00a9 Inspired Villages Group \u2014 used internally for ESG tool",
+    "file": "hero.jpg",
+    "bytes": 306909,
+    "note": "Header carousel exterior shot; small IVG logo lockup. Chosen for showing the actual village buildings at full (1600px) resolution."
+  },
+  "aerial": {
+    "source": "Esri World Imagery",
+    "lat": 52.157501,
+    "lon": -0.600351,
+    "zoom": 18,
+    "captured_at": "2026-05-22",
+    "file": "aerial.png",
+    "bytes": 1497652,
+    "note": "1024x1024 centred crop. (c) Esri, Maxar, Earthstar Geographics."
+  },
+  "site_plan": {
+    "source_filename": "Elderswell_P5382_SK 502 - Elderswell Farm -.pdf",
+    "source_modified": "2024-01-30",
+    "file": "site-plan.png",
+    "rendered_dpi": 200,
+    "final_px": [
+      2000,
+      1414
+    ],
+    "captured_at": "2026-05-22",
+    "notes": "Phase 02 walk-up replacement sketch (Option 4) - a design-option drawing, not an issued masterplan; only site-overview drawing available."
+  }
+}

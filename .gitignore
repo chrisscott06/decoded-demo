@@ -1,0 +1,42 @@
+# Python
+pipeline/.venv/
+pipeline/__pycache__/
+pipeline/**/__pycache__/
+*.pyc
+
+# Node
+node_modules/
+eir/dist/
+eir/.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Source spreadsheets — do not commit
+# (note: brief calls this pipeline/source_data/ with underscore; actual layout uses hyphen)
+pipeline/source-data/
+
+# Brief lifecycle: briefs are now committed history per the NZA Development Bible.
+# Used to gitignore docs/briefs/ — removed in Brief 5 Part 1 (bible bootstrap).
+
+# Brief 6 Step 1: EOC map-extraction artefacts archived (out-of-scope reference).
+.archive-eoc-extraction/
+
+# Scratch notes
+docs/scratch/
+
+# Misc
+*.tmp
+
+# Pipeline-generated logs (build_log.txt is committed; ad-hoc logs are not)
+pipeline/*.log
+
+# Brief 27 (NZA 26003-EPC-01) - .env at project root for EPC API
+# credentials (legacy API retired but chassis is kept defensively).
+# .env.example IS committed as a template; .env never is.
+.env

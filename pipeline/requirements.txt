@@ -1,0 +1,11 @@
+openpyxl==3.1.5
+
+# Brief 27 (NZA 26003-EPC-01) - EPC acquisition + coverage pipeline
+# Note: pip resolves newer minor versions in the venv (8 Jun installed
+# pandas 3.0.3, pyarrow 24.0.0, python-dotenv 1.2.2, requests 2.34.2).
+# Pins below are floor versions; the code uses cross-version-stable
+# CSV / Parquet / HTTP APIs.
+pandas>=2.2.3
+pyarrow>=18.1.0
+python-dotenv>=1.0.1
+requests>=2.32.3

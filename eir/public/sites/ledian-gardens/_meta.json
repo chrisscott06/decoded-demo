@@ -1,0 +1,34 @@
+{
+  "site_id": "ledian-gardens",
+  "hero": {
+    "source_page": "https://www.inspiredvillages.co.uk/villages/ledian-gardens",
+    "source_image_url": "https://www.inspiredvillages.co.uk/img/http/images/village-header-images/ledian-garden/web_header_lg_0001_carousel-1.jpg/d1fa4232502612e8a6c5e7524e7d4d7a/web_header_lg_0001_carousel-1.jpg",
+    "captured_at": "2026-05-21",
+    "attribution": "\u00a9 Inspired Villages Group \u2014 used internally for ESG tool",
+    "file": "hero.jpg",
+    "bytes": 387505,
+    "note": "Header carousel exterior shot; small IVG logo lockup. Chosen for showing the actual village buildings at full (1600px) resolution."
+  },
+  "aerial": {
+    "source": "Esri World Imagery",
+    "lat": 51.24485,
+    "lon": 0.60375,
+    "zoom": 18,
+    "captured_at": "2026-05-22",
+    "file": "aerial.png",
+    "bytes": 1441249,
+    "note": "1024x1024 centred crop. (c) Esri, Maxar, Earthstar Geographics."
+  },
+  "site_plan": {
+    "source_filename": "Ledian_.202 Phase 1 and 2 Masterplan. Rev E 05 03 21.pdf",
+    "source_modified": "2024-01-30",
+    "file": "site-plan.png",
+    "rendered_dpi": 200,
+    "final_px": [
+      1999,
+      1368
+    ],
+    "captured_at": "2026-05-22",
+    "notes": "Colour masterplan Rev E dated 2021-03-05, phases 1 & 2."
+  }
+}

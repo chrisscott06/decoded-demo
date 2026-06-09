@@ -1,0 +1,34 @@
+{
+  "site_id": "great-alne-park",
+  "hero": {
+    "source_page": "https://www.inspiredvillages.co.uk/villages/great-alne-park",
+    "source_image_url": "https://www.inspiredvillages.co.uk/img/http/images/village-header-images/great-alne-park/web_header_gap_0001_carousel-1.jpg/52ff7587617e1cb4b58991f210908d12/web_header_gap_0001_carousel-1.jpg",
+    "captured_at": "2026-05-21",
+    "attribution": "\u00a9 Inspired Villages Group \u2014 used internally for ESG tool",
+    "file": "hero.jpg",
+    "bytes": 368351,
+    "note": "Header carousel exterior shot; small IVG logo lockup. Chosen for showing the actual village buildings at full (1600px) resolution."
+  },
+  "aerial": {
+    "source": "Esri World Imagery",
+    "lat": 52.235698,
+    "lon": -1.821553,
+    "zoom": 18,
+    "captured_at": "2026-05-22",
+    "file": "aerial.png",
+    "bytes": 1736374,
+    "note": "1024x1024 centred crop. (c) Esri, Maxar, Earthstar Geographics."
+  },
+  "site_plan": {
+    "source_filename": "Great Alne_Phasing Site Plan_B_P1-P3.pdf",
+    "source_modified": "2024-01-30",
+    "file": "site-plan.png",
+    "rendered_dpi": 200,
+    "final_px": [
+      1712,
+      1232
+    ],
+    "captured_at": "2026-05-22",
+    "notes": "Colour phasing site plan Rev B, phases 1-3."
+  }
+}

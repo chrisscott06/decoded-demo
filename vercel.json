@@ -1,0 +1,9 @@
+{
+  "buildCommand": "cd eir && npm install && npm run build",
+  "outputDirectory": "eir/dist",
+  "installCommand": "echo skip-root-install",
+  "framework": null,
+  "rewrites": [
+    { "source": "/((?!assets/|favicon\\.svg|.*\\..*).*)", "destination": "/index.html" }
+  ]
+}

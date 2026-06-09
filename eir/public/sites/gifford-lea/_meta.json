@@ -1,0 +1,34 @@
+{
+  "site_id": "gifford-lea",
+  "hero": {
+    "source_page": "https://www.inspiredvillages.co.uk/villages/gifford-lea",
+    "source_image_url": "https://www.inspiredvillages.co.uk/img/http/images/village-header-images/gifford-lea/web_header_gl_0001_carousel-1.jpg/e3ecff46d305794a66030bb35cdfb821/web_header_gl_0001_carousel-1.jpg",
+    "captured_at": "2026-05-21",
+    "attribution": "\u00a9 Inspired Villages Group \u2014 used internally for ESG tool",
+    "file": "hero.jpg",
+    "bytes": 427038,
+    "note": "Header carousel exterior shot; small IVG logo lockup. Chosen for showing the actual village buildings at full (1600px) resolution."
+  },
+  "aerial": {
+    "source": "Esri World Imagery",
+    "lat": 53.121163,
+    "lon": -2.777159,
+    "zoom": 18,
+    "captured_at": "2026-05-22",
+    "file": "aerial.png",
+    "bytes": 1493573,
+    "note": "1024x1024 centred crop. (c) Esri, Maxar, Earthstar Geographics."
+  },
+  "site_plan": {
+    "source_filename": "P4175-02 - 00_051-A - The Grange, Estates Plan.pdf",
+    "source_modified": "2024-01-30",
+    "file": "site-plan.png",
+    "rendered_dpi": 200,
+    "final_px": [
+      1390,
+      2000
+    ],
+    "captured_at": "2026-05-22",
+    "notes": "Issued estate plan Rev A, colour, phases 1-3, north arrow."
+  }
+}
