@@ -109,14 +109,14 @@
         "gas": 0.0,
         "total": 0.0,
         "source": "TBC",
-        "tbc_reason": "Sycous sub-metering deployed but currently reading zero. NZA is working with IVG and Sycous to bring the sub-meters online; until then the landlord/resident split cannot be derived."
+        "tbc_reason": "Sycous sub-metering deployed but currently reading zero. NZA is working with Westbrook and Sycous to bring the sub-meters online; until then the landlord/resident split cannot be derived."
       },
       "resident_kwh": {
         "electricity": null,
         "gas": 0.0,
         "total": 0.0,
         "source": "TBC",
-        "tbc_reason": "Sycous sub-metering deployed but currently reading zero. NZA is working with IVG and Sycous to bring the sub-meters online; until then the landlord/resident split cannot be derived."
+        "tbc_reason": "Sycous sub-metering deployed but currently reading zero. NZA is working with Westbrook and Sycous to bring the sub-meters online; until then the landlord/resident split cannot be derived."
       },
       "data_quality_flag": "blendworth-hills_sycous_zero_reads"
     },
@@ -469,14 +469,14 @@
         "gas": 142153.6,
         "total": 142153.6,
         "source": "TBC",
-        "tbc_reason": "Bulk-metered site with no Sycous sub-metering deployed. The landlord/resident split cannot be derived without sub-meter data. NZA is working with IVG to deploy Sycous."
+        "tbc_reason": "Bulk-metered site with no Sycous sub-metering deployed. The landlord/resident split cannot be derived without sub-meter data. NZA is working with Westbrook to deploy Sycous."
       },
       "resident_kwh": {
         "electricity": null,
         "gas": 0.0,
         "total": 0.0,
         "source": "TBC",
-        "tbc_reason": "Bulk-metered site with no Sycous sub-metering deployed. The landlord/resident split cannot be derived without sub-meter data. NZA is working with IVG to deploy Sycous."
+        "tbc_reason": "Bulk-metered site with no Sycous sub-metering deployed. The landlord/resident split cannot be derived without sub-meter data. NZA is working with Westbrook to deploy Sycous."
       },
       "data_quality_flag": "millbrook-village_no_sycous"
     },
@@ -509,14 +509,14 @@
         "gas": 0.0,
         "total": 0.0,
         "source": "TBC",
-        "tbc_reason": "Sycous sub-meter readings exceed the bulk meter total, which is physically impossible if both measure electricity. NZA is investigating with IVG and Sycous to determine whether the Sycous data is mis-categorised or has a units/pipeline error. Until resolved, only the bulk meter total is reliable."
+        "tbc_reason": "Sycous sub-meter readings exceed the bulk meter total, which is physically impossible if both measure electricity. NZA is investigating with Westbrook and Sycous to determine whether the Sycous data is mis-categorised or has a units/pipeline error. Until resolved, only the bulk meter total is reliable."
       },
       "resident_kwh": {
         "electricity": null,
         "gas": 0.0,
         "total": 0.0,
         "source": "TBC",
-        "tbc_reason": "Sycous sub-meter readings exceed the bulk meter total, which is physically impossible if both measure electricity. NZA is investigating with IVG and Sycous to determine whether the Sycous data is mis-categorised or has a units/pipeline error. Until resolved, only the bulk meter total is reliable."
+        "tbc_reason": "Sycous sub-meter readings exceed the bulk meter total, which is physically impossible if both measure electricity. NZA is investigating with Westbrook and Sycous to determine whether the Sycous data is mis-categorised or has a units/pipeline error. Until resolved, only the bulk meter total is reliable."
       },
       "data_quality_flag": "millfield-green_sycous_anomaly"
     }

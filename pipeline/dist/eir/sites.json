@@ -44,7 +44,7 @@
       "elec_void": "Scope 2",
       "has_gas": true,
       "sycous_deduction": true,
-      "notes": "Bulk gas supply â€” all gas is IVG Scope 1. Bulk elec â€” communal is S2, resi is S3."
+      "notes": "Bulk gas supply â€” all gas is Westbrook Scope 1. Bulk elec â€” communal is S2, resi is S3."
     },
     "phasing": {
       "open_year": 2014,
@@ -280,7 +280,7 @@
       "elec_void": "Scope 2",
       "has_gas": true,
       "sycous_deduction": false,
-      "notes": "Individual gas boilers â€” occupied resi gas = resident's fuel = S3. Void gas = IVG."
+      "notes": "Individual gas boilers â€” occupied resi gas = resident's fuel = S3. Void gas = Westbrook."
     },
     "phasing": {
       "open_year": 2017,
@@ -752,7 +752,7 @@
       "elec_void": "Scope 2",
       "has_gas": true,
       "sycous_deduction": true,
-      "notes": "Bulk gas supply â€” all gas is IVG S1. 430kWp PV reduces grid import."
+      "notes": "Bulk gas supply â€” all gas is Westbrook S1. 430kWp PV reduces grid import."
     },
     "phasing": {
       "open_year": 2019,
@@ -914,7 +914,7 @@
       "vc_p1": {
         "system": "Hybrid",
         "confidence": "TBC",
-        "note": "Best read: GSHP + CHP at VC; gas boilers in apartments. Confirm with IVG operations."
+        "note": "Best read: GSHP + CHP at VC; gas boilers in apartments. Confirm with Westbrook operations."
       },
       "apt_p1": {
         "system": "Individual gas",
@@ -983,7 +983,7 @@
       "elec_void": "Scope 2",
       "has_gas": false,
       "sycous_deduction": true,
-      "notes": "All-electric microgrid. ALL elec is IVG S2 (bulk supply). Resi billed via Sycous but IVG holds MPAN."
+      "notes": "All-electric microgrid. ALL elec is Westbrook S2 (bulk supply). Resi billed via Sycous but Westbrook holds MPAN."
     },
     "phasing": {
       "open_year": 2023,

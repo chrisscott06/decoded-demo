@@ -100,4 +100,49 @@ brief's honest-by-default rule: this matches the "headline barely
 moves but per-site shape shifts" pattern Chris flagged. Did NOT
 layer a global shift on top to push the headline further away from
 the source — defer to Chris if he wants that.
-### Phase 5 — metadata polish + final sweep (pending)
+### Phase 5 — metadata polish + final sweep (2026-06-10)
+CLAUDE.md expanded with decodED palette table (16 tokens with hex
++ role), 11-school list with site IDs + refs + regions, password
+location, launch.bat instructions, provenance commit hash from the
+source tool (`f2a54ea`), and the 6-commit phase ledger. README.md
+rewritten as a public-facing 30-line description stressing
+"fictional, not a real client report."
+
+Final residuals sweep:
+  - `inspiredvillages.co.uk` URLs scrubbed from all 11
+    eir/public/sites/<id>/_meta.json files (source_page +
+    source_image_url fields blanked).
+  - scripts/ directory dropped (one-shot IVG hero-photo +
+    aerial-fetch scripts — no longer relevant in a fictional
+    school context).
+  - pipeline/dist/eir/ JSON files re-swept for "IVG" / "Inspired
+    Villages" residuals — 4 files updated (reconciliation,
+    rfi_status, sites, water).
+
+Final grep state: `\\bIVG\\b|Inspired Villages|inspiredvillages` =
+24 hits across 6 files, all deliberate provenance language in
+CLAUDE.md / STATUS.md / README.md / index.css comments /
+chart-colors.js comments / PortfolioEnergy.jsx comments. Zero
+user-visible IVG leaks.
+
+## Outstanding for Chris
+
+  - **Vercel wire-up:** create a new Vercel project pointing at
+    `chrisscott06/decoded-demo`, link main branch, confirm build
+    + dev URL.
+  - **Visual QA pass:** boot `launch.bat`, click through every
+    chapter and chart. The retune happened code-side; no
+    foreground browser walkthrough yet. Likely-to-catch issues:
+    chart contrast on the new dark register; water-vs-overview
+    distinction now that water moved to info-blue; GRESB-26
+    darker-shade pair on out-of-scope bars (now an empty array —
+    the OOS layer may render zero bars or hide its empty state).
+  - **Optional headline shift:** if the -2.4 % portfolio shift
+    isn't far enough from the source, add a global multiplier
+    in `.phase4_perturb.py` (e.g. 1.07) and re-run after `git
+    checkout` of the dist files.
+  - **"Retirement villages" → "schools" prose sweep:** Phase 3
+    handled NAMES; the narrative copy in PortfolioEnergy still
+    talks about "phases" / "village centres" / "residents" /
+    "bulk meter for the whole village" — sensible for IVG but
+    reading slightly off for an education estate.
