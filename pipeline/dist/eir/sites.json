@@ -1,0 +1,1295 @@
+{
+  "austin-heath": {
+    "id": "austin-heath",
+    "display_name": "Beechgrove Primary School",
+    "ref": "BPS",
+    "identity": {
+      "total_units": 167,
+      "completed": 122,
+      "void": 20,
+      "occupancy_pct": 73,
+      "resi_gia_m2": 11375.0,
+      "landlord_gia_m2": 2841.0,
+      "total_gia_m2": 14216.0,
+      "years_built": "2014-2020",
+      "total_phases": null,
+      "operational_phases": 3,
+      "management_entity": "Beechgrove Primary School Management Ltd"
+    },
+    "archetype": {
+      "primary_heating": "Central gas + CHP",
+      "hot_water": "Gas (communal)",
+      "chp": "Yes",
+      "heat_network": "Yes",
+      "heat_billing": "Sycous",
+      "grid_type": "Bulk (microgrid)",
+      "capacity_mva": 0.5,
+      "asc_kva": null,
+      "solar_pv_kwp": null,
+      "battery": "None",
+      "ev_chargers": "TBC",
+      "pool_spa": "No",
+      "restaurant": "Yes",
+      "village_centre": "Gym, library, salon",
+      "sycous": "Yes",
+      "ll_deduction": "Yes",
+      "metering_arrangement": "Bulk + Sycous"
+    },
+    "scope_allocation": {
+      "gas_landlord": "Scope 1",
+      "gas_occupied_resi": "Scope 1",
+      "gas_void": "Scope 1",
+      "elec_communal_ll": "Scope 2",
+      "elec_occupied_resi": "Scope 3 Cat 13",
+      "elec_void": "Scope 2",
+      "has_gas": true,
+      "sycous_deduction": true,
+      "notes": "Bulk gas supply — all gas is IVG Scope 1. Bulk elec — communal is S2, resi is S3."
+    },
+    "phasing": {
+      "open_year": 2014,
+      "phases": [
+        {
+          "phase": 1,
+          "units": 49,
+          "complete_year": 1
+        },
+        {
+          "phase": 2,
+          "units": 57,
+          "complete_year": 5
+        },
+        {
+          "phase": 3,
+          "units": 61,
+          "complete_year": 8
+        },
+        {
+          "phase": 4,
+          "units": 0,
+          "complete_year": 0
+        }
+      ],
+      "total_units_planned": 167,
+      "current_units": 167,
+      "status": "Operational",
+      "notes": "All phases complete"
+    },
+    "energy_benchmarks": {
+      "actual_elec_kwh": 423542.0,
+      "actual_gas_kwh": 2582255.0,
+      "actual_total_kwh": 3005797.0,
+      "eui_total_kwh_m2": 211.43760551491278,
+      "eui_elec_kwh_m2": 29.79333145751266,
+      "eui_gas_kwh_m2": 181.6442740574001,
+      "modelled_gas_eui_kwh_m2": 195.0,
+      "gas_vs_model": 0.931509097730257,
+      "tm54_benchmark": "55-65 (resi)",
+      "notes": "CHP site. High gas EUI expected."
+    },
+    "notes": "CHP confirmed in meter schedule",
+    "gresb_in_scope": true,
+    "heating_by_phase": {
+      "vc_p1": {
+        "system": "CHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p1": {
+        "system": "CHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p2": {
+        "system": "CHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p3": {
+        "system": "CHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p4": {
+        "system": "CHP",
+        "confidence": "confirmed",
+        "note": null
+      }
+    }
+  },
+  "gifford-lea": {
+    "id": "gifford-lea",
+    "display_name": "Whitfield Secondary Academy",
+    "ref": "WSA",
+    "identity": {
+      "total_units": 143,
+      "completed": 100,
+      "void": 9,
+      "occupancy_pct": 70,
+      "resi_gia_m2": 14419.0,
+      "landlord_gia_m2": 2929.0,
+      "total_gia_m2": 17348.0,
+      "years_built": "2016-2021",
+      "total_phases": null,
+      "operational_phases": 3,
+      "management_entity": "Whitfield Secondary Academy Management Ltd"
+    },
+    "archetype": {
+      "primary_heating": "Central gas + CHP",
+      "hot_water": "Gas (communal)",
+      "chp": "Yes (R410A)",
+      "heat_network": "Yes",
+      "heat_billing": "Sycous",
+      "grid_type": "Bulk (microgrid)",
+      "capacity_mva": 0.5,
+      "asc_kva": null,
+      "solar_pv_kwp": null,
+      "battery": "None",
+      "ev_chargers": "TBC",
+      "pool_spa": "No",
+      "restaurant": "Yes",
+      "village_centre": "TBC",
+      "sycous": "Yes",
+      "ll_deduction": "Yes",
+      "metering_arrangement": "Bulk + Sycous"
+    },
+    "scope_allocation": {
+      "gas_landlord": "Scope 1",
+      "gas_occupied_resi": "Scope 1",
+      "gas_void": "Scope 1",
+      "elec_communal_ll": "Scope 2",
+      "elec_occupied_resi": "Scope 3 Cat 13",
+      "elec_void": "Scope 2",
+      "has_gas": true,
+      "sycous_deduction": true,
+      "notes": "CHP site — gas drives both heat and power. All gas = S1."
+    },
+    "phasing": {
+      "open_year": 2016,
+      "phases": [
+        {
+          "phase": 1,
+          "units": 48,
+          "complete_year": 1
+        },
+        {
+          "phase": 2,
+          "units": 56,
+          "complete_year": 5
+        },
+        {
+          "phase": 3,
+          "units": 39,
+          "complete_year": 9
+        },
+        {
+          "phase": 4,
+          "units": 0,
+          "complete_year": 0
+        }
+      ],
+      "total_units_planned": 143,
+      "current_units": 143,
+      "status": "Operational",
+      "notes": "All phases complete"
+    },
+    "energy_benchmarks": {
+      "actual_elec_kwh": 630708.0,
+      "actual_gas_kwh": 2448995.0,
+      "actual_total_kwh": 3079703.0,
+      "eui_total_kwh_m2": 177.52495964952732,
+      "eui_elec_kwh_m2": 36.356237030205214,
+      "eui_gas_kwh_m2": 141.16872261932212,
+      "modelled_gas_eui_kwh_m2": 195.0,
+      "gas_vs_model": 0.723942167278575,
+      "tm54_benchmark": "55-65 (resi)",
+      "notes": "CHP site."
+    },
+    "notes": "CHP confirmed. R410A refrigerant.",
+    "gresb_in_scope": true,
+    "heating_by_phase": {
+      "vc_p1": {
+        "system": "CHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p1": {
+        "system": "CHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p2": {
+        "system": "CHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p3": {
+        "system": "CHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p4": {
+        "system": "CHP",
+        "confidence": "confirmed",
+        "note": null
+      }
+    }
+  },
+  "bramshott-place": {
+    "id": "bramshott-place",
+    "display_name": "Holloway College",
+    "ref": "HOC",
+    "identity": {
+      "total_units": 191,
+      "completed": 191,
+      "void": 0,
+      "occupancy_pct": 100,
+      "resi_gia_m2": 25707.0,
+      "landlord_gia_m2": 1959.0,
+      "total_gia_m2": 27666.0,
+      "years_built": "2017-2019",
+      "total_phases": null,
+      "operational_phases": 4,
+      "management_entity": "Holloway College Management Ltd"
+    },
+    "archetype": {
+      "primary_heating": "Individual gas hybrid",
+      "hot_water": "Gas (individual)",
+      "chp": "TBC",
+      "heat_network": "No",
+      "heat_billing": "TBC",
+      "grid_type": "DNO (individual MPANs)",
+      "capacity_mva": 0.2,
+      "asc_kva": null,
+      "solar_pv_kwp": null,
+      "battery": "None",
+      "ev_chargers": "TBC",
+      "pool_spa": "Yes",
+      "restaurant": "Yes",
+      "village_centre": "Gym, pool, salon, cinema",
+      "sycous": "No",
+      "ll_deduction": "No",
+      "metering_arrangement": "Individual MPANs + 12 NHH"
+    },
+    "scope_allocation": {
+      "gas_landlord": "Scope 1",
+      "gas_occupied_resi": "Scope 3 Cat 13",
+      "gas_void": "Scope 1",
+      "elec_communal_ll": "Scope 2",
+      "elec_occupied_resi": "Scope 3 Cat 13",
+      "elec_void": "Scope 2",
+      "has_gas": true,
+      "sycous_deduction": false,
+      "notes": "Individual gas boilers — occupied resi gas = resident's fuel = S3. Void gas = IVG."
+    },
+    "phasing": {
+      "open_year": 2017,
+      "phases": [
+        {
+          "phase": 1,
+          "units": 48,
+          "complete_year": 1
+        },
+        {
+          "phase": 2,
+          "units": 48,
+          "complete_year": 3
+        },
+        {
+          "phase": 3,
+          "units": 48,
+          "complete_year": 8
+        },
+        {
+          "phase": 4,
+          "units": 48,
+          "complete_year": 10
+        }
+      ],
+      "total_units_planned": 191,
+      "current_units": 191,
+      "status": "Operational",
+      "notes": "All phases complete"
+    },
+    "energy_benchmarks": {
+      "actual_elec_kwh": 783105.0,
+      "actual_gas_kwh": 1936238.0,
+      "actual_total_kwh": 2719343.0,
+      "eui_total_kwh_m2": 98.29187450300007,
+      "eui_elec_kwh_m2": 28.305682064628062,
+      "eui_gas_kwh_m2": 69.98619243837202,
+      "modelled_gas_eui_kwh_m2": 195.0,
+      "gas_vs_model": 0.35890355096601034,
+      "tm54_benchmark": "55-65 (resi)",
+      "notes": "Individual gas hybrid."
+    },
+    "notes": "GIA = Phase 1-3 (22,288) + Phase 4 (5,378)",
+    "gresb_in_scope": true,
+    "heating_by_phase": {
+      "vc_p1": {
+        "system": "Individual gas",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p1": {
+        "system": "Individual gas",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p2": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p3": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p4": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      }
+    }
+  },
+  "millbrook-village": {
+    "id": "millbrook-village",
+    "display_name": "Marston Hill C of E Primary",
+    "ref": "MHP",
+    "identity": {
+      "total_units": 165,
+      "completed": 160,
+      "void": 0,
+      "occupancy_pct": 97,
+      "resi_gia_m2": 17361.0,
+      "landlord_gia_m2": 4025.0,
+      "total_gia_m2": 21386.0,
+      "years_built": "2017-2019",
+      "total_phases": null,
+      "operational_phases": 4,
+      "management_entity": "Marston Hill C of E Primary Management Ltd"
+    },
+    "archetype": {
+      "primary_heating": "VC ASHP  + gas (pool only) - Inidvidual ASHP",
+      "hot_water": "Individual heat pumps (apartments)",
+      "chp": "No",
+      "heat_network": "No",
+      "heat_billing": "TBC",
+      "grid_type": "DNO (individual MPANs)",
+      "capacity_mva": 0.2,
+      "asc_kva": null,
+      "solar_pv_kwp": null,
+      "battery": "None",
+      "ev_chargers": "TBC",
+      "pool_spa": "No",
+      "restaurant": "Yes",
+      "village_centre": "TBC",
+      "sycous": "TBC",
+      "ll_deduction": "TBC",
+      "metering_arrangement": "Individual MPANs"
+    },
+    "scope_allocation": {
+      "gas_landlord": "Scope 1",
+      "gas_occupied_resi": null,
+      "gas_void": null,
+      "elec_communal_ll": "Scope 2",
+      "elec_occupied_resi": "Scope 3 Cat 13",
+      "elec_void": "Scope 2",
+      "has_gas": true,
+      "sycous_deduction": null,
+      "notes": "Gas for pool only single meter 147,706 kWh = Scope 1"
+    },
+    "phasing": {
+      "open_year": 2017,
+      "phases": [
+        {
+          "phase": 1,
+          "units": 41,
+          "complete_year": 1
+        },
+        {
+          "phase": 2,
+          "units": 41,
+          "complete_year": 5
+        },
+        {
+          "phase": 3,
+          "units": 41,
+          "complete_year": 9
+        },
+        {
+          "phase": 4,
+          "units": 41,
+          "complete_year": 11
+        }
+      ],
+      "total_units_planned": 164,
+      "current_units": 165,
+      "status": "Operational",
+      "notes": "Void reg shows 165 vs pipeline 164"
+    },
+    "energy_benchmarks": {
+      "actual_elec_kwh": 1122644.0,
+      "actual_gas_kwh": 147706.0,
+      "actual_total_kwh": 1270350.0,
+      "eui_total_kwh_m2": 59.401010006546336,
+      "eui_elec_kwh_m2": 52.49434209295801,
+      "eui_gas_kwh_m2": 6.906667913588329,
+      "modelled_gas_eui_kwh_m2": 195.0,
+      "gas_vs_model": 0.035418809813273486,
+      "tm54_benchmark": "55-65 (resi)",
+      "notes": "Low gas — mostly ASHP?"
+    },
+    "notes": null,
+    "gresb_in_scope": true,
+    "heating_by_phase": {
+      "vc_p1": {
+        "system": "Hybrid",
+        "confidence": "confirmed",
+        "note": "Pool gas + VC ASHP + individual apt ASHP."
+      },
+      "apt_p1": {
+        "system": "Hybrid",
+        "confidence": "confirmed",
+        "note": "Pool gas + VC ASHP + individual apt ASHP."
+      },
+      "apt_p2": {
+        "system": "Hybrid",
+        "confidence": "confirmed",
+        "note": "Pool gas + VC ASHP + individual apt ASHP."
+      },
+      "apt_p3": {
+        "system": "Hybrid",
+        "confidence": "confirmed",
+        "note": "Pool gas + VC ASHP + individual apt ASHP."
+      },
+      "apt_p4": {
+        "system": "Hybrid",
+        "confidence": "confirmed",
+        "note": "Pool gas + VC ASHP + individual apt ASHP."
+      }
+    }
+  },
+  "durrants-village": {
+    "id": "durrants-village",
+    "display_name": "Hartwell University Technical College",
+    "ref": "HUT",
+    "identity": {
+      "total_units": 173,
+      "completed": 169,
+      "void": 0,
+      "occupancy_pct": 98,
+      "resi_gia_m2": 18610.0,
+      "landlord_gia_m2": 2123.0,
+      "total_gia_m2": 20733.0,
+      "years_built": "2017-2020",
+      "total_phases": null,
+      "operational_phases": 4,
+      "management_entity": "Hartwell UTC Management Ltd"
+    },
+    "archetype": {
+      "primary_heating": "Individual ASHP",
+      "hot_water": "ASHP",
+      "chp": "No",
+      "heat_network": "No",
+      "heat_billing": "TBC",
+      "grid_type": "DNO (individual MPANs)",
+      "capacity_mva": 0.5,
+      "asc_kva": null,
+      "solar_pv_kwp": null,
+      "battery": "None",
+      "ev_chargers": "TBC",
+      "pool_spa": "No",
+      "restaurant": "Yes",
+      "village_centre": "TBC",
+      "sycous": "No",
+      "ll_deduction": "No",
+      "metering_arrangement": "Individual MPANs + 8 NHH"
+    },
+    "scope_allocation": {
+      "gas_landlord": null,
+      "gas_occupied_resi": null,
+      "gas_void": null,
+      "elec_communal_ll": "Scope 2",
+      "elec_occupied_resi": "Scope 3 Cat 13",
+      "elec_void": "Scope 2",
+      "has_gas": false,
+      "sycous_deduction": false,
+      "notes": "All-electric (ASHP). No gas. Resi has individual MPANs = S3."
+    },
+    "phasing": {
+      "open_year": 2017,
+      "phases": [
+        {
+          "phase": 1,
+          "units": 43,
+          "complete_year": 1
+        },
+        {
+          "phase": 2,
+          "units": 43,
+          "complete_year": 4
+        },
+        {
+          "phase": 3,
+          "units": 43,
+          "complete_year": 7
+        },
+        {
+          "phase": 4,
+          "units": 43,
+          "complete_year": 9
+        }
+      ],
+      "total_units_planned": 173,
+      "current_units": 173,
+      "status": "Operational",
+      "notes": null
+    },
+    "energy_benchmarks": {
+      "actual_elec_kwh": 1285363.0,
+      "actual_gas_kwh": 0.0,
+      "actual_total_kwh": 1285363.0,
+      "eui_total_kwh_m2": 61.9959967202045,
+      "eui_elec_kwh_m2": 61.9959967202045,
+      "eui_gas_kwh_m2": 0.0,
+      "modelled_gas_eui_kwh_m2": 0.0,
+      "gas_vs_model": null,
+      "tm54_benchmark": "55-65 (resi)",
+      "notes": "All-electric."
+    },
+    "notes": "All-electric site",
+    "gresb_in_scope": true,
+    "heating_by_phase": {
+      "vc_p1": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p1": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p2": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p3": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p4": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      }
+    }
+  },
+  "great-alne-park": {
+    "id": "great-alne-park",
+    "display_name": "St Margaret's Catholic Secondary",
+    "ref": "STM",
+    "identity": {
+      "total_units": 171,
+      "completed": 109,
+      "void": 41,
+      "occupancy_pct": 64,
+      "resi_gia_m2": 20529.0,
+      "landlord_gia_m2": 1652.0,
+      "total_gia_m2": 22181.0,
+      "years_built": "2017-2020",
+      "total_phases": null,
+      "operational_phases": 3,
+      "management_entity": "St Margaret's Catholic Secondary Management Ltd"
+    },
+    "archetype": {
+      "primary_heating": "Individual ASHP",
+      "hot_water": "ASHP",
+      "chp": "No",
+      "heat_network": "No",
+      "heat_billing": "TBC",
+      "grid_type": "DNO (individual MPANs)",
+      "capacity_mva": 0.5,
+      "asc_kva": null,
+      "solar_pv_kwp": null,
+      "battery": "None",
+      "ev_chargers": "TBC",
+      "pool_spa": "No",
+      "restaurant": "Yes",
+      "village_centre": "TBC",
+      "sycous": "No",
+      "ll_deduction": "No",
+      "metering_arrangement": "Individual MPANs + 10 NHH"
+    },
+    "scope_allocation": {
+      "gas_landlord": null,
+      "gas_occupied_resi": null,
+      "gas_void": null,
+      "elec_communal_ll": "Scope 2",
+      "elec_occupied_resi": "Scope 3 Cat 13",
+      "elec_void": "Scope 2",
+      "has_gas": false,
+      "sycous_deduction": false,
+      "notes": "All-electric (ASHP). No gas. Resi has individual MPANs = S3."
+    },
+    "phasing": {
+      "open_year": 2018,
+      "phases": [
+        {
+          "phase": 1,
+          "units": 122,
+          "complete_year": 1
+        },
+        {
+          "phase": 2,
+          "units": 0,
+          "complete_year": 0
+        },
+        {
+          "phase": 3,
+          "units": 49,
+          "complete_year": 8
+        },
+        {
+          "phase": 4,
+          "units": 0,
+          "complete_year": 0
+        }
+      ],
+      "total_units_planned": 171,
+      "current_units": 171,
+      "status": "Operational",
+      "notes": "2 phases. Pipeline shows possible future phases."
+    },
+    "energy_benchmarks": {
+      "actual_elec_kwh": 1047047.0,
+      "actual_gas_kwh": 0.0,
+      "actual_total_kwh": 1047047.0,
+      "eui_total_kwh_m2": 47.2046796808079,
+      "eui_elec_kwh_m2": 47.2046796808079,
+      "eui_gas_kwh_m2": 0.0,
+      "modelled_gas_eui_kwh_m2": 0.0,
+      "gas_vs_model": null,
+      "tm54_benchmark": "55-65 (resi)",
+      "notes": "All-electric."
+    },
+    "notes": "All-electric site. 2 phases in pipeline.",
+    "gresb_in_scope": true,
+    "heating_by_phase": {
+      "vc_p1": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p1": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p2": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p3": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p4": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      }
+    }
+  },
+  "ledian-gardens": {
+    "id": "ledian-gardens",
+    "display_name": "Eastlea Federation",
+    "ref": "EAF",
+    "identity": {
+      "total_units": 115,
+      "completed": 48,
+      "void": 48,
+      "occupancy_pct": 42,
+      "resi_gia_m2": 13132.0,
+      "landlord_gia_m2": 4095.0,
+      "total_gia_m2": 17226.0,
+      "years_built": "2022-2024",
+      "total_phases": null,
+      "operational_phases": 4,
+      "management_entity": "Eastlea Federation Management Ltd"
+    },
+    "archetype": {
+      "primary_heating": "Mix heat network, indivdidual gas and ASHP",
+      "hot_water": "as per heating",
+      "chp": "No",
+      "heat_network": "Partial",
+      "heat_billing": "Sycous",
+      "grid_type": "BNO",
+      "capacity_mva": 0.5,
+      "asc_kva": null,
+      "solar_pv_kwp": 430.0,
+      "battery": "Proposed 200kWh/100kW",
+      "ev_chargers": "TBC",
+      "pool_spa": "No",
+      "restaurant": "TBC",
+      "village_centre": "TBC",
+      "sycous": "Yes",
+      "ll_deduction": "Yes",
+      "metering_arrangement": "Bulk + Sycous + PV subs"
+    },
+    "scope_allocation": {
+      "gas_landlord": "Scope 1",
+      "gas_occupied_resi": "Scope 1",
+      "gas_void": "Scope 1",
+      "elec_communal_ll": "Scope 2",
+      "elec_occupied_resi": "Scope 3 Cat 13",
+      "elec_void": "Scope 2",
+      "has_gas": true,
+      "sycous_deduction": true,
+      "notes": "Bulk gas supply — all gas is IVG S1. 430kWp PV reduces grid import."
+    },
+    "phasing": {
+      "open_year": 2019,
+      "phases": [
+        {
+          "phase": 1,
+          "units": 72,
+          "complete_year": 1
+        },
+        {
+          "phase": 2,
+          "units": 50,
+          "complete_year": 5
+        },
+        {
+          "phase": 3,
+          "units": 40,
+          "complete_year": 9
+        }
+      ],
+      "total_units_planned": 162,
+      "current_units": 115,
+      "status": "Partially occupied",
+      "notes": "3-phase development (corrected from 4 per Chris 3 Jun). P1=72, P2=50, P3=40."
+    },
+    "energy_benchmarks": {
+      "actual_elec_kwh": 514523.0,
+      "actual_gas_kwh": 1252423.0,
+      "actual_total_kwh": 1766946.0,
+      "eui_total_kwh_m2": 102.57436433298503,
+      "eui_elec_kwh_m2": 29.868977127597816,
+      "eui_gas_kwh_m2": 72.70538720538721,
+      "modelled_gas_eui_kwh_m2": 170.0,
+      "gas_vs_model": 0.4276787482669836,
+      "tm54_benchmark": "55-65 (resi)",
+      "notes": "430kWp PV offsets import."
+    },
+    "notes": "430kWp PV. Battery + ASC study. Manual reads from Richard Uden.",
+    "gresb_in_scope": true,
+    "heating_by_phase": {
+      "vc_p1": {
+        "system": "Heat network (gas)",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p1": {
+        "system": "Heat network (gas)",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p2": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p3": {
+        "system": "Individual GSHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p4": {
+        "system": null,
+        "confidence": null,
+        "note": null
+      }
+    }
+  },
+  "elderswell": {
+    "id": "elderswell",
+    "display_name": "Riverdale Free School",
+    "ref": "RVF",
+    "identity": {
+      "total_units": 130,
+      "completed": 26,
+      "void": 31,
+      "occupancy_pct": 20,
+      "resi_gia_m2": 12219.0,
+      "landlord_gia_m2": 4061.0,
+      "total_gia_m2": 16280.0,
+      "years_built": "2022-2024",
+      "total_phases": null,
+      "operational_phases": 2,
+      "management_entity": "Riverdale Free School Management Ltd"
+    },
+    "archetype": {
+      "primary_heating": "Gas + ASHP",
+      "hot_water": "Gas (communal)",
+      "chp": "No",
+      "heat_network": "Yes",
+      "heat_billing": "Sycous",
+      "grid_type": "DNO (individual MPANs) + Sycous heat",
+      "capacity_mva": 0.5,
+      "asc_kva": null,
+      "solar_pv_kwp": null,
+      "battery": "None",
+      "ev_chargers": "TBC",
+      "pool_spa": "Yes (spa)",
+      "restaurant": "TBC",
+      "village_centre": "Spa, gym",
+      "sycous": "Yes",
+      "ll_deduction": "Yes",
+      "metering_arrangement": "Bulk + Sycous"
+    },
+    "scope_allocation": {
+      "gas_landlord": "Scope 1",
+      "gas_occupied_resi": "Scope 3 Cat 13",
+      "gas_void": "Scope 1",
+      "elec_communal_ll": "Scope 2",
+      "elec_occupied_resi": "Scope 3 Cat 13",
+      "elec_void": "Scope 2",
+      "has_gas": true,
+      "sycous_deduction": true,
+      "notes": "Gas + ASHP. Occupied resi gas via individual boilers = S3. Bulk elec needs deduction."
+    },
+    "phasing": {
+      "open_year": 2020,
+      "phases": [
+        {
+          "phase": 1,
+          "units": 36,
+          "complete_year": 1
+        },
+        {
+          "phase": 2,
+          "units": 36,
+          "complete_year": 4
+        },
+        {
+          "phase": 3,
+          "units": 36,
+          "complete_year": 9
+        },
+        {
+          "phase": 4,
+          "units": 36,
+          "complete_year": 11
+        }
+      ],
+      "total_units_planned": 145,
+      "current_units": 130,
+      "status": "Partially occupied",
+      "notes": "20% occupancy. Pipeline shows 145 vs void reg 130."
+    },
+    "energy_benchmarks": {
+      "actual_elec_kwh": 405964.0,
+      "actual_gas_kwh": 986236.0,
+      "actual_total_kwh": 1392200.0,
+      "eui_total_kwh_m2": 85.51597051597052,
+      "eui_elec_kwh_m2": 24.936363636363637,
+      "eui_gas_kwh_m2": 60.57960687960688,
+      "modelled_gas_eui_kwh_m2": 160.0,
+      "gas_vs_model": 0.378622542997543,
+      "tm54_benchmark": "55-65 (resi)",
+      "notes": "Gas + ASHP."
+    },
+    "notes": "Only site with F-gas top-up in 2025",
+    "gresb_in_scope": true,
+    "heating_by_phase": {
+      "vc_p1": {
+        "system": "Hybrid",
+        "confidence": "TBC",
+        "note": "Best read: GSHP + CHP at VC; gas boilers in apartments. Confirm with IVG operations."
+      },
+      "apt_p1": {
+        "system": "Individual gas",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p2": {
+        "system": "Individual gas",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p3": {
+        "system": "Individual gas",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p4": {
+        "system": "Individual gas",
+        "confidence": "confirmed",
+        "note": null
+      }
+    }
+  },
+  "millfield-green": {
+    "id": "millfield-green",
+    "display_name": "Penrith Community College",
+    "ref": "PCC",
+    "identity": {
+      "total_units": 86,
+      "completed": 19,
+      "void": 46,
+      "occupancy_pct": 22,
+      "resi_gia_m2": 18570.0,
+      "landlord_gia_m2": 6003.0,
+      "total_gia_m2": 24572.0,
+      "years_built": "2023-2025",
+      "total_phases": null,
+      "operational_phases": 4,
+      "management_entity": "Penrith Community College Management Ltd"
+    },
+    "archetype": {
+      "primary_heating": "Individual GSHP",
+      "hot_water": "ASHP (communal)",
+      "chp": "No",
+      "heat_network": "Yes",
+      "heat_billing": "N/A",
+      "grid_type": "Bulk (microgrid)",
+      "capacity_mva": 1.3,
+      "asc_kva": null,
+      "solar_pv_kwp": null,
+      "battery": "TBC",
+      "ev_chargers": "TBC",
+      "pool_spa": "TBC",
+      "restaurant": "TBC",
+      "village_centre": "TBC",
+      "sycous": "Yes",
+      "ll_deduction": "Yes",
+      "metering_arrangement": "Bulk + Sycous"
+    },
+    "scope_allocation": {
+      "gas_landlord": null,
+      "gas_occupied_resi": null,
+      "gas_void": null,
+      "elec_communal_ll": "Scope 2",
+      "elec_occupied_resi": "Scope 2",
+      "elec_void": "Scope 2",
+      "has_gas": false,
+      "sycous_deduction": true,
+      "notes": "All-electric microgrid. ALL elec is IVG S2 (bulk supply). Resi billed via Sycous but IVG holds MPAN."
+    },
+    "phasing": {
+      "open_year": 2023,
+      "phases": [
+        {
+          "phase": 1,
+          "units": 86,
+          "complete_year": 1
+        },
+        {
+          "phase": 2,
+          "units": 34,
+          "complete_year": 4
+        },
+        {
+          "phase": 3,
+          "units": 29,
+          "complete_year": 7
+        },
+        {
+          "phase": 4,
+          "units": 51,
+          "complete_year": 9
+        }
+      ],
+      "total_units_planned": 200,
+      "current_units": 86,
+      "status": "Early occupation",
+      "notes": "22% occupancy. Flagship microgrid."
+    },
+    "energy_benchmarks": {
+      "actual_elec_kwh": 814488.0,
+      "actual_gas_kwh": 0.0,
+      "actual_total_kwh": 814488.0,
+      "eui_total_kwh_m2": 33.14699658147485,
+      "eui_elec_kwh_m2": 33.14699658147485,
+      "eui_gas_kwh_m2": 0.0,
+      "modelled_gas_eui_kwh_m2": 0.0,
+      "gas_vs_model": null,
+      "tm54_benchmark": "55-65 (resi)",
+      "notes": "All-electric microgrid."
+    },
+    "notes": "Flagship microgrid model. Largest GIA (24.6k m²).",
+    "gresb_in_scope": true,
+    "heating_by_phase": {
+      "vc_p1": {
+        "system": "Individual GSHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p1": {
+        "system": "Individual GSHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p2": {
+        "system": "Individual GSHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p3": {
+        "system": "Individual GSHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p4": {
+        "system": "Individual GSHP",
+        "confidence": "confirmed",
+        "note": null
+      }
+    }
+  },
+  "ampfield-meadows": {
+    "id": "ampfield-meadows",
+    "display_name": "Aldergate Special Educational Needs School",
+    "ref": "ASN",
+    "identity": {
+      "total_units": 57,
+      "completed": 6,
+      "void": 47,
+      "occupancy_pct": 11,
+      "resi_gia_m2": 15515.0,
+      "landlord_gia_m2": 4766.0,
+      "total_gia_m2": 20281.0,
+      "years_built": "2024-2025",
+      "total_phases": null,
+      "operational_phases": 4,
+      "management_entity": "Aldergate Special Educational Needs School Management Ltd"
+    },
+    "archetype": {
+      "primary_heating": "ASHP throughout",
+      "hot_water": "ASHP/GSHP",
+      "chp": "No",
+      "heat_network": "Yes",
+      "heat_billing": "N/A",
+      "grid_type": "Bulk (microgrid)",
+      "capacity_mva": 1.5,
+      "asc_kva": null,
+      "solar_pv_kwp": null,
+      "battery": "None",
+      "ev_chargers": "TBC",
+      "pool_spa": "TBC",
+      "restaurant": "TBC",
+      "village_centre": "TBC",
+      "sycous": "Yes",
+      "ll_deduction": "Yes",
+      "metering_arrangement": "Bulk + Sycous"
+    },
+    "scope_allocation": {
+      "gas_landlord": null,
+      "gas_occupied_resi": null,
+      "gas_void": null,
+      "elec_communal_ll": "Scope 2",
+      "elec_occupied_resi": "Scope 2",
+      "elec_void": "Scope 2",
+      "has_gas": false,
+      "sycous_deduction": true,
+      "notes": "All-electric (GSHP/ASHP). Bulk supply — all S2. Sycous deduction for GRESB landlord split."
+    },
+    "phasing": {
+      "open_year": 2024,
+      "phases": [
+        {
+          "phase": 1,
+          "units": 57,
+          "complete_year": 1
+        },
+        {
+          "phase": 2,
+          "units": 42,
+          "complete_year": 4
+        },
+        {
+          "phase": 3,
+          "units": 48,
+          "complete_year": 7
+        },
+        {
+          "phase": 4,
+          "units": 49,
+          "complete_year": 9
+        }
+      ],
+      "total_units_planned": 196,
+      "current_units": 57,
+      "status": "Early occupation",
+      "notes": "11% occupancy. Phase 1 only."
+    },
+    "energy_benchmarks": {
+      "actual_elec_kwh": 659269.0,
+      "actual_gas_kwh": 0.0,
+      "actual_total_kwh": 659269.0,
+      "eui_total_kwh_m2": 32.50673043735516,
+      "eui_elec_kwh_m2": 32.50673043735516,
+      "eui_gas_kwh_m2": 0.0,
+      "modelled_gas_eui_kwh_m2": 0.0,
+      "gas_vs_model": null,
+      "tm54_benchmark": "55-65 (resi)",
+      "notes": "GSHP. All-electric."
+    },
+    "notes": "4 GSHPs + 7 AC units. Highest grid capacity (1.5 MVA).",
+    "gresb_in_scope": true,
+    "heating_by_phase": {
+      "vc_p1": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p1": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p2": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p3": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p4": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      }
+    }
+  },
+  "blendworth-hills": {
+    "id": "blendworth-hills",
+    "display_name": "Pennington Pre-Prep & Junior",
+    "ref": "PEP",
+    "identity": {
+      "total_units": 69,
+      "completed": 11,
+      "void": 57,
+      "occupancy_pct": 16,
+      "resi_gia_m2": 11792.0,
+      "landlord_gia_m2": 3633.0,
+      "total_gia_m2": 15425.0,
+      "years_built": "2024-2025",
+      "total_phases": null,
+      "operational_phases": 2,
+      "management_entity": "Pennington Pre-Prep & Junior Management Ltd"
+    },
+    "archetype": {
+      "primary_heating": "ASHP (×48 Samsung)",
+      "hot_water": "Individual ASHPs",
+      "chp": "No",
+      "heat_network": "No",
+      "heat_billing": "N/A",
+      "grid_type": "Bulk (microgrid)",
+      "capacity_mva": null,
+      "asc_kva": null,
+      "solar_pv_kwp": null,
+      "battery": "None",
+      "ev_chargers": "TBC",
+      "pool_spa": "TBC",
+      "restaurant": "TBC",
+      "village_centre": "TBC",
+      "sycous": "Yes",
+      "ll_deduction": "Yes",
+      "metering_arrangement": "Bulk + Sycous"
+    },
+    "scope_allocation": {
+      "gas_landlord": null,
+      "gas_occupied_resi": null,
+      "gas_void": null,
+      "elec_communal_ll": "Scope 2",
+      "elec_occupied_resi": "Scope 2",
+      "elec_void": "Scope 2",
+      "has_gas": false,
+      "sycous_deduction": true,
+      "notes": "All-electric (48 ASHPs). Bulk supply — all S2. Sycous deduction needed."
+    },
+    "phasing": {
+      "open_year": 2024,
+      "phases": [
+        {
+          "phase": 1,
+          "units": null,
+          "complete_year": null
+        },
+        {
+          "phase": 2,
+          "units": null,
+          "complete_year": null
+        },
+        {
+          "phase": 3,
+          "units": null,
+          "complete_year": null
+        },
+        {
+          "phase": 4,
+          "units": null,
+          "complete_year": null
+        }
+      ],
+      "total_units_planned": null,
+      "current_units": 69,
+      "status": "Early occupation",
+      "notes": "16% occupancy. Not in pipeline model."
+    },
+    "energy_benchmarks": {
+      "actual_elec_kwh": 548471.0,
+      "actual_gas_kwh": 0.0,
+      "actual_total_kwh": 548471.0,
+      "eui_total_kwh_m2": 35.557277147487845,
+      "eui_elec_kwh_m2": 35.557277147487845,
+      "eui_gas_kwh_m2": 0.0,
+      "modelled_gas_eui_kwh_m2": 0.0,
+      "gas_vs_model": null,
+      "tm54_benchmark": "55-65 (resi)",
+      "notes": "48 ASHPs. All-electric."
+    },
+    "notes": "48 individual ASHPs — ownership boundary TBC",
+    "gresb_in_scope": true,
+    "heating_by_phase": {
+      "vc_p1": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p1": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p2": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p3": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      },
+      "apt_p4": {
+        "system": "Individual ASHP",
+        "confidence": "confirmed",
+        "note": null
+      }
+    }
+  }
+}

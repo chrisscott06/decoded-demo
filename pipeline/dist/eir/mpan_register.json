@@ -1,0 +1,2017 @@
+{
+  "ampfield-meadows": [
+    {
+      "mpan": "3110000087890",
+      "type": "HH",
+      "category": "Landlord (HH)",
+      "category_source": "RFI / Auto: HH meter",
+      "cy25_kwh": 485572.2,
+      "months_covered": 9,
+      "account": null
+    },
+    {
+      "mpan": "3110000100948",
+      "type": "HH",
+      "category": "Landlord (HH)",
+      "category_source": "RFI / Auto: HH meter",
+      "cy25_kwh": 2951.9,
+      "months_covered": 6,
+      "account": null
+    },
+    {
+      "mpan": "3110000105389",
+      "type": "NHH",
+      "category": "Landlord (NHH) - heuristic",
+      "category_source": "Auto: 12mo + 35,397 kWh + Mgmt acct",
+      "cy25_kwh": 35397.3,
+      "months_covered": 12,
+      "account": null
+    }
+  ],
+  "austin-heath": [
+    {
+      "mpan": "1170000537858",
+      "type": "HH",
+      "category": "Landlord (HH)",
+      "category_source": "RFI / Auto: HH meter",
+      "cy25_kwh": 456470.3,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "7654434701",
+      "type": "Gas",
+      "category": "Landlord (Gas)",
+      "category_source": "Auto: Gas MPRN",
+      "cy25_kwh": 1739179.17,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "7714432107",
+      "type": "Gas",
+      "category": "Landlord (Gas)",
+      "category_source": "Auto: Gas MPRN",
+      "cy25_kwh": 736128.72,
+      "months_covered": 12,
+      "account": null
+    }
+  ],
+  "blendworth-hills": [
+    {
+      "mpan": "2700010394703",
+      "type": "HH",
+      "category": "Landlord (HH)",
+      "category_source": "RFI / Auto: HH meter",
+      "cy25_kwh": 181033.9,
+      "months_covered": 6,
+      "account": null
+    },
+    {
+      "mpan": "2700010394712",
+      "type": "HH",
+      "category": "Landlord (HH)",
+      "category_source": "RFI / Auto: HH meter",
+      "cy25_kwh": 98056.7,
+      "months_covered": 6,
+      "account": null
+    },
+    {
+      "mpan": "2700008366938",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 844 kWh > threshold",
+      "cy25_kwh": 844.2,
+      "months_covered": 6,
+      "account": null
+    }
+  ],
+  "bramshott-place": [
+    {
+      "mpan": "2000054195811",
+      "type": "HH",
+      "category": "Landlord (HH)",
+      "category_source": "RFI / Auto: HH meter",
+      "cy25_kwh": 54795.8,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700006696600",
+      "type": "HH",
+      "category": "Landlord (HH)",
+      "category_source": "RFI / Auto: HH meter",
+      "cy25_kwh": 1561.6,
+      "months_covered": 3,
+      "account": null
+    },
+    {
+      "mpan": "2700006696595",
+      "type": "HH",
+      "category": "Landlord (HH)",
+      "category_source": "RFI / Auto: HH meter",
+      "cy25_kwh": 0.0,
+      "months_covered": 0,
+      "account": null
+    },
+    {
+      "mpan": "2000054195732",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 10934.6,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700003680351",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 9439.8,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2000054195741",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 8466.3,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2000054313139",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 8462.28,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2000054195760",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 7969.7,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2000054195750",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 6614.9,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2000055385222",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 5980.5,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2000054313110",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 5785.9,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700001911499",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 4358.6,
+      "months_covered": 4,
+      "account": null
+    },
+    {
+      "mpan": "2000017436136",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 3866.2,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2000054195797",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 3641.7,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2000054195802",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 3593.2,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700003680360",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 2248.6,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2000054394963",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 705.8,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "7695658809",
+      "type": "Gas",
+      "category": "Landlord (Gas)",
+      "category_source": "Auto: Gas MPRN",
+      "cy25_kwh": 361728.6,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "7554000806",
+      "type": "Gas",
+      "category": "Landlord (Gas)",
+      "category_source": "Auto: Gas MPRN",
+      "cy25_kwh": 25472.6,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "7553985906",
+      "type": "Gas",
+      "category": "Landlord (Gas)",
+      "category_source": "Auto: Gas MPRN",
+      "cy25_kwh": 7487.8,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700006548043",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 4,808 kWh > threshold",
+      "cy25_kwh": 4807.6,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "2700006548025",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 4,318 kWh > threshold",
+      "cy25_kwh": 4317.5,
+      "months_covered": 7,
+      "account": null
+    },
+    {
+      "mpan": "2700006696489",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 4,275 kWh > threshold",
+      "cy25_kwh": 4275.0,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700006548210",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 3,404 kWh > threshold",
+      "cy25_kwh": 3403.9,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700006696451",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,867 kWh > threshold",
+      "cy25_kwh": 2867.4,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700006548309",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,735 kWh > threshold",
+      "cy25_kwh": 2735.2,
+      "months_covered": 6,
+      "account": null
+    },
+    {
+      "mpan": "2700003635535",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,130 kWh > threshold",
+      "cy25_kwh": 2129.5,
+      "months_covered": 8,
+      "account": null
+    },
+    {
+      "mpan": "2700009442048",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,116 kWh > threshold",
+      "cy25_kwh": 2116.1,
+      "months_covered": 2,
+      "account": null
+    },
+    {
+      "mpan": "2700006548220",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,896 kWh > threshold",
+      "cy25_kwh": 1896.5,
+      "months_covered": 2,
+      "account": null
+    },
+    {
+      "mpan": "2700009442206",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,896 kWh > threshold",
+      "cy25_kwh": 1895.5,
+      "months_covered": 2,
+      "account": null
+    },
+    {
+      "mpan": "2700003696495",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,882 kWh > threshold",
+      "cy25_kwh": 1882.1,
+      "months_covered": 4,
+      "account": null
+    },
+    {
+      "mpan": "2700009442190",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,206 kWh > threshold",
+      "cy25_kwh": 1205.8,
+      "months_covered": 2,
+      "account": null
+    },
+    {
+      "mpan": "2700009442154",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,178 kWh > threshold",
+      "cy25_kwh": 1178.5,
+      "months_covered": 2,
+      "account": null
+    },
+    {
+      "mpan": "2700009442377",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,164 kWh > threshold",
+      "cy25_kwh": 1163.7,
+      "months_covered": 2,
+      "account": null
+    },
+    {
+      "mpan": "2700009442039",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,107 kWh > threshold",
+      "cy25_kwh": 1107.1,
+      "months_covered": 2,
+      "account": null
+    },
+    {
+      "mpan": "2700009442066",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,088 kWh > threshold",
+      "cy25_kwh": 1087.7,
+      "months_covered": 2,
+      "account": null
+    },
+    {
+      "mpan": "2700009442233",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,071 kWh > threshold",
+      "cy25_kwh": 1071.1,
+      "months_covered": 2,
+      "account": null
+    },
+    {
+      "mpan": "2700009442001",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,064 kWh > threshold",
+      "cy25_kwh": 1064.0,
+      "months_covered": 2,
+      "account": null
+    },
+    {
+      "mpan": "2700009442010",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 968 kWh > threshold",
+      "cy25_kwh": 968.1,
+      "months_covered": 2,
+      "account": null
+    },
+    {
+      "mpan": "2700009442057",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 900 kWh > threshold",
+      "cy25_kwh": 899.8,
+      "months_covered": 2,
+      "account": null
+    },
+    {
+      "mpan": "2700009442321",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 843 kWh > threshold",
+      "cy25_kwh": 842.7,
+      "months_covered": 2,
+      "account": null
+    },
+    {
+      "mpan": "2700009442447",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 485 kWh < 500",
+      "cy25_kwh": 485.0,
+      "months_covered": 1,
+      "account": null
+    },
+    {
+      "mpan": "2700009442438",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 463 kWh < 500",
+      "cy25_kwh": 463.4,
+      "months_covered": 2,
+      "account": null
+    },
+    {
+      "mpan": "2700009442429",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 333 kWh < 500",
+      "cy25_kwh": 332.7,
+      "months_covered": 1,
+      "account": null
+    },
+    {
+      "mpan": "2700003696500",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 98 kWh < 500",
+      "cy25_kwh": 97.8,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "2700003635553",
+      "type": "NHH",
+      "category": "Inactive (no consumption)",
+      "category_source": "Auto: 0 kWh CY25",
+      "cy25_kwh": 0.0,
+      "months_covered": 0,
+      "account": null
+    },
+    {
+      "mpan": "2700006548293",
+      "type": "NHH",
+      "category": "Inactive (no consumption)",
+      "category_source": "Auto: 0 kWh CY25",
+      "cy25_kwh": 0.0,
+      "months_covered": 0,
+      "account": null
+    },
+    {
+      "mpan": "2700006548327",
+      "type": "NHH",
+      "category": "Inactive (no consumption)",
+      "category_source": "Auto: 0 kWh CY25",
+      "cy25_kwh": 0.0,
+      "months_covered": 0,
+      "account": null
+    },
+    {
+      "mpan": "2700006548336",
+      "type": "NHH",
+      "category": "Inactive (no consumption)",
+      "category_source": "Auto: 0 kWh CY25",
+      "cy25_kwh": 0.0,
+      "months_covered": 0,
+      "account": null
+    }
+  ],
+  "durrants-village": [
+    {
+      "mpan": "2700000897657",
+      "type": "HH",
+      "category": "Landlord (HH)",
+      "category_source": "RFI / Auto: HH meter",
+      "cy25_kwh": 238905.0,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700000897639",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 38258.8,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "2700001215903",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 11694.65,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700000897610",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 6119.92,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700004371614",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 5428.0,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700000897620",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 5372.06,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "2700000897648",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 5066.0,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700001057450",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 3942.34,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700000897601",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 3164.66,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "2700000897300",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 7,578 kWh > threshold",
+      "cy25_kwh": 7578.06,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700000897416",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 6,264 kWh > threshold",
+      "cy25_kwh": 6264.4,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700000897276",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 3,760 kWh > threshold",
+      "cy25_kwh": 3760.19,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "1900091121958",
+      "type": "NHH",
+      "category": "Resident or Void",
+      "category_source": "Auto: default NHH",
+      "cy25_kwh": 99.4,
+      "months_covered": 3,
+      "account": null
+    },
+    {
+      "mpan": "1900091121967",
+      "type": "NHH",
+      "category": "Resident or Void",
+      "category_source": "Auto: default NHH",
+      "cy25_kwh": 77.9,
+      "months_covered": 3,
+      "account": null
+    }
+  ],
+  "edenbridge-dev": [
+    {
+      "mpan": "1900029428105",
+      "type": "HH",
+      "category": "Landlord (HH)",
+      "category_source": "RFI / Auto: HH meter",
+      "cy25_kwh": 305.3,
+      "months_covered": 5,
+      "account": null
+    }
+  ],
+  "elderswell": [
+    {
+      "mpan": "2700007408969",
+      "type": "HH",
+      "category": "Landlord (HH)",
+      "category_source": "RFI / Auto: HH meter",
+      "cy25_kwh": 153015.6,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007408978",
+      "type": "HH",
+      "category": "Landlord (HH)",
+      "category_source": "RFI / Auto: HH meter",
+      "cy25_kwh": 31226.8,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007408987",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 60309.2,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329721",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 4515.23,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "9387454803",
+      "type": "Gas",
+      "category": "Landlord (Gas)",
+      "category_source": "Auto: Gas MPRN",
+      "cy25_kwh": 1003627.84,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "1050002205319",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,091 kWh > threshold",
+      "cy25_kwh": 2144.7,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329768",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,470 kWh > threshold",
+      "cy25_kwh": 1470.0,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329002",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,207 kWh > threshold",
+      "cy25_kwh": 1207.2,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329387",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,002 kWh > threshold",
+      "cy25_kwh": 1002.1,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329030",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 652 kWh > threshold",
+      "cy25_kwh": 652.3,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329058",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 622 kWh > threshold",
+      "cy25_kwh": 622.11,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329410",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 562 kWh > threshold",
+      "cy25_kwh": 562.2,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329689",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 532 kWh > threshold",
+      "cy25_kwh": 532.4,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329085",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 394 kWh < 500",
+      "cy25_kwh": 394.4,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329563",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 351 kWh < 500",
+      "cy25_kwh": 351.2,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329606",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 333 kWh < 500",
+      "cy25_kwh": 333.4,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329207",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 333 kWh < 500",
+      "cy25_kwh": 333.4,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329554",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 329 kWh < 500",
+      "cy25_kwh": 329.0,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329270",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 323 kWh < 500",
+      "cy25_kwh": 323.15,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329536",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 306 kWh < 500",
+      "cy25_kwh": 306.0,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329545",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 285 kWh < 500",
+      "cy25_kwh": 284.9,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329304",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 268 kWh < 500",
+      "cy25_kwh": 267.7,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329173",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 260 kWh < 500",
+      "cy25_kwh": 260.2,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329261",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 260 kWh < 500",
+      "cy25_kwh": 260.12,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329581",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 250 kWh < 500",
+      "cy25_kwh": 250.1,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329299",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 231 kWh < 500",
+      "cy25_kwh": 231.4,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329128",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 229 kWh < 500",
+      "cy25_kwh": 229.4,
+      "months_covered": 8,
+      "account": null
+    },
+    {
+      "mpan": "2700007329572",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 227 kWh < 500",
+      "cy25_kwh": 227.2,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329651",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 226 kWh < 500",
+      "cy25_kwh": 225.9,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329590",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 206 kWh < 500",
+      "cy25_kwh": 205.9,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329448",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 205 kWh < 500",
+      "cy25_kwh": 205.3,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329420",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 201 kWh < 500",
+      "cy25_kwh": 200.8,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329182",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 200 kWh < 500",
+      "cy25_kwh": 199.7,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329191",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 199 kWh < 500",
+      "cy25_kwh": 198.9,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329350",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 199 kWh < 500",
+      "cy25_kwh": 198.7,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329642",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 196 kWh < 500",
+      "cy25_kwh": 196.5,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329340",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 195 kWh < 500",
+      "cy25_kwh": 194.8,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329225",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 192 kWh < 500",
+      "cy25_kwh": 192.2,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329527",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 185 kWh < 500",
+      "cy25_kwh": 185.3,
+      "months_covered": 6,
+      "account": null
+    },
+    {
+      "mpan": "2700007329322",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 170 kWh < 500",
+      "cy25_kwh": 169.8,
+      "months_covered": 9,
+      "account": null
+    },
+    {
+      "mpan": "2700007329137",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 169 kWh < 500",
+      "cy25_kwh": 168.9,
+      "months_covered": 9,
+      "account": null
+    },
+    {
+      "mpan": "2700007329331",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 167 kWh < 500",
+      "cy25_kwh": 166.8,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700007329119",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 158 kWh < 500",
+      "cy25_kwh": 158.5,
+      "months_covered": 8,
+      "account": null
+    },
+    {
+      "mpan": "2700007329730",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 152 kWh < 500",
+      "cy25_kwh": 151.7,
+      "months_covered": 5,
+      "account": null
+    },
+    {
+      "mpan": "2700007329378",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 83 kWh < 500",
+      "cy25_kwh": 83.3,
+      "months_covered": 3,
+      "account": null
+    },
+    {
+      "mpan": "2700007329484",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 70 kWh < 500",
+      "cy25_kwh": 69.8,
+      "months_covered": 3,
+      "account": null
+    },
+    {
+      "mpan": "2700007329155",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 60 kWh < 500",
+      "cy25_kwh": 60.4,
+      "months_covered": 2,
+      "account": null
+    },
+    {
+      "mpan": "2700007329439",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 33 kWh < 500",
+      "cy25_kwh": 58.6,
+      "months_covered": 2,
+      "account": null
+    },
+    {
+      "mpan": "2700007329633",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 3 kWh < 500",
+      "cy25_kwh": 3.2,
+      "months_covered": 1,
+      "account": null
+    },
+    {
+      "mpan": "2700007329067",
+      "type": "NHH",
+      "category": "Inactive (no consumption)",
+      "category_source": "Auto: 0 kWh CY25",
+      "cy25_kwh": 0.0,
+      "months_covered": 0,
+      "account": null
+    },
+    {
+      "mpan": "2700007329280",
+      "type": "NHH",
+      "category": "Inactive (no consumption)",
+      "category_source": "Auto: 0 kWh CY25",
+      "cy25_kwh": 0.0,
+      "months_covered": 0,
+      "account": null
+    },
+    {
+      "mpan": "2700007329624",
+      "type": "NHH",
+      "category": "Inactive (no consumption)",
+      "category_source": "Auto: 0 kWh CY25",
+      "cy25_kwh": 0.0,
+      "months_covered": 0,
+      "account": null
+    }
+  ],
+  "gifford-lea": [
+    {
+      "mpan": "1300060637737",
+      "type": "HH",
+      "category": "Landlord (HH)",
+      "category_source": "RFI / Auto: HH meter",
+      "cy25_kwh": 658025.8,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "1300060628955",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 0.0,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "7680080600",
+      "type": "Gas",
+      "category": "Landlord (Gas)",
+      "category_source": "Auto: Gas MPRN",
+      "cy25_kwh": 2438453.1,
+      "months_covered": 12,
+      "account": null
+    }
+  ],
+  "great-alne-park": [
+    {
+      "mpan": "2700004078407",
+      "type": "HH",
+      "category": "Landlord (HH)",
+      "category_source": "RFI / Auto: HH meter",
+      "cy25_kwh": 258785.9,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700002761442",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 52171.8,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700006707192",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 19764.7,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700002761424",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 10092.3,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700002761433",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 5119.8,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700006707208",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 4296.1,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700003635562",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 4191.4,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700006707217",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 3995.2,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700003696510",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 3463.5,
+      "months_covered": 12,
+      "account": null
+    }
+  ],
+  "ledian-gardens": [
+    {
+      "mpan": "1900092082315",
+      "type": "HH",
+      "category": "Landlord (HH)",
+      "category_source": "RFI / Auto: HH meter",
+      "cy25_kwh": 273081.6,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "9382768307",
+      "type": "Gas",
+      "category": "Landlord (Gas)",
+      "category_source": "Auto: Gas MPRN",
+      "cy25_kwh": 1129475.75,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "65920700",
+      "type": "Gas",
+      "category": "Landlord (Gas)",
+      "category_source": "Auto: Gas MPRN",
+      "cy25_kwh": 41950.5,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "9382768105",
+      "type": "Gas",
+      "category": "Landlord (Gas)",
+      "category_source": "Auto: Gas MPRN",
+      "cy25_kwh": 6828.9,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "9382768408",
+      "type": "Gas",
+      "category": "Landlord (Gas)",
+      "category_source": "Auto: Gas MPRN",
+      "cy25_kwh": 3256.4,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "1900092593328",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 4,560 kWh > threshold",
+      "cy25_kwh": 4560.1,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092592885",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 4,140 kWh > threshold",
+      "cy25_kwh": 4139.7,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593062",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 3,714 kWh > threshold",
+      "cy25_kwh": 3714.3,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593053",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 3,596 kWh > threshold",
+      "cy25_kwh": 3596.3,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593123",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 3,492 kWh > threshold",
+      "cy25_kwh": 3492.4,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092592849",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 3,371 kWh > threshold",
+      "cy25_kwh": 3371.2,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092592867",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 3,328 kWh > threshold",
+      "cy25_kwh": 3327.8,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092070106",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 3,239 kWh > threshold",
+      "cy25_kwh": 3239.2,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "1900092592858",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 3,002 kWh > threshold",
+      "cy25_kwh": 3002.2,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593008",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,934 kWh > threshold",
+      "cy25_kwh": 2933.6,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092592928",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,878 kWh > threshold",
+      "cy25_kwh": 2878.3,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092592991",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,862 kWh > threshold",
+      "cy25_kwh": 2861.8,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593220",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,750 kWh > threshold",
+      "cy25_kwh": 2749.9,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593179",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,680 kWh > threshold",
+      "cy25_kwh": 2679.6,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593300",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,627 kWh > threshold",
+      "cy25_kwh": 2626.6,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593197",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,615 kWh > threshold",
+      "cy25_kwh": 2615.1,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092592876",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,414 kWh > threshold",
+      "cy25_kwh": 2414.2,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593202",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,336 kWh > threshold",
+      "cy25_kwh": 2336.2,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593035",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,262 kWh > threshold",
+      "cy25_kwh": 2262.4,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593211",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,244 kWh > threshold",
+      "cy25_kwh": 2243.7,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593114",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,242 kWh > threshold",
+      "cy25_kwh": 2241.6,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092592919",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,205 kWh > threshold",
+      "cy25_kwh": 2205.1,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593090",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,190 kWh > threshold",
+      "cy25_kwh": 2190.5,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593132",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,109 kWh > threshold",
+      "cy25_kwh": 2108.6,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593319",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,064 kWh > threshold",
+      "cy25_kwh": 2064.2,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092592894",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,027 kWh > threshold",
+      "cy25_kwh": 2026.9,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593258",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,017 kWh > threshold",
+      "cy25_kwh": 2017.5,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593230",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 2,017 kWh > threshold",
+      "cy25_kwh": 2016.6,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900025234111",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,992 kWh > threshold",
+      "cy25_kwh": 1991.5,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "1900092592982",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,796 kWh > threshold",
+      "cy25_kwh": 1795.6,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593017",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,782 kWh > threshold",
+      "cy25_kwh": 1782.4,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593249",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,772 kWh > threshold",
+      "cy25_kwh": 1771.6,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593150",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,742 kWh > threshold",
+      "cy25_kwh": 1741.9,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092592937",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,645 kWh > threshold",
+      "cy25_kwh": 1644.9,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593105",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,540 kWh > threshold",
+      "cy25_kwh": 1540.0,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092593160",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,515 kWh > threshold",
+      "cy25_kwh": 1515.0,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092069866",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,494 kWh > threshold",
+      "cy25_kwh": 1494.1,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "1900092593026",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,465 kWh > threshold",
+      "cy25_kwh": 1464.6,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092592946",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,460 kWh > threshold",
+      "cy25_kwh": 1460.4,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092592964",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,381 kWh > threshold",
+      "cy25_kwh": 1381.1,
+      "months_covered": 8,
+      "account": null
+    },
+    {
+      "mpan": "1900092593294",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,254 kWh > threshold",
+      "cy25_kwh": 1253.8,
+      "months_covered": 7,
+      "account": null
+    },
+    {
+      "mpan": "1900092592830",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,234 kWh > threshold",
+      "cy25_kwh": 1234.4,
+      "months_covered": 9,
+      "account": null
+    },
+    {
+      "mpan": "1900092592955",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 1,024 kWh > threshold",
+      "cy25_kwh": 1024.4,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092592973",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 956 kWh > threshold",
+      "cy25_kwh": 956.2,
+      "months_covered": 11,
+      "account": null
+    },
+    {
+      "mpan": "1900092070523",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 643 kWh > threshold",
+      "cy25_kwh": 642.8,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "1900092593044",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 637 kWh > threshold",
+      "cy25_kwh": 637.0,
+      "months_covered": 3,
+      "account": null
+    },
+    {
+      "mpan": "1900092070490",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 545 kWh > threshold",
+      "cy25_kwh": 544.6,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "1900092070532",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 515 kWh > threshold",
+      "cy25_kwh": 515.3,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "1900092070417",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 474 kWh < 500",
+      "cy25_kwh": 473.8,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "1900092593188",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 418 kWh < 500",
+      "cy25_kwh": 417.5,
+      "months_covered": 2,
+      "account": null
+    },
+    {
+      "mpan": "1900092070453",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 380 kWh < 500",
+      "cy25_kwh": 380.2,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "1900092070480",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 336 kWh < 500",
+      "cy25_kwh": 336.2,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "1900092593276",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 304 kWh < 500",
+      "cy25_kwh": 303.8,
+      "months_covered": 3,
+      "account": null
+    },
+    {
+      "mpan": "1900092070203",
+      "type": "NHH",
+      "category": "Void - Normal (low)",
+      "category_source": "Auto: NHH, not in RFI, 68 kWh < 500",
+      "cy25_kwh": 68.3,
+      "months_covered": 3,
+      "account": null
+    },
+    {
+      "mpan": "1900092069918",
+      "type": "NHH",
+      "category": "Inactive (no consumption)",
+      "category_source": "Auto: 0 kWh CY25",
+      "cy25_kwh": 0.0,
+      "months_covered": 0,
+      "account": null
+    },
+    {
+      "mpan": "1900092070115",
+      "type": "NHH",
+      "category": "Inactive (no consumption)",
+      "category_source": "Auto: 0 kWh CY25",
+      "cy25_kwh": 0.0,
+      "months_covered": 0,
+      "account": null
+    },
+    {
+      "mpan": "1900092070124",
+      "type": "NHH",
+      "category": "Inactive (no consumption)",
+      "category_source": "Auto: 0 kWh CY25",
+      "cy25_kwh": 0.0,
+      "months_covered": 0,
+      "account": null
+    },
+    {
+      "mpan": "1900092070142",
+      "type": "NHH",
+      "category": "Inactive (no consumption)",
+      "category_source": "Auto: 0 kWh CY25",
+      "cy25_kwh": 0.0,
+      "months_covered": 0,
+      "account": null
+    },
+    {
+      "mpan": "1900092070374",
+      "type": "NHH",
+      "category": "Inactive (no consumption)",
+      "category_source": "Auto: 0 kWh CY25",
+      "cy25_kwh": 0.0,
+      "months_covered": 0,
+      "account": null
+    },
+    {
+      "mpan": "1900092070444",
+      "type": "NHH",
+      "category": "Inactive (no consumption)",
+      "category_source": "Auto: 0 kWh CY25",
+      "cy25_kwh": 0.0,
+      "months_covered": 0,
+      "account": null
+    },
+    {
+      "mpan": "1900092593071",
+      "type": "NHH",
+      "category": "Inactive (no consumption)",
+      "category_source": "Auto: 0 kWh CY25",
+      "cy25_kwh": 0.0,
+      "months_covered": 0,
+      "account": null
+    },
+    {
+      "mpan": "1900092593080",
+      "type": "NHH",
+      "category": "Inactive (no consumption)",
+      "category_source": "Auto: 0 kWh CY25",
+      "cy25_kwh": 0.0,
+      "months_covered": 0,
+      "account": null
+    },
+    {
+      "mpan": "1900092593141",
+      "type": "NHH",
+      "category": "Inactive (no consumption)",
+      "category_source": "Auto: 0 kWh CY25",
+      "cy25_kwh": 0.0,
+      "months_covered": 0,
+      "account": null
+    },
+    {
+      "mpan": "1900092593267",
+      "type": "NHH",
+      "category": "Inactive (no consumption)",
+      "category_source": "Auto: 0 kWh CY25",
+      "cy25_kwh": 0.0,
+      "months_covered": 0,
+      "account": null
+    }
+  ],
+  "little-mount-lake-dev": [
+    {
+      "mpan": "1900036279486",
+      "type": "NHH",
+      "category": "Construction",
+      "category_source": "Auto: Dev site",
+      "cy25_kwh": 881.1,
+      "months_covered": 12,
+      "account": null
+    }
+  ],
+  "millbrook-village": [
+    {
+      "mpan": "2700001623991",
+      "type": "HH",
+      "category": "Landlord (HH)",
+      "category_source": "RFI / Auto: HH meter",
+      "cy25_kwh": 261809.1,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700001623964",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 19547.4,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700001623955",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 15346.3,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700001623982",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 15169.3,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700003685225",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 4619.5,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700001623928",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 4223.71,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700001623937",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 3659.15,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700001623973",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 3086.6,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700001623946",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 2431.8,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700003685234",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 2144.9,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700003745646",
+      "type": "NHH",
+      "category": "Landlord (NHH)",
+      "category_source": "RFI confirmed",
+      "cy25_kwh": 1655.2,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "9318297304",
+      "type": "Gas",
+      "category": "Landlord (Gas)",
+      "category_source": "Auto: Gas MPRN",
+      "cy25_kwh": 142153.6,
+      "months_covered": 12,
+      "account": null
+    },
+    {
+      "mpan": "2700001622942",
+      "type": "NHH",
+      "category": "Void - HIGH CONSUMPTION",
+      "category_source": "Auto: NHH, not in RFI, 4,861 kWh > threshold",
+      "cy25_kwh": 4861.1,
+      "months_covered": 12,
+      "account": null
+    }
+  ],
+  "millfield-green": [
+    {
+      "mpan": "2700007801700",
+      "type": "HH",
+      "category": "Landlord (HH)",
+      "category_source": "RFI / Auto: HH meter",
+      "cy25_kwh": 840266.4,
+      "months_covered": 12,
+      "account": null
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "probed_at": "2026-06-08T17:28:56.658510+00:00",
+  "probe_url": "https://epc.opendatacommunities.org/api/v1/domestic/search?postcode=NG12%205AB&size=5",
+  "auth_state": "unauthenticated",
+  "request_headers": {
+    "Accept": "application/json"
+  },
+  "http_status": 200,
+  "final_url": "https://get-energy-performance-data.communities.gov.uk/?postcode=NG12%205AB&size=5",
+  "content_type": "text/html;charset=utf-8",
+  "bytes": 17186,
+  "status": "retired",
+  "classification": "Legacy epc.opendatacommunities.org returns HTML after redirect - retired. Switch to GOV.UK One Login bulk download at https://get-energy-performance-data.communities.gov.uk/ . Drop downloaded ZIPs at pipeline\\source-data\\epc\\raw and run `python pipeline/readers/read_epc.py parse`."
+}

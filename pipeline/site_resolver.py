@@ -1,70 +1,69 @@
-"""Site name resolver — maps spelling variants across spreadsheets to canonical IDs."""
+"""Site name resolver — maps spelling variants across spreadsheets to canonical IDs.
+
+Demo template version. The 11 canonical IDs are kept identical to the source
+IVG tool (austin-heath, gifford-lea, ...) so URL routes and committed JSON
+keys stay stable; only the human-facing display + ref + variants are
+re-skinned to school names for the fictional Westbrook Academies Trust.
+
+Sonning Common and Edwalton Office (the 2 out-of-scope sites from the source
+tool) are dropped — the demo runs as 11 schools, not 13.
+"""
 
 CANONICAL_SITES = {
     "austin-heath": {
-        "display": "Austin Heath",
-        "ref": "AH",
-        "variants": ["Austin Heath", "Austin Heath Village"],
+        "display": "Beechgrove Primary School",
+        "ref": "BPS",
+        "variants": ["Beechgrove Primary School", "Beechgrove Primary"],
     },
     "gifford-lea": {
-        "display": "Gifford Lea",
-        "ref": "GL",
-        "variants": ["Gifford Lea"],
+        "display": "Whitfield Secondary Academy",
+        "ref": "WSA",
+        "variants": ["Whitfield Secondary Academy", "Whitfield Secondary"],
     },
     "bramshott-place": {
-        "display": "Bramshott Place",
-        "ref": "BP",
-        "variants": ["Bramshott Place"],
+        "display": "Holloway College",
+        "ref": "HOC",
+        "variants": ["Holloway College", "Holloway"],
     },
     "millbrook-village": {
-        "display": "Millbrook Village",
-        "ref": "MV",
-        "variants": ["Millbrook Village"],
+        "display": "Marston Hill C of E Primary",
+        "ref": "MHP",
+        "variants": ["Marston Hill C of E Primary", "Marston Hill"],
     },
     "durrants-village": {
-        "display": "Durrants Village",
-        "ref": "DV",
-        "variants": ["Durrants Village"],
+        "display": "Hartwell University Technical College",
+        "ref": "HUT",
+        "variants": ["Hartwell University Technical College", "Hartwell UTC"],
     },
     "great-alne-park": {
-        "display": "Great Alne Park",
-        "ref": "GAP",
-        "variants": ["Great Alne Park"],
+        "display": "St Margaret's Catholic Secondary",
+        "ref": "STM",
+        "variants": ["St Margaret's Catholic Secondary", "St Margaret's"],
     },
     "ledian-gardens": {
-        "display": "Ledian Gardens",
-        "ref": "LG",
-        "variants": ["Ledian Gardens"],
+        "display": "Eastlea Federation",
+        "ref": "EAF",
+        "variants": ["Eastlea Federation", "Eastlea"],
     },
     "elderswell": {
-        "display": "Elderswell",
-        "ref": "EW",
-        "variants": ["Elderswell"],
+        "display": "Riverdale Free School",
+        "ref": "RVF",
+        "variants": ["Riverdale Free School", "Riverdale"],
     },
     "millfield-green": {
-        "display": "Millfield Green",
-        "ref": "MFG",
-        "variants": ["Millfield Green"],
+        "display": "Penrith Community College",
+        "ref": "PCC",
+        "variants": ["Penrith Community College", "Penrith Community", "Penrith"],
     },
     "ampfield-meadows": {
-        "display": "Ampfield Meadows",
-        "ref": "AM",
-        "variants": ["Ampfield Meadows"],
+        "display": "Aldergate Special Educational Needs School",
+        "ref": "ASN",
+        "variants": ["Aldergate Special Educational Needs School", "Aldergate SEN", "Aldergate"],
     },
     "blendworth-hills": {
-        "display": "Blendworth Hills",
-        "ref": "BH",
-        "variants": ["Blendworth Hills"],
-    },
-    "sonning-common": {
-        "display": "Sonning Common",
-        "ref": "SC",
-        "variants": ["Sonning Common"],
-    },
-    "edwalton-office": {
-        "display": "Edwalton Office",
-        "ref": "HQ",
-        "variants": ["Edwalton Office", "Head Office", "Edwalton Business Park"],
+        "display": "Pennington Pre-Prep & Junior",
+        "ref": "PEP",
+        "variants": ["Pennington Pre-Prep & Junior", "Pennington Prep", "Pennington"],
     },
 }
 
@@ -74,8 +73,16 @@ for site_id, info in CANONICAL_SITES.items():
     for variant in info["variants"]:
         _VARIANT_TO_ID[variant.lower().strip()] = site_id
 
-# Known unmapped sites in source data — flag, don't fail
-KNOWN_UNMAPPED = {"edenbridge", "little mount farm", "portfolio total"}
+# Known unmapped sites in source data — flag, don't fail.
+# Sonning Common + Edwalton Office (the original 2 OOS sites) are listed
+# here so any stale spreadsheet rows still in the source data get
+# classified as "known OOS, expected" rather than "unmapped, surface for
+# investigation."
+KNOWN_UNMAPPED = {
+    "edenbridge", "little mount farm", "portfolio total",
+    "sonning common", "edwalton office", "head office",
+    "edwalton business park",
+}
 
 
 def resolve(name):

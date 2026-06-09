@@ -170,16 +170,16 @@ def main() -> None:
     _write_json(DIST_EIR / "sycous.json", sycous)
     log.append(f"  → wrote sycous.json ({sycous['portfolio']['sites_with_sycous']} sites in Sycous)")
 
-    # ----- Brief 17.5 Part 2: arbnco strip-rule + Elderswell + portfolio recompute -----
+    # ----- Brief 17.5 Part 2: arbnco strip-rule + Riverdale Free School + portfolio recompute -----
     # Mutates reconciliation in place (adds resident_kwh_by_source per site)
     # and recomputes portfolio_inscope.energy.derived_resident_gwh from the
-    # new subfields. Also applies the Elderswell grid_type override.
+    # new subfields. Also applies the Riverdale Free School grid_type override.
     ro_strip.apply_site_overrides(sites, log)
-    # Brief 18 Part 1 — pipeline corrections (Ledian / Sonning phase counts,
-    # Millfield / Ampfield primary_heating) + heating_by_phase block per site.
+    # Brief 18 Part 1 — pipeline corrections (Eastlea / Sonning phase counts,
+    # Penrith Community / Aldergate SEN primary_heating) + heating_by_phase block per site.
     ro_heat.apply(sites, log)
     _write_json(DIST_EIR / "sites.json", sites)
-    log.append("  → re-wrote sites.json (Elderswell override + Brief 18 heating matrix)")
+    log.append("  → re-wrote sites.json (Riverdale Free School override + Brief 18 heating matrix)")
     ro_strip.apply_strip_rule(reconciliation, sycous, log)
     ro_strip.recompute_portfolio_derived_resident_gwh(portfolio, reconciliation, log)
     _write_json(DIST_EIR / "reconciliation.json", reconciliation)

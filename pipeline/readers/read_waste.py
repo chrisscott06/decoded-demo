@@ -3,8 +3,8 @@
 Aggregates the raw waste sheets directly:
   - Convey_Raw       — BIFFA conveyance notes (~2,800 rows, 10 BIFFA sites)
   - Landfill_Raw     — BIFFA disposal-fate per EWC code per site (42 rows)
-  - SWP_Raw          — Millbrook Village monthly waste (SWP contractor)
-  - Ash_Waste_Raw    — Gifford Lea (Ash Waste Services, estimated weights)
+  - SWP_Raw          — Marston Hill C of E Primary monthly waste (SWP contractor)
+  - Ash_Waste_Raw    — Whitfield Secondary Academy (Ash Waste Services, estimated weights)
   - DEFRA_Inputs     — 2025 emission factors (read once, hardcoded as backup)
 
 Critical: does NOT read Site_Summary cached formula values. Those cells are
@@ -219,7 +219,7 @@ def _aggregate_biffa_conveyance(wb, log: list[str]) -> dict[str, float]:
 
 
 # ---------------------------------------------------------------------------
-# ASH (Gifford Lea) — Ash_Waste_Raw
+# ASH (Whitfield Secondary Academy) — Ash_Waste_Raw
 # ---------------------------------------------------------------------------
 
 def _read_gifford_ash(wb, log: list[str]) -> dict[str, Any]:
@@ -281,7 +281,7 @@ def _read_gifford_ash(wb, log: list[str]) -> dict[str, Any]:
 
 
 # ---------------------------------------------------------------------------
-# SWP (Millbrook) — SWP_Raw
+# SWP (Marston Hill) — SWP_Raw
 # ---------------------------------------------------------------------------
 
 # Map SWP "Waste Stream" → canonical stream
@@ -336,7 +336,7 @@ def _read_millbrook_swp(wb, log: list[str]) -> dict[str, Any]:
         rows_read += 1
 
     total = round(sum(disposal.values()), 3)
-    log.append(f"  [Waste] SWP_Raw: {rows_read} CY2025 rows → Millbrook {total:.3f} t")
+    log.append(f"  [Waste] SWP_Raw: {rows_read} CY2025 rows → Marston Hill {total:.3f} t")
 
     return {
         "contractor": "SWP",
@@ -416,7 +416,7 @@ def read_waste(workbook_path: Path, log: list[str]) -> dict[str, Any]:
             "notes": " ".join(notes_parts),
         }
 
-    # Gifford Lea (Ash Waste)
+    # Whitfield Secondary Academy (Ash Waste)
     g_disposal = {k: round(v, 3) for k, v in gifford["disposal"].items()}
     g_streams = {k: round(v, 3) for k, v in gifford["streams"].items()}
     g_by_route, g_emissions = _emissions_for_disposal(g_disposal)
@@ -434,7 +434,7 @@ def read_waste(workbook_path: Path, log: list[str]) -> dict[str, Any]:
         "notes": gifford["notes"],
     }
 
-    # Millbrook (SWP)
+    # Marston Hill (SWP)
     m_disposal = {k: round(v, 3) for k, v in millbrook["disposal"].items()}
     m_streams = {k: round(v, 3) for k, v in millbrook["streams"].items()}
     m_by_route, m_emissions = _emissions_for_disposal(m_disposal)

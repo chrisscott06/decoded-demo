@@ -73,7 +73,7 @@ export default function HeatMapView({ ctx }) {
     }}>
       {/* Chris ask 5 Jun: heat maps look 'the same on every page' even
           though the underlying data IS distinct per site (peak kW
-          varies meaningfully across sites - Austin Heath ~70, MFG
+          varies meaningfully across sites - Beechgrove Primary School ~70, PCC
           ~259). The pattern shape is similar because every site is
           residential and gets normalised against ITS OWN max. Make
           the site-specific peak value loud at the top so the reader

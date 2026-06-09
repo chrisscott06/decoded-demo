@@ -534,7 +534,7 @@ export default function PortfolioMap({ navigate }) {
             /* Chris ask 4 Jun: quadrant-aware placement so the card
                never overflows the page. Default placement was a fixed
                translate(16px, -110%) which left the card overflowing
-               the viewport for markers low on the map (e.g. Millfield
+               the viewport for markers low on the map (e.g. Penrith Community
                Green).
                Logic:
                  - Marker in LEFT half  → card flips to RIGHT of marker

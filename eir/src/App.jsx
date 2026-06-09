@@ -744,7 +744,7 @@ function SiteEnergyMonthlyOverview({ siteId, readyCount, pendingCount, totalHhMp
           the Portfolio Consumption chart carries the landlord/resident
           story portfolio-wide; duplicating it here ate page real-
           estate without adding information density worth the space.
-          For TBC sites (Millbrook/Millfield/Blendworth) the data-
+          For TBC sites (Marston Hill/Penrith Community/Pennington Prep) the data-
           quality story now lives only on Meters + the Portfolio
           chart's TBC bar treatment. */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 48, flexWrap: 'wrap' }}>
@@ -953,9 +953,9 @@ function SiteEnergy({ siteId }) {
 
   /* Brief 24.6 Part 1 - SiteEnergy data-refresh bug fix.
      `useState(readyMpans[0]?.mpan)` only fires on first mount, so
-     when the user navigates Millfield → Austin in the sidebar the
+     when the user navigates Penrith Community → Austin in the sidebar the
      prop changes but the same SiteEnergy instance reconciles and
-     keeps Millfield's `activeMpan` (and therefore Millfield's
+     keeps Penrith Community's `activeMpan` (and therefore Penrith Community's
      loaded `hhData`) on screen. Reset both whenever `siteId`
      changes; the HH-load effect above then runs with the fresh
      MPAN and pulls the new site's data.
@@ -981,7 +981,7 @@ function SiteEnergy({ siteId }) {
      monthly bars + donut; HH tabs share a meter selector strip and
      render full-height below.
      Chris ask 8 Jun - Energy sub-tab now persists across site
-     navigation (Millfield Heat Map → Austin Heath = Austin Heath
+     navigation (Penrith Community Heat Map → Beechgrove Primary School = Beechgrove Primary School
      Heat Map). The previous behaviour reset to 'overview' because
      SiteChapterFade's keyed re-mount on siteId change wiped the
      local `view` state. Lifting `_lastEnergyView` to module scope
@@ -993,7 +993,7 @@ function SiteEnergy({ siteId }) {
   const hhAvailable = readyCount > 0
 
   /* Brief 24 r4 follow-up (Chris ask 4 Jun): when you navigate from a
-     ready-HH site to a pending-HH site (e.g. Eldswell → Ampfield)
+     ready-HH site to a pending-HH site (e.g. Eldswell → Aldergate SEN)
      while a granular view is active, SiteEnergy doesn't remount -
      `view` stayed on "granular". The pill rendered selected-looking
      (coral fill) but the content area showed the pending notice,
@@ -1020,7 +1020,7 @@ function SiteEnergy({ siteId }) {
      Duration / Heat Map / Data Quality), so the outer toggle was
      duplicative. Site Energy now always renders the LoadInspector
      (or the pending notice for sites without HH data). Trade-off
-     surfaced to Chris: 3 pending-HH sites (Bramshott + 2 Ampfield
+     surfaced to Chris: 3 pending-HH sites (Bramshott + 2 Aldergate SEN
      meters) + Edwalton (no HH meter at all) now show only the pending
      notice - they no longer fall back to the Ecotricity monthly chart.
      EnergyChart import retired since this is its only consumer. */

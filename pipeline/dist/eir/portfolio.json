@@ -1,0 +1,297 @@
+{
+  "site_count": 13,
+  "village_count": 12,
+  "office_count": 1,
+  "total_gia_m2": 217314.0,
+  "total_landlord_gia_m2": 38087.0,
+  "total_units_completed": 961,
+  "energy": {
+    "total_electricity_kwh": 8315414.2,
+    "total_gas_kwh": 9353853.0,
+    "total_consumption_kwh": 17669267.2,
+    "total_emissions_actual_tco2e": 2615.08,
+    "total_emissions_national_avg_tco2e": 3630.98,
+    "sites_with_data": 12
+  },
+  "water": {
+    "total_consumption_m3": 17859,
+    "sites_with_confirmed_data": 3,
+    "sites_with_partial_data": 4,
+    "sites_with_missing_data": 6
+  },
+  "waste": {
+    "total_tonnage": 164.056,
+    "total_emissions_scope3_cat5_tco2e": 3.233,
+    "diversion_rate": 0.9994,
+    "sites_with_confirmed_data": 11,
+    "sites_with_partial_data": 1,
+    "sites_with_missing_data": 0,
+    "sites_not_applicable": 1
+  },
+  "data_period": "CY2025",
+  "build_timestamp": "2026-06-08T14:39:16.814167+00:00",
+  "portfolio_inscope": {
+    "site_ids": [
+      "austin-heath",
+      "gifford-lea",
+      "bramshott-place",
+      "millbrook-village",
+      "durrants-village",
+      "great-alne-park",
+      "ledian-gardens",
+      "elderswell",
+      "millfield-green",
+      "ampfield-meadows",
+      "blendworth-hills"
+    ],
+    "site_count": 11,
+    "village_count": 11,
+    "office_count": 0,
+    "total_gia_m2": 217314.0,
+    "total_landlord_gia_m2": 38087.0,
+    "total_units_completed": 961,
+    "energy": {
+      "total_electricity_kwh": 8235123.6,
+      "total_gas_kwh": 9353853.0,
+      "total_consumption_kwh": 17588976.6,
+      "total_emissions_actual_tco2e": 2613.19,
+      "total_emissions_national_avg_tco2e": 3616.76,
+      "sites_with_data": 11,
+      "derived_resident_gwh": 6.943,
+      "derived_resident_breakdown_kwh": {
+        "submetered_elec": 2902313.2,
+        "submetered_heat": 1345309.4,
+        "arbnco_derived_elec": 2695596.91
+      }
+    },
+    "water": {
+      "total_consumption_m3": 17859,
+      "sites_with_confirmed_data": 3,
+      "sites_with_partial_data": 4,
+      "sites_with_missing_data": 4
+    },
+    "waste": {
+      "total_tonnage": 163.961,
+      "total_emissions_scope3_cat5_tco2e": 3.23,
+      "diversion_rate": null,
+      "sites_with_confirmed_data": 10,
+      "sites_with_partial_data": 1,
+      "sites_with_missing_data": 0,
+      "sites_not_applicable": 0
+    }
+  },
+  "gresb_out_of_scope_site_ids": [
+    "edwalton-office",
+    "sonning-common"
+  ],
+  "metering_sankey": {
+    "commodities": {
+      "gas": 12,
+      "elec-hh": 16,
+      "elec-nhh": 44,
+      "elec-void": 128,
+      "elec-other": 19,
+      "sycous-elec": 496,
+      "sycous-heat": 95,
+      "sycous-hhw": 338,
+      "sycous-hw": 63,
+      "sycous-cw": 57,
+      "invisible-resident": 828
+    },
+    "per_site_mpans": {
+      "austin-heath": {
+        "hh": 1,
+        "nhh": 0,
+        "void_betw": 0,
+        "other": 0,
+        "gas": 2
+      },
+      "gifford-lea": {
+        "hh": 1,
+        "nhh": 1,
+        "void_betw": 0,
+        "other": 0,
+        "gas": 1
+      },
+      "bramshott-place": {
+        "hh": 3,
+        "nhh": 14,
+        "void_betw": 25,
+        "other": 4,
+        "gas": 3
+      },
+      "millbrook-village": {
+        "hh": 1,
+        "nhh": 10,
+        "void_betw": 1,
+        "other": 0,
+        "gas": 1
+      },
+      "durrants-village": {
+        "hh": 1,
+        "nhh": 8,
+        "void_betw": 3,
+        "other": 2,
+        "gas": 0
+      },
+      "great-alne-park": {
+        "hh": 1,
+        "nhh": 8,
+        "void_betw": 0,
+        "other": 0,
+        "gas": 0
+      },
+      "ledian-gardens": {
+        "hh": 1,
+        "nhh": 0,
+        "void_betw": 54,
+        "other": 10,
+        "gas": 4
+      },
+      "elderswell": {
+        "hh": 2,
+        "nhh": 2,
+        "void_betw": 44,
+        "other": 3,
+        "gas": 1
+      },
+      "millfield-green": {
+        "hh": 1,
+        "nhh": 0,
+        "void_betw": 0,
+        "other": 0,
+        "gas": 0
+      },
+      "ampfield-meadows": {
+        "hh": 2,
+        "nhh": 1,
+        "void_betw": 0,
+        "other": 0,
+        "gas": 0
+      },
+      "blendworth-hills": {
+        "hh": 2,
+        "nhh": 0,
+        "void_betw": 1,
+        "other": 0,
+        "gas": 0
+      }
+    },
+    "per_site_sycous": {
+      "austin-heath": {
+        "elec": 158,
+        "heat": 0,
+        "hhw": 118,
+        "hw": 0,
+        "cw": 0
+      },
+      "gifford-lea": {
+        "elec": 143,
+        "heat": 0,
+        "hhw": 143,
+        "hw": 0,
+        "cw": 0
+      },
+      "bramshott-place": {
+        "elec": 0,
+        "heat": 0,
+        "hhw": 0,
+        "hw": 0,
+        "cw": 0
+      },
+      "millbrook-village": {
+        "elec": 0,
+        "heat": 0,
+        "hhw": 0,
+        "hw": 0,
+        "cw": 0
+      },
+      "durrants-village": {
+        "elec": 0,
+        "heat": 0,
+        "hhw": 0,
+        "hw": 0,
+        "cw": 0
+      },
+      "great-alne-park": {
+        "elec": 0,
+        "heat": 0,
+        "hhw": 0,
+        "hw": 0,
+        "cw": 0
+      },
+      "ledian-gardens": {
+        "elec": 0,
+        "heat": 63,
+        "hhw": 0,
+        "hw": 63,
+        "cw": 0
+      },
+      "elderswell": {
+        "elec": 0,
+        "heat": 0,
+        "hhw": 77,
+        "hw": 0,
+        "cw": 0
+      },
+      "millfield-green": {
+        "elec": 133,
+        "heat": 0,
+        "hhw": 0,
+        "hw": 0,
+        "cw": 0
+      },
+      "ampfield-meadows": {
+        "elec": 57,
+        "heat": 0,
+        "hhw": 0,
+        "hw": 0,
+        "cw": 57
+      },
+      "blendworth-hills": {
+        "elec": 5,
+        "heat": 32,
+        "hhw": 0,
+        "hw": 0,
+        "cw": 0
+      }
+    },
+    "dno_bno_site_ids": [
+      "bramshott-place",
+      "millbrook-village",
+      "durrants-village",
+      "great-alne-park",
+      "ledian-gardens",
+      "elderswell"
+    ],
+    "dno_bno_resident_estimate": {
+      "bramshott-place": 293,
+      "millbrook-village": 162,
+      "durrants-village": 167,
+      "great-alne-park": 123,
+      "ledian-gardens": 52,
+      "elderswell": 31
+    },
+    "site_order": [
+      "austin-heath",
+      "gifford-lea",
+      "millfield-green",
+      "ampfield-meadows",
+      "blendworth-hills",
+      "millbrook-village",
+      "ledian-gardens",
+      "elderswell",
+      "bramshott-place",
+      "durrants-village",
+      "great-alne-park"
+    ],
+    "totals": {
+      "visible_to_ivg": 1268,
+      "invisible_to_ivg_estimate": 828
+    },
+    "notes": {
+      "estimation": "resident MPAN counts are READ FROM RECONCILIATION (arb_meters - eco_meters per site, electric + gas). NOT estimated from planned units — these are the actual arbnco meter counts. Includes both resident-electric and resident-gas where present (Bramshott has 140 resident gas MPANs in addition to 153 resident electric).",
+      "scope": "All counts are for in-scope sites only (11 of 13). Sonning Common (FY26 launch) and Edwalton Office are excluded. DNO/BNO detection is data-driven: a site is in-channel iff arbnco reports more meters than Ecotricity."
+    }
+  }
+}

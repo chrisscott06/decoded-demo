@@ -241,11 +241,11 @@ export default function Leaderboard({
             style={{
               // Post-Brief-10 user feedback: 13 rows must fit at 1440×900
               // without scroll. Dropping row height 44→34 + tightening gap.
-              // Name column widened (140) for "Bramshott Place"/"Blendworth
-              // Hills" + "Millbrook Village"; value column 80 for "1.3M kWh".
+              // Name column widened (140) for "Holloway College"/"Pennington Prep
+              // Hills" + "Marston Hill C of E Primary"; value column 80 for "1.3M kWh".
               // Brief 14 Part 3: name column widened 140 → 170 to accommodate
               // the 20px site icon + 8px gap + long names like
-              // "Blendworth Hills" / "Bramshott Place".
+              // "Pennington Pre-Prep & Junior" / "Holloway College".
               display: 'grid',
               gridTemplateColumns: '170px 1fr 80px',
               alignItems: 'center',

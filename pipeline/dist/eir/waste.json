@@ -1,0 +1,356 @@
+{
+  "austin-heath": {
+    "id": "austin-heath",
+    "contractor": "BIFFA",
+    "tonnage_total": 10.772,
+    "tonnage_by_stream": {
+      "general": 4.61,
+      "recycling": 2.704,
+      "glass": 2.091,
+      "organic": 1.367,
+      "cardboard": 0.0
+    },
+    "disposal_split": {
+      "landfill": 0.055,
+      "incinerated": 4.555,
+      "recycled": 4.795,
+      "ad": 1.367
+    },
+    "emissions_by_route": {
+      "landfill_tco2e": 0.0245,
+      "incineration_tco2e": 0.097,
+      "recycling_tco2e": 0.1021,
+      "ad_tco2e": 0.0139
+    },
+    "emissions_scope3_cat5_tco2e": 0.237,
+    "diversion_rate": 0.9949,
+    "data_status": "confirmed",
+    "data_period": "CY2025",
+    "notes": "BIFFA disposal-fate aggregated from Landfill_Raw. Conveyance-basis cross-check (Convey_Raw CY2025): 10.772 t."
+  },
+  "bramshott-place": {
+    "id": "bramshott-place",
+    "contractor": "BIFFA",
+    "tonnage_total": 8.97,
+    "tonnage_by_stream": {
+      "general": 4.703,
+      "recycling": 1.12,
+      "glass": 1.782,
+      "organic": 1.365,
+      "cardboard": 0.0
+    },
+    "disposal_split": {
+      "landfill": 0.0,
+      "incinerated": 4.703,
+      "recycled": 2.902,
+      "ad": 1.365
+    },
+    "emissions_by_route": {
+      "landfill_tco2e": 0.0,
+      "incineration_tco2e": 0.1001,
+      "recycling_tco2e": 0.0618,
+      "ad_tco2e": 0.0139
+    },
+    "emissions_scope3_cat5_tco2e": 0.176,
+    "diversion_rate": 1.0,
+    "data_status": "confirmed",
+    "data_period": "CY2025",
+    "notes": "BIFFA disposal-fate aggregated from Landfill_Raw. Conveyance-basis cross-check (Convey_Raw CY2025): 8.970 t."
+  },
+  "durrants-village": {
+    "id": "durrants-village",
+    "contractor": "BIFFA",
+    "tonnage_total": 4.097,
+    "tonnage_by_stream": {
+      "general": 1.79,
+      "recycling": 0.756,
+      "glass": 0.675,
+      "organic": 0.876,
+      "cardboard": 0.0
+    },
+    "disposal_split": {
+      "landfill": 0.0,
+      "incinerated": 1.381,
+      "recycled": 1.84,
+      "ad": 0.876
+    },
+    "emissions_by_route": {
+      "landfill_tco2e": 0.0,
+      "incineration_tco2e": 0.0294,
+      "recycling_tco2e": 0.0392,
+      "ad_tco2e": 0.0089
+    },
+    "emissions_scope3_cat5_tco2e": 0.077,
+    "diversion_rate": 1.0,
+    "data_status": "confirmed",
+    "data_period": "CY2025",
+    "notes": "BIFFA disposal-fate aggregated from Landfill_Raw. Conveyance-basis cross-check (Convey_Raw CY2025): 4.211 t."
+  },
+  "great-alne-park": {
+    "id": "great-alne-park",
+    "contractor": "BIFFA",
+    "tonnage_total": 9.889,
+    "tonnage_by_stream": {
+      "general": 3.622,
+      "recycling": 1.761,
+      "glass": 1.952,
+      "organic": 2.553,
+      "cardboard": 0.0
+    },
+    "disposal_split": {
+      "landfill": 0.038,
+      "incinerated": 3.585,
+      "recycled": 3.713,
+      "ad": 2.553
+    },
+    "emissions_by_route": {
+      "landfill_tco2e": 0.017,
+      "incineration_tco2e": 0.0763,
+      "recycling_tco2e": 0.0791,
+      "ad_tco2e": 0.0261
+    },
+    "emissions_scope3_cat5_tco2e": 0.199,
+    "diversion_rate": 0.9962,
+    "data_status": "confirmed",
+    "data_period": "CY2025",
+    "notes": "BIFFA disposal-fate aggregated from Landfill_Raw. Conveyance-basis cross-check (Convey_Raw CY2025): 9.888 t."
+  },
+  "ledian-gardens": {
+    "id": "ledian-gardens",
+    "contractor": "BIFFA",
+    "tonnage_total": 28.809,
+    "tonnage_by_stream": {
+      "general": 21.583,
+      "recycling": 2.411,
+      "glass": 1.815,
+      "organic": 3.0,
+      "cardboard": 0.0
+    },
+    "disposal_split": {
+      "landfill": 0.0,
+      "incinerated": 21.583,
+      "recycled": 4.226,
+      "ad": 3.0
+    },
+    "emissions_by_route": {
+      "landfill_tco2e": 0.0,
+      "incineration_tco2e": 0.4596,
+      "recycling_tco2e": 0.09,
+      "ad_tco2e": 0.0306
+    },
+    "emissions_scope3_cat5_tco2e": 0.58,
+    "diversion_rate": 1.0,
+    "data_status": "confirmed",
+    "data_period": "CY2025",
+    "notes": "BIFFA disposal-fate aggregated from Landfill_Raw. Conveyance-basis cross-check (Convey_Raw CY2025): 28.809 t."
+  },
+  "elderswell": {
+    "id": "elderswell",
+    "contractor": "BIFFA",
+    "tonnage_total": 19.195,
+    "tonnage_by_stream": {
+      "general": 11.039,
+      "recycling": 3.547,
+      "glass": 2.303,
+      "organic": 2.306,
+      "cardboard": 0.0
+    },
+    "disposal_split": {
+      "landfill": 0.0,
+      "incinerated": 11.039,
+      "recycled": 5.85,
+      "ad": 2.306
+    },
+    "emissions_by_route": {
+      "landfill_tco2e": 0.0,
+      "incineration_tco2e": 0.2351,
+      "recycling_tco2e": 0.1246,
+      "ad_tco2e": 0.0235
+    },
+    "emissions_scope3_cat5_tco2e": 0.383,
+    "diversion_rate": 1.0,
+    "data_status": "confirmed",
+    "data_period": "CY2025",
+    "notes": "BIFFA disposal-fate aggregated from Landfill_Raw. Conveyance-basis cross-check (Convey_Raw CY2025): 19.282 t."
+  },
+  "millfield-green": {
+    "id": "millfield-green",
+    "contractor": "BIFFA",
+    "tonnage_total": 17.903,
+    "tonnage_by_stream": {
+      "general": 10.379,
+      "recycling": 3.827,
+      "glass": 1.467,
+      "organic": 2.223,
+      "cardboard": 0.0
+    },
+    "disposal_split": {
+      "landfill": 0.0,
+      "incinerated": 10.379,
+      "recycled": 5.301,
+      "ad": 2.223
+    },
+    "emissions_by_route": {
+      "landfill_tco2e": 0.0,
+      "incineration_tco2e": 0.221,
+      "recycling_tco2e": 0.1129,
+      "ad_tco2e": 0.0227
+    },
+    "emissions_scope3_cat5_tco2e": 0.357,
+    "diversion_rate": 1.0,
+    "data_status": "confirmed",
+    "data_period": "CY2025",
+    "notes": "BIFFA disposal-fate aggregated from Landfill_Raw. Conveyance-basis cross-check (Convey_Raw CY2025): 18.063 t."
+  },
+  "ampfield-meadows": {
+    "id": "ampfield-meadows",
+    "contractor": "BIFFA",
+    "tonnage_total": 6.976,
+    "tonnage_by_stream": {
+      "general": 2.516,
+      "recycling": 1.693,
+      "glass": 1.192,
+      "organic": 1.575,
+      "cardboard": 0.0
+    },
+    "disposal_split": {
+      "landfill": 0.0,
+      "incinerated": 2.516,
+      "recycled": 2.885,
+      "ad": 1.575
+    },
+    "emissions_by_route": {
+      "landfill_tco2e": 0.0,
+      "incineration_tco2e": 0.0536,
+      "recycling_tco2e": 0.0614,
+      "ad_tco2e": 0.0161
+    },
+    "emissions_scope3_cat5_tco2e": 0.131,
+    "diversion_rate": 1.0,
+    "data_status": "confirmed",
+    "data_period": "CY2025",
+    "notes": "BIFFA disposal-fate aggregated from Landfill_Raw. Conveyance-basis cross-check (Convey_Raw CY2025): 6.976 t."
+  },
+  "blendworth-hills": {
+    "id": "blendworth-hills",
+    "contractor": "BIFFA",
+    "tonnage_total": 5.469,
+    "tonnage_by_stream": {
+      "general": 2.17,
+      "recycling": 1.173,
+      "glass": 1.174,
+      "organic": 0.952,
+      "cardboard": 0.0
+    },
+    "disposal_split": {
+      "landfill": 0.0,
+      "incinerated": 2.17,
+      "recycled": 2.347,
+      "ad": 0.952
+    },
+    "emissions_by_route": {
+      "landfill_tco2e": 0.0,
+      "incineration_tco2e": 0.0462,
+      "recycling_tco2e": 0.05,
+      "ad_tco2e": 0.0097
+    },
+    "emissions_scope3_cat5_tco2e": 0.106,
+    "diversion_rate": 1.0,
+    "data_status": "confirmed",
+    "data_period": "CY2025",
+    "notes": "BIFFA disposal-fate aggregated from Landfill_Raw. Conveyance-basis cross-check (Convey_Raw CY2025): 5.469 t."
+  },
+  "gifford-lea": {
+    "id": "gifford-lea",
+    "contractor": "Ash Waste",
+    "tonnage_total": 31.975,
+    "tonnage_by_stream": {
+      "general": 11.869,
+      "recycling": 2.706,
+      "glass": 9.45,
+      "organic": 5.64,
+      "cardboard": 2.31
+    },
+    "disposal_split": {
+      "landfill": 0.0,
+      "incinerated": 11.869,
+      "recycled": 14.466,
+      "ad": 5.64
+    },
+    "emissions_by_route": {
+      "landfill_tco2e": 0.0,
+      "incineration_tco2e": 0.2527,
+      "recycling_tco2e": 0.308,
+      "ad_tco2e": 0.0576
+    },
+    "emissions_scope3_cat5_tco2e": 0.618,
+    "diversion_rate": 1.0,
+    "data_status": "partial",
+    "data_period": "CY2025",
+    "notes": "Weights ESTIMATED from bin volume × industry-average fill density. Conveyance basis (Ash CY2025 TOTAL row): 31.975 t."
+  },
+  "millbrook-village": {
+    "id": "millbrook-village",
+    "contractor": "SWP",
+    "tonnage_total": 19.906,
+    "tonnage_by_stream": {
+      "general": 5.313,
+      "recycling": 4.343,
+      "glass": 5.05,
+      "organic": 5.2,
+      "cardboard": 0.0
+    },
+    "disposal_split": {
+      "landfill": 0.0,
+      "incinerated": 5.313,
+      "recycled": 9.393,
+      "ad": 5.2
+    },
+    "emissions_by_route": {
+      "landfill_tco2e": 0.0,
+      "incineration_tco2e": 0.1131,
+      "recycling_tco2e": 0.2,
+      "ad_tco2e": 0.0531
+    },
+    "emissions_scope3_cat5_tco2e": 0.366,
+    "diversion_rate": 1.0,
+    "data_status": "confirmed",
+    "data_period": "CY2025",
+    "notes": "Actual weighed data from SWP YTD reports (12 months CY2025)."
+  },
+  "portfolio": {
+    "tonnage_total": 164.056,
+    "tonnage_by_stream": {
+      "general": 79.613,
+      "recycling": 26.117,
+      "glass": 28.951,
+      "organic": 27.057,
+      "cardboard": 2.31
+    },
+    "disposal_split": {
+      "landfill": 0.093,
+      "incinerated": 79.112,
+      "recycled": 57.794,
+      "ad": 27.057
+    },
+    "emissions_by_route": {
+      "landfill_tco2e": 0.0415,
+      "incineration_tco2e": 1.6845,
+      "recycling_tco2e": 1.2307,
+      "ad_tco2e": 0.2761
+    },
+    "emissions_scope3_cat5_tco2e": 3.233,
+    "diversion_rate": 0.9994,
+    "sites_confirmed": 11,
+    "sites_partial": 1,
+    "sites_missing": 0,
+    "sites_not_applicable": 1,
+    "factors_used": {
+      "landfill_kgco2e_per_t": 446.242,
+      "incineration_kgco2e_per_t": 21.294,
+      "recycling_kgco2e_per_t": 21.294,
+      "ad_kgco2e_per_t": 10.204,
+      "source": "DEFRA 2025 (DESNZ Conversion Factors for Company Reporting)"
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "mpans": [
+    {
+      "mpan": "3110000087890",
+      "site_id": "ampfield-meadows",
+      "meter_label": "Aldergate Special Educational Needs School — Energy Centre",
+      "annual_kwh": null,
+      "peak_kw": null,
+      "peak_hh_kwh": null,
+      "years_covered": null,
+      "data_status": "pending",
+      "reason": "Stark export not yet pulled."
+    },
+    {
+      "mpan": "3110000100948",
+      "site_id": "ampfield-meadows",
+      "meter_label": "Aldergate Special Educational Needs School — Main",
+      "annual_kwh": null,
+      "peak_kw": null,
+      "peak_hh_kwh": null,
+      "years_covered": null,
+      "data_status": "pending",
+      "reason": "Stark export not yet pulled."
+    },
+    {
+      "mpan": "1170000537858",
+      "site_id": "austin-heath",
+      "meter_label": "Beechgrove Primary School",
+      "annual_kwh": 231452.3,
+      "peak_kw": 140.0,
+      "peak_hh_kwh": 70.0,
+      "years_covered": 1.851,
+      "data_status": "ready"
+    },
+    {
+      "mpan": "2000054195811",
+      "site_id": "bramshott-place",
+      "meter_label": "Bramshott Clubhouse",
+      "annual_kwh": null,
+      "peak_kw": null,
+      "peak_hh_kwh": null,
+      "years_covered": null,
+      "data_status": "pending",
+      "reason": "Stark export not yet pulled."
+    },
+    {
+      "mpan": "2700000897657",
+      "site_id": "durrants-village",
+      "meter_label": "Hartwell University Technical College",
+      "annual_kwh": 118872.9,
+      "peak_kw": 80.2,
+      "peak_hh_kwh": 40.1,
+      "years_covered": 1.851,
+      "data_status": "ready"
+    },
+    {
+      "mpan": "2700007408969",
+      "site_id": "elderswell",
+      "meter_label": "Riverdale Free School — Electric Room",
+      "annual_kwh": 80115.4,
+      "peak_kw": 50.2,
+      "peak_hh_kwh": 25.1,
+      "years_covered": 1.851,
+      "data_status": "ready"
+    },
+    {
+      "mpan": "2700007408978",
+      "site_id": "elderswell",
+      "meter_label": "Riverdale Free School — Plant Room",
+      "annual_kwh": 16859.4,
+      "peak_kw": 73.8,
+      "peak_hh_kwh": 36.9,
+      "years_covered": 1.851,
+      "data_status": "ready"
+    },
+    {
+      "mpan": "1300060637737",
+      "site_id": "gifford-lea",
+      "meter_label": "Whitfield Secondary Academy",
+      "annual_kwh": 329212.9,
+      "peak_kw": 161.6,
+      "peak_hh_kwh": 80.8,
+      "years_covered": 1.851,
+      "data_status": "ready"
+    },
+    {
+      "mpan": "2700004078407",
+      "site_id": "great-alne-park",
+      "meter_label": "St Margaret's Catholic Secondary",
+      "annual_kwh": 132845.6,
+      "peak_kw": 98.0,
+      "peak_hh_kwh": 49.0,
+      "years_covered": 1.851,
+      "data_status": "ready"
+    },
+    {
+      "mpan": "1900092082315",
+      "site_id": "ledian-gardens",
+      "meter_label": "Eastlea Federation",
+      "annual_kwh": 152523.7,
+      "peak_kw": 78.8,
+      "peak_hh_kwh": 39.4,
+      "years_covered": 1.851,
+      "data_status": "ready"
+    },
+    {
+      "mpan": "2700001623991",
+      "site_id": "millbrook-village",
+      "meter_label": "Springbok Hall (Marston Hill)",
+      "annual_kwh": 129103.1,
+      "peak_kw": 95.8,
+      "peak_hh_kwh": 47.9,
+      "years_covered": 1.851,
+      "data_status": "ready"
+    },
+    {
+      "mpan": "2700007801700",
+      "site_id": "millfield-green",
+      "meter_label": "Penrith Community College",
+      "annual_kwh": 411390.2,
+      "peak_kw": 259.0,
+      "peak_hh_kwh": 129.5,
+      "years_covered": 1.851,
+      "data_status": "ready"
+    }
+  ],
+  "by_site": {
+    "austin-heath": [
+      "1170000537858"
+    ],
+    "gifford-lea": [
+      "1300060637737"
+    ],
+    "ledian-gardens": [
+      "1900092082315"
+    ],
+    "durrants-village": [
+      "2700000897657"
+    ],
+    "millbrook-village": [
+      "2700001623991"
+    ],
+    "great-alne-park": [
+      "2700004078407"
+    ],
+    "elderswell": [
+      "2700007408969",
+      "2700007408978"
+    ],
+    "millfield-green": [
+      "2700007801700"
+    ],
+    "bramshott-place": [
+      "2000054195811"
+    ],
+    "ampfield-meadows": [
+      "3110000087890",
+      "3110000100948"
+    ]
+  }
+}

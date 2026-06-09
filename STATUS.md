@@ -44,6 +44,27 @@ role-named surface the brief asked for). Hex-literal sweep across
 eir/src updated 26 files, 231 substitutions, catching case variants
 and rgba/rgb decimal triples. chart-colors.js JS mirror brought into
 lockstep with the CSS.
-### Phase 3 — anonymise site names (pending)
+### Phase 3 — anonymise site names (2026-06-10)
+11 in-scope IVG site names → 11 school names via a structure-aware
+Python sweep. Pipeline `dist/` data layer (1.9 MB across 17 files,
+not part of the original Phase 0 copy — `dist/` was excluded; brought
+across before this phase since the UI loads from it). Site IDs kept
+identical (austin-heath, gifford-lea, ...) so committed JSON keys
+and URL routes stay stable; only display names + refs changed. The
+2 OOS sites (Sonning Common, Edwalton Office) dropped from every
+data structure that referenced them: top-level keys in sites.json,
+site_summaries.json, _meta.json; array entries by id/ref/display
+match; site_coordinates.json rewritten by hand. pipeline/site_resolver.py
+rewritten — 11 schools, OOS markers added to KNOWN_UNMAPPED so any
+residual spreadsheet rows referencing the old names get classified
+as "known OOS" not "unmapped." Site icon directories renamed
+implicitly (eir/public/sites/<id>/ — IDs preserved, icon.svg
+content kept per Chris's explicit ask). Sonning + Edwalton dirs
+deleted. pipeline/dist/eir/build_log.txt + eir/public/sites/extraction-log.csv
+deleted (engagement history not relevant to the demo). 39 JSON
+files structurally-pruned + renamed; 27 text files renamed (236
+substitutions); narrative copy in PortfolioEnergy + Landing edited
+by hand where it referenced "13 retirement villages" or the OOS
+sites by name.
 ### Phase 4 — randomise headline numbers ±10 % deterministic (pending)
 ### Phase 5 — metadata polish + final sweep (pending)

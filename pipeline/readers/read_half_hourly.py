@@ -21,7 +21,7 @@ Key conventions applied:
   - **Auto-detect columns** by header keyword (date / time / value) so
     future Stark exports with slightly different headers still parse.
 
-Pending MPANs (Bramshott, 2 × Ampfield as of 2026-05-22) get an index
+Pending MPANs (Bramshott, 2 × Aldergate SEN as of 2026-05-22) get an index
 entry with `data_status: "pending"` + reason; no per-MPAN JSON is written.
 The Site Detail HH view renders the pending state for those.
 """
@@ -38,18 +38,18 @@ from pathlib import Path
 # MPAN → site_id mapping (canonical) -----------------------------------------
 
 _MPAN_TO_SITE: dict[str, dict[str, str]] = {
-    "1170000537858": {"site_id": "austin-heath",       "meter_label": "Austin Heath"},
-    "1300060637737": {"site_id": "gifford-lea",        "meter_label": "Gifford Lea"},
-    "1900092082315": {"site_id": "ledian-gardens",     "meter_label": "Ledian Gardens"},
+    "1170000537858": {"site_id": "austin-heath",       "meter_label": "Beechgrove Primary School"},
+    "1300060637737": {"site_id": "gifford-lea",        "meter_label": "Whitfield Secondary Academy"},
+    "1900092082315": {"site_id": "ledian-gardens",     "meter_label": "Eastlea Federation"},
     "2000054195811": {"site_id": "bramshott-place",    "meter_label": "Bramshott Clubhouse"},
-    "2700000897657": {"site_id": "durrants-village",   "meter_label": "Durrants Village"},
-    "2700001623991": {"site_id": "millbrook-village",  "meter_label": "Springbok Hall (Millbrook)"},
-    "2700004078407": {"site_id": "great-alne-park",    "meter_label": "Great Alne Park"},
-    "2700007408969": {"site_id": "elderswell",         "meter_label": "Elderswell — Electric Room"},
-    "2700007408978": {"site_id": "elderswell",         "meter_label": "Elderswell — Plant Room"},
-    "2700007801700": {"site_id": "millfield-green",    "meter_label": "Millfield Green"},
-    "3110000087890": {"site_id": "ampfield-meadows",   "meter_label": "Ampfield Meadows — Energy Centre"},
-    "3110000100948": {"site_id": "ampfield-meadows",   "meter_label": "Ampfield Meadows — Main"},
+    "2700000897657": {"site_id": "durrants-village",   "meter_label": "Hartwell University Technical College"},
+    "2700001623991": {"site_id": "millbrook-village",  "meter_label": "Springbok Hall (Marston Hill)"},
+    "2700004078407": {"site_id": "great-alne-park",    "meter_label": "St Margaret's Catholic Secondary"},
+    "2700007408969": {"site_id": "elderswell",         "meter_label": "Riverdale Free School — Electric Room"},
+    "2700007408978": {"site_id": "elderswell",         "meter_label": "Riverdale Free School — Plant Room"},
+    "2700007801700": {"site_id": "millfield-green",    "meter_label": "Penrith Community College"},
+    "3110000087890": {"site_id": "ampfield-meadows",   "meter_label": "Aldergate Special Educational Needs School — Energy Centre"},
+    "3110000100948": {"site_id": "ampfield-meadows",   "meter_label": "Aldergate Special Educational Needs School — Main"},
 }
 
 _MPAN_RE = re.compile(r"mpan_(\d{13,14})")

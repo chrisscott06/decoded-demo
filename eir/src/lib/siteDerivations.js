@@ -32,7 +32,7 @@ import siteSummaries  from '../data/site_summaries.json'
  * kWh tile, which is misleading. This function returns ONLY the meters
  * that produced the headline landlord figure.
  *
- * For Ledian (worked example from brief):
+ * For Eastlea (worked example from brief):
  *   electricity = 1 (one Landlord HH meter)
  *   gas         = 4 (four Landlord Gas MPRNs)
  */
@@ -158,7 +158,7 @@ export function platformCoverage(siteId) {
   const arbMeterCount = (rec?.arb_meters_elec ?? 0) + (rec?.arb_meters_gas ?? 0)
   /* Brief 24.5 r2 FIX - sycous.json carries `meters_count` (plural),
      not `meter_count`. The previous typo caused all platform-coverage
-     badges to render Sycous as "not present" even at sites like MFG
+     badges to render Sycous as "not present" even at sites like PCC
      with 133 sub-meters. Now reads the right field. */
   const sycMeterCount = sycSite?.meters_count ?? sycSite?.total_meters ?? 0
 
@@ -235,7 +235,7 @@ export function groupedMeterRegister(siteId) {
      The previous Object.entries() iteration treated it as an object-
      keyed payload, so `service` became numeric indexes "0", "1" and
      the real Sycous categories were silently skipped. This is why
-     Millfield Green showed "1 meter" instead of 134 - all 133
+     Penrith Community College showed "1 meter" instead of 134 - all 133
      Sycous-electricity sub-meters were dropped. Now iterating as an
      array; each service becomes its own row in the table. */
   const sycSite = sycousData.by_site?.[siteId]

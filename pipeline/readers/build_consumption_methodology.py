@@ -4,8 +4,8 @@ Layers Total / Landlord / Resident figures on top of the existing
 reconciliation structure, fixing the bulk-site double-counting bug
 that inflated portfolio totals 2-4x at bulk-metered sites.
 
-Background. At bulk-metered sites (Austin, Gifford, Millfield,
-Ampfield, Blendworth) the Portfolio Consumption chart was stacking
+Background. At bulk-metered sites (Austin, Gifford, Penrith Community,
+Aldergate SEN, Pennington Prep) the Portfolio Consumption chart was stacking
 Ecotricity's bulk meter reading + Sycous sub-meter readings as if
 they were independent flows. They're not - Sycous sub-meters sit
 physically downstream of the Ecotricity bulk meter, so adding them
@@ -25,7 +25,7 @@ The fix here:
 * At DNO sites: Total = Ecotricity landlord+void + arbnco-derived;
   Landlord = Eco landlord+void (directly measured);
   Resident = arbnco-derived (estimate-by-subtraction).
-* At DNO+sycous-heat sites (Elderswell): elec follows DNO path; gas
+* At DNO+sycous-heat sites (Riverdale Free School): elec follows DNO path; gas
   follows the boiler path; submetered heat stays as-is in the existing
   resident_kwh_by_source block (out-of-scope for this brief's bar
   chart, surfaced in tooltips).
@@ -68,10 +68,10 @@ from .build_strip_rule import (
 
 
 # Sites where Sycous is *deployed* but currently reads 0 kWh - per
-# Brief 24.8 Part 1 reader-note, "*Blendworth has Sycous deployed but
+# Brief 24.8 Part 1 reader-note, "*Pennington Prep has Sycous deployed but
 # currently shows 0 kWh - treat as bulk-no-Sycous case for now."
 # Detected dynamically (submetered_elec == 0 or None) rather than
-# hard-coded so the Blendworth case auto-recovers when Sycous starts
+# hard-coded so the Pennington Prep case auto-recovers when Sycous starts
 # reporting non-zero numbers without code changes.
 
 # Per the brief: portfolio total electricity should land 6-10 GWh
@@ -132,7 +132,7 @@ def _compute_for_site(sid: str, rec_site: dict) -> dict:
     elif arrangement == "bulk+sycous":
         # Bulk meter is the trusted site total. Resident = Sycous.
         # Landlord = bulk - Sycous (derived). If Sycous deployed but
-        # reads 0 (Blendworth), fall through to the no-sycous branch
+        # reads 0 (Pennington Prep), fall through to the no-sycous branch
         # so we surface honest TBC rather than calling 0-resident
         # "measured".
         total_elec = eco_landlord_elec
@@ -163,7 +163,7 @@ def _compute_for_site(sid: str, rec_site: dict) -> dict:
                 resident_source = "measured"
         else:
             # Sycous deployed but reading 0 - treat as bulk-no-sycous.
-            # Per the brief: Blendworth currently. Auto-recovers when
+            # Per the brief: Pennington Prep currently. Auto-recovers when
             # Sycous starts reporting.
             landlord_elec = None
             resident_elec = None
@@ -179,7 +179,7 @@ def _compute_for_site(sid: str, rec_site: dict) -> dict:
             data_quality_flag = f"{sid}_sycous_zero_reads"
 
     elif arrangement == "bulk-no-sycous":
-        # Millbrook. Total = bulk; split is unknowable until Sycous
+        # Marston Hill. Total = bulk; split is unknowable until Sycous
         # gets deployed.
         total_elec = eco_landlord_elec + eco_void_elec
         landlord_elec = None
@@ -317,7 +317,7 @@ def _aggregate_portfolio(
                 arbnco_derived_elec += re_elec
             elif src == "mixed":
                 # Split per the actual underlying sources. Currently
-                # no site lands here (Ledian + Ampfield read as
+                # no site lands here (Eastlea + Aldergate SEN read as
                 # single-source under the current pipeline) but the
                 # branch is here for the BNO case mentioned in the
                 # brief - half attributed to each. When a site

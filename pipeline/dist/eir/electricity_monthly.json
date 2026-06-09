@@ -1,0 +1,1718 @@
+{
+  "austin-heath": {
+    "monthly": [
+      {
+        "month": "2024-10",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 62166.11,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2024-11",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 77218.09,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2024-12",
+        "hh": 38415.5,
+        "nhh": 0.0,
+        "gas": 313440.22,
+        "elec_landlord": 38415.5,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-01",
+        "hh": 43531.2,
+        "nhh": 0.0,
+        "gas": 567030.78,
+        "elec_landlord": 43531.2,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-02",
+        "hh": 35979.1,
+        "nhh": 0.0,
+        "gas": 96138.79,
+        "elec_landlord": 35979.1,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-03",
+        "hh": 37590.6,
+        "nhh": 0.0,
+        "gas": 280618.01,
+        "elec_landlord": 37590.6,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-04",
+        "hh": 35902.0,
+        "nhh": 0.0,
+        "gas": 196479.12,
+        "elec_landlord": 35902.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-05",
+        "hh": 28032.0,
+        "nhh": 0.0,
+        "gas": 168050.7,
+        "elec_landlord": 28032.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-06",
+        "hh": 27984.0,
+        "nhh": 0.0,
+        "gas": 131324.89,
+        "elec_landlord": 27984.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-07",
+        "hh": 28548.6,
+        "nhh": 0.0,
+        "gas": 122968.25,
+        "elec_landlord": 28548.6,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-08",
+        "hh": 35185.2,
+        "nhh": 0.0,
+        "gas": 121410.36,
+        "elec_landlord": 35185.2,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-09",
+        "hh": 40016.5,
+        "nhh": 0.0,
+        "gas": 135036.48,
+        "elec_landlord": 40016.5,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-10",
+        "hh": 33925.1,
+        "nhh": 0.0,
+        "gas": 191548.46,
+        "elec_landlord": 33925.1,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-11",
+        "hh": 48871.4,
+        "nhh": 0.0,
+        "gas": 220828.13,
+        "elec_landlord": 48871.4,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-12",
+        "hh": 60904.6,
+        "nhh": 0.0,
+        "gas": 243873.91,
+        "elec_landlord": 60904.6,
+        "elec_void": 0.0
+      }
+    ],
+    "cy25": {
+      "hh_kwh": 456470.3,
+      "nhh_kwh": 0.0,
+      "gas_kwh": 2475307.88,
+      "total_kwh": 2931778.18,
+      "landlord_kwh": 2931778.18,
+      "void_kwh": 0.0
+    }
+  },
+  "gifford-lea": {
+    "monthly": [
+      {
+        "month": "2024-10",
+        "hh": 59099.6,
+        "nhh": 0.0,
+        "gas": 171607.83,
+        "elec_landlord": 59099.6,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2024-11",
+        "hh": 61967.9,
+        "nhh": 0.0,
+        "gas": 235603.27,
+        "elec_landlord": 61967.9,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2024-12",
+        "hh": 47726.8,
+        "nhh": 0.0,
+        "gas": 308063.2,
+        "elec_landlord": 47726.8,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-01",
+        "hh": 35487.2,
+        "nhh": 0.0,
+        "gas": 369324.81,
+        "elec_landlord": 35487.2,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-02",
+        "hh": 53672.6,
+        "nhh": 0.0,
+        "gas": 282150.49,
+        "elec_landlord": 53672.6,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-03",
+        "hh": 62295.1,
+        "nhh": 0.0,
+        "gas": 241333.0,
+        "elec_landlord": 62295.1,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-04",
+        "hh": 54982.2,
+        "nhh": 0.0,
+        "gas": 182750.16,
+        "elec_landlord": 54982.2,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-05",
+        "hh": 54085.9,
+        "nhh": 0.0,
+        "gas": 143889.14,
+        "elec_landlord": 54085.9,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-06",
+        "hh": 50586.6,
+        "nhh": 0.0,
+        "gas": 120905.8,
+        "elec_landlord": 50586.6,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-07",
+        "hh": 53205.2,
+        "nhh": 0.0,
+        "gas": 115636.5,
+        "elec_landlord": 53205.2,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-08",
+        "hh": 53493.4,
+        "nhh": 0.0,
+        "gas": 115414.0,
+        "elec_landlord": 53493.4,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-09",
+        "hh": 50692.9,
+        "nhh": 0.0,
+        "gas": 147413.9,
+        "elec_landlord": 50692.9,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-10",
+        "hh": 59249.8,
+        "nhh": 0.0,
+        "gas": 191294.5,
+        "elec_landlord": 59249.8,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-11",
+        "hh": 62237.3,
+        "nhh": 0.0,
+        "gas": 244015.6,
+        "elec_landlord": 62237.3,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-12",
+        "hh": 68037.6,
+        "nhh": 0.0,
+        "gas": 284325.2,
+        "elec_landlord": 68037.6,
+        "elec_void": 0.0
+      }
+    ],
+    "cy25": {
+      "hh_kwh": 658025.8,
+      "nhh_kwh": 0.0,
+      "gas_kwh": 2438453.1,
+      "total_kwh": 3096478.9,
+      "landlord_kwh": 3096478.9,
+      "void_kwh": 0.0
+    }
+  },
+  "bramshott-place": {
+    "monthly": [
+      {
+        "month": "2024-10",
+        "hh": 160.6,
+        "nhh": 3347.96,
+        "gas": 0.0,
+        "elec_landlord": 2658.04,
+        "elec_void": 850.52
+      },
+      {
+        "month": "2024-11",
+        "hh": 2851.1,
+        "nhh": 7829.56,
+        "gas": 37387.6,
+        "elec_landlord": 8091.52,
+        "elec_void": 2589.14
+      },
+      {
+        "month": "2024-12",
+        "hh": 7732.4,
+        "nhh": 17766.3,
+        "gas": 39118.1,
+        "elec_landlord": 19317.46,
+        "elec_void": 6181.24
+      },
+      {
+        "month": "2025-01",
+        "hh": 5377.4,
+        "nhh": 19439.26,
+        "gas": 48305.9,
+        "elec_landlord": 18800.75,
+        "elec_void": 6015.91
+      },
+      {
+        "month": "2025-02",
+        "hh": 2626.9,
+        "nhh": 17443.18,
+        "gas": 41418.0,
+        "elec_landlord": 15204.81,
+        "elec_void": 4865.27
+      },
+      {
+        "month": "2025-03",
+        "hh": 3194.5,
+        "nhh": 12543.14,
+        "gas": 36446.2,
+        "elec_landlord": 11922.62,
+        "elec_void": 3815.03
+      },
+      {
+        "month": "2025-04",
+        "hh": 6507.8,
+        "nhh": 8048.51,
+        "gas": 27703.8,
+        "elec_landlord": 11027.65,
+        "elec_void": 3528.65
+      },
+      {
+        "month": "2025-05",
+        "hh": 6350.4,
+        "nhh": 6985.29,
+        "gas": 21091.9,
+        "elec_landlord": 10102.93,
+        "elec_void": 3232.76
+      },
+      {
+        "month": "2025-06",
+        "hh": 6005.5,
+        "nhh": 4354.76,
+        "gas": 13013.1,
+        "elec_landlord": 7848.78,
+        "elec_void": 2511.47
+      },
+      {
+        "month": "2025-07",
+        "hh": 5631.7,
+        "nhh": 5639.64,
+        "gas": 12517.9,
+        "elec_landlord": 8539.01,
+        "elec_void": 2732.33
+      },
+      {
+        "month": "2025-08",
+        "hh": 5172.9,
+        "nhh": 5002.26,
+        "gas": 60760.02,
+        "elec_landlord": 7708.56,
+        "elec_void": 2466.6
+      },
+      {
+        "month": "2025-09",
+        "hh": 3545.6,
+        "nhh": 5751.94,
+        "gas": 14659.38,
+        "elec_landlord": 7043.69,
+        "elec_void": 2253.85
+      },
+      {
+        "month": "2025-10",
+        "hh": 3320.9,
+        "nhh": 7250.11,
+        "gas": 32181.4,
+        "elec_landlord": 8008.45,
+        "elec_void": 2562.56
+      },
+      {
+        "month": "2025-11",
+        "hh": 4422.9,
+        "nhh": 14653.45,
+        "gas": 42807.7,
+        "elec_landlord": 14451.97,
+        "elec_void": 4624.38
+      },
+      {
+        "month": "2025-12",
+        "hh": 4200.9,
+        "nhh": 19250.24,
+        "gas": 43783.7,
+        "elec_landlord": 17766.25,
+        "elec_void": 5684.89
+      }
+    ],
+    "cy25": {
+      "hh_kwh": 56357.4,
+      "nhh_kwh": 126361.78,
+      "gas_kwh": 394689.0,
+      "total_kwh": 577408.18,
+      "landlord_kwh": 533114.48,
+      "void_kwh": 44293.7
+    }
+  },
+  "millbrook-village": {
+    "monthly": [
+      {
+        "month": "2024-10",
+        "hh": 0.0,
+        "nhh": 6462.1,
+        "gas": 0.0,
+        "elec_landlord": 6369.31,
+        "elec_void": 92.79
+      },
+      {
+        "month": "2024-11",
+        "hh": 22621.9,
+        "nhh": 6159.9,
+        "gas": 17227.3,
+        "elec_landlord": 28368.54,
+        "elec_void": 413.26
+      },
+      {
+        "month": "2024-12",
+        "hh": 25196.1,
+        "nhh": 5958.44,
+        "gas": 19905.3,
+        "elec_landlord": 30707.21,
+        "elec_void": 447.33
+      },
+      {
+        "month": "2025-01",
+        "hh": 28729.7,
+        "nhh": 8983.66,
+        "gas": 13993.1,
+        "elec_landlord": 37171.86,
+        "elec_void": 541.5
+      },
+      {
+        "month": "2025-02",
+        "hh": 24194.0,
+        "nhh": 7553.96,
+        "gas": 20660.3,
+        "elec_landlord": 31292.11,
+        "elec_void": 455.85
+      },
+      {
+        "month": "2025-03",
+        "hh": 23979.5,
+        "nhh": 6502.17,
+        "gas": 8233.3,
+        "elec_landlord": 30044.01,
+        "elec_void": 437.67
+      },
+      {
+        "month": "2025-04",
+        "hh": 19735.4,
+        "nhh": 6416.88,
+        "gas": 12206.75,
+        "elec_landlord": 25776.77,
+        "elec_void": 375.51
+      },
+      {
+        "month": "2025-05",
+        "hh": 18745.3,
+        "nhh": 5635.59,
+        "gas": 10422.79,
+        "elec_landlord": 24030.82,
+        "elec_void": 350.07
+      },
+      {
+        "month": "2025-06",
+        "hh": 18560.1,
+        "nhh": 5163.7,
+        "gas": 7713.0,
+        "elec_landlord": 23383.16,
+        "elec_void": 340.64
+      },
+      {
+        "month": "2025-07",
+        "hh": 21460.6,
+        "nhh": 5400.2,
+        "gas": 7014.63,
+        "elec_landlord": 26475.12,
+        "elec_void": 385.68
+      },
+      {
+        "month": "2025-08",
+        "hh": 20186.2,
+        "nhh": 5419.99,
+        "gas": 7585.47,
+        "elec_landlord": 25238.53,
+        "elec_void": 367.66
+      },
+      {
+        "month": "2025-09",
+        "hh": 18450.7,
+        "nhh": 5874.71,
+        "gas": 9575.35,
+        "elec_landlord": 23976.13,
+        "elec_void": 349.27
+      },
+      {
+        "month": "2025-10",
+        "hh": 19897.1,
+        "nhh": 6574.74,
+        "gas": 11565.23,
+        "elec_landlord": 26091.75,
+        "elec_void": 380.09
+      },
+      {
+        "month": "2025-11",
+        "hh": 22983.2,
+        "nhh": 6184.35,
+        "gas": 13262.97,
+        "elec_landlord": 28748.75,
+        "elec_void": 418.8
+      },
+      {
+        "month": "2025-12",
+        "hh": 24887.3,
+        "nhh": 7035.01,
+        "gas": 19920.69,
+        "elec_landlord": 31463.96,
+        "elec_void": 458.35
+      }
+    ],
+    "cy25": {
+      "hh_kwh": 261809.1,
+      "nhh_kwh": 76744.96,
+      "gas_kwh": 142153.6,
+      "total_kwh": 480707.66,
+      "landlord_kwh": 475846.56,
+      "void_kwh": 4861.1
+    }
+  },
+  "durrants-village": {
+    "monthly": [
+      {
+        "month": "2024-10",
+        "hh": 0.0,
+        "nhh": 28.8,
+        "gas": 0.0,
+        "elec_landlord": 27.27,
+        "elec_void": 1.53
+      },
+      {
+        "month": "2024-11",
+        "hh": 0.0,
+        "nhh": 32.8,
+        "gas": 0.0,
+        "elec_landlord": 31.06,
+        "elec_void": 1.74
+      },
+      {
+        "month": "2024-12",
+        "hh": 21386.5,
+        "nhh": 10354.22,
+        "gas": 0.0,
+        "elec_landlord": 30059.77,
+        "elec_void": 1680.95
+      },
+      {
+        "month": "2025-01",
+        "hh": 25427.1,
+        "nhh": 10805.78,
+        "gas": 0.0,
+        "elec_landlord": 34314.03,
+        "elec_void": 1918.85
+      },
+      {
+        "month": "2025-02",
+        "hh": 22676.4,
+        "nhh": 7522.4,
+        "gas": 0.0,
+        "elec_landlord": 28599.51,
+        "elec_void": 1599.29
+      },
+      {
+        "month": "2025-03",
+        "hh": 21042.8,
+        "nhh": 8467.9,
+        "gas": 0.0,
+        "elec_landlord": 27947.84,
+        "elec_void": 1562.85
+      },
+      {
+        "month": "2025-04",
+        "hh": 18139.1,
+        "nhh": 8417.37,
+        "gas": 0.0,
+        "elec_landlord": 25150.07,
+        "elec_void": 1406.4
+      },
+      {
+        "month": "2025-05",
+        "hh": 17875.3,
+        "nhh": 7133.33,
+        "gas": 0.0,
+        "elec_landlord": 23684.21,
+        "elec_void": 1324.43
+      },
+      {
+        "month": "2025-06",
+        "hh": 17483.2,
+        "nhh": 7342.82,
+        "gas": 0.0,
+        "elec_landlord": 23511.26,
+        "elec_void": 1314.76
+      },
+      {
+        "month": "2025-07",
+        "hh": 18692.6,
+        "nhh": 6370.58,
+        "gas": 0.0,
+        "elec_landlord": 23735.86,
+        "elec_void": 1327.32
+      },
+      {
+        "month": "2025-08",
+        "hh": 17755.3,
+        "nhh": 6506.87,
+        "gas": 0.0,
+        "elec_landlord": 22977.27,
+        "elec_void": 1284.9
+      },
+      {
+        "month": "2025-09",
+        "hh": 17859.6,
+        "nhh": 7355.73,
+        "gas": 0.0,
+        "elec_landlord": 23879.96,
+        "elec_void": 1335.37
+      },
+      {
+        "month": "2025-10",
+        "hh": 18805.9,
+        "nhh": 8308.22,
+        "gas": 0.0,
+        "elec_landlord": 25678.19,
+        "elec_void": 1435.93
+      },
+      {
+        "month": "2025-11",
+        "hh": 20581.2,
+        "nhh": 9454.4,
+        "gas": 0.0,
+        "elec_landlord": 28444.95,
+        "elec_void": 1590.65
+      },
+      {
+        "month": "2025-12",
+        "hh": 22566.5,
+        "nhh": 9140.98,
+        "gas": 0.0,
+        "elec_landlord": 30028.29,
+        "elec_void": 1679.19
+      }
+    ],
+    "cy25": {
+      "hh_kwh": 238905.0,
+      "nhh_kwh": 96826.38,
+      "gas_kwh": 0.0,
+      "total_kwh": 335731.38,
+      "landlord_kwh": 317951.43,
+      "void_kwh": 17779.95
+    }
+  },
+  "great-alne-park": {
+    "monthly": [
+      {
+        "month": "2024-10",
+        "hh": 0.0,
+        "nhh": 4136.9,
+        "gas": 0.0,
+        "elec_landlord": 4136.9,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2024-11",
+        "hh": 0.0,
+        "nhh": 5454.3,
+        "gas": 0.0,
+        "elec_landlord": 5454.3,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2024-12",
+        "hh": 29277.1,
+        "nhh": 10650.1,
+        "gas": 0.0,
+        "elec_landlord": 39927.2,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-01",
+        "hh": 33257.1,
+        "nhh": 10045.1,
+        "gas": 0.0,
+        "elec_landlord": 43302.2,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-02",
+        "hh": 26502.4,
+        "nhh": 8254.79,
+        "gas": 0.0,
+        "elec_landlord": 34757.19,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-03",
+        "hh": 25379.6,
+        "nhh": 8265.4,
+        "gas": 0.0,
+        "elec_landlord": 33645.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-04",
+        "hh": 21758.7,
+        "nhh": 7558.93,
+        "gas": 0.0,
+        "elec_landlord": 29317.63,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-05",
+        "hh": 18380.6,
+        "nhh": 7295.42,
+        "gas": 0.0,
+        "elec_landlord": 25676.02,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-06",
+        "hh": 16954.7,
+        "nhh": 8307.79,
+        "gas": 0.0,
+        "elec_landlord": 25262.49,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-07",
+        "hh": 16167.7,
+        "nhh": 8011.87,
+        "gas": 0.0,
+        "elec_landlord": 24179.57,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-08",
+        "hh": 17420.5,
+        "nhh": 8283.67,
+        "gas": 0.0,
+        "elec_landlord": 25704.17,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-09",
+        "hh": 16739.7,
+        "nhh": 9905.03,
+        "gas": 0.0,
+        "elec_landlord": 26644.73,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-10",
+        "hh": 19568.1,
+        "nhh": 9224.76,
+        "gas": 0.0,
+        "elec_landlord": 28792.86,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-11",
+        "hh": 22117.1,
+        "nhh": 9391.43,
+        "gas": 0.0,
+        "elec_landlord": 31508.53,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-12",
+        "hh": 24539.7,
+        "nhh": 8550.61,
+        "gas": 0.0,
+        "elec_landlord": 33090.31,
+        "elec_void": 0.0
+      }
+    ],
+    "cy25": {
+      "hh_kwh": 258785.9,
+      "nhh_kwh": 103094.8,
+      "gas_kwh": 0.0,
+      "total_kwh": 361880.7,
+      "landlord_kwh": 361880.7,
+      "void_kwh": 0.0
+    }
+  },
+  "ledian-gardens": {
+    "monthly": [
+      {
+        "month": "2024-10",
+        "hh": 28149.8,
+        "nhh": 0.0,
+        "gas": 20003.7,
+        "elec_landlord": 20263.12,
+        "elec_void": 7886.68
+      },
+      {
+        "month": "2024-11",
+        "hh": 27803.2,
+        "nhh": 0.0,
+        "gas": 105261.1,
+        "elec_landlord": 20013.63,
+        "elec_void": 7789.57
+      },
+      {
+        "month": "2024-12",
+        "hh": 30105.0,
+        "nhh": 1047.8,
+        "gas": 135380.35,
+        "elec_landlord": 22424.78,
+        "elec_void": 8728.02
+      },
+      {
+        "month": "2025-01",
+        "hh": 29476.0,
+        "nhh": 1090.9,
+        "gas": 172845.42,
+        "elec_landlord": 22003.03,
+        "elec_void": 8563.87
+      },
+      {
+        "month": "2025-02",
+        "hh": 26617.8,
+        "nhh": 12371.5,
+        "gas": 141716.86,
+        "elec_landlord": 28065.74,
+        "elec_void": 10923.56
+      },
+      {
+        "month": "2025-03",
+        "hh": 23554.6,
+        "nhh": 14024.5,
+        "gas": 132259.29,
+        "elec_landlord": 27050.63,
+        "elec_void": 10528.47
+      },
+      {
+        "month": "2025-04",
+        "hh": 18690.1,
+        "nhh": 10191.42,
+        "gas": 96495.05,
+        "elec_landlord": 20789.83,
+        "elec_void": 8091.68
+      },
+      {
+        "month": "2025-05",
+        "hh": 16187.7,
+        "nhh": 7595.38,
+        "gas": 61923.03,
+        "elec_landlord": 17119.82,
+        "elec_void": 6663.26
+      },
+      {
+        "month": "2025-06",
+        "hh": 13702.2,
+        "nhh": 5881.2,
+        "gas": 49040.4,
+        "elec_landlord": 14096.75,
+        "elec_void": 5486.65
+      },
+      {
+        "month": "2025-07",
+        "hh": 16782.7,
+        "nhh": 5317.9,
+        "gas": 41969.3,
+        "elec_landlord": 15908.72,
+        "elec_void": 6191.88
+      },
+      {
+        "month": "2025-08",
+        "hh": 17525.9,
+        "nhh": 5463.8,
+        "gas": 50067.9,
+        "elec_landlord": 16548.72,
+        "elec_void": 6440.98
+      },
+      {
+        "month": "2025-09",
+        "hh": 18929.4,
+        "nhh": 7172.8,
+        "gas": 70673.4,
+        "elec_landlord": 18789.19,
+        "elec_void": 7313.01
+      },
+      {
+        "month": "2025-10",
+        "hh": 27078.0,
+        "nhh": 9150.5,
+        "gas": 79756.57,
+        "elec_landlord": 26078.43,
+        "elec_void": 10150.07
+      },
+      {
+        "month": "2025-11",
+        "hh": 31242.8,
+        "nhh": 13795.2,
+        "gas": 130388.03,
+        "elec_landlord": 32419.79,
+        "elec_void": 12618.21
+      },
+      {
+        "month": "2025-12",
+        "hh": 33294.4,
+        "nhh": 14231.9,
+        "gas": 154376.3,
+        "elec_landlord": 34210.94,
+        "elec_void": 13315.36
+      }
+    ],
+    "cy25": {
+      "hh_kwh": 273081.6,
+      "nhh_kwh": 106287.0,
+      "gas_kwh": 1181511.55,
+      "total_kwh": 1560880.15,
+      "landlord_kwh": 1454593.15,
+      "void_kwh": 106287.0
+    }
+  },
+  "elderswell": {
+    "monthly": [
+      {
+        "month": "2024-10",
+        "hh": 0.0,
+        "nhh": 8.5,
+        "gas": 77688.69,
+        "elec_landlord": 7.99,
+        "elec_void": 0.51
+      },
+      {
+        "month": "2024-11",
+        "hh": 0.0,
+        "nhh": 68.1,
+        "gas": 99558.54,
+        "elec_landlord": 64.02,
+        "elec_void": 4.08
+      },
+      {
+        "month": "2024-12",
+        "hh": 25679.1,
+        "nhh": 7632.9,
+        "gas": 109031.32,
+        "elec_landlord": 31316.62,
+        "elec_void": 1995.37
+      },
+      {
+        "month": "2025-01",
+        "hh": 25637.7,
+        "nhh": 7933.86,
+        "gas": 137090.04,
+        "elec_landlord": 31560.63,
+        "elec_void": 2010.92
+      },
+      {
+        "month": "2025-02",
+        "hh": 20410.9,
+        "nhh": 6839.47,
+        "gas": 120580.79,
+        "elec_landlord": 25618.08,
+        "elec_void": 1632.29
+      },
+      {
+        "month": "2025-03",
+        "hh": 17432.3,
+        "nhh": 7198.04,
+        "gas": 102368.76,
+        "elec_landlord": 23155.0,
+        "elec_void": 1475.35
+      },
+      {
+        "month": "2025-04",
+        "hh": 11594.7,
+        "nhh": 6725.87,
+        "gas": 84827.38,
+        "elec_landlord": 17223.17,
+        "elec_void": 1097.39
+      },
+      {
+        "month": "2025-05",
+        "hh": 10416.4,
+        "nhh": 6684.71,
+        "gas": 60464.22,
+        "elec_landlord": 16076.76,
+        "elec_void": 1024.35
+      },
+      {
+        "month": "2025-06",
+        "hh": 10230.1,
+        "nhh": 5950.46,
+        "gas": 43112.68,
+        "elec_landlord": 15211.35,
+        "elec_void": 969.21
+      },
+      {
+        "month": "2025-07",
+        "hh": 11538.0,
+        "nhh": 6275.69,
+        "gas": 39552.49,
+        "elec_landlord": 16746.66,
+        "elec_void": 1067.03
+      },
+      {
+        "month": "2025-08",
+        "hh": 11735.4,
+        "nhh": 6730.3,
+        "gas": 47700.09,
+        "elec_landlord": 17359.61,
+        "elec_void": 1106.09
+      },
+      {
+        "month": "2025-09",
+        "hh": 13525.6,
+        "nhh": 6576.91,
+        "gas": 52198.5,
+        "elec_landlord": 18898.38,
+        "elec_void": 1204.13
+      },
+      {
+        "month": "2025-10",
+        "hh": 19320.2,
+        "nhh": 6266.03,
+        "gas": 72960.91,
+        "elec_landlord": 24053.62,
+        "elec_void": 1532.6
+      },
+      {
+        "month": "2025-11",
+        "hh": 15868.3,
+        "nhh": 6809.16,
+        "gas": 103956.29,
+        "elec_landlord": 21319.09,
+        "elec_void": 1358.37
+      },
+      {
+        "month": "2025-12",
+        "hh": 16532.8,
+        "nhh": 6703.51,
+        "gas": 138815.7,
+        "elec_landlord": 21844.47,
+        "elec_void": 1391.84
+      }
+    ],
+    "cy25": {
+      "hh_kwh": 184242.4,
+      "nhh_kwh": 80694.0,
+      "gas_kwh": 1003627.84,
+      "total_kwh": 1268564.24,
+      "landlord_kwh": 1252694.67,
+      "void_kwh": 15869.57
+    }
+  },
+  "millfield-green": {
+    "monthly": [
+      {
+        "month": "2024-10",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2024-11",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2024-12",
+        "hh": 95863.1,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 95863.1,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-01",
+        "hh": 98248.8,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 98248.8,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-02",
+        "hh": 88055.5,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 88055.5,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-03",
+        "hh": 77225.2,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 77225.2,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-04",
+        "hh": 61929.2,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 61929.2,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-05",
+        "hh": 51771.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 51771.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-06",
+        "hh": 39977.1,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 39977.1,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-07",
+        "hh": 40710.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 40710.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-08",
+        "hh": 45513.7,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 45513.7,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-09",
+        "hh": 58111.8,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 58111.8,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-10",
+        "hh": 80716.5,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 80716.5,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-11",
+        "hh": 91593.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 91593.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-12",
+        "hh": 106414.6,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 106414.6,
+        "elec_void": 0.0
+      }
+    ],
+    "cy25": {
+      "hh_kwh": 840266.4,
+      "nhh_kwh": 0.0,
+      "gas_kwh": 0.0,
+      "total_kwh": 840266.4,
+      "landlord_kwh": 840266.4,
+      "void_kwh": 0.0
+    }
+  },
+  "ampfield-meadows": {
+    "monthly": [
+      {
+        "month": "2024-10",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2024-11",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2024-12",
+        "hh": 808.3,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 808.3,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-01",
+        "hh": 917.5,
+        "nhh": 3094.7,
+        "gas": 0.0,
+        "elec_landlord": 4012.2,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-02",
+        "hh": 555.2,
+        "nhh": 4750.3,
+        "gas": 0.0,
+        "elec_landlord": 5305.5,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-03",
+        "hh": 504.2,
+        "nhh": 3538.0,
+        "gas": 0.0,
+        "elec_landlord": 4042.2,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-04",
+        "hh": 48889.8,
+        "nhh": 3817.2,
+        "gas": 0.0,
+        "elec_landlord": 52707.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-05",
+        "hh": 50413.4,
+        "nhh": 2199.7,
+        "gas": 0.0,
+        "elec_landlord": 52613.1,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-06",
+        "hh": 36809.8,
+        "nhh": 1908.2,
+        "gas": 0.0,
+        "elec_landlord": 38718.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-07",
+        "hh": 44302.5,
+        "nhh": 1800.4,
+        "gas": 0.0,
+        "elec_landlord": 46102.9,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-08",
+        "hh": 45420.4,
+        "nhh": 1838.0,
+        "gas": 0.0,
+        "elec_landlord": 47258.4,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-09",
+        "hh": 43615.9,
+        "nhh": 1322.9,
+        "gas": 0.0,
+        "elec_landlord": 44938.8,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-10",
+        "hh": 61643.5,
+        "nhh": 2558.3,
+        "gas": 0.0,
+        "elec_landlord": 64201.8,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-11",
+        "hh": 70781.1,
+        "nhh": 3714.1,
+        "gas": 0.0,
+        "elec_landlord": 74495.2,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-12",
+        "hh": 84670.8,
+        "nhh": 4855.5,
+        "gas": 0.0,
+        "elec_landlord": 89526.3,
+        "elec_void": 0.0
+      }
+    ],
+    "cy25": {
+      "hh_kwh": 488524.1,
+      "nhh_kwh": 35397.3,
+      "gas_kwh": 0.0,
+      "total_kwh": 523921.4,
+      "landlord_kwh": 523921.4,
+      "void_kwh": 0.0
+    }
+  },
+  "blendworth-hills": {
+    "monthly": [
+      {
+        "month": "2024-10",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2024-11",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2024-12",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-01",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-02",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-03",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-04",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-05",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-06",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-07",
+        "hh": 11202.4,
+        "nhh": 27.6,
+        "gas": 0.0,
+        "elec_landlord": 11196.13,
+        "elec_void": 33.87
+      },
+      {
+        "month": "2025-08",
+        "hh": 33999.9,
+        "nhh": 80.2,
+        "gas": 0.0,
+        "elec_landlord": 33977.32,
+        "elec_void": 102.78
+      },
+      {
+        "month": "2025-09",
+        "hh": 40315.1,
+        "nhh": 243.26,
+        "gas": 0.0,
+        "elec_landlord": 40436.05,
+        "elec_void": 122.31
+      },
+      {
+        "month": "2025-10",
+        "hh": 52706.6,
+        "nhh": 283.37,
+        "gas": 0.0,
+        "elec_landlord": 52830.17,
+        "elec_void": 159.8
+      },
+      {
+        "month": "2025-11",
+        "hh": 62665.3,
+        "nhh": 136.05,
+        "gas": 0.0,
+        "elec_landlord": 62611.96,
+        "elec_void": 189.39
+      },
+      {
+        "month": "2025-12",
+        "hh": 78201.3,
+        "nhh": 73.71,
+        "gas": 0.0,
+        "elec_landlord": 78038.96,
+        "elec_void": 236.05
+      }
+    ],
+    "cy25": {
+      "hh_kwh": 279090.6,
+      "nhh_kwh": 844.2,
+      "gas_kwh": 0.0,
+      "total_kwh": 279934.8,
+      "landlord_kwh": 279090.6,
+      "void_kwh": 844.2
+    }
+  },
+  "edenbridge-dev": {
+    "monthly": [
+      {
+        "month": "2024-10",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2024-11",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2024-12",
+        "hh": 121.7,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 121.7,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-01",
+        "hh": 51.1,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 51.1,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-02",
+        "hh": 13.3,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 13.3,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-03",
+        "hh": 236.1,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 236.1,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-04",
+        "hh": 2.9,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 2.9,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-05",
+        "hh": 1.9,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 1.9,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-06",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-07",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-08",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-09",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-10",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-11",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-12",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      }
+    ],
+    "cy25": {
+      "hh_kwh": 305.3,
+      "nhh_kwh": 0.0,
+      "gas_kwh": 0.0,
+      "total_kwh": 305.3,
+      "landlord_kwh": 305.3,
+      "void_kwh": 0.0
+    }
+  },
+  "little-mount-lake-dev": {
+    "monthly": [
+      {
+        "month": "2024-10",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2024-11",
+        "hh": 0.0,
+        "nhh": 0.0,
+        "gas": 0.0,
+        "elec_landlord": 0.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2024-12",
+        "hh": 0.0,
+        "nhh": 99.7,
+        "gas": 0.0,
+        "elec_landlord": 99.7,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-01",
+        "hh": 0.0,
+        "nhh": 0.6,
+        "gas": 0.0,
+        "elec_landlord": 0.6,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-02",
+        "hh": 0.0,
+        "nhh": 87.8,
+        "gas": 0.0,
+        "elec_landlord": 87.8,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-03",
+        "hh": 0.0,
+        "nhh": 86.1,
+        "gas": 0.0,
+        "elec_landlord": 86.1,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-04",
+        "hh": 0.0,
+        "nhh": 75.7,
+        "gas": 0.0,
+        "elec_landlord": 75.7,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-05",
+        "hh": 0.0,
+        "nhh": 73.5,
+        "gas": 0.0,
+        "elec_landlord": 73.5,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-06",
+        "hh": 0.0,
+        "nhh": 67.0,
+        "gas": 0.0,
+        "elec_landlord": 67.0,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-07",
+        "hh": 0.0,
+        "nhh": 68.9,
+        "gas": 0.0,
+        "elec_landlord": 68.9,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-08",
+        "hh": 0.0,
+        "nhh": 70.8,
+        "gas": 0.0,
+        "elec_landlord": 70.8,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-09",
+        "hh": 0.0,
+        "nhh": 76.2,
+        "gas": 0.0,
+        "elec_landlord": 76.2,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-10",
+        "hh": 0.0,
+        "nhh": 83.5,
+        "gas": 0.0,
+        "elec_landlord": 83.5,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-11",
+        "hh": 0.0,
+        "nhh": 92.3,
+        "gas": 0.0,
+        "elec_landlord": 92.3,
+        "elec_void": 0.0
+      },
+      {
+        "month": "2025-12",
+        "hh": 0.0,
+        "nhh": 98.7,
+        "gas": 0.0,
+        "elec_landlord": 98.7,
+        "elec_void": 0.0
+      }
+    ],
+    "cy25": {
+      "hh_kwh": 0.0,
+      "nhh_kwh": 881.1,
+      "gas_kwh": 0.0,
+      "total_kwh": 881.1,
+      "landlord_kwh": 881.1,
+      "void_kwh": 0.0
+    }
+  }
+}

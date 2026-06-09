@@ -16,7 +16,7 @@
  * Ribbon width = meter count. Colour follows the source commodity so
  * the visual story is "this commodity flows through this platform to
  * these sites." The Arbnco channel (resident MPANs at the 5 DNO + BNO
- * sites - Bramshott, Durrants, Great Alne, Elderswell, Ledian) is
+ * sites - Bramshott, Hartwell UTC, St Margaret's, Riverdale Free School, Eastlea) is
  * DASHED + lower opacity because the count is estimated (1 MPAN per
  * planned unit; pipeline doesn't carry the resident total directly).
  *

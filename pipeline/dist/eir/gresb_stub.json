@@ -1,0 +1,36 @@
+{
+  "current_score_2025": 52,
+  "target_score_2026": 62,
+  "portfolio_change": {
+    "assets_2025": 3,
+    "assets_2026": 11
+  },
+  "indicators_summary": {
+    "data_coverage": {
+      "status": "improving",
+      "target_points": 5.5,
+      "current_progress_pct": 35
+    },
+    "policies": {
+      "status": "in_progress",
+      "target_points": 4.3,
+      "current_progress_pct": 50
+    },
+    "green_leases": {
+      "status": "scoping",
+      "target_points": 5.0,
+      "current_progress_pct": 10
+    },
+    "esg_fit_out_guides": {
+      "status": "not_started",
+      "target_points": 3.0,
+      "current_progress_pct": 0
+    },
+    "breeam_in_use": {
+      "status": "scoping",
+      "target_points": 8.5,
+      "current_progress_pct": 0
+    }
+  },
+  "coming_soon_message": "Full GRESB Readiness scorecard arrives Sunday with indicator-by-indicator detail and submission roadmap."
+}

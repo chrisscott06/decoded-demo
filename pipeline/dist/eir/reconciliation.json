@@ -1,0 +1,611 @@
+{
+  "by_site": {
+    "ampfield-meadows": {
+      "eco_landlord_elec_kwh": 523921.4,
+      "eco_void_elec_kwh": 0.0,
+      "eco_gas_kwh": 0.0,
+      "eco_meters_elec": 3,
+      "eco_meters_gas": 0,
+      "arb_elec_kwh": 659269.19,
+      "arb_gas_kwh": 0.0,
+      "arb_meters_elec": 3,
+      "arb_meters_gas": 0,
+      "derived_resident_elec_kwh": 135347.79,
+      "derived_resident_gas_kwh": 0.0,
+      "resident_kwh_by_source": {
+        "submetered_elec": 165242.6,
+        "submetered_heat": null,
+        "arbnco_derived_elec": null,
+        "arbnco_was_stripped": true,
+        "arrangement": "bulk+sycous"
+      },
+      "total_site_kwh": {
+        "electricity": 523921.4,
+        "gas": 0.0,
+        "total": 523921.4
+      },
+      "landlord_kwh": {
+        "electricity": 358678.8,
+        "gas": 0.0,
+        "total": 358678.8,
+        "source": "derived",
+        "tbc_reason": null
+      },
+      "resident_kwh": {
+        "electricity": 165242.6,
+        "gas": 0.0,
+        "total": 165242.6,
+        "source": "measured",
+        "tbc_reason": null
+      },
+      "data_quality_flag": null
+    },
+    "austin-heath": {
+      "eco_landlord_elec_kwh": 456470.3,
+      "eco_void_elec_kwh": 0.0,
+      "eco_gas_kwh": 2475307.88,
+      "eco_meters_elec": 1,
+      "eco_meters_gas": 2,
+      "arb_elec_kwh": 423541.69,
+      "arb_gas_kwh": 2582255.0,
+      "arb_meters_elec": 1,
+      "arb_meters_gas": 2,
+      "derived_resident_elec_kwh": 0.0,
+      "derived_resident_gas_kwh": 106947.12,
+      "resident_kwh_by_source": {
+        "submetered_elec": 233345.9,
+        "submetered_heat": 583792.0,
+        "arbnco_derived_elec": null,
+        "arbnco_was_stripped": true,
+        "arrangement": "bulk+sycous"
+      },
+      "total_site_kwh": {
+        "electricity": 456470.3,
+        "gas": 2475307.88,
+        "total": 2931778.18
+      },
+      "landlord_kwh": {
+        "electricity": 223124.4,
+        "gas": 2475307.88,
+        "total": 2698432.28,
+        "source": "derived",
+        "tbc_reason": null
+      },
+      "resident_kwh": {
+        "electricity": 233345.9,
+        "gas": 0.0,
+        "total": 233345.9,
+        "source": "measured",
+        "tbc_reason": null
+      },
+      "data_quality_flag": null
+    },
+    "blendworth-hills": {
+      "eco_landlord_elec_kwh": 279090.6,
+      "eco_void_elec_kwh": 844.2,
+      "eco_gas_kwh": 0.0,
+      "eco_meters_elec": 3,
+      "eco_meters_gas": 0,
+      "arb_elec_kwh": 548470.69,
+      "arb_gas_kwh": 0.0,
+      "arb_meters_elec": 3,
+      "arb_meters_gas": 0,
+      "derived_resident_elec_kwh": 269380.09,
+      "derived_resident_gas_kwh": 0.0,
+      "resident_kwh_by_source": {
+        "submetered_elec": null,
+        "submetered_heat": null,
+        "arbnco_derived_elec": null,
+        "arbnco_was_stripped": true,
+        "arrangement": "bulk+sycous"
+      },
+      "total_site_kwh": {
+        "electricity": 279090.6,
+        "gas": 0.0,
+        "total": 279090.6
+      },
+      "landlord_kwh": {
+        "electricity": null,
+        "gas": 0.0,
+        "total": 0.0,
+        "source": "TBC",
+        "tbc_reason": "Sycous sub-metering deployed but currently reading zero. NZA is working with IVG and Sycous to bring the sub-meters online; until then the landlord/resident split cannot be derived."
+      },
+      "resident_kwh": {
+        "electricity": null,
+        "gas": 0.0,
+        "total": 0.0,
+        "source": "TBC",
+        "tbc_reason": "Sycous sub-metering deployed but currently reading zero. NZA is working with IVG and Sycous to bring the sub-meters online; until then the landlord/resident split cannot be derived."
+      },
+      "data_quality_flag": "blendworth-hills_sycous_zero_reads"
+    },
+    "bramshott-place": {
+      "eco_landlord_elec_kwh": 138425.48,
+      "eco_void_elec_kwh": 44293.7,
+      "eco_gas_kwh": 394689.0,
+      "eco_meters_elec": 46,
+      "eco_meters_gas": 3,
+      "arb_elec_kwh": 783105.19,
+      "arb_gas_kwh": 1936238.0,
+      "arb_meters_elec": 199,
+      "arb_meters_gas": 143,
+      "derived_resident_elec_kwh": 644679.71,
+      "derived_resident_gas_kwh": 1541549.0,
+      "resident_kwh_by_source": {
+        "submetered_elec": null,
+        "submetered_heat": null,
+        "arbnco_derived_elec": 644679.71,
+        "arbnco_was_stripped": false,
+        "arrangement": "dno"
+      },
+      "total_site_kwh": {
+        "electricity": 827398.89,
+        "gas": 394689.0,
+        "total": 1222087.89
+      },
+      "landlord_kwh": {
+        "electricity": 182719.18,
+        "gas": 394689.0,
+        "total": 577408.18,
+        "source": "measured",
+        "tbc_reason": null
+      },
+      "resident_kwh": {
+        "electricity": 644679.71,
+        "gas": 0.0,
+        "total": 644679.71,
+        "source": "derived",
+        "tbc_reason": null
+      },
+      "data_quality_flag": null
+    },
+    "durrants-village": {
+      "eco_landlord_elec_kwh": 317951.43,
+      "eco_void_elec_kwh": 17602.65,
+      "eco_gas_kwh": 0.0,
+      "eco_meters_elec": 14,
+      "eco_meters_gas": 0,
+      "arb_elec_kwh": 1285363.29,
+      "arb_gas_kwh": 0.0,
+      "arb_meters_elec": 181,
+      "arb_meters_gas": 0,
+      "derived_resident_elec_kwh": 967411.86,
+      "derived_resident_gas_kwh": 0.0,
+      "resident_kwh_by_source": {
+        "submetered_elec": null,
+        "submetered_heat": null,
+        "arbnco_derived_elec": 967411.86,
+        "arbnco_was_stripped": false,
+        "arrangement": "dno"
+      },
+      "total_site_kwh": {
+        "electricity": 1302965.94,
+        "gas": 0.0,
+        "total": 1302965.94
+      },
+      "landlord_kwh": {
+        "electricity": 335554.08,
+        "gas": 0.0,
+        "total": 335554.08,
+        "source": "measured",
+        "tbc_reason": null
+      },
+      "resident_kwh": {
+        "electricity": 967411.86,
+        "gas": 0.0,
+        "total": 967411.86,
+        "source": "derived",
+        "tbc_reason": null
+      },
+      "data_quality_flag": null
+    },
+    "edenbridge-dev": {
+      "eco_landlord_elec_kwh": 305.3,
+      "eco_void_elec_kwh": 0.0,
+      "eco_gas_kwh": 0.0,
+      "eco_meters_elec": 1,
+      "eco_meters_gas": 0,
+      "arb_elec_kwh": 0.0,
+      "arb_gas_kwh": 0.0,
+      "arb_meters_elec": 1,
+      "arb_meters_gas": 0,
+      "derived_resident_elec_kwh": 0.0,
+      "derived_resident_gas_kwh": 0.0,
+      "resident_kwh_by_source": {
+        "submetered_elec": null,
+        "submetered_heat": null,
+        "arbnco_derived_elec": null,
+        "arbnco_was_stripped": false,
+        "arrangement": "unclassified"
+      },
+      "total_site_kwh": {
+        "electricity": null,
+        "gas": 0.0,
+        "total": 0.0
+      },
+      "landlord_kwh": {
+        "electricity": null,
+        "gas": 0.0,
+        "total": 0.0,
+        "source": "unclassified",
+        "tbc_reason": null
+      },
+      "resident_kwh": {
+        "electricity": null,
+        "gas": 0.0,
+        "total": 0.0,
+        "source": "unclassified",
+        "tbc_reason": null
+      },
+      "data_quality_flag": "edenbridge-dev_unclassified_arrangement"
+    },
+    "elderswell": {
+      "eco_landlord_elec_kwh": 249066.83,
+      "eco_void_elec_kwh": 15869.57,
+      "eco_gas_kwh": 1003627.84,
+      "eco_meters_elec": 51,
+      "eco_meters_gas": 1,
+      "arb_elec_kwh": 405964.08,
+      "arb_gas_kwh": 986236.0,
+      "arb_meters_elec": 82,
+      "arb_meters_gas": 1,
+      "derived_resident_elec_kwh": 156897.25,
+      "derived_resident_gas_kwh": 0.0,
+      "resident_kwh_by_source": {
+        "submetered_elec": null,
+        "submetered_heat": 73787.1,
+        "arbnco_derived_elec": 156897.25,
+        "arbnco_was_stripped": false,
+        "arrangement": "dno+sycous-heat"
+      },
+      "total_site_kwh": {
+        "electricity": 421833.65,
+        "gas": 1003627.84,
+        "total": 1425461.49
+      },
+      "landlord_kwh": {
+        "electricity": 264936.4,
+        "gas": 1003627.84,
+        "total": 1268564.24,
+        "source": "measured",
+        "tbc_reason": null
+      },
+      "resident_kwh": {
+        "electricity": 156897.25,
+        "gas": 0.0,
+        "total": 156897.25,
+        "source": "derived",
+        "tbc_reason": null
+      },
+      "data_quality_flag": null
+    },
+    "gifford-lea": {
+      "eco_landlord_elec_kwh": 658025.8,
+      "eco_void_elec_kwh": 0.0,
+      "eco_gas_kwh": 2438453.1,
+      "eco_meters_elec": 2,
+      "eco_meters_gas": 1,
+      "arb_elec_kwh": 630707.69,
+      "arb_gas_kwh": 2448995.0,
+      "arb_meters_elec": 2,
+      "arb_meters_gas": 1,
+      "derived_resident_elec_kwh": 0.0,
+      "derived_resident_gas_kwh": 10541.9,
+      "resident_kwh_by_source": {
+        "submetered_elec": 252187.5,
+        "submetered_heat": 687730.3,
+        "arbnco_derived_elec": null,
+        "arbnco_was_stripped": true,
+        "arrangement": "bulk+sycous"
+      },
+      "total_site_kwh": {
+        "electricity": 658025.8,
+        "gas": 2438453.1,
+        "total": 3096478.9
+      },
+      "landlord_kwh": {
+        "electricity": 405838.3,
+        "gas": 2438453.1,
+        "total": 2844291.4,
+        "source": "derived",
+        "tbc_reason": null
+      },
+      "resident_kwh": {
+        "electricity": 252187.5,
+        "gas": 0.0,
+        "total": 252187.5,
+        "source": "measured",
+        "tbc_reason": null
+      },
+      "data_quality_flag": null
+    },
+    "great-alne-park": {
+      "eco_landlord_elec_kwh": 361880.7,
+      "eco_void_elec_kwh": 0.0,
+      "eco_gas_kwh": 0.0,
+      "eco_meters_elec": 9,
+      "eco_meters_gas": 0,
+      "arb_elec_kwh": 1047047.4,
+      "arb_gas_kwh": 0.0,
+      "arb_meters_elec": 132,
+      "arb_meters_gas": 0,
+      "derived_resident_elec_kwh": 685166.7,
+      "derived_resident_gas_kwh": 0.0,
+      "resident_kwh_by_source": {
+        "submetered_elec": null,
+        "submetered_heat": null,
+        "arbnco_derived_elec": 685166.7,
+        "arbnco_was_stripped": false,
+        "arrangement": "dno"
+      },
+      "total_site_kwh": {
+        "electricity": 1047047.4,
+        "gas": 0.0,
+        "total": 1047047.4
+      },
+      "landlord_kwh": {
+        "electricity": 361880.7,
+        "gas": 0.0,
+        "total": 361880.7,
+        "source": "measured",
+        "tbc_reason": null
+      },
+      "resident_kwh": {
+        "electricity": 685166.7,
+        "gas": 0.0,
+        "total": 685166.7,
+        "source": "derived",
+        "tbc_reason": null
+      },
+      "data_quality_flag": null
+    },
+    "ledian-gardens": {
+      "eco_landlord_elec_kwh": 273081.6,
+      "eco_void_elec_kwh": 106287.0,
+      "eco_gas_kwh": 1181511.55,
+      "eco_meters_elec": 65,
+      "eco_meters_gas": 4,
+      "arb_elec_kwh": 514522.99,
+      "arb_gas_kwh": 1252423.0,
+      "arb_meters_elec": 116,
+      "arb_meters_gas": 5,
+      "derived_resident_elec_kwh": 241441.39,
+      "derived_resident_gas_kwh": 70911.45,
+      "resident_kwh_by_source": {
+        "submetered_elec": null,
+        "submetered_heat": null,
+        "arbnco_derived_elec": 241441.39,
+        "arbnco_was_stripped": false,
+        "arrangement": "dno"
+      },
+      "total_site_kwh": {
+        "electricity": 620809.99,
+        "gas": 1181511.55,
+        "total": 1802321.54
+      },
+      "landlord_kwh": {
+        "electricity": 379368.6,
+        "gas": 1181511.55,
+        "total": 1560880.15,
+        "source": "measured",
+        "tbc_reason": null
+      },
+      "resident_kwh": {
+        "electricity": 241441.39,
+        "gas": 0.0,
+        "total": 241441.39,
+        "source": "derived",
+        "tbc_reason": null
+      },
+      "data_quality_flag": null
+    },
+    "little-mount-lake-dev": {
+      "eco_landlord_elec_kwh": 881.1,
+      "eco_void_elec_kwh": 0.0,
+      "eco_gas_kwh": 0.0,
+      "eco_meters_elec": 1,
+      "eco_meters_gas": 0,
+      "arb_elec_kwh": 0.0,
+      "arb_gas_kwh": 0.0,
+      "arb_meters_elec": 2,
+      "arb_meters_gas": 0,
+      "derived_resident_elec_kwh": 0.0,
+      "derived_resident_gas_kwh": 0.0,
+      "resident_kwh_by_source": {
+        "submetered_elec": null,
+        "submetered_heat": null,
+        "arbnco_derived_elec": null,
+        "arbnco_was_stripped": false,
+        "arrangement": "unclassified"
+      },
+      "total_site_kwh": {
+        "electricity": null,
+        "gas": 0.0,
+        "total": 0.0
+      },
+      "landlord_kwh": {
+        "electricity": null,
+        "gas": 0.0,
+        "total": 0.0,
+        "source": "unclassified",
+        "tbc_reason": null
+      },
+      "resident_kwh": {
+        "electricity": null,
+        "gas": 0.0,
+        "total": 0.0,
+        "source": "unclassified",
+        "tbc_reason": null
+      },
+      "data_quality_flag": "little-mount-lake-dev_unclassified_arrangement"
+    },
+    "millbrook-village": {
+      "eco_landlord_elec_kwh": 333692.96,
+      "eco_void_elec_kwh": 4861.1,
+      "eco_gas_kwh": 142153.6,
+      "eco_meters_elec": 12,
+      "eco_meters_gas": 1,
+      "arb_elec_kwh": 1122643.69,
+      "arb_gas_kwh": 147706.0,
+      "arb_meters_elec": 174,
+      "arb_meters_gas": 1,
+      "derived_resident_elec_kwh": 788950.73,
+      "derived_resident_gas_kwh": 5552.4,
+      "resident_kwh_by_source": {
+        "submetered_elec": null,
+        "submetered_heat": null,
+        "arbnco_derived_elec": null,
+        "arbnco_was_stripped": true,
+        "arrangement": "bulk-no-sycous"
+      },
+      "total_site_kwh": {
+        "electricity": 338554.06,
+        "gas": 142153.6,
+        "total": 480707.66
+      },
+      "landlord_kwh": {
+        "electricity": null,
+        "gas": 142153.6,
+        "total": 142153.6,
+        "source": "TBC",
+        "tbc_reason": "Bulk-metered site with no Sycous sub-metering deployed. The landlord/resident split cannot be derived without sub-meter data. NZA is working with IVG to deploy Sycous."
+      },
+      "resident_kwh": {
+        "electricity": null,
+        "gas": 0.0,
+        "total": 0.0,
+        "source": "TBC",
+        "tbc_reason": "Bulk-metered site with no Sycous sub-metering deployed. The landlord/resident split cannot be derived without sub-meter data. NZA is working with IVG to deploy Sycous."
+      },
+      "data_quality_flag": "millbrook-village_no_sycous"
+    },
+    "millfield-green": {
+      "eco_landlord_elec_kwh": 840266.4,
+      "eco_void_elec_kwh": 0.0,
+      "eco_gas_kwh": 0.0,
+      "eco_meters_elec": 1,
+      "eco_meters_gas": 0,
+      "arb_elec_kwh": 814487.7,
+      "arb_gas_kwh": 0.0,
+      "arb_meters_elec": 1,
+      "arb_meters_gas": 0,
+      "derived_resident_elec_kwh": 0.0,
+      "derived_resident_gas_kwh": 0.0,
+      "resident_kwh_by_source": {
+        "submetered_elec": 2251537.2,
+        "submetered_heat": null,
+        "arbnco_derived_elec": null,
+        "arbnco_was_stripped": false,
+        "arrangement": "bulk+sycous"
+      },
+      "total_site_kwh": {
+        "electricity": 840266.4,
+        "gas": 0.0,
+        "total": 840266.4
+      },
+      "landlord_kwh": {
+        "electricity": null,
+        "gas": 0.0,
+        "total": 0.0,
+        "source": "TBC",
+        "tbc_reason": "Sycous sub-meter readings exceed the bulk meter total, which is physically impossible if both measure electricity. NZA is investigating with IVG and Sycous to determine whether the Sycous data is mis-categorised or has a units/pipeline error. Until resolved, only the bulk meter total is reliable."
+      },
+      "resident_kwh": {
+        "electricity": null,
+        "gas": 0.0,
+        "total": 0.0,
+        "source": "TBC",
+        "tbc_reason": "Sycous sub-meter readings exceed the bulk meter total, which is physically impossible if both measure electricity. NZA is investigating with IVG and Sycous to determine whether the Sycous data is mis-categorised or has a units/pipeline error. Until resolved, only the bulk meter total is reliable."
+      },
+      "data_quality_flag": "millfield-green_sycous_anomaly"
+    }
+  },
+  "portfolio": {
+    "eco_landlord_elec_kwh": 4509907.29,
+    "eco_void_elec_kwh": 189758.22,
+    "eco_gas_kwh": 7635742.97,
+    "arb_elec_kwh": 8309120.9,
+    "arb_gas_kwh": 9353853.0,
+    "derived_resident_elec_kwh": 3889275.52,
+    "derived_resident_gas_kwh": 1735501.87,
+    "eco_meters_total": 222,
+    "arb_meters_total": 1051,
+    "methodology_v2": {
+      "total_kwh": {
+        "electricity": 7316384.43,
+        "gas": 7635742.97,
+        "total": 14952127.4
+      },
+      "landlord_kwh": {
+        "electricity": 2512100.46,
+        "gas": 7493589.37,
+        "total": 10005689.83
+      },
+      "resident_kwh": {
+        "electricity": 3346372.91,
+        "gas": 0.0,
+        "total": 3346372.91,
+        "by_source": {
+          "sycous_measured_elec": 650776.0,
+          "arbnco_derived_elec": 2695596.91
+        }
+      },
+      "sites_with_full_data": 8,
+      "sites_with_tbc": [
+        "millbrook-village",
+        "millfield-green",
+        "blendworth-hills"
+      ],
+      "in_scope_count": 11
+    }
+  },
+  "voids": {
+    "by_site": {
+      "blendworth-hills": {
+        "high_count": 1,
+        "normal_count": 0,
+        "inactive_count": 0,
+        "high_kwh": 844.2
+      },
+      "bramshott-place": {
+        "high_count": 21,
+        "normal_count": 4,
+        "inactive_count": 4,
+        "high_kwh": 42914.8
+      },
+      "durrants-village": {
+        "high_count": 3,
+        "normal_count": 0,
+        "inactive_count": 0,
+        "high_kwh": 17602.65
+      },
+      "elderswell": {
+        "high_count": 8,
+        "normal_count": 36,
+        "inactive_count": 3,
+        "high_kwh": 8193.01
+      },
+      "ledian-gardens": {
+        "high_count": 48,
+        "normal_count": 6,
+        "inactive_count": 10,
+        "high_kwh": 104307.2
+      },
+      "millbrook-village": {
+        "high_count": 1,
+        "normal_count": 0,
+        "inactive_count": 0,
+        "high_kwh": 4861.1
+      }
+    },
+    "portfolio": {
+      "total_voids": 145,
+      "high_voids": 82,
+      "normal_voids": 46,
+      "inactive_voids": 17,
+      "total_high_kwh": 178722.96,
+      "estimated_annual_cost_gbp": 49133.97
+    }
+  }
+}

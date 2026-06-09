@@ -22,7 +22,7 @@ from site_resolver import CANONICAL_SITES, is_known_unmapped, resolve
 
 # Display names used in this workbook that aren't in the canonical resolver's variants.
 _EXTRA_NAMES = {
-    "Austin Heath Village": "austin-heath",
+    "Beechgrove Primary School": "austin-heath",
 }
 
 

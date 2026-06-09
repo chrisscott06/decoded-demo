@@ -227,7 +227,7 @@ export default function PortfolioEnergy({ subSubTab }) {
                  (Ecotricity bulk at bulk sites; Eco + arbnco at DNO/BNO)
      Landlord  → bar = landlord_kwh.{gas, electricity}
                  (measured at DNO/BNO; derived bulk-minus-Sycous at
-                  bulk+Sycous; TBC at Millfield/Millbrook/Blendworth)
+                  bulk+Sycous; TBC at Penrith Community/Marston Hill/Pennington Prep)
      Resident  → bar = resident_kwh.{gas, electricity}
                  (Sycous-measured at bulk+Sycous; arbnco-derived at
                   DNO; TBC at the same three sites)
@@ -239,7 +239,7 @@ export default function PortfolioEnergy({ subSubTab }) {
    visible but no bar drawn - the filter behaviour is honest about
    "this site isn't in scope for this lens" without hiding it.
 
-   TBC sites (Millfield, Millbrook, Blendworth in CY25) get a thin
+   TBC sites (Penrith Community, Marston Hill, Pennington Prep in CY25) get a thin
    striped grey bar at the chart baseline in Landlord and Resident
    views, with hover tooltip explaining the data-quality reason. Total
    view shows them with normal bars (the bulk meter total is trusted
@@ -504,10 +504,10 @@ function ConsumptionPanes() {
             tokens were already wired in Part 2; this rewrite aligns
             the surrounding prose to the corrected figures + adds
             honest TBC framing for the three sites with pending splits
-            (Millbrook, Millfield, Blendworth). Headers stay as the
+            (Marston Hill, Penrith Community, Pennington Prep). Headers stay as the
             plain noun phrases Brief 24.7 established. */}
         <NarrativePara title="What Westbrook used in CY2025.">
-          Westbrook Academies Trust operates 13 retirement villages. 2 are out of scope for this GRESB reporting cycle - one is the head office (Edwalton) and the other only became operational in 2026 (Sonning Common, still under construction). Across the remaining 11 sites in CY2025, Westbrook used{' '}
+          Westbrook Academies Trust runs 11 schools across England. Across all 11 sites in CY2025, the Trust used{' '}
           <Token>{fmtGwh(inScopeTotals.total)} GWh</Token> of energy - split as{' '}
           <Token>{fmtGwh(t_elec_total)} GWh</Token> of electricity and{' '}
           <Token>{fmtGwh(t_gas_total)} GWh</Token> of gas. Gas accounts for{' '}
@@ -516,7 +516,7 @@ function ConsumptionPanes() {
         </NarrativePara>
 
         <NarrativePara title="Why some sites use much more than others.">
-          Five sites carry roughly <Token>{top5_pct}%</Token> of the total energy - Gifford Lea, Austin Heath, Ledian Gardens, Elderswell, and Durrants Village. The first four run gas-fired heating in some form: Gifford Lea and Austin Heath via central combined heat and power (CHP) plants serving every home from one source, Ledian Gardens via a mix of gas heat network and air-source heat pumps (ASHP) across its three phases, Elderswell via a heat network at its village centre with individual heat pumps in apartments. Durrants Village is the outlier - electricity-only throughout - but it supports a large resident base which lifts its total close to the heat-network sites'. Bramshott Place, with individual gas boilers in each home, sits just below the top five.
+          Five sites carry roughly <Token>{top5_pct}%</Token> of the total energy - Whitfield Secondary Academy, Beechgrove Primary School, Eastlea Federation, Riverdale Free School, and Hartwell University Technical College. The first four run gas-fired heating in some form: Whitfield Secondary Academy and Beechgrove Primary School via central combined heat and power (CHP) plants serving every home from one source, Eastlea Federation via a mix of gas heat network and air-source heat pumps (ASHP) across its three phases, Riverdale Free School via a heat network at its village centre with individual heat pumps in apartments. Hartwell University Technical College is the outlier - electricity-only throughout - but it supports a large resident base which lifts its total close to the heat-network sites'. Holloway College, with individual gas boilers in each home, sits just below the top five.
         </NarrativePara>
 
         <NarrativePara continuation>
@@ -538,13 +538,13 @@ function ConsumptionPanes() {
         </NarrativePara>
 
         <NarrativePara continuation>
-          At <strong>bulk-metered sites with Sycous coverage</strong> (Austin Heath, Gifford Lea, Ampfield Meadows), the resident electricity flows through Westbrook's commercial supply and is sub-metered apartment-by-apartment by Sycous -{' '}
-          <Token>{fmtGwh(t_resident_submetered)} GWh</Token> directly measured. At <strong>standard residential sites</strong> (Bramshott Place, Durrants Village, Great Alne Park, Elderswell, Ledian Gardens), each resident has their own meter and their own supplier. Westbrook never sees this directly. The figure shown -{' '}
+          At <strong>bulk-metered sites with Sycous coverage</strong> (Beechgrove Primary School, Whitfield Secondary Academy, Aldergate Special Educational Needs School), the resident electricity flows through Westbrook's commercial supply and is sub-metered apartment-by-apartment by Sycous -{' '}
+          <Token>{fmtGwh(t_resident_submetered)} GWh</Token> directly measured. At <strong>standard residential sites</strong> (Holloway College, Hartwell University Technical College, St Margaret's Catholic Secondary, Riverdale Free School, Eastlea Federation), each resident has their own meter and their own supplier. Westbrook never sees this directly. The figure shown -{' '}
           <Token>{fmtGwh(t_resident_arbnco)} GWh</Token> - is <em>derived</em> by taking the total flowing into the site (from arbnco) and subtracting Westbrook's known landlord consumption. The arbnco methodology hasn't been published to NZA.
         </NarrativePara>
 
         <NarrativePara continuation>
-          Three sites currently show TBC on the landlord/resident split. <strong>Millbrook Village</strong> is bulk-metered with no Sycous sub-metering deployed - NZA is working with Westbrook to deploy coverage. <strong>Millfield Green</strong>'s Sycous readings exceed the bulk meter total, which is physically impossible if both measure electricity - NZA is investigating with Westbrook and Sycous to resolve the data anomaly. <strong>Blendworth Hills</strong> has Sycous deployed but the sub-meters currently read zero across the site. Their site totals are reliable (the bulk meter tells us what flowed in); only the split between landlord and resident is pending.
+          Three sites currently show TBC on the landlord/resident split. <strong>Marston Hill C of E Primary</strong> is bulk-metered with no Sycous sub-metering deployed - NZA is working with Westbrook to deploy coverage. <strong>Penrith Community College</strong>'s Sycous readings exceed the bulk meter total, which is physically impossible if both measure electricity - NZA is investigating with Westbrook and Sycous to resolve the data anomaly. <strong>Pennington Pre-Prep & Junior</strong> has Sycous deployed but the sub-meters currently read zero across the site. Their site totals are reliable (the bulk meter tells us what flowed in); only the split between landlord and resident is pending.
         </NarrativePara>
 
         <NarrativePara continuation>
@@ -1353,7 +1353,7 @@ function VoidCallout({ voidCount, voidKwh, voidKwhLabel }) {
       <Token>{voidCount} electricity meters</Token>{' '}
       as vacant but reports{' '}
       <Token>{voidKwhLabel}</Token>{' '}
-      of consumption against them across CY25 - concentrated at Ledian Gardens, Bramshott Place, and Elderswell. Three possible explanations: billing classification error, equipment running in genuinely vacant homes, or estimated readings on an inactive meter. NZA is investigating as part of the ongoing site intelligence review.
+      of consumption against them across CY25 - concentrated at Eastlea Federation, Holloway College, and Riverdale Free School. Three possible explanations: billing classification error, equipment running in genuinely vacant homes, or estimated readings on an inactive meter. NZA is investigating as part of the ongoing site intelligence review.
     </div>
   )
 }
@@ -1386,7 +1386,7 @@ function ScopeLine({ children }) {
    Cells with adjacent identical (system, confidence) merge
    horizontally via grid-column: span N. Null systems render as
    dashed-empty (phase doesn't exist). TBC confidence renders as
-   dashed coral (Elderswell VC P1). GRESB-26 OOS rows render
+   dashed coral (Riverdale Free School VC P1). GRESB-26 OOS rows render
    their filled cells with a darker shade.
 */
 
@@ -1474,7 +1474,7 @@ const HEATING_SYSTEM_KIND = {
   'Individual ASHP':      'individual',
   'Individual GSHP':      'individual',
   'Mixed':                'individual',  /* ASHP + GSHP individual mix per dwelling */
-  'Hybrid':               'communal',    /* Millbrook pool gas + VC ASHP plant */
+  'Hybrid':               'communal',    /* Marston Hill pool gas + VC ASHP plant */
 }
 
 /* RLE-merge adjacent cells with the same (system, confidence).
@@ -1559,19 +1559,19 @@ function HeatingPanes() {
         </NarrativePara>
 
         <NarrativePara continuation>
-          <strong>Bramshott Place</strong> uses individual gas boilers in its earliest phase (Village Centre + apartments), then switches to individual air-source heat pumps for Phases 2 through 4 - a within-portfolio decarbonisation story across one site.
+          <strong>Holloway College</strong> uses individual gas boilers in its earliest phase (Village Centre + apartments), then switches to individual air-source heat pumps for Phases 2 through 4 - a within-portfolio decarbonisation story across one site.
         </NarrativePara>
 
         <NarrativePara continuation>
-          <strong>Ledian Gardens</strong> spans three completely different strategies across its three phases: a gas heat network in Phase 1, individual ASHP in Phase 2, individual GSHP in Phase 3. No Phase 4.
+          <strong>Eastlea Federation</strong> spans three completely different strategies across its three phases: a gas heat network in Phase 1, individual ASHP in Phase 2, individual GSHP in Phase 3. No Phase 4.
         </NarrativePara>
 
         <NarrativePara continuation>
-          <strong>Elderswell</strong> pairs a TBC village-centre arrangement with gas-boilered apartments through all four phases.
+          <strong>Riverdale Free School</strong> pairs a TBC village-centre arrangement with gas-boilered apartments through all four phases.
         </NarrativePara>
 
         <NarrativePara continuation>
-          <strong>Millbrook Village</strong> runs a hybrid on every phase - pool gas plus village-centre ASHP plus individual apartment ASHP.
+          <strong>Marston Hill C of E Primary</strong> runs a hybrid on every phase - pool gas plus village-centre ASHP plus individual apartment ASHP.
         </NarrativePara>
 
         <NarrativePara continuation>
@@ -1579,12 +1579,14 @@ function HeatingPanes() {
         </NarrativePara>
 
         <NarrativePara title="What's confirmed and what we're still checking.">
-          One cell carries a TBC marker - <strong>Elderswell's village centre</strong>. As part of NZA's ongoing site intelligence review, we'll confirm exactly what's installed at each site. Every other phase on the 11 sites is confirmed.
+          One cell carries a TBC marker - <strong>Riverdale Free School's village centre</strong>. As part of NZA's ongoing site intelligence review, we'll confirm exactly what's installed at each site. Every other phase on the 11 sites is confirmed.
         </NarrativePara>
 
-        <NarrativePara continuation>
-          Two sites sit at the bottom of the matrix at lower visual weight: Sonning Common (under construction; out of GRESB 26 scope) and Edwalton Office (the head office, not a village).
-        </NarrativePara>
+        {/* OOS-specific narrative para removed in the demo template:
+            source IVG tool had 2 out-of-scope sites (Sonning Common +
+            Edwalton Office) that rendered at lower visual weight at
+            the bottom of this matrix. The demo drops those sites
+            entirely. */}
       </NarrativePane>
 
       <GraphicPane>
@@ -1830,8 +1832,8 @@ const POWER_ARRANGEMENT = {
   'austin-heath':       'bulk',
   'gifford-lea':        'bulk',
   'millfield-green':    'bulk',
-  'ampfield-meadows':   'bno',      /* Brief 19 follow-up (Chris 4 Jun): Ampfield is
-                                       BNO too, same arrangement as Ledian. */
+  'ampfield-meadows':   'bno',      /* Brief 19 follow-up (Chris 4 Jun): Aldergate SEN is
+                                       BNO too, same arrangement as Eastlea. */
   'blendworth-hills':   'bulk',
   'millbrook-village':  'bulk',
   'sonning-common':     'bulk',     /* OOS - included for completeness */
@@ -1839,7 +1841,7 @@ const POWER_ARRANGEMENT = {
   'durrants-village':   'dno',
   'elderswell':         'dno',
   'great-alne-park':    'dno',
-  'ledian-gardens':     'bno',      /* Brief 18 follow-up (Chris 3 Jun): Ledian is BNO -
+  'ledian-gardens':     'bno',      /* Brief 18 follow-up (Chris 3 Jun): Eastlea is BNO -
                                        Westbrook-owned private cable network behind the DNO
                                        point of connection. */
   'edwalton-office':    'office',   /* OOS */
@@ -1953,15 +1955,15 @@ function PowerPanes() {
         </NarrativePara>
 
         <NarrativePara continuation>
-          <strong>Bulk-metered (microgrid)</strong> - Westbrook holds one large commercial supply for the whole site, then distributes power through its own private wire network to each home. Residents are sub-billed through Sycous. <em>Five sites: Austin Heath, Blendworth Hills, Gifford Lea, Millbrook Village, Millfield Green</em> (plus Sonning Common, out of scope).
+          <strong>Bulk-metered (microgrid)</strong> - Westbrook holds one large commercial supply for the whole site, then distributes power through its own private wire network to each home. Residents are sub-billed through Sycous. <em>Five sites: Beechgrove Primary School, Pennington Pre-Prep & Junior, Whitfield Secondary Academy, Marston Hill C of E Primary, Penrith Community College</em>.
         </NarrativePara>
 
         <NarrativePara continuation>
-          <strong>Standard residential supply</strong> - each resident has their own meter and their own supplier (the standard arrangement on the UK Distribution Network Operator, or DNO). Westbrook only meters the small landlord supply for communal areas. <em>Four sites: Bramshott Place, Durrants Village, Elderswell, Great Alne Park.</em>
+          <strong>Standard residential supply</strong> - each resident has their own meter and their own supplier (the standard arrangement on the UK Distribution Network Operator, or DNO). Westbrook only meters the small landlord supply for communal areas. <em>Four sites: Holloway College, Hartwell University Technical College, Riverdale Free School, St Margaret's Catholic Secondary.</em>
         </NarrativePara>
 
         <NarrativePara continuation>
-          <strong>Private cable network with individual residents</strong> - a hybrid: Westbrook owns the cable network on site (a Body of Network Operator, or BNO arrangement), but each resident has their own meter and their own supplier riding on Westbrook's infrastructure. <em>Two sites: Ampfield Meadows, Ledian Gardens.</em>
+          <strong>Private cable network with individual residents</strong> - a hybrid: Westbrook owns the cable network on site (a Body of Network Operator, or BNO arrangement), but each resident has their own meter and their own supplier riding on Westbrook's infrastructure. <em>Two sites: Aldergate Special Educational Needs School, Eastlea Federation.</em>
         </NarrativePara>
 
         <NarrativePara continuation>
@@ -1975,8 +1977,8 @@ function PowerPanes() {
 
         <NarrativePara continuation>
           <strong>Solar PV</strong> is installed at several sites - most significantly at{' '}
-          <Token>Ledian Gardens (430 kWp)</Token> and{' '}
-          <Token>Millfield Green</Token> (covering about 50% of demand on-site). At bulk-metered sites, solar reduces grid draw on the landlord supply directly. The billing arrangement for what's exported back to the grid is under review.
+          <Token>Eastlea Federation (430 kWp)</Token> and{' '}
+          <Token>Penrith Community College</Token> (covering about 50% of demand on-site). At bulk-metered sites, solar reduces grid draw on the landlord supply directly. The billing arrangement for what's exported back to the grid is under review.
         </NarrativePara>
       </NarrativePane>
 
@@ -2463,7 +2465,7 @@ function MeteringPanes() {
         </NarrativePara>
 
         <NarrativePara continuation>
-          <strong>Private cable sites</strong> (Ampfield Meadows, Ledian Gardens) - Westbrook owns the cable but residents have their own contracts. Visibility sits between the two.
+          <strong>Private cable sites</strong> (Aldergate Special Educational Needs School, Eastlea Federation) - Westbrook owns the cable but residents have their own contracts. Visibility sits between the two.
         </NarrativePara>
 
         <NarrativePara title="The three platforms.">

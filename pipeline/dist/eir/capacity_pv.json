@@ -1,0 +1,511 @@
+{
+  "purpose": "ECPR/strategy",
+  "data_source": "design_workbook+stark_hh",
+  "workbook_path": "Inspired_Villages_-_Projects_Overview.xlsx",
+  "rules_applied": [
+    "no_fabrication",
+    "raw_row_reconciliation",
+    "phase_operational_default",
+    "extended_to_all_portfolio_sites",
+    "two_pv_figures",
+    "headroom_computed",
+    "gresb_ecpr_separation"
+  ],
+  "sites": {
+    "austin-heath": {
+      "data_source": "absent_from_workbook",
+      "dno": null,
+      "dno_supply_ref": null,
+      "g99_ref": null,
+      "mpan": null,
+      "secured_capacity_mva": null,
+      "secured_capacity_source": null,
+      "secured_capacity_raw": null,
+      "site_peak_load_kw": 140.0,
+      "site_peak_load_source": "stark_hh",
+      "site_peak_load_scope": "full_site",
+      "headroom_kva": null,
+      "headroom_pct": null,
+      "pv_kwp_current": null,
+      "pv_kwp_full": null,
+      "phases": [],
+      "reconciliation": null,
+      "missing_fields": [
+        "secured_capacity_mva",
+        "dno",
+        "phases",
+        "pv_kwp_current",
+        "pv_kwp_full"
+      ],
+      "planning_notes": null,
+      "in_scope": true
+    },
+    "gifford-lea": {
+      "data_source": "absent_from_workbook",
+      "dno": null,
+      "dno_supply_ref": null,
+      "g99_ref": null,
+      "mpan": null,
+      "secured_capacity_mva": null,
+      "secured_capacity_source": null,
+      "secured_capacity_raw": null,
+      "site_peak_load_kw": 161.6,
+      "site_peak_load_source": "stark_hh",
+      "site_peak_load_scope": "full_site",
+      "headroom_kva": null,
+      "headroom_pct": null,
+      "pv_kwp_current": null,
+      "pv_kwp_full": null,
+      "phases": [],
+      "reconciliation": null,
+      "missing_fields": [
+        "secured_capacity_mva",
+        "dno",
+        "phases",
+        "pv_kwp_current",
+        "pv_kwp_full"
+      ],
+      "planning_notes": null,
+      "in_scope": true
+    },
+    "bramshott-place": {
+      "data_source": "absent_from_workbook",
+      "dno": null,
+      "dno_supply_ref": null,
+      "g99_ref": null,
+      "mpan": null,
+      "secured_capacity_mva": null,
+      "secured_capacity_source": null,
+      "secured_capacity_raw": null,
+      "site_peak_load_kw": null,
+      "site_peak_load_source": null,
+      "site_peak_load_scope": null,
+      "headroom_kva": null,
+      "headroom_pct": null,
+      "pv_kwp_current": null,
+      "pv_kwp_full": null,
+      "phases": [],
+      "reconciliation": null,
+      "missing_fields": [
+        "secured_capacity_mva",
+        "dno",
+        "phases",
+        "pv_kwp_current",
+        "pv_kwp_full",
+        "site_peak_load_kw"
+      ],
+      "planning_notes": null,
+      "in_scope": true
+    },
+    "millbrook-village": {
+      "data_source": "absent_from_workbook",
+      "dno": null,
+      "dno_supply_ref": null,
+      "g99_ref": null,
+      "mpan": null,
+      "secured_capacity_mva": null,
+      "secured_capacity_source": null,
+      "secured_capacity_raw": null,
+      "site_peak_load_kw": 95.8,
+      "site_peak_load_source": "stark_hh",
+      "site_peak_load_scope": "full_site",
+      "headroom_kva": null,
+      "headroom_pct": null,
+      "pv_kwp_current": null,
+      "pv_kwp_full": null,
+      "phases": [],
+      "reconciliation": null,
+      "missing_fields": [
+        "secured_capacity_mva",
+        "dno",
+        "phases",
+        "pv_kwp_current",
+        "pv_kwp_full"
+      ],
+      "planning_notes": null,
+      "in_scope": true
+    },
+    "durrants-village": {
+      "data_source": "absent_from_workbook",
+      "dno": null,
+      "dno_supply_ref": null,
+      "g99_ref": null,
+      "mpan": null,
+      "secured_capacity_mva": null,
+      "secured_capacity_source": null,
+      "secured_capacity_raw": null,
+      "site_peak_load_kw": 80.2,
+      "site_peak_load_source": "stark_hh",
+      "site_peak_load_scope": "landlord_only",
+      "headroom_kva": null,
+      "headroom_pct": null,
+      "pv_kwp_current": null,
+      "pv_kwp_full": null,
+      "phases": [],
+      "reconciliation": null,
+      "missing_fields": [
+        "secured_capacity_mva",
+        "dno",
+        "phases",
+        "pv_kwp_current",
+        "pv_kwp_full"
+      ],
+      "planning_notes": null,
+      "in_scope": true
+    },
+    "great-alne-park": {
+      "data_source": "absent_from_workbook",
+      "dno": null,
+      "dno_supply_ref": null,
+      "g99_ref": null,
+      "mpan": null,
+      "secured_capacity_mva": null,
+      "secured_capacity_source": null,
+      "secured_capacity_raw": null,
+      "site_peak_load_kw": 98.0,
+      "site_peak_load_source": "stark_hh",
+      "site_peak_load_scope": "landlord_only",
+      "headroom_kva": null,
+      "headroom_pct": null,
+      "pv_kwp_current": null,
+      "pv_kwp_full": null,
+      "phases": [],
+      "reconciliation": null,
+      "missing_fields": [
+        "secured_capacity_mva",
+        "dno",
+        "phases",
+        "pv_kwp_current",
+        "pv_kwp_full"
+      ],
+      "planning_notes": null,
+      "in_scope": true
+    },
+    "ledian-gardens": {
+      "data_source": "absent_from_workbook",
+      "dno": null,
+      "dno_supply_ref": null,
+      "g99_ref": null,
+      "mpan": null,
+      "secured_capacity_mva": null,
+      "secured_capacity_source": null,
+      "secured_capacity_raw": null,
+      "site_peak_load_kw": 78.8,
+      "site_peak_load_source": "stark_hh",
+      "site_peak_load_scope": "landlord_only",
+      "headroom_kva": null,
+      "headroom_pct": null,
+      "pv_kwp_current": null,
+      "pv_kwp_full": null,
+      "phases": [],
+      "reconciliation": null,
+      "missing_fields": [
+        "secured_capacity_mva",
+        "dno",
+        "phases",
+        "pv_kwp_current",
+        "pv_kwp_full"
+      ],
+      "planning_notes": null,
+      "in_scope": true
+    },
+    "elderswell": {
+      "data_source": "absent_from_workbook",
+      "dno": null,
+      "dno_supply_ref": null,
+      "g99_ref": null,
+      "mpan": null,
+      "secured_capacity_mva": null,
+      "secured_capacity_source": null,
+      "secured_capacity_raw": null,
+      "site_peak_load_kw": 124.0,
+      "site_peak_load_source": "stark_hh",
+      "site_peak_load_scope": "landlord_only",
+      "headroom_kva": null,
+      "headroom_pct": null,
+      "pv_kwp_current": null,
+      "pv_kwp_full": null,
+      "phases": [],
+      "reconciliation": null,
+      "missing_fields": [
+        "secured_capacity_mva",
+        "dno",
+        "phases",
+        "pv_kwp_current",
+        "pv_kwp_full"
+      ],
+      "planning_notes": null,
+      "in_scope": true
+    },
+    "millfield-green": {
+      "data_source": "design_workbook",
+      "dno": "GTC",
+      "dno_supply_ref": null,
+      "g99_ref": null,
+      "mpan": null,
+      "secured_capacity_mva": 1.3,
+      "secured_capacity_source": "design_workbook",
+      "secured_capacity_raw": "1.3 MVA",
+      "site_peak_load_kw": 259.0,
+      "site_peak_load_source": "stark_hh",
+      "site_peak_load_scope": "full_site",
+      "headroom_kva": 1041.0,
+      "headroom_pct": 80.1,
+      "pv_kwp_current": 203,
+      "pv_kwp_full": 909,
+      "phases": [
+        {
+          "phase": "vc_p1",
+          "label": "Village centre · Phase 1",
+          "pv_kwp": 151,
+          "area_m2": 11312,
+          "units": 80,
+          "operational": true,
+          "heating_type_hint": null
+        },
+        {
+          "phase": "apt_p1",
+          "label": "Apartments · Phase 1",
+          "pv_kwp": 52,
+          "area_m2": 746,
+          "units": 6,
+          "operational": true,
+          "heating_type_hint": null
+        },
+        {
+          "phase": "apt_p2",
+          "label": "Apartments · Phase 2",
+          "pv_kwp": 205,
+          "area_m2": 3855,
+          "units": 34,
+          "operational": false,
+          "heating_type_hint": null
+        },
+        {
+          "phase": "apt_p3",
+          "label": "Apartments · Phase 3",
+          "pv_kwp": 211,
+          "area_m2": 3738,
+          "units": 29,
+          "operational": false,
+          "heating_type_hint": null
+        },
+        {
+          "phase": "apt_p4",
+          "label": "Apartments · Phase 4",
+          "pv_kwp": 290,
+          "area_m2": 4612,
+          "units": 51,
+          "operational": false,
+          "heating_type_hint": null
+        }
+      ],
+      "reconciliation": {
+        "area": {
+          "match": true,
+          "parts_sum": 24263,
+          "total": 24263,
+          "delta_pct": 0.0
+        },
+        "units": {
+          "match": true,
+          "parts_sum": 200,
+          "total": 200,
+          "delta_pct": 0.0
+        },
+        "pv": {
+          "match": true,
+          "parts_sum": 909,
+          "total": 909,
+          "delta_pct": 0.0
+        }
+      },
+      "missing_fields": [],
+      "planning_notes": null
+    },
+    "ampfield-meadows": {
+      "data_source": "design_workbook",
+      "dno": "SSEN",
+      "dno_supply_ref": "EUF611/2",
+      "g99_ref": "230917-000118",
+      "mpan": "3110000087890",
+      "secured_capacity_mva": 1.1,
+      "secured_capacity_source": "design_workbook",
+      "secured_capacity_raw": "1.1 MVA",
+      "site_peak_load_kw": null,
+      "site_peak_load_source": null,
+      "site_peak_load_scope": null,
+      "headroom_kva": null,
+      "headroom_pct": null,
+      "pv_kwp_current": 0,
+      "pv_kwp_full": 977,
+      "phases": [
+        {
+          "phase": "vc_p1",
+          "label": "Village centre · Phase 1",
+          "pv_kwp": 222,
+          "area_m2": 7684,
+          "units": 48,
+          "operational": false,
+          "heating_type_hint": "GSHP"
+        },
+        {
+          "phase": "apt_p1",
+          "label": "Apartments · Phase 1",
+          "pv_kwp": 37,
+          "area_m2": 1258,
+          "units": 9,
+          "operational": false,
+          "heating_type_hint": "GSHP"
+        },
+        {
+          "phase": "apt_p2",
+          "label": "Apartments · Phase 2",
+          "pv_kwp": 280,
+          "area_m2": 5886,
+          "units": 42,
+          "operational": false,
+          "heating_type_hint": "GSHP"
+        },
+        {
+          "phase": "apt_p3",
+          "label": "Apartments · Phase 3",
+          "pv_kwp": 198,
+          "area_m2": 5048,
+          "units": 48,
+          "operational": false,
+          "heating_type_hint": "GSHP"
+        },
+        {
+          "phase": "apt_p4",
+          "label": "Apartments · Phase 4",
+          "pv_kwp": 240,
+          "area_m2": 5703,
+          "units": 49,
+          "operational": false,
+          "heating_type_hint": "GSHP"
+        }
+      ],
+      "reconciliation": {
+        "area": {
+          "match": true,
+          "parts_sum": 25579,
+          "total": 25579,
+          "delta_pct": 0.0
+        },
+        "units": {
+          "match": true,
+          "parts_sum": 196,
+          "total": 196,
+          "delta_pct": 0.0
+        },
+        "pv": {
+          "match": true,
+          "parts_sum": 977,
+          "total": 977,
+          "delta_pct": 0.0
+        }
+      },
+      "missing_fields": [
+        "site_peak_load_kw_stark"
+      ],
+      "planning_notes": "Total 196 units\nPhase 1 – 57 Units [under construction with PC expected May/June 2024; GSHP]\nPhase 2 – 48 units [on site in 2025 – likely GSHP]\nPhase 3 – 42 units [on site 2028 – likely GSHP]\nPhase 4 – 49 units [on site 2030 – likely GSHP]"
+    },
+    "blendworth-hills": {
+      "data_source": "design_workbook",
+      "dno": "SSEN",
+      "dno_supply_ref": "EVX773/2",
+      "g99_ref": "230917-000120",
+      "mpan": null,
+      "secured_capacity_mva": 1.1,
+      "secured_capacity_source": "design_workbook",
+      "secured_capacity_raw": "1.1 MVA",
+      "site_peak_load_kw": null,
+      "site_peak_load_source": null,
+      "site_peak_load_scope": null,
+      "headroom_kva": null,
+      "headroom_pct": null,
+      "pv_kwp_current": 0,
+      "pv_kwp_full": 459,
+      "phases": [
+        {
+          "phase": "vc_p1",
+          "label": "Village centre · Phase 1",
+          "pv_kwp": 120,
+          "area_m2": 4831,
+          "units": 32,
+          "operational": false,
+          "heating_type_hint": "ASHP"
+        },
+        {
+          "phase": "apt_p1",
+          "label": "Apartments · Phase 1",
+          "pv_kwp": 166,
+          "area_m2": 4546,
+          "units": 37,
+          "operational": false,
+          "heating_type_hint": "ASHP"
+        },
+        {
+          "phase": "apt_p2",
+          "label": "Apartments · Phase 2",
+          "pv_kwp": 173,
+          "area_m2": 6000,
+          "units": 51,
+          "operational": false,
+          "heating_type_hint": "ASHP"
+        },
+        {
+          "phase": "apt_p3",
+          "label": "Apartments · Phase 3",
+          "pv_kwp": null,
+          "area_m2": 0,
+          "units": null,
+          "operational": false,
+          "heating_type_hint": "ASHP"
+        },
+        {
+          "phase": "apt_p4",
+          "label": "Apartments · Phase 4",
+          "pv_kwp": null,
+          "area_m2": 0,
+          "units": null,
+          "operational": false,
+          "heating_type_hint": "ASHP"
+        }
+      ],
+      "reconciliation": {
+        "area": {
+          "match": true,
+          "parts_sum": 15377,
+          "total": 15377,
+          "delta_pct": 0.0
+        },
+        "units": {
+          "match": true,
+          "parts_sum": 120,
+          "total": 120,
+          "delta_pct": 0.0
+        },
+        "pv": {
+          "match": true,
+          "parts_sum": 459,
+          "total": 459,
+          "delta_pct": 0.0
+        }
+      },
+      "missing_fields": [
+        "site_peak_load_kw_stark"
+      ],
+      "planning_notes": "Total 120 units\nPhase 1 – 69 Units [under construction with PC expected September/October 2024; Air Source Heat Pumps]\nPhase 2 – 51 units [on site in 2025 – ASHP]"
+    }
+  },
+  "portfolio_rollup": {
+    "total_pv_current_kwp": 203,
+    "total_pv_full_kwp": 3053,
+    "total_secured_capacity_mva": 4.0,
+    "sites_with_secured_capacity": 4,
+    "sites_with_measured_peak": 8,
+    "sites_missing_capacity_data": 9
+  }
+}

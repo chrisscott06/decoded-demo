@@ -1,10 +1,10 @@
 """Heating strategy matrix data builder — Brief 18 Part 1.
 
 Applies Chris-sourced corrections to sites.json:
-  - Ledian Gardens: phases 4 -> 3 (units 72/50/40)
+  - Eastlea Federation: phases 4 -> 3 (units 72/50/40)
   - Sonning Common: phases 4 -> 2 (drop zero-unit placeholders)
-  - Millfield Green: primary_heating -> "Individual GSHP"
-  - Ampfield Meadows: primary_heating -> "ASHP throughout"
+  - Penrith Community College: primary_heating -> "Individual GSHP"
+  - Aldergate Special Educational Needs School: primary_heating -> "ASHP throughout"
 
 Then attaches a `heating_by_phase` block per site keyed by matrix slot
 (`vc_p1`, `apt_p1`, `apt_p2`, `apt_p3`, `apt_p4`) with `system`,

@@ -22,7 +22,7 @@ Output: each `reconciliation["by_site"][sid]` gets a new
                            BUT only at DNO sites — stripped (None) at bulk-meter sites
 
 Sites with neither sub-metering nor a defensible DNO derivation
-(Millbrook Village; Sonning Common bulk; Edwalton Office) get null
+(Marston Hill C of E Primary; Sonning Common bulk; Edwalton Office) get null
 subfields and are honestly labelled in the chart legend / tooltip.
 
 Resident gas is intentionally NOT carried as a separate subfield:
@@ -116,7 +116,7 @@ def _strip_for_site(sid: str, rec_site: dict, syc_site: dict) -> dict:
     if sid in DNO_SITES:
         # arbnco-minus-Eco is the defensible resident-elec figure.
         arbnco_derived_elec = derived_elec_raw or 0.0
-        # Bramshott/Durrants/Great Alne have no Sycous; Elderswell+Ledian have Sycous heat.
+        # Bramshott/Hartwell UTC/St Margaret's have no Sycous; Riverdale Free School+Eastlea have Sycous heat.
         # Sub-metered elec is meaningless on DNO sites (residents not on the bulk meter).
         submetered_elec = None
         return {
@@ -248,19 +248,19 @@ def recompute_portfolio_derived_resident_gwh(portfolio: dict, reconciliation: di
                f"arbnco_derived_elec {breakdown['arbnco_derived_elec']/1e6:.3f} GWh")
 
 
-# ----- Elderswell grid_type override -----
+# ----- Riverdale Free School grid_type override -----
 # Per Brief 17.5 §Why this brief #4. Source workbook Site Overview lists
-# Elderswell `grid_type` as null; Chris confirmed the actual arrangement is
+# Riverdale Free School `grid_type` as null; Chris confirmed the actual arrangement is
 # DNO for electricity + Sycous-covered for heat & hot water. Apply as a
 # post-read override so the JSON output carries the canonical value
 # without modifying the source xlsx (which we never write to).
 
 ELDERSWELL_GRID_TYPE = "DNO (individual MPANs) + Sycous heat"
 
-# Brief 21 (Chris confirmed 4 Jun) — Millbrook source workbook labels
+# Brief 21 (Chris confirmed 4 Jun) — Marston Hill source workbook labels
 # `grid_type` as "Bulk (microgrid)" but the arbnco data shows 174 individual
-# electric MPANs at Millbrook (vs 12 known to Ecotricity), making it a DNO
-# arrangement. Sycous hasn't onboarded Millbrook yet but the underlying
+# electric MPANs at Marston Hill (vs 12 known to Ecotricity), making it a DNO
+# arrangement. Sycous hasn't onboarded Marston Hill yet but the underlying
 # arrangement is individual MPANs per resident. Override to match reality
 # per the metering reconciliation.
 MILLBROOK_GRID_TYPE = "DNO (individual MPANs)"
@@ -269,15 +269,15 @@ MILLBROOK_METERING_ARRANGEMENT = "Individual MPANs"
 
 def apply_site_overrides(sites: dict, log: list[str]) -> None:
     """Apply post-read corrections to sites.json structure that the source
-    workbook does not carry. Currently: Elderswell grid_type (Brief 17.5),
-    Millbrook grid_type + metering (Brief 21).
+    workbook does not carry. Currently: Riverdale Free School grid_type (Brief 17.5),
+    Marston Hill grid_type + metering (Brief 21).
     """
     elderswell = sites.get("elderswell")
     if elderswell is not None:
         archetype = elderswell.setdefault("archetype", {})
         previous = archetype.get("grid_type")
         archetype["grid_type"] = ELDERSWELL_GRID_TYPE
-        log.append(f"  Elderswell grid_type override: {previous!r} → {ELDERSWELL_GRID_TYPE!r}")
+        log.append(f"  Riverdale Free School grid_type override: {previous!r} → {ELDERSWELL_GRID_TYPE!r}")
 
     millbrook = sites.get("millbrook-village")
     if millbrook is not None:
@@ -286,5 +286,5 @@ def apply_site_overrides(sites: dict, log: list[str]) -> None:
         prev_meter = archetype.get("metering_arrangement")
         archetype["grid_type"] = MILLBROOK_GRID_TYPE
         archetype["metering_arrangement"] = MILLBROOK_METERING_ARRANGEMENT
-        log.append(f"  Millbrook grid_type override: {prev_grid!r} → {MILLBROOK_GRID_TYPE!r}")
-        log.append(f"  Millbrook metering_arrangement override: {prev_meter!r} → {MILLBROOK_METERING_ARRANGEMENT!r}")
+        log.append(f"  Marston Hill grid_type override: {prev_grid!r} → {MILLBROOK_GRID_TYPE!r}")
+        log.append(f"  Marston Hill metering_arrangement override: {prev_meter!r} → {MILLBROOK_METERING_ARRANGEMENT!r}")

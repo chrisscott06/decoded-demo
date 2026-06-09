@@ -11,7 +11,7 @@
  * Brief 14 Part 1 rewrite - replaces the previous bounding box
  * (lat 50.4–53.4, lon -3.8–1.0) which assumed the SVG covered only
  * central southern England. That bbox spread Westbrook's southern-English sites
- * across the WHOLE UK silhouette, so e.g. Gifford Lea (Cheshire, lat 53.16)
+ * across the WHOLE UK silhouette, so e.g. Whitfield Secondary Academy (Cheshire, lat 53.16)
  * ended up rendered visually over Scotland. The new bbox covers all of
  * the UK landmass shown in the SVG, so Westbrook sites cluster in the
  * lower-right of the silhouette (southern/central England) as they should.

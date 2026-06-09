@@ -1,0 +1,242 @@
+{
+  "by_site": {
+    "austin-heath": {
+      "in_sycous": true,
+      "sycous_network": "Warwick Gates",
+      "properties_count": 162,
+      "meters_count": 276,
+      "services_covered": [
+        "Electricity",
+        "Heat & Hot Water"
+      ],
+      "by_service": [
+        {
+          "service": "Electricity",
+          "properties": 158,
+          "meters": 158,
+          "valid_reads": 154,
+          "total_reads": 158,
+          "data_quality_pct": 97,
+          "annual_total": 233345.9,
+          "unit": "kWh"
+        },
+        {
+          "service": "Heat & Hot Water",
+          "properties": 118,
+          "meters": 118,
+          "valid_reads": 118,
+          "total_reads": 118,
+          "data_quality_pct": 100,
+          "annual_total": 583792.0,
+          "unit": "kWh"
+        }
+      ],
+      "reconciliation_note": "Aligned — arbnco asset is the landlord/heat-network site. Sycous covers ~158 sub-metered residents."
+    },
+    "gifford-lea": {
+      "in_sycous": true,
+      "sycous_network": "Tattenhall",
+      "properties_count": 143,
+      "meters_count": 286,
+      "services_covered": [
+        "Electricity",
+        "Heat & Hot Water"
+      ],
+      "by_service": [
+        {
+          "service": "Electricity",
+          "properties": 143,
+          "meters": 143,
+          "valid_reads": 137,
+          "total_reads": 143,
+          "data_quality_pct": 96,
+          "annual_total": 252187.5,
+          "unit": "kWh"
+        },
+        {
+          "service": "Heat & Hot Water",
+          "properties": 143,
+          "meters": 143,
+          "valid_reads": 127,
+          "total_reads": 143,
+          "data_quality_pct": 89,
+          "annual_total": 687730.3,
+          "unit": "kWh"
+        }
+      ],
+      "reconciliation_note": "Aligned — appears as \"Tattenhall\" network. Sycous covers 143 sub-metered residents on electricity and heat & hot water."
+    },
+    "bramshott-place": {
+      "in_sycous": false,
+      "reconciliation_note": "Heat network site with substantial sub-metering on the arbnco side, but absent from this Sycous export. Either uses a different sub-metering provider or older Sycous data not yet on this server. Worth asking Stephen."
+    },
+    "millbrook-village": {
+      "in_sycous": false,
+      "reconciliation_note": "Older site, no Sycous sub-metering. Residents on individual electricity supplies."
+    },
+    "durrants-village": {
+      "in_sycous": false,
+      "reconciliation_note": "Resident electricity is on individual MPANs (DNO arrangement), so no Sycous sub-meters required. arbnco picks up supply data directly."
+    },
+    "great-alne-park": {
+      "in_sycous": false,
+      "reconciliation_note": "Older site, no Sycous sub-metering. Residents on individual MPANs. arbnco picks up supply data."
+    },
+    "ledian-gardens": {
+      "in_sycous": true,
+      "sycous_network": "Eastlea Farm",
+      "properties_count": 63,
+      "meters_count": 126,
+      "services_covered": [
+        "Heat",
+        "Hot Water"
+      ],
+      "by_service": [
+        {
+          "service": "Heat",
+          "properties": 63,
+          "meters": 63,
+          "valid_reads": 63,
+          "total_reads": 63,
+          "data_quality_pct": 100,
+          "annual_total": 274390.0,
+          "unit": "kWh"
+        },
+        {
+          "service": "Hot Water",
+          "properties": 63,
+          "meters": 63,
+          "valid_reads": 63,
+          "total_reads": 63,
+          "data_quality_pct": 100,
+          "annual_total": 530.6,
+          "unit": "m³"
+        }
+      ],
+      "reconciliation_note": "Aligned — appears as \"Eastlea Farm\" network. Heat and hot water sub-metered via Sycous; resident electricity is on individual MPANs (Eastlea is the DNO-arrangement site)."
+    },
+    "elderswell": {
+      "in_sycous": true,
+      "sycous_network": "Turvey",
+      "properties_count": 77,
+      "meters_count": 77,
+      "services_covered": [
+        "Heat & Hot Water"
+      ],
+      "by_service": [
+        {
+          "service": "Heat & Hot Water",
+          "properties": 77,
+          "meters": 77,
+          "valid_reads": 10,
+          "total_reads": 77,
+          "data_quality_pct": 13,
+          "annual_total": 73787.1,
+          "unit": "kWh"
+        }
+      ],
+      "reconciliation_note": "Aligned. Appears in Sycous as \"Turvey\" network. No electricity sub-meters in Sycous (residents likely on individual MPANs); only heat & hot water sub-metered."
+    },
+    "millfield-green": {
+      "in_sycous": true,
+      "sycous_network": "Caddington",
+      "properties_count": 130,
+      "meters_count": 133,
+      "services_covered": [
+        "Electricity"
+      ],
+      "by_service": [
+        {
+          "service": "Electricity",
+          "properties": 130,
+          "meters": 133,
+          "valid_reads": 118,
+          "total_reads": 133,
+          "data_quality_pct": 89,
+          "annual_total": 2251537.2,
+          "unit": "kWh"
+        }
+      ],
+      "reconciliation_note": "Aligned — appears as \"Caddington\" network. arbnco asset-level count (1) looks landlord-only; Sycous shows 130 sub-metered residents. Electricity only (GSHPs handle all heat)."
+    },
+    "ampfield-meadows": {
+      "in_sycous": true,
+      "sycous_network": "Chandlers Ford",
+      "properties_count": 57,
+      "meters_count": 114,
+      "services_covered": [
+        "Cold Water",
+        "Electricity"
+      ],
+      "by_service": [
+        {
+          "service": "Cold Water",
+          "properties": 57,
+          "meters": 57,
+          "valid_reads": 55,
+          "total_reads": 55,
+          "data_quality_pct": 100,
+          "annual_total": 2525.5,
+          "unit": "m³"
+        },
+        {
+          "service": "Electricity",
+          "properties": 57,
+          "meters": 57,
+          "valid_reads": 57,
+          "total_reads": 57,
+          "data_quality_pct": 100,
+          "annual_total": 165242.6,
+          "unit": "kWh"
+        }
+      ],
+      "reconciliation_note": "Aligned — arbnco asset count looks like landlord meters only; Sycous covers 57 sub-metered residents (electricity + cold water)."
+    },
+    "blendworth-hills": {
+      "in_sycous": true,
+      "sycous_network": "Horndean",
+      "properties_count": 37,
+      "meters_count": 37,
+      "services_covered": [
+        "Electricity",
+        "Heat"
+      ],
+      "by_service": [
+        {
+          "service": "Electricity",
+          "properties": 5,
+          "meters": 5,
+          "valid_reads": 0,
+          "total_reads": 5,
+          "data_quality_pct": 0,
+          "annual_total": 0.0,
+          "unit": "kWh"
+        },
+        {
+          "service": "Heat",
+          "properties": 32,
+          "meters": 32,
+          "valid_reads": 0,
+          "total_reads": 32,
+          "data_quality_pct": 0,
+          "annual_total": 0.0,
+          "unit": "kWh"
+        }
+      ],
+      "reconciliation_note": "Aligned — Sycous data present but no readings yet (commissioning)."
+    }
+  },
+  "portfolio": {
+    "sites_with_sycous": 7,
+    "sites_without_sycous": 6,
+    "total_properties_metered": 669,
+    "total_meters": 1049,
+    "supply_types": [
+      "Cold Water",
+      "Electricity",
+      "Heat",
+      "Heat & Hot Water",
+      "Hot Water"
+    ]
+  }
+}

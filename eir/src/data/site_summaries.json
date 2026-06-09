@@ -7,66 +7,111 @@
   "ampfield-meadows": {
     "type": "BNO",
     "summary": "BNO site. Sycous sub-meters resident electricity (57 properties) and cold water (57). No gas - fully electric. Limited landlord electricity through Ecotricity. Stark half-hourly data not yet pulled for the two landlord meters.",
-    "facts": ["BNO", "All-electric", "Sycous: 57 elec · 57 cold water", "Stark HH pending"]
+    "facts": [
+      "BNO",
+      "All-electric",
+      "Sycous: 57 elec · 57 cold water",
+      "Stark HH pending"
+    ]
   },
   "austin-heath": {
     "type": "Bulk-meter",
     "summary": "Bulk-meter site with CHP-driven heat networks. Stark provides half-hourly data for the landlord supply. Sycous sub-meters apartments for electricity and heat across the village. Ecotricity bills 2 gas MPRNs serving the CHP plant.",
-    "facts": ["Bulk-meter", "CHP heat network", "Sycous full coverage", "2 gas MPRNs"]
+    "facts": [
+      "Bulk-meter",
+      "CHP heat network",
+      "Sycous full coverage",
+      "2 gas MPRNs"
+    ]
   },
   "blendworth-hills": {
     "type": "Bulk-meter",
     "summary": "Bulk-meter site with ASHP throughout - fully electric. Stark provides half-hourly data for the landlord supply. Sycous sub-meters 32 properties for heat. Small landlord estate, no gas MPRNs.",
-    "facts": ["Bulk-meter", "All-electric ASHP", "Sycous: 32 heat", "No gas"]
+    "facts": [
+      "Bulk-meter",
+      "All-electric ASHP",
+      "Sycous: 32 heat",
+      "No gas"
+    ]
   },
   "bramshott-place": {
     "type": "DNO",
     "summary": "DNO site. No private wire - residents have individual MPANs on their own supplier contracts (invisible to Westbrook). Ecotricity bills the small landlord estate and 3 gas MPRNs. No Sycous coverage. The 191 resident MPANs are derived from arbnco, not measured directly.",
-    "facts": ["DNO", "3 gas MPRNs", "191 invisible resident MPANs", "No Sycous"]
+    "facts": [
+      "DNO",
+      "3 gas MPRNs",
+      "191 invisible resident MPANs",
+      "No Sycous"
+    ]
   },
   "durrants-village": {
     "type": "DNO",
     "summary": "DNO site with individual ASHP per unit - no heat network. Small landlord estate billed via Ecotricity, Stark provides HH for the landlord supply. 173 resident electricity meters sit on individual supplier contracts; Westbrook has no visibility on them.",
-    "facts": ["DNO", "Individual ASHP", "173 invisible residents", "No gas"]
-  },
-  "edwalton-office": {
-    "type": "Office",
-    "summary": "Office building - not a residential village. No accommodation meter estate. Out of GRESB FY25 scope.",
-    "facts": ["Office", "Not residential", "Out of GRESB FY25"]
+    "facts": [
+      "DNO",
+      "Individual ASHP",
+      "173 invisible residents",
+      "No gas"
+    ]
   },
   "elderswell": {
     "type": "DNO",
     "summary": "DNO site with hybrid heating. Limited landlord electricity through Ecotricity, Stark provides HH for two landlord meters (Electric Room + Plant Room). 1 gas MPRN. No Sycous coverage. 145 planned resident meters sit outside Westbrook's visibility.",
-    "facts": ["DNO", "Hybrid heating", "2 Stark HH meters", "145 invisible residents"]
+    "facts": [
+      "DNO",
+      "Hybrid heating",
+      "2 Stark HH meters",
+      "145 invisible residents"
+    ]
   },
   "gifford-lea": {
     "type": "Bulk-meter",
     "summary": "Bulk-meter site with a single CHP heat network. Stark provides half-hourly data for the landlord supply. Sycous sub-meters resident electricity and heat across all phases. Single Ecotricity gas MPRN serves the CHP plant.",
-    "facts": ["Bulk-meter", "Single CHP network", "Sycous: elec + heat", "1 gas MPRN"]
+    "facts": [
+      "Bulk-meter",
+      "Single CHP network",
+      "Sycous: elec + heat",
+      "1 gas MPRN"
+    ]
   },
   "great-alne-park": {
     "type": "DNO",
     "summary": "DNO site with individual ASHP per unit. Small landlord supply via Ecotricity, Stark provides HH. The 171 planned resident meters sit outside Westbrook's supply contract.",
-    "facts": ["DNO", "Individual ASHP", "171 invisible residents", "No gas"]
+    "facts": [
+      "DNO",
+      "Individual ASHP",
+      "171 invisible residents",
+      "No gas"
+    ]
   },
   "ledian-gardens": {
     "type": "BNO",
     "summary": "BNO site - Westbrook owns the cable network but residents have individual MPANs on it. Ecotricity bills 4 gas MPRNs and a small landlord estate. Sycous sub-meters 63 properties for heat and 63 for hot water. Approximately 162 resident MPANs sit on Westbrook-owned cable but are invisible to Westbrook.",
-    "facts": ["BNO", "Westbrook-owned cable", "4 gas MPRNs", "Sycous: 63 heat · 63 HW"]
+    "facts": [
+      "BNO",
+      "Westbrook-owned cable",
+      "4 gas MPRNs",
+      "Sycous: 63 heat · 63 HW"
+    ]
   },
   "millbrook-village": {
     "type": "Bulk-meter",
     "summary": "Bulk-meter site with mixed heating strategies - pool gas + village-centre ASHP. Stark provides half-hourly data for the landlord supply. Single Ecotricity gas MPRN serves pool and back-of-house only. Sycous sub-metering not currently deployed.",
-    "facts": ["Bulk-meter", "Hybrid heating", "Pool + VC ASHP", "1 gas MPRN"]
+    "facts": [
+      "Bulk-meter",
+      "Hybrid heating",
+      "Pool + VC ASHP",
+      "1 gas MPRN"
+    ]
   },
   "millfield-green": {
     "type": "Bulk-meter",
     "summary": "Bulk-meter site, fully electric with individual GSHP per unit. Stark provides half-hourly data for the single landlord MPAN at the head of supply. Sycous sub-meters all 133 apartments behind it for resident billing. No gas, no invisible-to-Westbrook layer.",
-    "facts": ["Bulk-meter", "All-electric GSHP", "Sycous: 133 elec", "No gas · no invisible"]
-  },
-  "sonning-common": {
-    "type": "Bulk-meter",
-    "summary": "Bulk-meter site, under construction. GSHP throughout, no gas. Limited current metering - out of GRESB FY25 scope until operational.",
-    "facts": ["Bulk-meter", "Under construction", "GSHP throughout", "Out of GRESB FY25"]
+    "facts": [
+      "Bulk-meter",
+      "All-electric GSHP",
+      "Sycous: 133 elec",
+      "No gas · no invisible"
+    ]
   }
 }

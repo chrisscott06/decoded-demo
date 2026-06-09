@@ -1,17 +1,13 @@
 {
-  "austin-heath": {"name": "Austin Heath", "lat": 52.290, "lon": -1.560},
-  "gifford-lea": {"name": "Gifford Lea", "lat": 53.156, "lon": -2.756},
-  "bramshott-place": {"name": "Bramshott Place", "lat": 51.082, "lon": -0.794},
-  "millbrook-village": {"name": "Millbrook Village", "lat": 50.682, "lon": -3.527},
-  "durrants-village": {"name": "Durrants Village", "lat": 51.082, "lon": -0.345},
-  "great-alne-park": {"name": "Great Alne Park", "lat": 52.220, "lon": -1.840},
-  "ledian-gardens": {"name": "Ledian Gardens", "lat": 51.220, "lon": 0.640},
-  "elderswell": {"name": "Elderswell", "lat": 52.165, "lon": -0.595},
-  "millfield-green": {"name": "Millfield Green", "lat": 51.876, "lon": -0.475},
-  "ampfield-meadows": {"name": "Ampfield Meadows", "lat": 51.020, "lon": -1.418},
-  "blendworth-hills": {"name": "Blendworth Hills", "lat": 50.910, "lon": -1.020},
-  "sonning-common": {"name": "Sonning Common", "lat": 51.518, "lon": -0.965},
-  "edwalton-office": {"name": "Edwalton Office", "lat": 52.917, "lon": -1.131},
-  "edenbridge-dev": {"name": "Edenbridge (dev)", "lat": 51.197, "lon": 0.066},
-  "little-mount-lake-dev": {"name": "Little Mount Lake (dev)", "lat": 51.131, "lon": 0.262}
+  "austin-heath": {"name": "Beechgrove Primary School", "lat": 52.290, "lon": -1.560},
+  "gifford-lea": {"name": "Whitfield Secondary Academy", "lat": 53.156, "lon": -2.756},
+  "bramshott-place": {"name": "Holloway College", "lat": 51.082, "lon": -0.794},
+  "millbrook-village": {"name": "Marston Hill C of E Primary", "lat": 50.682, "lon": -3.527},
+  "durrants-village": {"name": "Hartwell University Technical College", "lat": 51.082, "lon": -0.345},
+  "great-alne-park": {"name": "St Margaret's Catholic Secondary", "lat": 52.220, "lon": -1.840},
+  "ledian-gardens": {"name": "Eastlea Federation", "lat": 51.220, "lon": 0.640},
+  "elderswell": {"name": "Riverdale Free School", "lat": 52.165, "lon": -0.595},
+  "millfield-green": {"name": "Penrith Community College", "lat": 51.876, "lon": -0.475},
+  "ampfield-meadows": {"name": "Aldergate Special Educational Needs School", "lat": 51.020, "lon": -1.418},
+  "blendworth-hills": {"name": "Pennington Pre-Prep & Junior", "lat": 50.910, "lon": -1.020}
 }

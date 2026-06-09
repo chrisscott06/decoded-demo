@@ -1330,7 +1330,7 @@
           "clickable": true,
           "pointContribution2026": 0.25,
           "validatorReason": "Accepted in 2025 — but on CRREM 2°C transition scenario which is RETIRED for 2026 cycle.",
-          "whatLastYearSubmitted": "Hydrock (Stantec) 2024 work for Bramshott Place, Millbrook, Durrants. UKCP18 climate projections (RCP 2.6, 4.5, 8.5) for physical risk. CRREM 1.5°C transition scenario already used — Westbrook technically already meets the 2026 standard. Assessment periods up to 2080. Risks: heat stress, flooding, drought, extreme weather. Internal documents only — not publicly disclosed.",
+          "whatLastYearSubmitted": "Hydrock (Stantec) 2024 work for Holloway College, Marston Hill, Hartwell UTC. UKCP18 climate projections (RCP 2.6, 4.5, 8.5) for physical risk. CRREM 1.5°C transition scenario already used — Westbrook technically already meets the 2026 standard. Assessment periods up to 2080. Risks: heat stress, flooding, drought, extreme weather. Internal documents only — not publicly disclosed.",
           "whatWeNeedToDoChecklist": [
             "NZA refreshes the climate resilience strategy citing CRREM 1.5°C (already used in Hydrock work — no change needed) + NGFS scenarios as supplementary.",
             "Extend coverage to all 11 sites (Hydrock 2024 work covered 3 sites).",
@@ -1383,8 +1383,8 @@
           "achievable2026": 1.0,
           "clickable": true,
           "pointContribution2026": 0.5,
-          "validatorReason": "Accepted in 2025 — but only 3 sites covered (Bramshott, Durrants, Millbrook). 11-site portfolio coverage needed to defend at the new weight.",
-          "whatLastYearSubmitted": "Westbrook's 2025 narrative: *\"Westbrook Academies Trust (Westbrook) prioritises transition risks through a structured assessment process, aligned with international best practice and investor expectations. In 2024, Westbrook commissioned Hydrock (now Stantec) to undertake a CRREM Stranding Risk Assessment across Bramshott, Millbrook, and Durrants. This process evaluates the carbon intensity of each asset against a 1.5°C decarbonisation pathway... Westbrook's Transition Risk Register consolidates these findings, ranking risks by likelihood and potential impact. High-priority risks include reliance on fossil fuel heating systems, the absence of on-site renewables, and upcoming regulatory deadlines for carbon performance. Prioritised risks are incorporated into Westbrook's Net Zero Delivery Plan.\"* Verdict: ACCEPTED (0.5 / 0.5 at 2025 weight).",
+          "validatorReason": "Accepted in 2025 — but only 3 sites covered (Bramshott, Hartwell UTC, Marston Hill). 11-site portfolio coverage needed to defend at the new weight.",
+          "whatLastYearSubmitted": "Westbrook's 2025 narrative: *\"Westbrook Academies Trust (Westbrook) prioritises transition risks through a structured assessment process, aligned with international best practice and investor expectations. In 2024, Westbrook commissioned Hydrock (now Stantec) to undertake a CRREM Stranding Risk Assessment across Bramshott, Marston Hill, and Hartwell UTC. This process evaluates the carbon intensity of each asset against a 1.5°C decarbonisation pathway... Westbrook's Transition Risk Register consolidates these findings, ranking risks by likelihood and potential impact. High-priority risks include reliance on fossil fuel heating systems, the absence of on-site renewables, and upcoming regulatory deadlines for carbon performance. Prioritised risks are incorporated into Westbrook's Net Zero Delivery Plan.\"* Verdict: ACCEPTED (0.5 / 0.5 at 2025 weight).",
           "whatWeNeedToDoChecklist": [
             "NZA Workstream D extends Hydrock 2024 transition risk work to all 11 sites.",
             "Refresh the Westbrook Transition Risk Register with portfolio-wide assets.",
@@ -1471,7 +1471,7 @@
           },
           "priority": "action-needed",
           "whatItMeans": "Identified physical risks at portfolio level plus per-asset risk register (flood, heat, storm, etc.). Weight DOUBLED to 1pt for 2026.",
-          "whatWeNeedToDo": "NZA builds Portfolio Climate Risk Assessment with refreshed physical risk register. Hydrock 2024 work covering Bramshott, Millbrook, Durrants is the foundation — extend to all 11 sites.",
+          "whatWeNeedToDo": "NZA builds Portfolio Climate Risk Assessment with refreshed physical risk register. Hydrock 2024 work covering Bramshott, Marston Hill, Hartwell UTC is the foundation — extend to all 11 sites.",
           "evidenceRequired": {
             "type": "policy-document",
             "validation": "manual",
@@ -1484,7 +1484,7 @@
           "clickable": true,
           "pointContribution2026": 0.5,
           "validatorReason": "Accepted in 2025 — but only 3 sites. 11-site coverage needed to defend at new weight.",
-          "whatLastYearSubmitted": "Westbrook's 2025 narrative: *\"Westbrook commissioned Hydrock to assess physical climate risks across Bramshott, Millbrook, and Durrants Villages, applying the UK Green Building Council (UKGBC) framework and UKCP18 climate projections. Risks were evaluated across short- and long-term timeframes (up to 2080) and multiple climate scenarios (RCP 2.6, 4.5, 8.5).\"* Acute hazards considered: extratropical storm, flash flood, hail, river flood, storm surge, tropical cyclone. Chronic stressors: drought stress, fire weather stress, heat stress, precipitation stress, rising mean temperatures, rising sea levels. Verdict: ACCEPTED (0.5 / 0.5).",
+          "whatLastYearSubmitted": "Westbrook's 2025 narrative: *\"Westbrook commissioned Hydrock to assess physical climate risks across Bramshott, Marston Hill, and Hartwell University Technical Colleges, applying the UK Green Building Council (UKGBC) framework and UKCP18 climate projections. Risks were evaluated across short- and long-term timeframes (up to 2080) and multiple climate scenarios (RCP 2.6, 4.5, 8.5).\"* Acute hazards considered: extratropical storm, flash flood, hail, river flood, storm surge, tropical cyclone. Chronic stressors: drought stress, fire weather stress, heat stress, precipitation stress, rising mean temperatures, rising sea levels. Verdict: ACCEPTED (0.5 / 0.5).",
           "whatWeNeedToDoChecklist": [
             "NZA Workstream D extends Hydrock physical risk work to all 11 sites.",
             "Refresh the per-asset physical risk register using UKCP18 (still current).",
@@ -2249,7 +2249,7 @@
           "clickable": true,
           "pointContribution2026": 1.0,
           "validatorReason": "Only 4 risk types claimed at 100% coverage. Many more could be supported by Hydrock work that was performed but not claimed.",
-          "whatLastYearSubmitted": "Westbrook's 2025 narrative: *\"Westbrook conducts ESG risk assessments to inform investment planning, resilience improvements, and strategic decision-making across its standing portfolio. A GHG assessment has been undertaken across the REIT and other aspects of Westbrook's portfolio to support a wider decarbonisation strategy aligned to SBTi's net zero standard... For climate risks, Hydrock (Stantec) completed a Physical Climate Risk and Resilience Assessment for Bramshott Place, Millbrook, and Durrants Villages... Transition risks are assessed using the Carbon Risk Real Estate Monitor (CRREM) tool.\"* Aligned with: GHG Protocol + SBTi (aligned but not validated), UKGBC Climate Resilience Framework, CRREM. Issues claimed at 100% coverage: Climate / Climate change adaptation, Flooding, GHG emissions, Resilience. Verdict: Partially Accepted (2 / 3).",
+          "whatLastYearSubmitted": "Westbrook's 2025 narrative: *\"Westbrook conducts ESG risk assessments to inform investment planning, resilience improvements, and strategic decision-making across its standing portfolio. A GHG assessment has been undertaken across the REIT and other aspects of Westbrook's portfolio to support a wider decarbonisation strategy aligned to SBTi's net zero standard... For climate risks, Hydrock (Stantec) completed a Physical Climate Risk and Resilience Assessment for Holloway College, Marston Hill, and Hartwell University Technical Colleges... Transition risks are assessed using the Carbon Risk Real Estate Monitor (CRREM) tool.\"* Aligned with: GHG Protocol + SBTi (aligned but not validated), UKGBC Climate Resilience Framework, CRREM. Issues claimed at 100% coverage: Climate / Climate change adaptation, Flooding, GHG emissions, Resilience. Verdict: Partially Accepted (2 / 3).",
           "gresbTrackedIssues": [
             {
               "label": "Biodiversity and habitat",
@@ -3497,7 +3497,7 @@
           },
           "priority": "parked",
           "whatItMeans": "Operational green building certifications (BREEAM In-Use, LEED O+M, etc.). No certs in place — BREEAM In-Use is the realistic future path.",
-          "whatWeNeedToDo": "No action this cycle. BREEAM In-Use on flagship asset (Millfield Green) is the future-cycle target. Quote requested from Sam.",
+          "whatWeNeedToDo": "No action this cycle. BREEAM In-Use on flagship asset (Penrith Community College) is the future-cycle target. Quote requested from Sam.",
           "evidenceRequired": {
             "type": "asset-spreadsheet",
             "validation": "automated",
@@ -4326,7 +4326,7 @@
           "note": "Rob/Operations"
         },
         {
-          "label": "BREEAM In-Use pilot at flagship site (Millfield Green)",
+          "label": "BREEAM In-Use pilot at flagship site (Penrith Community College)",
           "delta": 1.0,
           "category": "2027",
           "indicator": "BC1.2",
@@ -4438,7 +4438,7 @@
         "note": "Specialist TCFD-style modelling. Park to 2027 with climate data provider."
       },
       {
-        "title": "BREEAM In-Use on flagship asset (Millfield Green)",
+        "title": "BREEAM In-Use on flagship asset (Penrith Community College)",
         "pointPotential": 2.0,
         "note": "BC1.2 future-cycle path. Indicative quote requested from Sam."
       },
@@ -4469,7 +4469,7 @@
       },
       {
         "title": "Multiple BREEAM In-Use 2026 (portfolio-wide)",
-        "reason": "Sequencing — Millfield Green as flagship 2027, portfolio 2028. Avoids cert cost concentration."
+        "reason": "Sequencing — Penrith Community College as flagship 2027, portfolio 2028. Avoids cert cost concentration."
       }
     ],
     "waterfall2026": {
@@ -4769,7 +4769,7 @@
         },
         {
           "code": "BC1.2",
-          "label": "BREEAM In-Use pilot at flagship site (Millfield Green)",
+          "label": "BREEAM In-Use pilot at flagship site (Penrith Community College)",
           "delta": 1.0,
           "owner": "Operations + NZA",
           "type": "positive"

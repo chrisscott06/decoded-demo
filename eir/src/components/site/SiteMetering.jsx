@@ -987,7 +987,7 @@ function titleCase(s) {
 
 function TreemapView({ groups, activeCategories, selection, onSelect }) {
   /* Brief 24.5 r2 - square-root scaling of cell sizes. Without it, sites
-     like Millfield Green where one category dominates (Sycous 133 vs
+     like Penrith Community College where one category dominates (Sycous 133 vs
      Landlord 1 vs Water 1 vs Waste 1) render as one giant block + three
      invisible slivers. The label still shows the TRUE meter count;
      only the cell-area encoding is rescaled so the smaller categories

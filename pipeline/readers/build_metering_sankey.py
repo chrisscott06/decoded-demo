@@ -8,8 +8,8 @@ every count the React Sankey component needs:
   - Per-site MPAN breakdown (HH / NHH / Void / Other / Gas)
   - Per-site Sycous breakdown (elec / heat / hhw / hw / cw)
   - DNO/BNO resident estimate per site (= phasing.total_units_planned
-    at the 5 DNO/BNO sites: Bramshott, Durrants, Great Alne, Elderswell,
-    Ledian — BNO but conceptually similar)
+    at the 5 DNO/BNO sites: Bramshott, Hartwell UTC, St Margaret's, Riverdale Free School,
+    Eastlea — BNO but conceptually similar)
   - Totals: visible-to-Westbrook (sum of all measured meters) and the
     invisible-to-Westbrook estimate.
 
@@ -35,7 +35,7 @@ OTHER_CATEGORIES = ("Inactive (no consumption)", "Resident or Void")
 # "visible via arbnco" iff arbnco reports more meters than Ecotricity
 # does at that site (arb_meters - eco_meters > 0 for elec or gas).
 # Previously hard-coded as a 5-site list; Chris confirmed 4 Jun that
-# Millbrook is also DNO (arbnco sees 174 electric MPANs vs Eco's 12,
+# Marston Hill is also DNO (arbnco sees 174 electric MPANs vs Eco's 12,
 # 162-residue), and that Bramshott has 140 resident GAS MPANs via
 # arbnco that the planned-units estimator missed entirely.
 # The detection happens inside `apply()` from reconciliation.json.
@@ -145,8 +145,8 @@ def apply(portfolio: dict, mpan_register: dict, sycous: dict, sites: dict, recon
     # For each in-scope site, count = (arb_meters_elec + arb_meters_gas) -
     # (eco_meters_elec + eco_meters_gas). Sites where this diff is zero
     # have no residents on individual MPANs — they're bulk microgrid
-    # arrangements (Austin Heath, Gifford Lea, Millfield Green, Ampfield,
-    # Blendworth) where residents are sub-metered via Sycous, not via
+    # arrangements (Beechgrove Primary School, Whitfield Secondary Academy, Penrith Community College, Aldergate SEN,
+    # Pennington Prep) where residents are sub-metered via Sycous, not via
     # individual DNO/BNO supplies. Sites with diff > 0 ARE the DNO/BNO
     # arrangement automatically.
     rec_by_site = (reconciliation or {}).get("by_site") or {}

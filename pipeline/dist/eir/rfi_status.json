@@ -1,0 +1,234 @@
+{
+  "items": [
+    {
+      "ref": "A1",
+      "theme": "A. Organisational Boundary & Reporting",
+      "theme_letter": "A",
+      "sub_theme": "Ownership structure",
+      "request_summary": "Please confirm the current JV ownership structure following NatWest Pension Fund's acquisition of L&G's stake. Which entities does IVG have operational control over? Please provide an updated org cha…",
+      "status": "Open"
+    },
+    {
+      "ref": "A2",
+      "theme": "A. Organisational Boundary & Reporting",
+      "theme_letter": "A",
+      "sub_theme": "Reporting boundary: sites",
+      "request_summary": "Please confirm which sites are within the GHG and GRESB reporting boundary for the 2025 calendar year. The LoA lists 12 villages + head office. Are all operational? Are Pennington Pre-Prep & Junior (Horndean) an…",
+      "status": "Open"
+    },
+    {
+      "ref": "A3",
+      "theme": "A. Organisational Boundary & Reporting",
+      "theme_letter": "A",
+      "sub_theme": "Reporting periods",
+      "request_summary": "Please confirm IVG's financial year end date. We will prepare the GHG inventory for the 2025 calendar year but may also need financial year alignment for SECR/NWPF reporting.",
+      "status": "Open"
+    },
+    {
+      "ref": "A4",
+      "theme": "A. Organisational Boundary & Reporting",
+      "theme_letter": "A",
+      "sub_theme": "NWPF climate commitments",
+      "request_summary": "Does NWPF have SBTi targets or climate commitments IVG needs to align with? L&G had a 42% absolute S1+2 reduction by 2030 from 2021 baseline — has this carried over?",
+      "status": "Open"
+    },
+    {
+      "ref": "A5",
+      "theme": "A. Organisational Boundary & Reporting",
+      "theme_letter": "A",
+      "sub_theme": "Embodied carbon:  reporting approach",
+      "request_summary": "Does NWPF want IVG to report embodied carbon of new buildings within IVG's corporate GHG inventory (Scope 3 Cat 2), or separately at portfolio/asset level? Which entity commissions and pays for const…",
+      "status": "Open"
+    },
+    {
+      "ref": "A6",
+      "theme": "A. Organisational Boundary & Reporting",
+      "theme_letter": "A",
+      "sub_theme": "Downstream leased assets",
+      "request_summary": "Does NWPF want IVG to report resident energy use (Scope 3 Cat 13)? Hydrock excluded this previously.",
+      "status": "Open"
+    },
+    {
+      "ref": "B1",
+      "theme": "B. Utilities, Water & Waste",
+      "theme_letter": "B",
+      "sub_theme": "Electricity - landlord meters",
+      "request_summary": "Please provide electricity consumption data (kWh) and ASC (kvA) for all landlord/communal meters for 1 Jan – 31 Dec 2025. NZA will obtain HH data from Stark directly. Please provide NHH meter data vi…",
+      "status": "Open"
+    },
+    {
+      "ref": "B2",
+      "theme": "B. Utilities, Water & Waste",
+      "theme_letter": "B",
+      "sub_theme": "Electricity - void properties",
+      "request_summary": "Please provide a void property list as at 31 Dec 2025 and confirm consumption for void units on the Ecotricity account during 2025. See 'Electricity Void' tab. The 2023 data shows ~132 residential me…",
+      "status": "Open"
+    },
+    {
+      "ref": "B3",
+      "theme": "B. Utilities, Water & Waste",
+      "theme_letter": "B",
+      "sub_theme": "Natural gas",
+      "request_summary": "Please provide gas consumption data (kWh) for all sites with gas supplies for 1 Jan – 31 Dec 2025. See 'Gas LL' tab for 9 confirmed MPRNs across 6 sites.",
+      "status": "Open"
+    },
+    {
+      "ref": "B4",
+      "theme": "B. Utilities, Water & Waste",
+      "theme_letter": "B",
+      "sub_theme": "Water",
+      "request_summary": "Please provide water consumption data (m³) for all communal meters for 2025. See 'Water' tab - 19 meters confirmed across 6 sites. Also provide missing water supplier and meter info for Beechgrove Primary School,…",
+      "status": "Open"
+    },
+    {
+      "ref": "B5",
+      "theme": "B. Utilities, Water & Waste",
+      "theme_letter": "B",
+      "sub_theme": "Waste",
+      "request_summary": "Please provide waste data for all sites for 2025 by stream, weight (tonnes), and disposal method. NZA will request BIFFA data directly. Please confirm the waste contractor for Whitfield Secondary Academy and Millbro…",
+      "status": "Open"
+    },
+    {
+      "ref": "B6",
+      "theme": "B. Utilities, Water & Waste",
+      "theme_letter": "B",
+      "sub_theme": "Fugitive emissions — refrigerants",
+      "request_summary": "Please provide F-gas maintenance logs for all ASHP, GSHP, refrigeration, and AC units across all sites for 2025. Include refrigerant type, charge quantity, and top-up/leak quantities. If unavailable,…",
+      "status": "Open"
+    },
+    {
+      "ref": "B7",
+      "theme": "B. Utilities, Water & Waste",
+      "theme_letter": "B",
+      "sub_theme": "CHP and on-site generation",
+      "request_summary": "Please confirm whether CHP units at Beechgrove Primary School and Whitfield Secondary Academy are still operational. Provide fuel input data (gas kWh) and electricity output (kWh) for 2025.",
+      "status": "Open"
+    },
+    {
+      "ref": "B8",
+      "theme": "B. Utilities, Water & Waste",
+      "theme_letter": "B",
+      "sub_theme": "Resident sub-meter data (Sycous)",
+      "request_summary": "Please provide access to the Sycous sub-metering platform, or a bulk data export of all resident sub-meter data acrosseach site - heat, hot water, electricity, and water consumption at the most granu…",
+      "status": "Open"
+    },
+    {
+      "ref": "C1",
+      "theme": "C. Fleet, Logistics & Travel",
+      "theme_letter": "C",
+      "sub_theme": "Company fleet",
+      "request_summary": "Please provide fuel consumption or mileage data for all IVG-owned/leased vehicles during 2025, including resident transport vehicles at each village. Include fuel type, litres consumed, or km travell…",
+      "status": "Open"
+    },
+    {
+      "ref": "C2",
+      "theme": "C. Fleet, Logistics & Travel",
+      "theme_letter": "C",
+      "sub_theme": "Business travel",
+      "request_summary": "Please provide all business travel data for 2025: mileage claims (with vehicle type + fuel), rail bookings (with origin/destination), flights, hotel stays (nights + location), taxi receipts.",
+      "status": "Open"
+    },
+    {
+      "ref": "C3",
+      "theme": "C. Fleet, Logistics & Travel",
+      "theme_letter": "C",
+      "sub_theme": "Employee commuting",
+      "request_summary": "Please provide headcount by site as at 31 Dec 2025. Will IVG re-issue the commuting survey? Previous survey had only 12% response. Also confirm homeworking policy and frequency.",
+      "status": "Open"
+    },
+    {
+      "ref": "D1",
+      "theme": "D. Construction & Embodied Carbon",
+      "theme_letter": "D",
+      "sub_theme": "Construction site energy",
+      "request_summary": "Please provide energy consumption, water and waste data for active construction sites during 2025 - potentially via ESG app",
+      "status": "Open"
+    },
+    {
+      "ref": "D3",
+      "theme": "D. Construction & Embodied Carbon",
+      "theme_letter": "D",
+      "sub_theme": "WLCA / embodied carbon",
+      "request_summary": "Please share any WLCA reports for IVG building archetypes.",
+      "status": "Open"
+    },
+    {
+      "ref": "E1",
+      "theme": "E. Procurement & Supply Chain",
+      "theme_letter": "E",
+      "sub_theme": "Purchased goods & services",
+      "request_summary": "Please provide the full purchase ledger for 2025: supplier name, category, amount (£), and site allocation. Include vendor SIC codes and addresses where available.",
+      "status": "Open"
+    },
+    {
+      "ref": "E2",
+      "theme": "E. Procurement & Supply Chain",
+      "theme_letter": "E",
+      "sub_theme": "Capital goods",
+      "request_summary": "Please provide capital expenditure data for 2025, including asset descriptions, values, and site allocation. Note: this covers IVG's own capex only - building construction is assumed DevCo (see A5).",
+      "status": "Open"
+    },
+    {
+      "ref": "E3",
+      "theme": "E. Procurement & Supply Chain",
+      "theme_letter": "E",
+      "sub_theme": "Upstream T&D",
+      "request_summary": "Please confirm whether delivery/logistics costs are recorded separately from general procurement. If so, provide distance/weight data for deliveries to sites during 2025.",
+      "status": "Open"
+    },
+    {
+      "ref": "F1",
+      "theme": "F. GRESB & Site Information",
+      "theme_letter": "F",
+      "sub_theme": "Gross internal area (GIA)",
+      "request_summary": "Please provide current GIA (m²) per site, split by residential and non-residential. Hydrock 2021 figures have discrepancies with other sources.",
+      "status": "Open"
+    },
+    {
+      "ref": "F2",
+      "theme": "F. GRESB & Site Information",
+      "theme_letter": "F",
+      "sub_theme": "Unit counts & occupancy",
+      "request_summary": "Please provide total units per site, units per phase, and occupancy as at 31 Dec 2025. Six sites have conflicting unit counts across our data sources.",
+      "status": "Open"
+    },
+    {
+      "ref": "F3",
+      "theme": "F. GRESB & Site Information",
+      "theme_letter": "F",
+      "sub_theme": "Heating strategy confirmation",
+      "request_summary": "Please confirm heating strategy per site: (a) Does Marston Hill have gas? We show active MPRN 9318297304. (b) Does Aldergate SEN have gas? (c) Are CHP units at Beechgrove Primary School and Whitfield Secondary Academy still operational?",
+      "status": "Open"
+    },
+    {
+      "ref": "F4",
+      "theme": "F. GRESB & Site Information",
+      "theme_letter": "F",
+      "sub_theme": "Gross Asset Value (GAV)",
+      "request_summary": "Please provide GAV per entity/site as at 31 Dec 2025.",
+      "status": "Open"
+    },
+    {
+      "ref": "F5",
+      "theme": "F. GRESB & Site Information",
+      "theme_letter": "F",
+      "sub_theme": "ESG policies",
+      "request_summary": "Please share existing ESG policies: environmental, tenant engagement, H&S, biodiversity, sustainable procurement, business travel etc",
+      "status": "Open"
+    }
+  ],
+  "summary": {
+    "total": 27,
+    "by_theme": {
+      "A": 6,
+      "B": 8,
+      "C": 3,
+      "D": 2,
+      "E": 3,
+      "F": 5
+    },
+    "by_status": {
+      "Open": 27
+    }
+  }
+}

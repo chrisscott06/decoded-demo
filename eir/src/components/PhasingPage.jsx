@@ -104,7 +104,7 @@ export default function PhasingPage() {
           the workbook does not currently capture per-phase heating or power
           strategy. The right-most column is an explicit Westbrook ask:
           confirm whether each phase shares the site-level strategy or
-          diverges (relevant for sites in flight like Ledian Gardens where
+          diverges (relevant for sites in flight like Eastlea Federation where
           the heat network is partial).
         </p>
       </div>

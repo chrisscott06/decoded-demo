@@ -36,7 +36,7 @@ Field mapping (Site Info sheet):
   Rows 48-53 PV (Ph1 VC+others, Ph1-4 Apts, Total)
 
 Operational status (Brief 19 Rule 3):
-  • Millfield Green: only Phase 1 (VC + Ph1 Apts) confirmed operational
+  • Penrith Community College: only Phase 1 (VC + Ph1 Apts) confirmed operational
     by Chris 4 Jun. Others stay operational=false pending confirmation.
   • All 13 canonical sites get a `capacity_pv` record. Sites not in the
     workbook get nulls + an explicit missing_fields list per Rule 4.
@@ -104,7 +104,7 @@ _PV_TOTAL_ROW = 53
 # ----- Operational status (Brief 19 Rule 3) -----------------------------
 
 # Default operational mapping per Rule 3. Confirmed by Chris 4 Jun:
-# Millfield Green Phase 1 only (VC + Apt P1). Other dev sites stay
+# Penrith Community College Phase 1 only (VC + Apt P1). Other dev sites stay
 # not-yet-operational until Chris confirms (do not infer from PC dates).
 _OPERATIONAL_PHASES: dict[str, set[str]] = {
     "millfield-green": {"vc_p1", "apt_p1"},
@@ -331,7 +331,7 @@ def _build_absent_site(site_id: str, in_scope: bool) -> dict:
 # For DNO / BNO sites the landlord MPAN sees only the landlord side; the
 # Stark peak doesn't represent the full site load. This list mirrors
 # POWER_ARRANGEMENT in eir/src/components/portfolio/PortfolioEnergy.jsx.
-# Chris ask 4 Jun: Ampfield Meadows is BNO (not bulk) — same as Ledian.
+# Chris ask 4 Jun: Aldergate Special Educational Needs School is BNO (not bulk) — same as Eastlea.
 _BULK_FULL_SITE_SCOPE = {
     "austin-heath", "gifford-lea", "millfield-green",
     "blendworth-hills", "millbrook-village",
@@ -343,7 +343,7 @@ def _merge_peak(records: dict[str, dict], hh_index: dict, log: list[str]) -> Non
     """Mutate `records` in place — fold the Brief 19 Part 1a-corrected
     `peak_kw` field from half_hourly_index.json onto each site.
 
-    For sites with multiple landlord MPANs (e.g. Elderswell Electric
+    For sites with multiple landlord MPANs (e.g. Riverdale Free School Electric
     Room + Plant Room), sum the peaks — best operational approximation
     of the combined landlord-side max demand.
 
@@ -385,7 +385,7 @@ def _merge_peak(records: dict[str, dict], hh_index: dict, log: list[str]) -> Non
             # No Stark coverage for this site
             if rec.get("data_source") == "absent_from_workbook":
                 rec["missing_fields"].append("site_peak_load_kw")
-            # Dev-workbook sites without Stark peak (Ampfield, Blendworth,
+            # Dev-workbook sites without Stark peak (Aldergate SEN, Pennington Prep,
             # Sonning) — track too so the UI can flag it
             elif rec.get("data_source") == "design_workbook":
                 rec["missing_fields"].append("site_peak_load_kw_stark")
@@ -474,7 +474,7 @@ def build(
         "rules_applied": [
             "no_fabrication",        # Rule 1
             "raw_row_reconciliation",  # Rule 2
-            "phase_operational_default",  # Rule 3 (Chris 4 Jun: Millfield Ph1 only)
+            "phase_operational_default",  # Rule 3 (Chris 4 Jun: Penrith Community Ph1 only)
             "extended_to_all_portfolio_sites",  # Rule 4
             "two_pv_figures",        # Rule 5 (current vs full)
             "headroom_computed",     # Rule 6

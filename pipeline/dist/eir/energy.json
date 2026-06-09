@@ -1,0 +1,292 @@
+{
+  "ampfield-meadows": {
+    "id": "ampfield-meadows",
+    "meters": {
+      "electricity": 3,
+      "gas": 0
+    },
+    "consumption_kwh": {
+      "electricity": 659269.19,
+      "gas": null,
+      "total": 659269.19
+    },
+    "emissions_actual_tco2e": {
+      "electricity": 80.41,
+      "gas": null,
+      "total": 80.41
+    },
+    "emissions_national_avg_tco2e": {
+      "electricity": 116.69,
+      "gas": null,
+      "total": 116.69
+    },
+    "source_arbnco_notes": null,
+    "data_period": "CY2025",
+    "notes": null
+  },
+  "austin-heath": {
+    "id": "austin-heath",
+    "meters": {
+      "electricity": 1,
+      "gas": 2
+    },
+    "consumption_kwh": {
+      "electricity": 423541.69,
+      "gas": 2582255.0,
+      "total": 3005796.69
+    },
+    "emissions_actual_tco2e": {
+      "electricity": 0.0,
+      "gas": 919.47,
+      "total": 919.47
+    },
+    "emissions_national_avg_tco2e": {
+      "electricity": 74.97,
+      "gas": 919.47,
+      "total": 994.44
+    },
+    "source_arbnco_notes": null,
+    "data_period": "CY2025",
+    "notes": "Resident electricity split pending (Sycous integration). Meter-aggregate values recorded; landlord/resident apportionment deferred."
+  },
+  "blendworth-hills": {
+    "id": "blendworth-hills",
+    "meters": {
+      "electricity": 3,
+      "gas": 0
+    },
+    "consumption_kwh": {
+      "electricity": 548470.69,
+      "gas": null,
+      "total": 548470.69
+    },
+    "emissions_actual_tco2e": {
+      "electricity": 0.0,
+      "gas": null,
+      "total": 0.0
+    },
+    "emissions_national_avg_tco2e": {
+      "electricity": 97.08,
+      "gas": null,
+      "total": 97.08
+    },
+    "source_arbnco_notes": null,
+    "data_period": "CY2025",
+    "notes": null
+  },
+  "bramshott-place": {
+    "id": "bramshott-place",
+    "meters": {
+      "electricity": 199,
+      "gas": 143
+    },
+    "consumption_kwh": {
+      "electricity": 783105.19,
+      "gas": 1936238.0,
+      "total": 2719343.19
+    },
+    "emissions_actual_tco2e": {
+      "electricity": 145.02,
+      "gas": 354.22,
+      "total": 499.24
+    },
+    "emissions_national_avg_tco2e": {
+      "electricity": 138.67,
+      "gas": 354.22,
+      "total": 492.89
+    },
+    "source_arbnco_notes": null,
+    "data_period": "CY2025",
+    "notes": "Resident electricity split pending (Sycous integration). Meter-aggregate values recorded; landlord/resident apportionment deferred."
+  },
+  "durrants-village": {
+    "id": "durrants-village",
+    "meters": {
+      "electricity": 181,
+      "gas": 0
+    },
+    "consumption_kwh": {
+      "electricity": 1285363.29,
+      "gas": null,
+      "total": 1285363.29
+    },
+    "emissions_actual_tco2e": {
+      "electricity": 62.51,
+      "gas": null,
+      "total": 62.51
+    },
+    "emissions_national_avg_tco2e": {
+      "electricity": 227.48,
+      "gas": null,
+      "total": 227.48
+    },
+    "source_arbnco_notes": null,
+    "data_period": "CY2025",
+    "notes": "Resident electricity split pending (Sycous integration). Meter-aggregate values recorded; landlord/resident apportionment deferred."
+  },
+  "elderswell": {
+    "id": "elderswell",
+    "meters": {
+      "electricity": 82,
+      "gas": 1
+    },
+    "consumption_kwh": {
+      "electricity": 405964.08,
+      "gas": 986236.0,
+      "total": 1392200.08
+    },
+    "emissions_actual_tco2e": {
+      "electricity": 1.86,
+      "gas": 180.44,
+      "total": 182.3
+    },
+    "emissions_national_avg_tco2e": {
+      "electricity": 72.62,
+      "gas": 180.44,
+      "total": 253.06
+    },
+    "source_arbnco_notes": null,
+    "data_period": "CY2025",
+    "notes": "Resident electricity split pending (Sycous integration). Meter-aggregate values recorded; landlord/resident apportionment deferred."
+  },
+  "gifford-lea": {
+    "id": "gifford-lea",
+    "meters": {
+      "electricity": 2,
+      "gas": 1
+    },
+    "consumption_kwh": {
+      "electricity": 630707.69,
+      "gas": 2448995.0,
+      "total": 3079702.69
+    },
+    "emissions_actual_tco2e": {
+      "electricity": 0.0,
+      "gas": 448.07,
+      "total": 448.07
+    },
+    "emissions_national_avg_tco2e": {
+      "electricity": 111.63,
+      "gas": 448.07,
+      "total": 559.7
+    },
+    "source_arbnco_notes": null,
+    "data_period": "CY2025",
+    "notes": "Resident electricity split pending (Sycous integration). Meter-aggregate values recorded; landlord/resident apportionment deferred."
+  },
+  "great-alne-park": {
+    "id": "great-alne-park",
+    "meters": {
+      "electricity": 132,
+      "gas": 0
+    },
+    "consumption_kwh": {
+      "electricity": 1047047.4,
+      "gas": null,
+      "total": 1047047.4
+    },
+    "emissions_actual_tco2e": {
+      "electricity": 32.78,
+      "gas": null,
+      "total": 32.78
+    },
+    "emissions_national_avg_tco2e": {
+      "electricity": 185.34,
+      "gas": null,
+      "total": 185.34
+    },
+    "source_arbnco_notes": null,
+    "data_period": "CY2025",
+    "notes": "Resident electricity split pending (Sycous integration). Meter-aggregate values recorded; landlord/resident apportionment deferred."
+  },
+  "ledian-gardens": {
+    "id": "ledian-gardens",
+    "meters": {
+      "electricity": 116,
+      "gas": 5
+    },
+    "consumption_kwh": {
+      "electricity": 514522.99,
+      "gas": 1252423.0,
+      "total": 1766945.99
+    },
+    "emissions_actual_tco2e": {
+      "electricity": 67.37,
+      "gas": 229.14,
+      "total": 296.51
+    },
+    "emissions_national_avg_tco2e": {
+      "electricity": 91.11,
+      "gas": 229.14,
+      "total": 320.25
+    },
+    "source_arbnco_notes": null,
+    "data_period": "CY2025",
+    "notes": "Resident electricity split pending (Sycous integration). Meter-aggregate values recorded; landlord/resident apportionment deferred."
+  },
+  "millbrook-village": {
+    "id": "millbrook-village",
+    "meters": {
+      "electricity": 174,
+      "gas": 1
+    },
+    "consumption_kwh": {
+      "electricity": 1122643.69,
+      "gas": 147706.0,
+      "total": 1270349.69
+    },
+    "emissions_actual_tco2e": {
+      "electricity": 64.88,
+      "gas": 27.02,
+      "total": 91.9
+    },
+    "emissions_national_avg_tco2e": {
+      "electricity": 198.65,
+      "gas": 27.02,
+      "total": 225.67
+    },
+    "source_arbnco_notes": null,
+    "data_period": "CY2025",
+    "notes": "Resident electricity split pending (Sycous integration). Meter-aggregate values recorded; landlord/resident apportionment deferred."
+  },
+  "millfield-green": {
+    "id": "millfield-green",
+    "meters": {
+      "electricity": 1,
+      "gas": 0
+    },
+    "consumption_kwh": {
+      "electricity": 814487.7,
+      "gas": null,
+      "total": 814487.7
+    },
+    "emissions_actual_tco2e": {
+      "electricity": 0.0,
+      "gas": null,
+      "total": 0.0
+    },
+    "emissions_national_avg_tco2e": {
+      "electricity": 144.16,
+      "gas": null,
+      "total": 144.16
+    },
+    "source_arbnco_notes": null,
+    "data_period": "CY2025",
+    "notes": null
+  },
+  "portfolio": {
+    "total_electricity_meters": 898,
+    "total_gas_meters": 153,
+    "total_consumption_kwh": 17669267.2,
+    "total_electricity_kwh": 8315414.2,
+    "total_gas_kwh": 9353853.0,
+    "total_emissions_actual_tco2e": 2615.08,
+    "total_electricity_actual_tco2e": 456.72,
+    "total_gas_actual_tco2e": 2158.36,
+    "total_emissions_national_avg_tco2e": 3630.98,
+    "total_electricity_national_avg_tco2e": 1472.62,
+    "total_gas_national_avg_tco2e": 2158.36,
+    "data_period": "CY2025",
+    "sites_with_data": 12
+  }
+}

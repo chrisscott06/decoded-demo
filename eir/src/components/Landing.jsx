@@ -20,7 +20,7 @@ import carbon   from '@pipeline-data/carbon.json'
  * Portfolio + Carbon hooks added here.
  */
 
-const TOTAL_SITES = 13  // 12 villages + Edwalton Office
+const TOTAL_SITES = 11  // 11 in-scope schools (demo template; OOS sites dropped)
 
 /** Compact format: 1.2M, 17.9k, 164. */
 function fmtCompact(n) {
