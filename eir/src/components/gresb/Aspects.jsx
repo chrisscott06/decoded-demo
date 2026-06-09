@@ -255,7 +255,7 @@ export default function GresbAspects({ gresb }) {
          pulled the narrative aside H4 ("What you're looking at") up
          into the same vertical band as the header's
          entity-submission line, so the H4's 1 px coral underline
-         struck through "Inspired Villages Group · submission due ...".
+         struck through "Westbrook Academies Trust · submission due ...".
          Now the parent grid sits at its natural y; the right column
          alone carries a larger lift to align the toggle with the
          logo top (see right-column wrapper below). */
@@ -749,7 +749,7 @@ function ExpandedDetail({ indicator, primary, tint, meta, muted }) {
         </Panel>
 
         {/* Panel 2 - Last year (verdict banner + validator reason + what
-            IVG submitted). Brief 25 (v1.4) adds explicit validatorReason
+            Westbrook submitted). Brief 25 (v1.4) adds explicit validatorReason
             + whatLastYearSubmitted fields - both render conditionally
             below the verdict pill. */}
         <Panel header="Last year" icon={Clock} primary={primary}>
@@ -866,8 +866,8 @@ function ExpandedDetail({ indicator, primary, tint, meta, muted }) {
 
       {/* Brief 25 (v1.4) - Open questions strip. Sits below the
          4-panel grid, above the metadata footer. Amber-tinted,
-         flagged as key questions for IVG (Chris ask 5 Jun r14 - the
-         tool is ongoing IVG-facing chrome, not tied to one meeting). */}
+         flagged as key questions for Westbrook (Chris ask 5 Jun r14 - the
+         tool is ongoing Westbrook-facing chrome, not tied to one meeting). */}
       {openQuestions && openQuestions.length > 0 && (
         <OpenQuestionsStrip questions={openQuestions} />
       )}
@@ -1007,13 +1007,13 @@ function IssueChipGrid({ issues, primary, tint }) {
   )
 }
 
-/** Brief 25 (v1.4) - OPEN QUESTIONS FOR IVG strip. Sits below the
+/** Brief 25 (v1.4) - OPEN QUESTIONS FOR Westbrook strip. Sits below the
    4-panel grid inside the expanded card. Amber-tinted border-left
    over a darker panel, with HelpCircle icon-prefixed list items.
    Only renders when openQuestionsForIVG has at least one entry -
-   draws explicit attention to anything the IVG board needs to
+   draws explicit attention to anything the Westbrook board needs to
    confirm for the GRESB submission. (Chris ask 5 Jun r14: the tool
-   is ongoing IVG-facing chrome, not tied to one meeting - copy
+   is ongoing Westbrook-facing chrome, not tied to one meeting - copy
    reads as steady-state "key questions" rather than dated calls.) */
 function OpenQuestionsStrip({ questions }) {
   return (
@@ -1029,7 +1029,7 @@ function OpenQuestionsStrip({ questions }) {
         fontSize: 10, fontWeight: 600,
         letterSpacing: 1.2, textTransform: 'uppercase',
         color: '#F5B048',
-      }}>Key questions for IVG</div>
+      }}>Key questions for Westbrook</div>
       <ul style={{
         margin: 0, padding: 0,
         listStyle: 'none',
@@ -1079,7 +1079,7 @@ function NumberedChecklist({ items, primary }) {
   )
 }
 
-/** #7 - inline peer comparison strip. Each row: label · IVG status ·
+/** #7 - inline peer comparison strip. Each row: label · Westbrook status ·
    peer percent · 10-segment horizontal bar showing peer adoption. */
 function PeerComparisonStrip({ rows, primary }) {
   return (
@@ -1101,7 +1101,7 @@ function PeerComparisonStrip({ rows, primary }) {
           }}>
             <span style={{ color: TEXT_MUTED, whiteSpace: 'nowrap' }}>{row.label}:</span>
             <span style={{ color: primary, fontWeight: 600, whiteSpace: 'nowrap' }}>
-              IVG: {row.ivgStatus ?? '-'}
+              Westbrook: {row.ivgStatus ?? '-'}
             </span>
             {pct != null && (
               <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, minWidth: 0 }}>

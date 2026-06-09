@@ -12,9 +12,9 @@
  * power strategy in the data. Only ONE strategy per whole site. So this
  * table surfaces what EXISTS (units per phase, timing, site-level
  * heating/grid, occupancy, status) and explicitly flags the per-phase
- * heating/power gap as an IVG ask. Do NOT fabricate per-phase strategy.
+ * heating/power gap as an Westbrook ask. Do NOT fabricate per-phase strategy.
  *
- * This page doubles as the structured ask handed back to IVG to firm up
+ * This page doubles as the structured ask handed back to Westbrook to firm up
  * in writing (Brief Principle 3, honest data never fabricated).
  *
  * Cream register; reuses Brief 14's --font-site for the village names.
@@ -61,7 +61,7 @@ function PhaseRow({ site, phase, isFirst, totalPhases }) {
             )}
           </td>
           <td className="phasing-cell-gap" rowSpan={totalPhases}>
-            {/* Brief Principle 3: explicit IVG ask, not fabricated data. */}
+            {/* Brief Principle 3: explicit Westbrook ask, not fabricated data. */}
             Confirm per-phase
           </td>
         </>
@@ -102,7 +102,7 @@ export default function PhasingPage() {
           Phasing timing and unit count come from the sites workbook. The
           heating, grid, and solar columns are <strong>site-level only</strong> -
           the workbook does not currently capture per-phase heating or power
-          strategy. The right-most column is an explicit IVG ask:
+          strategy. The right-most column is an explicit Westbrook ask:
           confirm whether each phase shares the site-level strategy or
           diverges (relevant for sites in flight like Ledian Gardens where
           the heat network is partial).
@@ -142,7 +142,7 @@ export default function PhasingPage() {
       </div>
 
       <div className="phasing-footnote">
-        <span className="phasing-footnote-label">IVG ask</span>
+        <span className="phasing-footnote-label">Westbrook ask</span>
         <span>
           For each site, please confirm whether the per-phase heating and
           power strategy matches the site-level archetype shown above, or

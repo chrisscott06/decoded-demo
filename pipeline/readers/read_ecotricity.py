@@ -127,7 +127,7 @@ def _landlord_void_ratios(wb, log: list[str]) -> dict[str, dict[str, float]]:
             if cat_lower.startswith("landlord") or cat_lower.startswith("construction"):
                 bucket["landlord_elec"] += cy25
             elif cat_lower.startswith("void") or cat_lower.startswith("inactive") or "resident" in cat_lower:
-                # "Resident or Void" → bucket as void (conservative: still being billed to IVG)
+                # "Resident or Void" → bucket as void (conservative: still being billed to Westbrook)
                 bucket["void_elec"] += cy25
             else:
                 # Unknown category — bucket into landlord as a fallback; log

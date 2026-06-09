@@ -36,7 +36,7 @@ const STATUS_LABELS = {
   not_applicable: 'N/A',
 }
 
-/* Chris ask 2026-06-03: status badges now ride the IVG icon language
+/* Chris ask 2026-06-03: status badges now ride the Westbrook icon language
    from the home page tiles, laid out in a uniform 2×2 grid so each
    cell occupies the same footprint regardless of label length. The
    icon picks up the status colour via mask + currentColor; the label

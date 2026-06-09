@@ -136,7 +136,7 @@ function useFluidSize(minPx, vwFactor, maxPx) {
    because no localStorage entry existed and the user hadn't yet
    clicked through a Portfolio Map pin -> "View site" CTA. Phase 1B
    behaviour was correct but introduced unnecessary friction for a
-   first-time IVG user who just wanted to click Site.
+   first-time Westbrook user who just wanted to click Site.
    Fix: default to ampfield-meadows on cold load. Existing
    localStorage entries take precedence so anyone who's already
    navigated through a site keeps their last selection.
@@ -403,10 +403,10 @@ function SiteOverview({ site, siteId, rec }) {
   const activeView = views.find((v) => v.key === imgView) || views[0]
 
   /* Chris ask 2026-05-24 (post-imagery): a "View metadata" toggle that
-     slides a card across the square image, revealing the deeper IVG
+     slides a card across the square image, revealing the deeper Westbrook
      site profile (units, occupancy, phasing, amenities, system spec).
      Keeps the page calm - energy/water/waste own the tiles, but every
-     IVG fact we have is one click away. */
+     Westbrook fact we have is one click away. */
   const [metaOpen, setMetaOpen] = useState(false)
 
   /* Chris ask 2026-05-24: metadata icon strip below the H1.
@@ -551,7 +551,7 @@ function SiteOverview({ site, siteId, rec }) {
 /* Chris ask 2026-05-24 (post-imagery): slide-over metadata panel.
    Lives inside the 320×320 imagery card; "View details" toggle swipes
    it across the image. Four compact sections - Identity, Phasing,
-   Amenities, Systems - exposing every IVG fact we have in sites.json
+   Amenities, Systems - exposing every Westbrook fact we have in sites.json
    without cluttering the main page. */
 function SiteMetadataPanel({ site, metadataIcons = [] }) {
   const id = site.identity || {}
@@ -1184,7 +1184,7 @@ function SiteEnergyHHView({ view, ctx, loading, readyMpans, pendingCount, totalH
   }
 
   /* Granular AND Heat map views - pre-clamp to CY25 so the chart only
-     shows the calendar year IVG cares about (Chris ask 5 Jun: 'on the
+     shows the calendar year Westbrook cares about (Chris ask 5 Jun: 'on the
      heat map, can we just show CY25 and filter out the other stuff').
      Daily profile and Duration curve keep the full dataset because
      aggregate views benefit from the longer time range. */
@@ -2101,7 +2101,7 @@ function GresbPage({ currentSiteId, subTab, drillCode }) {
         {drillCode && drillEntity && sub === 'aspects' && (
           <GresbTask1Placeholder
             title={`${drillEntity.code} - ${drillEntity.name}`}
-            body={`Aspect drill-in placeholder. Full layout lands in Task 4 (per-aspect breakdown - indicators, "the play here", evidence list, retired/parked badges).\n\nThis aspect carries ${drillEntity.indicators?.length || 0} indicators. IVG-name: "${drillEntity.ivgName}". Component band: ${drillEntity.component}. Score 2025 → ${drillEntity.score2025} / Floor → ${drillEntity.floor2026} / Ceiling → ${drillEntity.ceiling2026} / Max → ${drillEntity.max2026}.`}
+            body={`Aspect drill-in placeholder. Full layout lands in Task 4 (per-aspect breakdown - indicators, "the play here", evidence list, retired/parked badges).\n\nThis aspect carries ${drillEntity.indicators?.length || 0} indicators. Westbrook-name: "${drillEntity.ivgName}". Component band: ${drillEntity.component}. Score 2025 → ${drillEntity.score2025} / Floor → ${drillEntity.floor2026} / Ceiling → ${drillEntity.ceiling2026} / Max → ${drillEntity.max2026}.`}
           />
         )}
         {/* Brief 22 Task 6 - Dependencies drill-in branch removed entirely. */}
@@ -2239,7 +2239,7 @@ function GresbComponentShowcase() {
       </Section>
       <Section title="EvidenceItem - read-only Phase 1">
         <div style={{ width: '100%' }}>
-          <EvidenceItem name="IVG ESG Policy 2026" validUntil="2027-03-31" />
+          <EvidenceItem name="Westbrook ESG Policy 2026" validUntil="2027-03-31" />
           <EvidenceItem name="Sustainability Statement" validUntil="2026-12-31" url="https://example.org/policy.pdf" />
           <EvidenceItem name="Climate Risk Assessment v2" />
         </div>

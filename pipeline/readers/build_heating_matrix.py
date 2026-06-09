@@ -89,7 +89,7 @@ HEATING_BY_PHASE: dict[str, dict[str, tuple[Any, Any, Any]]] = {
         "vc_p1": (
             "Hybrid",
             "TBC",
-            "Best read: GSHP + CHP at VC; gas boilers in apartments. Confirm with IVG operations.",
+            "Best read: GSHP + CHP at VC; gas boilers in apartments. Confirm with Westbrook operations.",
         ),
         "apt_p1": ("Individual gas", "confirmed", None),
         "apt_p2": ("Individual gas", "confirmed", None),

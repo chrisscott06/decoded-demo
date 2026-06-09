@@ -192,7 +192,7 @@ def _reconcile(parts: list[int | float | None], total: int | float | None) -> di
 
 def _build_dev_site(ws, site_id: str, col: int, log: list[str]) -> dict:
     """Build the capacity_pv record for a site that's present in the
-    Inspired Villages workbook (4 dev sites). Phase data, secured
+    Westbrook Academies Trust workbook (4 dev sites). Phase data, secured
     capacity, DNO, reconciliation all sourced from the sheet."""
 
     dno = _cell_str(ws, _ROW_DNO, col)
@@ -402,7 +402,7 @@ def build(
     in_scope_set: set[str],
     log: list[str],
 ) -> dict:
-    """Read the Inspired Villages workbook + merge Stark peaks. Returns
+    """Read the Westbrook Academies Trust workbook + merge Stark peaks. Returns
     the capacity_pv.json payload structure.
 
     `canonical_site_ids` is the full 13-site portfolio list (from
@@ -414,7 +414,7 @@ def build(
     warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
     log.append("")
-    log.append("[Capacity + PV phasing] Brief 19 Part 1b — reading Inspired Villages workbook")
+    log.append("[Capacity + PV phasing] Brief 19 Part 1b — reading Westbrook Academies Trust workbook")
 
     if not workbook_path.exists():
         log.append(f"  ERROR: workbook missing at {workbook_path}")

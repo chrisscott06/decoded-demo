@@ -13,7 +13,7 @@ import DataStatusBadge from './DataStatusBadge.jsx'
  *   why      - optional callout line
  *   big      - make the value 64px (default 48)
  *   onClick  - optional, makes the tile clickable
- *   iconUrl  - optional Chris-supplied IVG×NZA mask SVG; renders inline
+ *   iconUrl  - optional Chris-supplied Westbrook×NZA mask SVG; renders inline
  *              with the label (Chris ask 2026-06-02 - Site Overview
  *              tiles now carry the same icon language as the home
  *              page tiles).

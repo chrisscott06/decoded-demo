@@ -120,7 +120,7 @@ export default function WasteTab({ siteId, site: siteProp }) {
         <div className="empty-state-card">
           <p className="empty-state-headline">No waste contract for this site.</p>
           <p className="empty-state-body">
-            {w?.notes || 'Treated centrally / serviced via building landlord - not in IVG’s operational waste boundary.'}
+            {w?.notes || 'Treated centrally / serviced via building landlord - not in Westbrook’s operational waste boundary.'}
           </p>
         </div>
       </div>

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-build_aerials.py — Generate satellite/aerial images for each IVG site.
+build_aerials.py — Generate satellite/aerial images for each Westbrook site.
 
 For each site in sites.json:
   1. Geocode `postcode_approx` via postcodes.io (free, no auth)

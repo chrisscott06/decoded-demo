@@ -2,7 +2,7 @@
  * SycousPanel - shared component surfacing the resident-billing chain
  * (Brief 12 Part 3).
  *
- * IVG's most distinctive operational data: the bulk-supply → Sycous
+ * Westbrook's most distinctive operational data: the bulk-supply → Sycous
  * sub-metering → resident-bill chain. No other retirement-village operator
  * has this. Used in two contexts:
  *
@@ -75,7 +75,7 @@ export default function SycousPanel({ siteId, mode = 'full' }) {
           This site is not on the Sycous sub-metering platform. The
           resident-billing chain shown for sub-metered sites is not
           available here - residents are billed directly by suppliers (no
-          IVG sub-meter layer).
+          Westbrook sub-meter layer).
         </p>
       </div>
     )
@@ -114,7 +114,7 @@ export default function SycousPanel({ siteId, mode = 'full' }) {
         <p className="sycous-recon-note">
           Bulk landlord supply (charted above) → Sycous resident sub-metering
           (below) is the resident-billing reconciliation. The gap between the
-          two is the resident consumption IVG passes through but doesn’t bill
+          two is the resident consumption Westbrook passes through but doesn’t bill
           itself - Scope 3 Cat 13 in the GHG inventory.
         </p>
       )}

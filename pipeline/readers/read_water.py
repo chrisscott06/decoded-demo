@@ -1,6 +1,6 @@
 """Water reader.
 
-Reads the Dashboard sheet from the IVG Water workbook into per-site water
+Reads the Dashboard sheet from the Westbrook Water workbook into per-site water
 consumption + status flags. Output is keyed by canonical site ID and contains
 all 13 canonical sites — sites without water data get data_status="missing".
 """

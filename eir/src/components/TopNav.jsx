@@ -11,7 +11,7 @@
 import LogoLockup from './LogoLockup.jsx'
 import DataVintageBadge from './DataVintageBadge.jsx'
 
-/* Chris ask 8 Jun (pre-IVG-handoff):
+/* Chris ask 8 Jun (pre-Westbrook-handoff):
    - Portfolio top-link stays live (Map + Energy work well).
    - Insights chapter removed entirely (the three sub-tabs were
      scaffolds that never matured).
@@ -31,7 +31,7 @@ const SECONDARY = {
      Map + Energy, the thematic-page direction. Overview / Sites /
      Phasing / Comparisons stripped - their routes still resolve and
      redirect to /portfolio/map (see App.jsx).
-     Chris ask 8 Jun: Water / Waste / Carbon greyed pre-IVG handoff -
+     Chris ask 8 Jun: Water / Waste / Carbon greyed pre-Westbrook handoff -
      placeholder routes still resolve but the tabs are unclickable so
      the user doesn't see an empty page. */
   portfolio: [
@@ -60,7 +60,7 @@ const SECONDARY = {
   ],
   /* Brief 22 (BR-13 v1.2) Task 6 - Dependencies sub-tab removed (CDs are
      NZA-internal working notes, surfaced only in the P09 tracker, not
-     IVG-facing). GRESB nav is now three sub-tabs:
+     Westbrook-facing). GRESB nav is now three sub-tabs:
      Overview · Aspects · Forward planning. */
   gresb: [
     { key: 'overview', label: 'Overview',         path: '/gresb/overview' },
@@ -124,7 +124,7 @@ export default function TopNav({
             {PRIMARY.map((item) => {
               const isActive = activePrimary === item.key
               /* Disabled when the item carries an explicit `disabled`
-                 flag (Portfolio pre-IVG-handoff) OR when it's the Site
+                 flag (Portfolio pre-Westbrook-handoff) OR when it's the Site
                  link with no current site loaded (Phase 1B behaviour). */
               const disabled = !!item.disabled || (item.key === 'site' && !currentSiteId)
               const tooltipText = item.disabled

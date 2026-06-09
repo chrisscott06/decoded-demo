@@ -9,7 +9,7 @@ Scope 3 Cat 13 = derived resident electricity × GRID factor + resident gas × N
 
 Brief disclaimer: these are simplified factors for Phase 1B. Full SBTi accuracy
 arrives later. The split between Scope 2 (landlord elec) and Scope 3 (resident elec)
-is the structurally important thing for IVG's GHG inventory.
+is the structurally important thing for Westbrook's GHG inventory.
 """
 
 from __future__ import annotations

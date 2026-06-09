@@ -1,6 +1,6 @@
 """RFI Register reader — produces dist/eir/rfi_status.json.
 
-Reads the RFI_P06 tab from the IVG RFI Register workbook. Header row 12, data row 13+.
+Reads the RFI_P06 tab from the Westbrook RFI Register workbook. Header row 12, data row 13+.
 Theme column is only set on the first row of each theme group; needs forward-fill.
 Status defaults to "Open" in P06 (no status column populated yet).
 """

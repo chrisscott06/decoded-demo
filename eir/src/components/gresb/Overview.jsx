@@ -18,7 +18,7 @@
  *      bar without a separate legend.
  *
  * 3. Markers:
- *    - IVG / Target / 2025-ref get explicit vertical bars with labels above
+ *    - Westbrook / Target / 2025-ref get explicit vertical bars with labels above
  *      the bar (was below, where they collided with threshold numbers).
  *    - Peer + Global moved off the bar (they were 3 pts apart and collided).
  *      Surfaced as a small context strip below the bar so the data is still
@@ -48,7 +48,7 @@ const GREEN_CONFIDENT = 'var(--theme-carbon)'
    (#0F1729) without translucency. */
 const STAR_COLORS = {
   0: '#5A3530',  // <1★ - dark coral-brown
-  1: '#C44A2C',  // 1★  - coral (where IVG sits in 2025)
+  1: '#C44A2C',  // 1★  - coral (where Westbrook sits in 2025)
   2: '#D8A347',  // 2★  - amber (target zone)
   3: '#A8B765',  // 3★  - olive
   4: '#4E9C8A',  // 4★  - teal-green
@@ -289,7 +289,7 @@ function Card2025Result({ score, star, thresholds }) {
       <QuintileBand
         thresholds={thresholds}
         markers={[
-          { score, label: `IVG ${score}`, kind: 'primary' },
+          { score, label: `Westbrook ${score}`, kind: 'primary' },
         ]}
       />
       <ContextStrip

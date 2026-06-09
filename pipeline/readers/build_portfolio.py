@@ -1,7 +1,7 @@
 """Portfolio rollup — aggregates across sites/energy/water/waste into one summary.
 
 Brief 17 — GRESB FY25 scope. Sonning Common (FY26 launch) and Edwalton Office
-(not residential) are out of scope for IVG's GRESB FY25 assessment. The
+(not residential) are out of scope for Westbrook's GRESB FY25 assessment. The
 in-scope portfolio for the thematic Energy / Water / Waste / Carbon pages is
 11 sites, not 13. We emit two parallel rollups:
 

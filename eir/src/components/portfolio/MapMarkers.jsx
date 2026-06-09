@@ -24,7 +24,7 @@ import {
  * + `onHoverSite` + `onSelectSite` props.
  *
  * Per handoff Section 4 + 7. CSS pulse keyframe replaces Tailwind's
- * `animate-ping` (IVG has no Tailwind).
+ * `animate-ping` (Westbrook has no Tailwind).
  */
 
 const CATEGORICAL_PALETTE = [
@@ -205,7 +205,7 @@ export default function MapMarkers({
         preserveAspectRatio="xMidYMid meet"
         width="100%"
         height="100%"
-        aria-label="Map of southern and central England - Inspired Villages estate"
+        aria-label="Map of southern and central England - Westbrook Academies Trust estate"
         style={{
           display: 'block',
           /* Chris ask 2026-06-02 (option 1 - dialled-down ambient
@@ -335,7 +335,7 @@ export default function MapMarkers({
                     coloured pin body); on hover/select it goes to bright
                     white. No separate head circle - the icon IS the
                     contrast at hover. Lets a viewer identify a site
-                    from the icon at rest, the way IVG's website map
+                    from the icon at rest, the way Westbrook's website map
                     does. */}
               </svg>
               {isEdwalton ? (

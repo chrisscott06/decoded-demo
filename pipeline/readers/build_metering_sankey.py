@@ -10,8 +10,8 @@ every count the React Sankey component needs:
   - DNO/BNO resident estimate per site (= phasing.total_units_planned
     at the 5 DNO/BNO sites: Bramshott, Durrants, Great Alne, Elderswell,
     Ledian — BNO but conceptually similar)
-  - Totals: visible-to-IVG (sum of all measured meters) and the
-    invisible-to-IVG estimate.
+  - Totals: visible-to-Westbrook (sum of all measured meters) and the
+    invisible-to-Westbrook estimate.
 
 Principle 1 of the brief: real data, computed live. No hardcoded counts
 in the React component — every number in the Sankey lives in this block.

@@ -1,212 +1,85 @@
-# IVG ESG Tool — CLAUDE.md
+# decoded-demo — CLAUDE.md
 
-> **Development discipline:** This project follows the NZA Development Bible at https://www.notion.so/32dd645e05cc813b881edd454053e238.
-> Every session: read this CLAUDE.md, then STATUS.md, then the active brief at `docs/briefs/active/`, then run the reconciliation pass per Process Rule 8 below.
+> **This is a demo template, not a live client engagement.**
+>
+> The repo started life as an anonymised copy of the IVG ESG Tool
+> (the live client project at `chrisscott06/ivg-esg-tool`). All
+> client-identifying data has been replaced with a fictional Academy
+> Trust narrative so the tool can be screenshotted, demoed, or
+> handed to prospects without leaking real client data.
 
-## What this project is
+## What this is
 
-The IVG ESG Tool is a digital reporting platform for Inspired Villages Group's GRESB submission and GHG inventory. The pipeline reads four canonical calculation spreadsheets and produces JSON output that feeds two downstream reports (built in later phases).
+A digital ESG / GRESB reporting platform shown as if it were built
+for the fictional **Westbrook Academies Trust** — a Multi-Academy
+Trust running 11 schools across England. The pipeline reads four
+canonical calculation spreadsheets and produces JSON output that
+feeds two downstream report pages.
 
-**Phase 0 (current):** Build the pipeline + a minimal shell rendering pipeline output on Vercel.
+The demo's purpose is to show the *format* of the report, not to
+expose any real numbers. Per-site values are perturbed within
+±10 % of the source IVG values via a deterministic seed=42
+multiplier (see `_meta._demo_note` in the gresb.json).
 
 ## Environment
 
-- Local: `C:\Users\ChrisScott\Dev\ivg-esg-tool`
-- GitHub: https://github.com/chrisscott06/ivg-esg-tool (public, will go private later)
-- Vercel: linked to GitHub repo, free tier
-- Python: 3.11+ for the pipeline. Dependencies via `pipeline/requirements.txt` and a venv in `pipeline/.venv/`.
-- Node: 20 LTS for the shell. Dependencies via `eir/package.json`.
+- Local: `C:\Users\ChrisScott\Dev\decoded-demo`
+- GitHub: `https://github.com/chrisscott06/decoded-demo`
+- Vercel: separate project from the IVG production tool (will be
+  wired up after Phase 5).
+- Python: 3.11+ for the pipeline. `pipeline/requirements.txt` + venv
+  at `pipeline/.venv/`.
+- Node: 20 LTS for the shell. `eir/package.json`.
+- Vite dev port: **5174** (production IVG on 5173 — both can run
+  side by side).
+
+## Launching locally
+
+Double-click `launch.bat` at the repo root. It pulls the latest
+`main`, runs `npm install --silent`, starts Vite on port 5174, and
+opens the browser at `http://localhost:5174/`.
+
+## Demo password
+
+The PasswordGate constant is in `eir/src/components/PasswordGate.jsx`.
+Default for this demo: `NZAI-demo-2026`.
 
 ## Folder structure
 
 ```
-ivg-esg-tool/
+decoded-demo/
 ├── CLAUDE.md                    # this file
-├── STATUS.md                    # running log
-├── README.md                    # project overview
+├── README.md                    # public-facing project overview
+├── STATUS.md                    # running log (starts fresh in this repo)
+├── launch.bat                   # double-click to run locally
+├── rebuild-pipeline.bat         # rebuild generated JSON from spreadsheets
 ├── .gitignore
 ├── pipeline/                    # Python data pipeline
 │   ├── readers/
-│   ├── source-data/             # four calc sheets (do not commit)
+│   ├── source-data/             # source spreadsheets (do not commit)
 │   ├── dist/                    # generated JSON (committed)
 │   ├── build.py
 │   ├── site_resolver.py
 │   ├── requirements.txt
 │   └── .venv/                   # local venv (do not commit)
-├── eir/                         # ESG Inventory Report shell (Phase 0 = minimal)
+├── eir/                         # ESG Reporting Tool shell
 │   ├── src/
 │   ├── public/
 │   ├── package.json
 │   └── vite.config.js
-├── docs/
-│   ├── briefs/                  # working briefs (gitignored)
-│   │   ├── phase-0-overnight-brief.md
-│   │   └── ivg-data-source-inventory.md
-│   └── ...                      # decisions, screenshots
+└── docs/                        # demo-template docs (intentionally minimal)
 ```
 
-> **Path note:** the brief uses `pipeline/source_data/` (underscore) and `briefs/` (root). The actual layout uses `pipeline/source-data/` (hyphen) and `docs/briefs/`. This file and the pipeline reflect the actual layout. Do not try to "fix" the paths back — the source files live where they live.
+## Provenance + further polish
 
-## Hard rules (non-negotiable)
+The repo's Phase 1 commit lands the bulk anonymisation pass. A
+deeper rewrite of this file — palette token table, fictional Trust
++ school name list, source commit reference, design discipline
+inherited from the source tool — is performed in Phase 5 of the
+demo-template setup brief.
 
-1. Read order at session start: CLAUDE.md → STATUS.md → current brief → supporting docs.
-2. One chunk at a time. Do not start chunk N+1 until N is PASS.
-3. STATUS.md updated at the **start** and **end** of each chunk.
-4. Commit + push after every PASS. Conventional commit messages: `chunk-N(scope): description`.
-5. Pipeline verification = JSON inspection. Shell verification = browser + screenshot.
-6. Never write to OneDrive paths. Never delete files you did not create.
-7. Stuck for 15 continuous minutes → stop, document in STATUS.md, do not speculate-fix.
-8. Hard stops: data structure mismatches, zero-row outputs where 12+ expected, auth failures, paid-tier prompts. Stop and document.
-9. SANCTIONED ASSET DIRECTORIES — never archive, move, or delete these; they are intentional in-scope project assets created by sibling workspaces (Cowork), not stray output:
-   - `eir/public/sites/` — per-site imagery (hero/aerial/site-plan/icon/_meta per site, all 13 sites). Gathered by a Cowork session; integration tracked as a numbered brief. A `README.md` in the folder marks it intentional.
-   - `eir/public/maps/` — the dotted UK SVG used by the Portfolio Map.
-   - `pipeline/source-data/` — source spreadsheets and Stark CSVs (gitignored but never to be deleted from disk).
-   If a reconciliation pass (Rule 8) finds files here that look unfamiliar, that is EXPECTED — they come from sibling sessions. Do not classify them as cruft. When in doubt, leave them and surface to Chris; never delete.
-
-## Data source canonical reference
-
-`docs/briefs/ivg-data-source-inventory.md` is the single source of truth for spreadsheet structure, column names, status flag conventions, and the canonical site list. When in doubt, check the inventory. If the spreadsheet contradicts the inventory, stop and document.
-
-## Canonical site list
-
-13 entities: 12 villages + Edwalton Office. Site IDs are kebab-case slugs:
-`austin-heath`, `gifford-lea`, `bramshott-place`, `millbrook-village`, `durrants-village`, `great-alne-park`, `ledian-gardens`, `elderswell`, `millfield-green`, `ampfield-meadows`, `blendworth-hills`, `sonning-common`, `edwalton-office`.
-
-Site names vary across spreadsheets ("Austin Heath" vs "Austin Heath Village" vs "Head Office"). The site name resolver in `pipeline/site_resolver.py` maps all variants to canonical IDs.
-
-## Voice and style (for any user-facing text generated by the shell)
-
-- Measured, professional, slightly understated. Auditor-grade where it matters.
-- No "we", no "you", no first-person.
-- No internal-team language ("ship", "land", "deep-dive" as a verb).
-- No NZA staff names anywhere.
-- Sentence case for headings. Em-dashes for parenthetical clauses. No emojis in copy.
-
-(Phase 0 has minimal user-facing text — these rules apply once content chapters are built.)
-
-## Process rules
-
-### Rule 7 — Documentation hygiene (brief-on-disk)
-Every brief delivered to Claude Code is landed at `docs/briefs/active/<NN>_<name>.md` as Part 1's first commit. Downloads is delivery only; `docs/briefs/active/` is canonical. When a brief closes, `git mv` it to `docs/briefs/archive/<NN>_<name>_COMPLETED.md` and update `docs/briefs/current.md` to point to the next active brief (or empty state). Audit docs follow the same pattern at `docs/audit/<NN>_<topic>.md`.
-
-If Claude Code finds itself reasoning from a brief that cannot be pointed to as a file in `docs/briefs/active/`, it must stop and ask Chris which brief is canonical. Never proceed from a remembered brief.
-
-### Rule 8 — Session-start reconciliation pass
-At the start of every session, before any code change, run:
-- `ls docs/briefs/active/`
-- `cat docs/briefs/current.md`
-- `tail STATUS.md`
-- `git log --oneline -20`
-
-Cross-check that `active/` matches `current.md` matches the most recent close commit. If anything is stale, the first commit of the session is the cleanup commit. If `active/` contains a different brief than expected, or `current.md` claims a different active brief, stop and surface to Chris before any work begins.
-
-Note: unfamiliar files under the sanctioned asset directories (hard rule 9) are NOT cruft — they are sibling-workspace assets. Never archive or delete them during reconciliation.
-
-### Rule 9 — Browser verification at walkthrough
-Every brief mandates browser verification at the walkthrough Part. Boot the dev server, load the target views, capture findings with specific numerical evidence or screenshots. Code-side reasoning has missed UX-layer bugs throughout the project — the Phase 1B Comparisons chart Y-axis bug is the canonical case where chunk 19 QA passed code-side but the chart was clipped in the browser.
-
-### Rule 10 — Recharts ResponsiveContainer height convention (Brief 13)
-A Recharts `<ResponsiveContainer width="100%" height="100%">` is only safe when its immediate parent has an **explicit resolved pixel height** — typically `<div style={{ height: NNN }}>` directly above it. A `flex: 1` chain that bottoms out without a definite container height resolves to ~0 and Recharts will silently render the chart at ~0 px (or warn `width(-1) height(-1)` in the dev console). The brief is graded on browser walkthrough, not green build — so a chart silently rendering at 0 px passes every CI gate.
-
-Two patterns are acceptable:
-- **Fluid chart**: parent `<div style={{ height: NNN }}>` + `<ResponsiveContainer width="100%" height="100%">`. Used by every LoadInspector view.
-- **Fixed chart**: no ResponsiveContainer; use the chart's own `width={N} height={N}` props directly. Required for Recharts 3.x `<PieChart>` (the wrapper reports width(-1)/height(-1) inside flex columns — see Brief 13 Part 2 for the diagnostic chain). Recharts 3.x also requires `isAnimationActive={false}` on Pie, otherwise the animated pie gets stuck mid-animation with empty `<path>` `d` attributes.
-
-Falsifiability: `grep -rn 'height="100%"' eir/src --include="*.jsx"` — every hit must have a resolved-height parent confirmed by visual walkthrough (not just code review). A brief that touches a chart MUST screenshot the rendered chart in the close report.
-
-### Rule 11 — Thematic-page grammar (Brief 17.5; layout numbers added Brief 17.5.2)
-A thematic Portfolio page (Energy, Water, Waste, Carbon, Overview) renders as a narrow narrative pane left, single interactive graphic right, slim sub-tabs above both. Sub-tabs switch both panes together — text and graphic are paired. Charts use a **single combined-legend-filter control surface** — for the Consumption chart, this is a compact horizontal toggle row at the TOP of the graphic (Amendment 1 to Brief 17.5), six toggles with AND logic: party-type row toggles (Landlord, Sub-metered, Estimated) × commodity column toggles (Gas, Electricity) × scope master (GRESB 26). No separate filter pills above, no separate legend below — one surface does both jobs. GRESB-26 out-of-scope sites are shown by default with a simpler 2-segment composition in **darker shade tokens** (`--color-gresb26-gas`, `--color-gresb26-elec`), not at 0.4 opacity. Palette draws from tokens matching the Map view (`--metric-gas`, `--metric-electricity`); site names use `--font-site` + the site's `icon.svg`. Motion: outer page fade on entry + sub-tab swap fade-and-grow (scale 0.98 → 1) + Recharts native bar growth with per-segment `animationBegin` stagger. Brief 17.5 (including Amendment 1) is the canonical implementation reference at `eir/src/components/portfolio/PortfolioEnergy.jsx`.
-
-#### Rule 11 measured layout (Brief 17.5.2 — presentation-grade at 1920×1080)
-Every thematic page MUST inherit these numbers. Future Water / Waste / Carbon / Overview pages copy this layout shell verbatim; do not redesign per page.
-
-| Dimension | Value | Notes |
-|---|---|---|
-| Page container max-width | **1280 px** | Centred via `margin: 0 auto`. Class `.thematic-page-container`. |
-| Outer page padding (breathing rule) | **`var(--page-edge-x) = 32 px`** minimum each side | Content NEVER touches viewport edge. At 1920 viewport the container is 1280 wide with 320 px each side (288 + 32). At 1280 viewport the container collapses to 1216 (constrained by padding). |
-| Primary nav strip | **44 px** | Brief 17.5 Part 1. |
-| Secondary nav strip | **36 px** | Brief 17.5 Part 1. |
-| Tertiary sub-tab strip | **32 px** | **Brief 19.5 Pattern A — text-only with underline-on-active.** Active tab: coral text + 2 px coral `border-bottom`. Inactive: muted text + 2 px transparent `border-bottom` (so layout doesn't shift on state flip). 28 px gap between tabs. Zero horizontal padding so the first tab's text sits flush at the container's left edge. NO pill backgrounds at any state. The GRESB chapter's *secondary* nav inherits the same Pattern A treatment via the `.topnav-secondary--underline` CSS modifier (Chris extension 4 Jun) so the GRESB workflow + Portfolio thematic sub-sub-tabs share one design grammar. Three distinct nav weights descending: filled coral pill (primary) → softer coral pill (secondary, except GRESB) → underline (tertiary + GRESB secondary). **Type:** Stolzl Book 400 at `--text-caption` (11.87 px at 1920) — matches secondary nav size, one weight lighter (Chris ask 4 Jun: tertiary must read lighter than the band above it). |
-| Gap secondary nav → tertiary tabs | **4 px** | Outer wrapper `padding-top: 4` (Chris ask 4 Jun — tertiary sits immediately below secondary, not in a generous breathing band). |
-| Gap tertiary tabs → page title / toggle row | **24 px** | Via thematic-page-container `gap: 24`. |
-| Top toggle row (if present, e.g. Consumption) | **32 px** tall | Same height as tertiary strip — consistent visual rhythm. |
-| Gap top toggle row → chart canvas | **32 px** | Via `GraphicPane` flex column `gap: 32`. |
-| Chart canvas | **~820 px tall at 1920×1080** | Whatever's left after the rhythm above. At 1440×900 reduces to ~620 px (graceful scale-down). |
-| Bottom margin (chart bottom → container bottom) | **48 px** | Container `paddingBottom: 48`. |
-| Two-column inner grid: narrative pane | **flex within 400–520 px band** | Page-author runs the **fit test**: start at wide end, narrow until prose fits without internal scroll, floor 400 → if still doesn't fit, enable internal scroll on narrative only. Different sub-tabs within the same page may sit at different widths — intentional. Consumption sits at 500 px. |
-| Two-column inner grid: gutter | **48 px** | Fixed. |
-| Two-column inner grid: graphic pane | **fills remainder** (732–832 px) | `1280 − narrative_width − 48`. |
-| Subsection title | **22 px** Source Serif 4 (`--font-site`), coral | In the 20–24 spec band. |
-| Subsection title underline | **1 px solid coral**, `padding-bottom: 5 px` | In the 4–6 spec window for "gap below baseline." |
-| Gap subsection underline → body | **16 px** | Via `margin-bottom: 16` on title. |
-| Body text | **15 px Inter**, line-height **24 px** absolute | Absolute pixel line-height per spec, not ratio. |
-| Gap between paragraphs in same subsection | **12 px** | Continuation `<NarrativePara>` uses `marginTop: -36` (offset against the parent's `gap: 48` → net 12). |
-| Gap between subsections | **48 px** | Via NarrativePane `gap: 48`. |
-
-Falsifiability at 1920×1080:
-- `.thematic-page-container` width = 1280 (`document.querySelector('.thematic-page-container').offsetWidth`).
-- Container left x ≥ 320 (at 1920 viewport).
-- Chart canvas (`.recharts-wrapper`) height ≥ 800.
-- H3 inside narrative has `font-size: 22px` + `border-bottom: 1px solid` + `padding-bottom: 5px` + `margin-bottom: 16px`.
-- Body `<p>` has `line-height: 24px`.
-
-Brief 17.5.2 is the canonical layout reference; future thematic pages inherit by copying the structure.
-
-#### Rule 11 type scale (Brief 17.5.3 — fluid via clamp)
-Closed scale. Every text element in the tool references one of six role tokens. Arbitrary `font-size: Npx` in components is forbidden — exceptions only for Recharts-internal labels (chart axis ticks) and icon-glyph sizing (treated as icon, not text).
-
-Each role scales linearly between viewport widths 1440 (min) and 2560 (max) via CSS `clamp()`. Below 1440 → min. Above 2560 → max. No media queries.
-
-| Role token | Min (≤1440vw) | Max (≥2560vw) | LH | Family | Use |
-|---|---|---|---|---|---|
-| `--text-page-title` | 28 | 36 | 1.15 | `--font-heading` | Page titles ("Energy", "Carbon") |
-| `--text-section-title` | 20 | 26 | 1.25 | `--font-heading` | Major section titles |
-| `--text-subsection-title` | 16 | 20 | 1.3 | `--font-heading` or `--font-site` | Subsection titles (coral underlined editorials) |
-| `--text-body` | 14 | 18 | 1.55 | `--font-body` | All body text, narrative paragraphs, primary nav labels |
-| `--text-body-small` | 12 | 15 | 1.5 | `--font-body` | Scope captions, italics, secondary nav labels, tooltips |
-| `--text-caption` | 11 | 13 | 1.4 | `--font-body` | Axis labels, micro-labels, source attributions |
-
-Verification at 1920 viewport (computed via getComputedStyle):
-- body = 15.71px
-- subsection-title = 17.71px
-- page-title = 31.42px
-
-Falsifiability: `grep -rn 'font-size:' eir/src --include='*.jsx'` → 0 hits.
-
-Brief 17.5.3 also locked the nav-alignment grid: introduced `--nav-content-max-width: 1280px` so the three nav strips' inner content shares the body's `.thematic-page-container` left edge. At 1920×1080, all four bands' text edges sit at x=320; at 1440×900, at x=80.
-
-#### Rule 11.x — Body-text alignment foundation (Chris ask 4 Jun 2026, codified in CSS)
-
-**The one rule you need to remember:** wrap every page body in `.thematic-page-outer` > `.thematic-page-container` and the body's left text edge will land at x=320 (1920) / x=80 (1440) automatically — exactly matching the primary nav, secondary nav, and tertiary sub-tab text edges. A continuous vertical line down the left side of every page, every time.
-
-The pair is the foundation:
-
-```jsx
-<div className="thematic-page-outer">      {/* scrollable border-box outer with --page-edge-x breathing + scrollbar gutter */}
-  <div className="thematic-page-container"> {/* centred 1280 max-width inner */}
-    {/* body content — h1, narrative, graphics, etc. */}
-  </div>
-</div>
-```
-
-Authoritative implementation lives in `eir/src/index.css` (search for `.thematic-page-outer` and `.thematic-page-container`).
-
-**Hard rules for the pair:**
-- Page authors NEVER set `max-width`, `margin-left`, `margin-right`, `padding-left`, `padding-right`, or `box-sizing` on either element. These are foundation properties — touching them is a regression.
-- Page authors MAY layer on `flex`, `display`, `flex-direction`, `gap`, `padding-top`, `padding-bottom`. These compose without breaking the horizontal alignment.
-- The outer's `padding: 4px var(--page-edge-x) 0` puts the body content's top exactly 4 px below the secondary nav (Chris ask 4 Jun — tertiary or H1 sits immediately under the secondary nav).
-- The outer's `scrollbar-gutter: stable both-edges` reserves the vertical-scrollbar gutter on both sides so the centred 1280 child stays geometrically aligned whether the page scrolls or not.
-- The container has NO horizontal padding. The outer's `--page-edge-x` padding does the breathing. If the container also had inner padding, body text would sit 32 px right of the nav text — the original 4-Jun regression that triggered this codification.
-
-**Falsifiability (computed at 1920×1080):**
-- `getComputedStyle(document.querySelector('.thematic-page-container')).paddingLeft === '0px'` ✓
-- All five text-edge x-coordinates equal:
-  - `.topnav-primary-inner a` first label
-  - `.topnav-secondary-inner a` first label
-  - `.thematic-page-container h1` first glyph
-  - `.thematic-page-container h3` first glyph
-  - `.thematic-page-container p` first glyph
-
-**Opt-out:** pages that intentionally break out of the 1280 band (e.g. full-bleed Portfolio Map) do so by NOT using these classes — and must document the deviation at the call site. Default is in-band; opt-out is explicit.
-
-**Existing pages on the foundation:** `eir/src/components/portfolio/PortfolioEnergy.jsx` (and its sub-panes), `eir/src/App.jsx` GresbPage (and its `<GresbOverview>` + `<GresbForward>` children via `eir/src/components/gresb/layout.jsx` `<ThematicContainer>`). Future Water / Waste / Carbon pages just wrap and inherit.
+The design discipline rules from the source IVG engagement (Hard
+Rule 11 thematic-page grammar, Hard Rule 11.x body-text alignment
+foundation, type scale tokens, etc.) carry across unchanged — they
+describe the UI shell, not the client. They're preserved in the
+codebase comments at the components that implement them.

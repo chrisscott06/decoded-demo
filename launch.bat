@@ -8,7 +8,7 @@ REM   3. npm install --silent (idempotent; resolves any new deps)
 REM   4. start the Vite dev server in a new window
 REM   5. open http://localhost:5174 in the default browser
 REM
-REM Demo lives in a SEPARATE repo from the production IVG tool and
+REM Demo lives in a SEPARATE repo from the source production tool and
 REM runs on port 5174 (production is on 5173) so both can run side
 REM by side without colliding.
 REM ---------------------------------------------------------------

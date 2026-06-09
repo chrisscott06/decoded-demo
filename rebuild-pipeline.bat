@@ -1,13 +1,13 @@
 @echo off
-REM IVG ESG Tool — rebuild the pipeline from current source-data
+REM Westbrook ESG Tool — rebuild the pipeline from current source-data
 REM Use this when you've updated any spreadsheet in pipeline/source-data/
 
-title IVG ESG Tool - Pipeline Rebuild
+title Westbrook ESG Tool - Pipeline Rebuild
 cd /d "%~dp0pipeline"
 
 echo.
 echo ============================================
-echo  IVG ESG Tool - rebuilding pipeline...
+echo  Westbrook ESG Tool - rebuilding pipeline...
 echo ============================================
 echo.
 echo  Reading source-data/ and writing dist/eir/...

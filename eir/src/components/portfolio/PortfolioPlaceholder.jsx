@@ -6,7 +6,7 @@
  * grid as the real Energy thematic page next door.
  *
  * Visual: centred eyebrow + headline + supporting line + small "coming
- * soon" pill so the IVG team can preview the nav and feel where the
+ * soon" pill so the Westbrook team can preview the nav and feel where the
  * content will land.
  */
 

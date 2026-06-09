@@ -264,8 +264,8 @@ export default function Leaderboard({
             {/* Brief 14 Part 3: site icon + name. Icon is rendered via
                 CSS mask-image so currentColor drives the fill - black SVG
                 paths render cream on the dark register. Edwalton has no
-                site icon (its mark is the IVG logo lockup, not a square
-                icon) - render the IVG-monogram fallback character. Sites
+                site icon (its mark is the Westbrook logo lockup, not a square
+                icon) - render the Westbrook-monogram fallback character. Sites
                 missing an icon.svg get the same fallback (honest, no
                 broken-image glyph). */}
             <span

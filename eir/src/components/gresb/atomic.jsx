@@ -13,7 +13,7 @@
  *   <RetiredBadge />
  *   <ParkedBadge label="Parked → 2027" />
  *
- * Tuned for the IVG tool's dark register. No new dependencies - uses
+ * Tuned for the Westbrook tool's dark register. No new dependencies - uses
  * lucide-react (already in package.json from Brief 8) and CSS
  * gradients for the bar (no chart lib needed per brief Principle 4).
  * Visual style follows Appendix B; GRESB-specific tokens declared in
@@ -84,7 +84,7 @@ export function AspectBadge({ code, variant = 'management' }) {
 
 /* ---------- StatusPill ---------- */
 /* "In place" / "At risk" / "Missing" / "Not applicable" - icon + label.
-   Status colours reuse the existing IVG risk-token palette so the
+   Status colours reuse the existing Westbrook risk-token palette so the
    visual language stays consistent with the rest of the tool. */
 const STATUS_META = {
   'In place':        { icon: Check,          color: 'var(--color-risk-low)'      },

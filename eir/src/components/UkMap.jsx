@@ -145,7 +145,7 @@ export default function UkMap({ sites, metrics = {}, metricLabel = 'Value', onSi
           width="100%"
           style={{ display: 'block', maxHeight: 600 }}
           role="img"
-          aria-label="Map of Inspired Villages sites across Great Britain"
+          aria-label="Map of Westbrook Academies Trust sites across Great Britain"
         >
           {/* GB silhouette */}
           <path d={GB_PATH_D} fill={COLOR_UK_SILHOUETTE} stroke="rgba(255,255,255,0.06)" strokeWidth="1" />

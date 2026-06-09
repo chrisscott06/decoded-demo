@@ -46,7 +46,7 @@ export function landlordMeterCounts(siteId) {
   const gas         = mpans.filter((m) => m.type === 'Gas' && isLandlord(m)).length
   const water       = waterData?.[siteId]?.meters_known ?? null
   /* Waste = collection-point count when available; fall back to 1 if
-     there's any waste data (single collection point is the IVG norm). */
+     there's any waste data (single collection point is the Westbrook norm). */
   const wasteRec    = wasteData?.[siteId]
   const waste       = wasteRec?.collection_points ?? (wasteRec?.tonnage_total ? 1 : null)
   return { electricity, gas, water, waste }
@@ -139,7 +139,7 @@ function readinessFromWaste(siteId) {
 /**
  * platformCoverage(siteId) → array of { platform, present, meterCount }
  *
- * The four IVG-facing data platforms:
+ * The four Westbrook-facing data platforms:
  *   Ecotricity  (landlord electricity + gas - billing source of truth)
  *   arbnco      (whole-site total electricity - methodology-derived)
  *   Sycous      (resident sub-metering - heat networks + microgrids)
@@ -315,7 +315,7 @@ export function siteSummary(siteId) {
   if (s) return s
   return {
     type: '-',
-    summary: 'Summary pending - IVG ESG team to refine wording for this site.',
+    summary: 'Summary pending - Westbrook ESG team to refine wording for this site.',
     facts: [],
   }
 }

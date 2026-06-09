@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "purpose": "Hand-written per-site narrative summaries surfaced at the top of the Site / Metering & data quality page. 2-3 sentences in plain English. Refinable by IVG ESG team over time without code changes.",
+    "purpose": "Hand-written per-site narrative summaries surfaced at the top of the Site / Metering & data quality page. 2-3 sentences in plain English. Refinable by Westbrook ESG team over time without code changes.",
     "brief": "24.5 Part 1",
     "version": "1.0"
   },
@@ -21,12 +21,12 @@
   },
   "bramshott-place": {
     "type": "DNO",
-    "summary": "DNO site. No private wire - residents have individual MPANs on their own supplier contracts (invisible to IVG). Ecotricity bills the small landlord estate and 3 gas MPRNs. No Sycous coverage. The 191 resident MPANs are derived from arbnco, not measured directly.",
+    "summary": "DNO site. No private wire - residents have individual MPANs on their own supplier contracts (invisible to Westbrook). Ecotricity bills the small landlord estate and 3 gas MPRNs. No Sycous coverage. The 191 resident MPANs are derived from arbnco, not measured directly.",
     "facts": ["DNO", "3 gas MPRNs", "191 invisible resident MPANs", "No Sycous"]
   },
   "durrants-village": {
     "type": "DNO",
-    "summary": "DNO site with individual ASHP per unit - no heat network. Small landlord estate billed via Ecotricity, Stark provides HH for the landlord supply. 173 resident electricity meters sit on individual supplier contracts; IVG has no visibility on them.",
+    "summary": "DNO site with individual ASHP per unit - no heat network. Small landlord estate billed via Ecotricity, Stark provides HH for the landlord supply. 173 resident electricity meters sit on individual supplier contracts; Westbrook has no visibility on them.",
     "facts": ["DNO", "Individual ASHP", "173 invisible residents", "No gas"]
   },
   "edwalton-office": {
@@ -36,7 +36,7 @@
   },
   "elderswell": {
     "type": "DNO",
-    "summary": "DNO site with hybrid heating. Limited landlord electricity through Ecotricity, Stark provides HH for two landlord meters (Electric Room + Plant Room). 1 gas MPRN. No Sycous coverage. 145 planned resident meters sit outside IVG's visibility.",
+    "summary": "DNO site with hybrid heating. Limited landlord electricity through Ecotricity, Stark provides HH for two landlord meters (Electric Room + Plant Room). 1 gas MPRN. No Sycous coverage. 145 planned resident meters sit outside Westbrook's visibility.",
     "facts": ["DNO", "Hybrid heating", "2 Stark HH meters", "145 invisible residents"]
   },
   "gifford-lea": {
@@ -46,13 +46,13 @@
   },
   "great-alne-park": {
     "type": "DNO",
-    "summary": "DNO site with individual ASHP per unit. Small landlord supply via Ecotricity, Stark provides HH. The 171 planned resident meters sit outside IVG's supply contract.",
+    "summary": "DNO site with individual ASHP per unit. Small landlord supply via Ecotricity, Stark provides HH. The 171 planned resident meters sit outside Westbrook's supply contract.",
     "facts": ["DNO", "Individual ASHP", "171 invisible residents", "No gas"]
   },
   "ledian-gardens": {
     "type": "BNO",
-    "summary": "BNO site - IVG owns the cable network but residents have individual MPANs on it. Ecotricity bills 4 gas MPRNs and a small landlord estate. Sycous sub-meters 63 properties for heat and 63 for hot water. Approximately 162 resident MPANs sit on IVG-owned cable but are invisible to IVG.",
-    "facts": ["BNO", "IVG-owned cable", "4 gas MPRNs", "Sycous: 63 heat · 63 HW"]
+    "summary": "BNO site - Westbrook owns the cable network but residents have individual MPANs on it. Ecotricity bills 4 gas MPRNs and a small landlord estate. Sycous sub-meters 63 properties for heat and 63 for hot water. Approximately 162 resident MPANs sit on Westbrook-owned cable but are invisible to Westbrook.",
+    "facts": ["BNO", "Westbrook-owned cable", "4 gas MPRNs", "Sycous: 63 heat · 63 HW"]
   },
   "millbrook-village": {
     "type": "Bulk-meter",
@@ -61,7 +61,7 @@
   },
   "millfield-green": {
     "type": "Bulk-meter",
-    "summary": "Bulk-meter site, fully electric with individual GSHP per unit. Stark provides half-hourly data for the single landlord MPAN at the head of supply. Sycous sub-meters all 133 apartments behind it for resident billing. No gas, no invisible-to-IVG layer.",
+    "summary": "Bulk-meter site, fully electric with individual GSHP per unit. Stark provides half-hourly data for the single landlord MPAN at the head of supply. Sycous sub-meters all 133 apartments behind it for resident billing. No gas, no invisible-to-Westbrook layer.",
     "facts": ["Bulk-meter", "All-electric GSHP", "Sycous: 133 elec", "No gas · no invisible"]
   },
   "sonning-common": {

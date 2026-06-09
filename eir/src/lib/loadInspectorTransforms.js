@@ -1,14 +1,14 @@
 /**
  * Load Inspector transforms (Brief 11 Part 3).
  *
- * Pure helpers ported from the PABLO handoff §3 + §4.2, adapted for IVG's
+ * Pure helpers ported from the PABLO handoff §3 + §4.2, adapted for Westbrook's
  * pre-aggregated per-MPAN JSON shape (`hh_data[]` + `stats` + `monthly`
  * + `daily_profile` from `pipeline/readers/read_half_hourly.py`).
  *
  * Conventions:
  *   - Sample `i` STARTS at `start + i × intervalHours` (HH-ending already
  *     resolved in the reader).
- *   - `intervalHours` is always 0.5 for IVG.
+ *   - `intervalHours` is always 0.5 for Westbrook.
  *   - `periodsPerDay` = 48.
  *
  * No DOM here; all functions are JSON-in JSON-out so view memos can call

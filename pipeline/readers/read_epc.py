@@ -19,7 +19,7 @@ Subcommands:
               `pipeline/source-data/epc/processed/epc_certificates.parquet`.
 
     match   - (Phase 2, blocked) Joins normalised EPCs against the
-              IVG property reference extract; produces match report.
+              Westbrook property reference extract; produces match report.
 
     coverage- (Phase 2, blocked) Computes per-site + portfolio EPC
               coverage ratios and writes the BC2 asset table.
@@ -351,7 +351,7 @@ def _detect_kind(name: str) -> str:
 
 def cmd_match(args: argparse.Namespace) -> int:
     print("[match] Phase 2 - blocked on Chris's data delivery.")
-    print("[match] Needs: IVG property reference extract from Luke Kibble")
+    print("[match] Needs: Westbrook property reference extract from Luke Kibble")
     print("[match]        (UPRN + ADDRESS + POSTCODE + GFA m² per dwelling + per communal).")
     print("[match] See docs/briefs/active/27_EPC-01_acquisition.md §Phase 2.")
     return 1
@@ -381,7 +381,7 @@ def build_parser() -> argparse.ArgumentParser:
     sp_parse = sub.add_parser("parse", help="Parse raw bulk ZIPs into a normalised Parquet table.")
     sp_parse.set_defaults(func=cmd_parse)
 
-    sp_match = sub.add_parser("match", help="(Phase 2) Match IVG units to EPCs.")
+    sp_match = sub.add_parser("match", help="(Phase 2) Match Westbrook units to EPCs.")
     sp_match.set_defaults(func=cmd_match)
 
     sp_cov = sub.add_parser("coverage", help="(Phase 2) Compute per-site EPC coverage + BC2 asset table.")

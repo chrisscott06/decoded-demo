@@ -149,7 +149,7 @@ def _compute_for_site(sid: str, rec_site: dict) -> dict:
                     "Sycous sub-meter readings exceed the bulk meter "
                     "total, which is physically impossible if both "
                     "measure electricity. NZA is investigating with "
-                    "IVG and Sycous to determine whether the Sycous "
+                    "Westbrook and Sycous to determine whether the Sycous "
                     "data is mis-categorised or has a units/pipeline "
                     "error. Until resolved, only the bulk meter total "
                     "is reliable."
@@ -171,7 +171,7 @@ def _compute_for_site(sid: str, rec_site: dict) -> dict:
             resident_source = "TBC"
             landlord_tbc_reason = (
                 "Sycous sub-metering deployed but currently reading "
-                "zero. NZA is working with IVG and Sycous to bring "
+                "zero. NZA is working with Westbrook and Sycous to bring "
                 "the sub-meters online; until then the landlord/"
                 "resident split cannot be derived."
             )
@@ -189,13 +189,13 @@ def _compute_for_site(sid: str, rec_site: dict) -> dict:
         landlord_tbc_reason = (
             "Bulk-metered site with no Sycous sub-metering deployed. "
             "The landlord/resident split cannot be derived without "
-            "sub-meter data. NZA is working with IVG to deploy Sycous."
+            "sub-meter data. NZA is working with Westbrook to deploy Sycous."
         )
         resident_tbc_reason = landlord_tbc_reason
         data_quality_flag = f"{sid}_no_sycous"
 
     elif arrangement in ("dno", "dno+sycous-heat"):
-        # Eco landlord + void = directly-measured IVG supply.
+        # Eco landlord + void = directly-measured Westbrook supply.
         # arbnco-derived = estimate of resident consumption (own
         # MPANs).
         landlord_elec = eco_landlord_elec + eco_void_elec

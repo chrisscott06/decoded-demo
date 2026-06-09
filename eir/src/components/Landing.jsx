@@ -42,7 +42,7 @@ function fmtCompact(n) {
  *             (same pattern as the site icons in the leaderboard).
  *   icon    - lucide fallback if iconUrl is null/undefined; "clean
  *             fallback" per Brief 16 Part 3 - no broken glyph.
- *   meaning - one-line label, e.g. "IVG-billed electricity"
+ *   meaning - one-line label, e.g. "Westbrook-billed electricity"
  *   value   - headline number (string, already formatted)
  *   unit    - small suffix, e.g. "kWh", "m²"
  *   line3   - coverage clause or, for Portfolio, scale
@@ -161,7 +161,7 @@ export default function Landing({ navigate, currentSiteId }) {
   const elecKwh           = portfolio.energy?.total_electricity_kwh
   const elecValue         = fmtCompact(elecKwh)                     // '8.3M'
   const elecUnit          = 'kWh'
-  const elecMeaning       = 'IVG-billed electricity'
+  const elecMeaning       = 'Westbrook-billed electricity'
   // Sites with non-null + non-zero electricity in CY25 (Sonning Common
   // currently absent from energy.json - Brief 11 follow-up).
   const elecSitesWith     = Object.entries(energy)
@@ -212,7 +212,7 @@ export default function Landing({ navigate, currentSiteId }) {
   const carbonMeaning     = 'Scope 1+2 inventory'
   const carbonCoverage    = `${TOTAL_SITES} of ${TOTAL_SITES} sites · Scope 3 in progress`
 
-  /* Brief 16 Part 3 - wire the Chris-supplied IVG×NZA tile icons
+  /* Brief 16 Part 3 - wire the Chris-supplied Westbrook×NZA tile icons
      (eir/public/icons/). Icons are mask-painted with currentColor so
      they pick up the coral tint at the same intensity as lucide
      icons. Lucide stays as the `icon` fallback per the "clean
@@ -227,7 +227,7 @@ export default function Landing({ navigate, currentSiteId }) {
        omitted so HomeTile renders the lucide fallback at the same coral
        tint as the other tiles' mask-painted icons. */
     /* Chris ask 4 Jun: bump electricity + gas iconScales 1.25 → 1.55.
-       The IVG×NZA electricity-03.svg and gas-01.svg glyphs sit inside a
+       The Westbrook×NZA electricity-03.svg and gas-01.svg glyphs sit inside a
        generous viewBox so they were reading visibly smaller than the
        water/recycling/co2 marks at the previous 1.25 mask-size. Carbon
        co2.svg bumped 1 → 1.15 (lighter touch - Chris said "slightly
@@ -256,7 +256,7 @@ export default function Landing({ navigate, currentSiteId }) {
       currentSiteId={currentSiteId}
       navigate={navigate}
     >
-      {/* Chris ask 2026-06-02 (revert): old Brief 8 layout - big IVG
+      {/* Chris ask 2026-06-02 (revert): old Brief 8 layout - big Westbrook
           logo + narrative on the LEFT, tile grid on the RIGHT. Six
           compact tiles in 2×3 take the same area the previous four
           tiles in 2×2 did. Grey "13 sites · 217k m² · 961 units"
@@ -264,11 +264,11 @@ export default function Landing({ navigate, currentSiteId }) {
           line 3 now). */}
       {/* Layout sized + responsive in index.css `.landing-grid`. */}
       <div className="landing-grid">
-        {/* Left - big IVG logo + narrative */}
+        {/* Left - big Westbrook logo + narrative */}
         <div style={{ display: 'flex', flexDirection: 'column', minWidth: 0 }}>
           <img
             src="/ivg-logo-dark.svg"
-            alt="Inspired Villages"
+            alt="Westbrook Academies Trust"
             style={{
               width: 'min(480px, 100%)',
               height: 'auto',
@@ -303,7 +303,7 @@ export default function Landing({ navigate, currentSiteId }) {
               maxWidth: 480,
             }}
           >
-            A single view of energy, water and waste across the IVG portfolio.
+            A single view of energy, water and waste across the Westbrook portfolio.
           </h1>
           <p
             style={{
@@ -316,7 +316,7 @@ export default function Landing({ navigate, currentSiteId }) {
               maxWidth: 520,
             }}
           >
-            This tool brings together the utility data IVG holds across its
+            This tool brings together the utility data Westbrook holds across its
             retirement-living estate - electricity, gas, water and waste -
             into one operational picture. It shows what is known today,
             where the gaps are, and how the dataset improves as billing,

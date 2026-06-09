@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-scrape_heroes.py — Fetch hero photos for each IVG village from inspiredvillages.co.uk.
+scrape_heroes.py — Fetch hero photos for each Westbrook village from inspiredvillages.co.uk.
 
 For each operational site in sites.json:
   1. Fetch the village marketing page
@@ -162,7 +162,7 @@ def process_site(site: dict, dry_run: bool = False) -> dict:
         "source_page": url,
         "source_image_url": hero_url,
         "captured_at": date.today().isoformat(),
-        "attribution": "© Inspired Villages Group — used internally for ESG tool",
+        "attribution": "© Westbrook Academies Trust — used internally for ESG tool",
         "file": "hero.jpg",
         "bytes": len(jpeg_bytes),
     }

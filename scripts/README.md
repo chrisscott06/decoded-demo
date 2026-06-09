@@ -51,7 +51,7 @@ The script updates `sites.json` in place to add resolved lat/long for each site.
 ## Notes
 
 - **Verify postcodes first.** Several entries in `sites.json` are marked `postcode_approx` because Chris's session memory wasn't 100% confident on them. Run `--geocode-only` first and eyeball the results before fetching aerials. If the geocoded lat/long is wrong, update `sites.json` manually before re-running.
-- **Be respectful with the IVG site.** The scraper does one request per village page + one per image (~24 requests). Add a small `time.sleep(0.5)` between sites if you want to be extra polite.
+- **Be respectful with the Westbrook site.** The scraper does one request per village page + one per image (~24 requests). Add a small `time.sleep(0.5)` between sites if you want to be extra polite.
 - **Re-runs are idempotent.** Both scripts overwrite, so you can re-run safely after editing `sites.json`.
 
 ## Site plans (the third image type)

@@ -403,7 +403,7 @@ export default function MeteringSankey() {
   }
   function showLinkTip(e, l) {
     const detail = l.estimated
-      ? `Visible only via Arbnco's aggregation - these residents own individual MPANs (DNO / BNO) and aren't billed by IVG. Count is the actual arbnco meter count for this site (arb_meters minus eco_meters, electric + gas).`
+      ? `Visible only via Arbnco's aggregation - these residents own individual MPANs (DNO / BNO) and aren't billed by Westbrook. Count is the actual arbnco meter count for this site (arb_meters minus eco_meters, electric + gas).`
       : ''
     setTooltip({
       x: e.clientX, y: e.clientY,

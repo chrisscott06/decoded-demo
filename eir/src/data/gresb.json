@@ -3,10 +3,10 @@
     "version": "P12 / v1.5.0 (Master Matrix patch - BR-16 v1.1)",
     "lastUpdated": "2026-06-09",
     "submissionDeadline": "2026-07-01",
-    "entityName": "Inspired Villages Group",
-    "trackerSource": "26003-NZA-IVG-XX-SH-2000_P12_-_GRESB_2026_Master_Matrix.xlsx",
-    "notes": "All weights, scores, and validation decisions sourced directly from (a) GRESB 2026 RE Standard Updates, (b) IVG 2025 GRESB Benchmark Report (portal report 70100), (c) SharePoint /GRESB_Audit_Trail/. Previous v1.4.3 contained errors from phantom residential reweightings and incorrect RES6 modelling - fully replaced in this version.",
-    "toolPurpose": "This page is the central source of truth for IVG's GRESB submission. As policies are confirmed, evidence collected and data lands, this view updates dynamically.",
+    "entityName": "Westbrook Academies Trust",
+    "trackerSource": "26003-NZA-Westbrook-XX-SH-2000_P12_-_GRESB_2026_Master_Matrix.xlsx",
+    "notes": "All weights, scores, and validation decisions sourced directly from (a) GRESB 2026 RE Standard Updates, (b) Westbrook 2025 GRESB Benchmark Report (portal report 70100), (c) SharePoint /GRESB_Audit_Trail/. Previous v1.4.3 contained errors from phantom residential reweightings and incorrect RES6 modelling - fully replaced in this version.",
+    "toolPurpose": "This page is the central source of truth for Westbrook's GRESB submission. As policies are confirmed, evidence collected and data lands, this view updates dynamically.",
     "criticalRisks": [
       {
         "code": "SE2.1",
@@ -36,7 +36,7 @@
         "code": "T1.2",
         "label": "NWPF Net Zero target",
         "ptsAtStake": 2.0,
-        "question": "Does L&G/SBTi 2021 target carry to IVG under NWPF?",
+        "question": "Does L&G/SBTi 2021 target carry to Westbrook under NWPF?",
         "owner": "Jez",
         "consequence": "+1pt automatic if defendable at 2026 doubled weight"
       }
@@ -64,7 +64,7 @@
     {
       "name": "2-star",
       "thresholdIndicative2025": 55,
-      "note": "IVG target zone"
+      "note": "Westbrook target zone"
     },
     {
       "name": "3-star",
@@ -87,7 +87,7 @@
       "name": "Leadership",
       "ivgName": "ESG Leadership & Governance",
       "component": "Management",
-      "summary": "How IVG's leadership owns ESG outcomes — who's responsible, what they're accountable for, how it's structured.",
+      "summary": "How Westbrook's leadership owns ESG outcomes — who's responsible, what they're accountable for, how it's structured.",
       "playHere": "Mostly holds via prefill — verify it carries post-NWPF. LE6 is the only meaningful active gap. LE3 retired for 2026 = guaranteed −2pt structural drop.",
       "max2026": 5,
       "indicators": [
@@ -100,7 +100,7 @@
           "ceiling2026": null,
           "max2026": "Not scored",
           "confidence": "N/A",
-          "owner": "IVG",
+          "owner": "Westbrook",
           "forecastRationale": "LE1 unscored",
           "needed": [],
           "youHave": [],
@@ -115,7 +115,7 @@
           },
           "priority": "non-scored",
           "whatItMeans": "Reporting-only indicator covering ESG leadership statements. No score impact in 2026 — included for narrative context.",
-          "whatWeNeedToDo": "Provide a brief narrative statement of IVG's ESG leadership commitments. Reporting only — no points to chase.",
+          "whatWeNeedToDo": "Provide a brief narrative statement of Westbrook's ESG leadership commitments. Reporting only — no points to chase.",
           "evidenceRequired": {
             "type": "narrative-only",
             "validation": "none",
@@ -137,7 +137,7 @@
           "ceiling2026": 1.0,
           "max2026": 1,
           "confidence": "M",
-          "owner": "IVG",
+          "owner": "Westbrook",
           "forecastRationale": "Held 2025; sleeper risk post-NWPF restructure — need current dated ESG-objectives doc covering 11-site portfolio",
           "needed": [
             "A current dated ESG objectives document covering the 11-site portfolio"
@@ -153,7 +153,7 @@
             "rfiRef": "G2"
           },
           "priority": "defending",
-          "whatItMeans": "A current dated document setting out IVG's ESG objectives. Must explicitly reference the operating portfolio and have a senior signatory.",
+          "whatItMeans": "A current dated document setting out Westbrook's ESG objectives. Must explicitly reference the operating portfolio and have a senior signatory.",
           "whatWeNeedToDo": "Confirm existing ESG objectives doc is current under NWPF ownership. Refresh if older than 2024 or if signatory has changed.",
           "evidenceRequired": {
             "type": "policy-document",
@@ -189,7 +189,7 @@
           "evidence": [],
           "gresbDetail": {
             "description": "RETIRED 2026 - Individual responsible for ESG",
-            "changeNote": "RETIRED in 2026; IVG scored 2/2 in 2025 → -2pts net loss",
+            "changeNote": "RETIRED in 2026; Westbrook scored 2/2 in 2025 → -2pts net loss",
             "evidenceType": "Do not complete",
             "rfiRef": "—"
           },
@@ -221,7 +221,7 @@
           "ceiling2026": 1.0,
           "max2026": 1,
           "confidence": "M",
-          "owner": "IVG",
+          "owner": "Westbrook",
           "forecastRationale": "Held 2025; committee status post-NWPF needs verification + TORs refresh",
           "needed": [],
           "youHave": [],
@@ -262,7 +262,7 @@
           "ceiling2026": 1.0,
           "max2026": 1,
           "confidence": "M",
-          "owner": "IVG",
+          "owner": "Westbrook",
           "forecastRationale": "Held 2025; need current senior ESG owner name + role description under NWPF ownership",
           "needed": [],
           "youHave": [],
@@ -306,7 +306,7 @@
           "ceiling2026": 1.0,
           "max2026": 2,
           "confidence": "L",
-          "owner": "IVG",
+          "owner": "Westbrook",
           "forecastRationale": "HR pack on remuneration-linked ESG needed; partial 2025 (~1.83); could carry partial or recover full",
           "needed": [
             "Documentation showing remuneration is linked to ESG performance across all selected personnel groups"
@@ -322,7 +322,7 @@
             "rfiRef": "G2"
           },
           "priority": "action-needed",
-          "whatItMeans": "LE6 scores IVG on whether personnel have ESG performance targets AND predetermined consequences for hitting or missing them. The validator checks coverage across 11 personnel groups. For maximum marks the evidence has to support ESG-linked compensation across all personnel groups IVG selects — AND that evidence has to be either publicly disclosed or shared directly with investors.",
+          "whatItMeans": "LE6 scores Westbrook on whether personnel have ESG performance targets AND predetermined consequences for hitting or missing them. The validator checks coverage across 11 personnel groups. For maximum marks the evidence has to support ESG-linked compensation across all personnel groups Westbrook selects — AND that evidence has to be either publicly disclosed or shared directly with investors.",
           "whatWeNeedToDo": "HR pack required — confirm which personnel groups have ESG-linked compensation, gather evidence (incentive scheme docs, performance review templates referencing ESG).",
           "evidenceRequired": {
             "type": "policy-document",
@@ -390,11 +390,11 @@
             "Submit updated HR pack referencing the named personnel groups + link to public disclosure."
           ],
           "openQuestionsForIVG": [
-            "Which IVG personnel groups currently have ESG-linked compensation?",
+            "Which Westbrook personnel groups currently have ESG-linked compensation?",
             "Is there scope to extend ESG-linked comp to Senior Management / Dedicated ESG Staff for CY2026?"
           ],
           "gapToMaxSummary": "Realistic this cycle: ~1.5 / 2",
-          "gapToMaxDetail": "IVG scored 1/2 because not all selected personnel groups were supported by evidence, AND the evidence wasn't shared with investors. To reach 2.0: (a) extend ESG-linked compensation to more personnel groups (each group beyond exec adds ~0.1pt), and (b) publish the evidence — the cleanest route is including a section in the CY2025 sustainability report (RP1). The \"share publicly\" piece is a zero-cost win that pushes us toward 1.5-1.7pt. Reaching full 2.0 needs broader personnel-group coverage which IVG will need to confirm - key question.",
+          "gapToMaxDetail": "Westbrook scored 1/2 because not all selected personnel groups were supported by evidence, AND the evidence wasn't shared with investors. To reach 2.0: (a) extend ESG-linked compensation to more personnel groups (each group beyond exec adds ~0.1pt), and (b) publish the evidence — the cleanest route is including a section in the CY2025 sustainability report (RP1). The \"share publicly\" piece is a zero-cost win that pushes us toward 1.5-1.7pt. Reaching full 2.0 needs broader personnel-group coverage which Westbrook will need to confirm - key question.",
           "defendable": 0,
           "target": 0.7,
           "stretch": 1.0,
@@ -420,8 +420,8 @@
       "name": "Policies",
       "ivgName": "Your ESG Policy Library",
       "component": "Management",
-      "summary": "The set of policy documents covering environmental, social and governance issues that IVG has in place.",
-      "playHere": "Biggest easy win for 2026 — failure in 2025 was supply, not absence. We just need PDFs of policies IVG already has. Anna leads. ~+4pt available.",
+      "summary": "The set of policy documents covering environmental, social and governance issues that Westbrook has in place.",
+      "playHere": "Biggest easy win for 2026 — failure in 2025 was supply, not absence. We just need PDFs of policies Westbrook already has. Anna leads. ~+4pt available.",
       "max2026": 4.5,
       "indicators": [
         {
@@ -436,7 +436,7 @@
           "owner": "NZA-delivered",
           "forecastRationale": "Floor: defending 2025 Net Zero partial credit; Ceiling: small uplift from Procurement + Mould & Damp policies if accepted. No dedicated Environmental Policy until 2027.",
           "needed": [
-            "IVG Environmental Policy PDF (whatever exists)",
+            "Westbrook Environmental Policy PDF (whatever exists)",
             "Document must visibly cover environmental issues GRESB tracks"
           ],
           "youHave": [],
@@ -450,8 +450,8 @@
             "rfiRef": "G1 / F5"
           },
           "priority": "action-needed",
-          "whatItMeans": "A formal Environmental Policy covering the 12 environmental issues GRESB tracks. Plus a separate Yes/No on whether IVG has a Net Zero policy. Existing policies count — vintage rule is that the policy must have been in force during CY2025, not that it was newly written.",
-          "whatWeNeedToDo": "Anna confirms what exists in IVG's Policy Register (27.06.25 inventory) and sends the actual policy PDFs. For partial credit (+0.5pt realistic): supply existing IVG environmental commitments — any policy doc, sustainability statement, or operational policy with environmental content visible. Net Zero policy is being drafted by NZA Workstream B for the 2027 cycle (can't be backdated to CY2025).",
+          "whatItMeans": "A formal Environmental Policy covering the 12 environmental issues GRESB tracks. Plus a separate Yes/No on whether Westbrook has a Net Zero policy. Existing policies count — vintage rule is that the policy must have been in force during CY2025, not that it was newly written.",
+          "whatWeNeedToDo": "Anna confirms what exists in Westbrook's Policy Register (27.06.25 inventory) and sends the actual policy PDFs. For partial credit (+0.5pt realistic): supply existing Westbrook environmental commitments — any policy doc, sustainability statement, or operational policy with environmental content visible. Net Zero policy is being drafted by NZA Workstream B for the 2027 cycle (can't be backdated to CY2025).",
           "evidenceRequired": {
             "type": "policy-document",
             "validation": "manual",
@@ -530,10 +530,10 @@
           ],
           "openQuestionsForIVG": [
             "Does the Policy Register contain any Environmental Policy or sustainability statement that can be sent to GRESB as evidence?",
-            "Is there any IVG document that addresses the 12 GRESB environmental issues, even partially?"
+            "Is there any Westbrook document that addresses the 12 GRESB environmental issues, even partially?"
           ],
           "gapToMaxSummary": "Realistic this cycle: ~0.5 / 1.5",
-          "gapToMaxDetail": "Max 1.5 requires a formal Environmental Policy covering all 12 GRESB-tracked environmental issues, PLUS a separate Net Zero policy (90% of peer group answered Yes), PLUS evidence shared with investors. IVG's existing Policy Register doesn't contain a formal Environmental Policy doc — the 0.17 we scored came from naming the personnel responsible, not from the policy itself. Realistic this cycle: ~0.5pt if Anna can send any environmental commitment doc / sustainability statement that visibly covers some of the 12 issues. Full 1.5 is a 2027 play once NZA-drafted Environmental + Net Zero policies are in force during CY2026.",
+          "gapToMaxDetail": "Max 1.5 requires a formal Environmental Policy covering all 12 GRESB-tracked environmental issues, PLUS a separate Net Zero policy (90% of peer group answered Yes), PLUS evidence shared with investors. Westbrook's existing Policy Register doesn't contain a formal Environmental Policy doc — the 0.17 we scored came from naming the personnel responsible, not from the policy itself. Realistic this cycle: ~0.5pt if Anna can send any environmental commitment doc / sustainability statement that visibly covers some of the 12 issues. Full 1.5 is a 2027 play once NZA-drafted Environmental + Net Zero policies are in force during CY2026.",
           "defendable": 0.17,
           "target": 0.4,
           "stretch": 0.7,
@@ -549,9 +549,9 @@
           "max2026": 1.5,
           "confidence": "M",
           "owner": "NZA-delivered",
-          "forecastRationale": "Floor: validator may reject HR procedures as ESG policy; Ceiling: 6+ sub-options covered by formal dated PDFs IVG already has. Awaiting Anna delivery to confirm.",
+          "forecastRationale": "Floor: validator may reject HR procedures as ESG policy; Ceiling: 6+ sub-options covered by formal dated PDFs Westbrook already has. Awaiting Anna delivery to confirm.",
           "needed": [
-            "Social policy / H&S / wellbeing / EDI policy PDFs IVG already has",
+            "Social policy / H&S / wellbeing / EDI policy PDFs Westbrook already has",
             "Code of conduct"
           ],
           "youHave": [],
@@ -566,7 +566,7 @@
           },
           "priority": "action-needed",
           "whatItMeans": "A Social Policy (or set of policies) covering 15 social issues. Multiple policies combine — doesn't need to be one document. For UK companies, H&S, EDI, and safeguarding policies are typically statutory, so something almost certainly exists.",
-          "whatWeNeedToDo": "Anna sends existing IVG social-pillar policies: H&S policy (statutory in UK, must exist), employee wellbeing / EAP policy, EDI policy, code of conduct, safeguarding policy. For partial credit (+0.5pt realistic), even fragmented social policies score better than nothing.",
+          "whatWeNeedToDo": "Anna sends existing Westbrook social-pillar policies: H&S policy (statutory in UK, must exist), employee wellbeing / EAP policy, EDI policy, code of conduct, safeguarding policy. For partial credit (+0.5pt realistic), even fragmented social policies score better than nothing.",
           "evidenceRequired": {
             "type": "policy-document",
             "validation": "manual",
@@ -643,18 +643,18 @@
             }
           ],
           "whatWeNeedToDoChecklist": [
-            "Anna sends existing IVG social-pillar policies: H&S policy (statutory in UK), employee wellbeing / EAP policy, EDI policy, code of conduct, safeguarding policy.",
+            "Anna sends existing Westbrook social-pillar policies: H&S policy (statutory in UK), employee wellbeing / EAP policy, EDI policy, code of conduct, safeguarding policy.",
             "Multiple separate policies score better than nothing — bundle them as a Social Policy pack.",
             "For partial credit (+0.5pt realistic): even fragmented social policies score, especially H&S and EDI.",
             "NZA-drafted comprehensive Social Policy in 2026 → score 2027 cycle (+ further uplift)."
           ],
           "openQuestionsForIVG": [
-            "Does IVG have a Health & Safety Policy? (statutory in UK — must exist)",
-            "Does IVG have a Wellbeing / EAP, EDI, and Safeguarding Policy?",
+            "Does Westbrook have a Health & Safety Policy? (statutory in UK — must exist)",
+            "Does Westbrook have a Wellbeing / EAP, EDI, and Safeguarding Policy?",
             "Are these collated anywhere that can be sent as a Social Policy pack?"
           ],
           "gapToMaxSummary": "Realistic this cycle: ~0.5 / 1.5",
-          "gapToMaxDetail": "Max 1.5 requires a formal Social Policy (or set) visibly covering the 15 social issues (H&S, EDI, wellbeing, labour, etc.) AND shared with investors. IVG almost certainly has H&S, EDI, safeguarding and wellbeing policies as standalone documents — bundling them as a \"Social Policy pack\" should score partial credit (~0.5pt). Full 1.5 needs a consolidated Social Policy doc — NZA can draft for 2027 cycle.",
+          "gapToMaxDetail": "Max 1.5 requires a formal Social Policy (or set) visibly covering the 15 social issues (H&S, EDI, wellbeing, labour, etc.) AND shared with investors. Westbrook almost certainly has H&S, EDI, safeguarding and wellbeing policies as standalone documents — bundling them as a \"Social Policy pack\" should score partial credit (~0.5pt). Full 1.5 needs a consolidated Social Policy doc — NZA can draft for 2027 cycle.",
           "defendable": 0.3,
           "target": 1.3,
           "stretch": 1.5,
@@ -670,7 +670,7 @@
           "max2026": 1.5,
           "confidence": "M",
           "owner": "NZA-delivered",
-          "forecastRationale": "Floor: validator may reject. Ceiling: 6+ sub-options covered by formal dated PDFs IVG already has.",
+          "forecastRationale": "Floor: validator may reject. Ceiling: 6+ sub-options covered by formal dated PDFs Westbrook already has.",
           "needed": [
             "Governance / anti-bribery / whistleblowing policies",
             "May include NWPF-level documents"
@@ -686,8 +686,8 @@
             "rfiRef": "F5"
           },
           "priority": "action-needed",
-          "whatItMeans": "A Governance Policy (or set of policies) covering 9 governance issues. The Supplier Code v22 in IVG's Policy Register covers part of this. Most other governance policies (anti-bribery, GDPR, whistleblowing) are statutory for UK businesses so should exist.",
-          "whatWeNeedToDo": "Anna sends: Supplier Code v22 (already in policy register), anti-bribery & corruption policy, whistleblowing policy, data protection / GDPR policy, plus any NWPF-level governance documents that apply to IVG. For partial credit (+0.5pt realistic) — these almost certainly exist as statutory documents.",
+          "whatItMeans": "A Governance Policy (or set of policies) covering 9 governance issues. The Supplier Code v22 in Westbrook's Policy Register covers part of this. Most other governance policies (anti-bribery, GDPR, whistleblowing) are statutory for UK businesses so should exist.",
+          "whatWeNeedToDo": "Anna sends: Supplier Code v22 (already in policy register), anti-bribery & corruption policy, whistleblowing policy, data protection / GDPR policy, plus any NWPF-level governance documents that apply to Westbrook. For partial credit (+0.5pt realistic) — these almost certainly exist as statutory documents.",
           "evidenceRequired": {
             "type": "policy-document",
             "validation": "manual",
@@ -749,10 +749,10 @@
           ],
           "openQuestionsForIVG": [
             "Does the Policy Register contain anti-bribery, whistleblowing, GDPR, and Supplier Code documents?",
-            "Are there NWPF-level governance documents that apply to IVG?"
+            "Are there NWPF-level governance documents that apply to Westbrook?"
           ],
           "gapToMaxSummary": "Realistic this cycle: ~0.5 / 1.5",
-          "gapToMaxDetail": "Max 1.5 requires a formal Governance Policy covering the 9 governance issues (bribery, cyber, GDPR, fiduciary duty, etc.). 100% of peers cover Bribery and Data Protection — IVG must have these as statutory documents. Anna sending Supplier Code v22 + anti-bribery + GDPR + whistleblowing policies should score ~0.5pt. Full 1.5 needs consolidated Governance Policy — 2027 play.",
+          "gapToMaxDetail": "Max 1.5 requires a formal Governance Policy covering the 9 governance issues (bribery, cyber, GDPR, fiduciary duty, etc.). 100% of peers cover Bribery and Data Protection — Westbrook must have these as statutory documents. Anna sending Supplier Code v22 + anti-bribery + GDPR + whistleblowing policies should score ~0.5pt. Full 1.5 needs consolidated Governance Policy — 2027 play.",
           "defendable": 0.3,
           "target": 1.3,
           "stretch": 1.5,
@@ -791,7 +791,7 @@
           "ceiling2026": 2.5,
           "max2026": 3.5,
           "confidence": "L",
-          "owner": "IVG / NZA",
+          "owner": "Westbrook / NZA",
           "forecastRationale": "Floor: no acceptable CY2025 report = 0; Ceiling: E+S report published + GRI/EPRA aligned (without 3rd-party assurance = no full ceiling)",
           "needed": [
             "Public CY2025 sustainability report covering environmental AND social pillars",
@@ -799,7 +799,7 @@
             "(Optional uplift: standard alignment like GRI/EPRA + third-party review)"
           ],
           "youHave": [],
-          "gap": "No CY2025 sustainability report exists — needs to be built. Environmental sections come from NZA's carbon inventory + net-zero work. Social content already exists across IVG's website (resident wellbeing, EDI, H&S, community engagement) — the path is to pull it together with IVG's team into one public disclosure.",
+          "gap": "No CY2025 sustainability report exists — needs to be built. Environmental sections come from NZA's carbon inventory + net-zero work. Social content already exists across Westbrook's website (resident wellbeing, EDI, H&S, community engagement) — the path is to pull it together with Westbrook's team into one public disclosure.",
           "nextYear": "Defend; add governance pillar to push toward full marks. Consider verified assurance.",
           "evidence": [],
           "gresbDetail": {
@@ -810,7 +810,7 @@
           },
           "priority": "action-needed",
           "whatItMeans": "A public sustainability disclosure covering CY2025. Must cover at least two of E, S and G pillars — one pillar only halves the score. Can be a standalone report, a section of an annual report, or a dedicated website section. Third-party assurance adds further marks (not pursued this cycle).",
-          "whatWeNeedToDo": "Build a combined CY2025 sustainability report covering E + S pillars. NZA authors the environmental sections (carbon inventory, net-zero report, climate risk). Social content largely exists already across IVG's website (resident wellbeing, EDI, H&S, community engagement) - IVG's team curates and links it together with the environmental sections. IVG board must agree to publish it publicly. Optional uplift if reviewed by a third party (not pursuing this cycle).",
+          "whatWeNeedToDo": "Build a combined CY2025 sustainability report covering E + S pillars. NZA authors the environmental sections (carbon inventory, net-zero report, climate risk). Social content largely exists already across Westbrook's website (resident wellbeing, EDI, H&S, community engagement) - Westbrook's team curates and links it together with the environmental sections. Westbrook board must agree to publish it publicly. Optional uplift if reviewed by a third party (not pursuing this cycle).",
           "evidenceRequired": {
             "type": "public-disclosure",
             "validation": "manual",
@@ -847,20 +847,20 @@
             }
           ],
           "whatWeNeedToDoChecklist": [
-            "NZA authors the environmental sections (carbon inventory + net-zero report + climate risk). IVG team curates the social content - much of it (resident wellbeing, EDI, H&S, community engagement) already lives on IVG's website and just needs pulling together alongside the environmental sections.",
-            "IVG board approves public publication (required — critical for GRESB submission).",
+            "NZA authors the environmental sections (carbon inventory + net-zero report + climate risk). Westbrook team curates the social content - much of it (resident wellbeing, EDI, H&S, community engagement) already lives on Westbrook's website and just needs pulling together alongside the environmental sections.",
+            "Westbrook board approves public publication (required — critical for GRESB submission).",
             "Social content needs numbers: resident wellbeing scores, EDI metrics, H&S indicators, community engagement, safeguarding.",
             "Environmental content: CY2025 GHG, energy, water, waste data + climate risk summary.",
-            "Host on IVG website with public URL — submission references the URL.",
+            "Host on Westbrook website with public URL — submission references the URL.",
             "Optional 2027 uplift: ISAE 3000 / equivalent third-party assurance."
           ],
           "openQuestionsForIVG": [
-            "Has IVG produced any CY2025 sustainability disclosure already? Even an annual report ESG section?",
-            "Will the IVG board agree to publicly publish a CY2025 sustainability report by the 1 July deadline?",
+            "Has Westbrook produced any CY2025 sustainability disclosure already? Even an annual report ESG section?",
+            "Will the Westbrook board agree to publicly publish a CY2025 sustainability report by the 1 July deadline?",
             "Is there appetite to align with INREV (13% of peer group) as the residential-relevant framework?"
           ],
           "gapToMaxSummary": "Realistic this cycle: 2.5–3 / 3.5 (pending board approval)",
-          "gapToMaxDetail": "Max 3.5 requires a public CY2025 sustainability report covering E + S pillars with quantitative data, ALIGNED to a recognised framework (GRI / EPRA / INREV), AND third-party reviewed. IVG's 2025 score of 1.4 came from the 2023 Hydrock Impact Report being submitted as \"Other\" alignment — the vintage was rejected. Realistic this cycle: 2.5pt if board approves publishing a CY2025 sustainability report (NZA authors the environmental sections; IVG's team pulls together the social content from existing website material; INREV alignment makes sense for residential). Full 3.5 needs third-party assurance, which we've scoped out for 2026 — would add ~1pt in 2027. If board says NO to publishing: realistic drops to ~1.5pt (defending only).",
+          "gapToMaxDetail": "Max 3.5 requires a public CY2025 sustainability report covering E + S pillars with quantitative data, ALIGNED to a recognised framework (GRI / EPRA / INREV), AND third-party reviewed. Westbrook's 2025 score of 1.4 came from the 2023 Hydrock Impact Report being submitted as \"Other\" alignment — the vintage was rejected. Realistic this cycle: 2.5pt if board approves publishing a CY2025 sustainability report (NZA authors the environmental sections; Westbrook's team pulls together the social content from existing website material; INREV alignment makes sense for residential). Full 3.5 needs third-party assurance, which we've scoped out for 2026 — would add ~1pt in 2027. If board says NO to publishing: realistic drops to ~1.5pt (defending only).",
           "defendable": 0,
           "target": 2.0,
           "stretch": 2.5,
@@ -875,10 +875,10 @@
           "ceiling2026": 0.25,
           "max2026": 0.25,
           "confidence": "M",
-          "owner": "IVG (Richard Higgins / Operational Risk)",
+          "owner": "Westbrook (Richard Higgins / Operational Risk)",
           "forecastRationale": "Easy 0.25pt via Richard Higgins / Operational Risk confirmation",
           "needed": [
-            "Process description for how IVG monitors ESG-related incidents/controversies/penalties"
+            "Process description for how Westbrook monitors ESG-related incidents/controversies/penalties"
           ],
           "youHave": [],
           "gap": "Likely already exists via Operational Risk framework — needs confirmation from Richard Higgins",
@@ -891,8 +891,8 @@
             "rfiRef": "G1"
           },
           "priority": "easy-win",
-          "whatItMeans": "A process description for how IVG monitors ESG-related incidents and controversies. Process description only — no incident data required at this stage (RP2.2 is the actual incident count).",
-          "whatWeNeedToDo": "NZA drafts a short process description; Richard Higgins (Operational Risk) confirms it reflects existing IVG controls.",
+          "whatItMeans": "A process description for how Westbrook monitors ESG-related incidents and controversies. Process description only — no incident data required at this stage (RP2.2 is the actual incident count).",
+          "whatWeNeedToDo": "NZA drafts a short process description; Richard Higgins (Operational Risk) confirms it reflects existing Westbrook controls.",
           "evidenceRequired": {
             "type": "process-description",
             "validation": "manual",
@@ -905,7 +905,7 @@
           "clickable": true,
           "pointContribution2026": 0.13,
           "validatorReason": "Limited process detail and not all stakeholders covered.",
-          "whatLastYearSubmitted": "IVG's exact 2025 response: \"There is no formal process for this however there is a supplier code of conduct in place and any significant incidences will be communicated to staff where appropriate.\"",
+          "whatLastYearSubmitted": "Westbrook's exact 2025 response: \"There is no formal process for this however there is a supplier code of conduct in place and any significant incidences will be communicated to staff where appropriate.\"",
           "gresbTrackedIssues": [
             {
               "label": "Clients / Customers",
@@ -942,14 +942,14 @@
           ],
           "whatWeNeedToDoChecklist": [
             "NZA drafts a short formal incident monitoring process description covering all 8+ stakeholder groups.",
-            "Richard Higgins (Operational Risk) confirms it reflects existing IVG controls.",
-            "Reference IVG's Operational Risk framework + Supplier Code of Conduct."
+            "Richard Higgins (Operational Risk) confirms it reflects existing Westbrook controls.",
+            "Reference Westbrook's Operational Risk framework + Supplier Code of Conduct."
           ],
           "openQuestionsForIVG": [
-            "Does IVG have a formal Operational Risk framework document Richard can share?"
+            "Does Westbrook have a formal Operational Risk framework document Richard can share?"
           ],
           "gapToMaxSummary": "Realistic this cycle: 0.25 / 0.25 (full)",
-          "gapToMaxDetail": "Max 0.25 requires a documented incident-monitoring process covering 8+ stakeholder groups. IVG scored 0.12 because the 2025 answer was \"no formal process\". NZA drafts a short formal process description; Richard Higgins confirms it reflects existing IVG controls. Full marks easily achievable.",
+          "gapToMaxDetail": "Max 0.25 requires a documented incident-monitoring process covering 8+ stakeholder groups. Westbrook scored 0.12 because the 2025 answer was \"no formal process\". NZA drafts a short formal process description; Richard Higgins confirms it reflects existing Westbrook controls. Full marks easily achievable.",
           "defendable": 0.12,
           "target": 0.22,
           "stretch": 0.25,
@@ -964,7 +964,7 @@
           "ceiling2026": 0,
           "max2026": "Reporting only",
           "confidence": "H",
-          "owner": "IVG",
+          "owner": "Westbrook",
           "forecastRationale": "RP2.2 reporting only - no points",
           "needed": [],
           "youHave": [],
@@ -1012,7 +1012,7 @@
       "name": "Risk Management",
       "ivgName": "Risk Management Frameworks",
       "component": "Management",
-      "summary": "How IVG identifies, assesses, and responds to ESG and climate risks across the portfolio.",
+      "summary": "How Westbrook identifies, assesses, and responds to ESG and climate risks across the portfolio.",
       "playHere": "Two NZA deliverables: an EMS document and a Portfolio Climate Risk Assessment. ~3.75pts in play. RM6.2/6.4 (financial impact) parked to 2027.",
       "max2026": 6.8,
       "indicators": [
@@ -1043,7 +1043,7 @@
           },
           "priority": "action-needed",
           "whatItMeans": "A formal Environmental Management System (EMS) document covering objectives, responsibilities, monitoring and review cycle. ISO 14001 not required — self-certified EMS scores full marks. 90% of peer group has one in place.",
-          "whatWeNeedToDo": "NZA writes a self-certified EMS document for IVG. References existing policies, processes, ESG governance structure. One-time build, defends annually thereafter.",
+          "whatWeNeedToDo": "NZA writes a self-certified EMS document for Westbrook. References existing policies, processes, ESG governance structure. One-time build, defends annually thereafter.",
           "evidenceRequired": {
             "type": "policy-document",
             "validation": "manual",
@@ -1056,7 +1056,7 @@
           "clickable": true,
           "pointContribution2026": 0.65,
           "validatorReason": "No EMS document submitted.",
-          "whatLastYearSubmitted": "Nothing — IVG answered No.",
+          "whatLastYearSubmitted": "Nothing — Westbrook answered No.",
           "peerComparison": [
             {
               "label": "EMS in place",
@@ -1065,7 +1065,7 @@
             }
           ],
           "whatWeNeedToDoChecklist": [
-            "NZA writes self-certified EMS document for IVG (in scope of NZA Workstream B).",
+            "NZA writes self-certified EMS document for Westbrook (in scope of NZA Workstream B).",
             "References existing policies, processes, ESG governance structure (ESGH Steering Committee).",
             "One-time build — defends annually thereafter at no further cost.",
             "ISO 14001 path opens for 2027/2028 cycles as future-cycle uplift."
@@ -1087,7 +1087,7 @@
           "ceiling2026": 0.25,
           "max2026": 0.25,
           "confidence": "H",
-          "owner": "IVG",
+          "owner": "Westbrook",
           "forecastRationale": "Prefill-eligible; carries from 2025 with minor lift via policy work",
           "needed": [],
           "youHave": [],
@@ -1101,7 +1101,7 @@
             "rfiRef": "—"
           },
           "priority": "defending",
-          "whatItMeans": "A process description showing how IVG ensures governance policies are actually implemented — not just written but enforced. Prefill-eligible from 2025.",
+          "whatItMeans": "A process description showing how Westbrook ensures governance policies are actually implemented — not just written but enforced. Prefill-eligible from 2025.",
           "whatWeNeedToDo": "Confirm 2025 prefill carries forward. Minor lift possible from documenting policy implementation cycle.",
           "evidenceRequired": {
             "type": "process-description",
@@ -1114,9 +1114,9 @@
           "achievable2026": 0.25,
           "clickable": true,
           "pointContribution2026": 0.03,
-          "whatLastYearSubmitted": "IVG selected 10 governance-implementation systems: Compliance linked to employee remuneration, Dedicated help desks / ombudsman / hotlines, Disciplinary actions for breach, Employee performance appraisal systems integrate compliance, Investment due diligence process, Responsibilities and reporting lines systematically defined in all divisions, Training related to governance risks, Regular follow-ups, Induction when employee joins, Whistle-blower mechanism. Verdict: Partially Accepted (0.22 / 0.25).",
+          "whatLastYearSubmitted": "Westbrook selected 10 governance-implementation systems: Compliance linked to employee remuneration, Dedicated help desks / ombudsman / hotlines, Disciplinary actions for breach, Employee performance appraisal systems integrate compliance, Investment due diligence process, Responsibilities and reporting lines systematically defined in all divisions, Training related to governance risks, Regular follow-ups, Induction when employee joins, Whistle-blower mechanism. Verdict: Partially Accepted (0.22 / 0.25).",
           "gapToMaxSummary": "Defending ~0.22 / 0.25",
-          "gapToMaxDetail": "IVG covers 10 of 11 tracked systems. Effectively maxed — defendable. The 0.03 gap not worth chasing.",
+          "gapToMaxDetail": "Westbrook covers 10 of 11 tracked systems. Effectively maxed — defendable. The 0.03 gap not worth chasing.",
           "defendable": 0.22,
           "target": 0.25,
           "stretch": 0.25,
@@ -1131,7 +1131,7 @@
           "ceiling2026": 0.25,
           "max2026": 0.25,
           "confidence": "H",
-          "owner": "IVG / NZA",
+          "owner": "Westbrook / NZA",
           "forecastRationale": "Prefill; full marks 2025; carries forward",
           "needed": [],
           "youHave": [],
@@ -1158,7 +1158,7 @@
           "achievable2026": 0.25,
           "clickable": true,
           "pointContribution2026": 0.0,
-          "whatLastYearSubmitted": "IVG's social risk assessment covers the 17 GRESB-tracked social issues: child labor, community development, customer satisfaction, employee engagement, employee H&W, forced labor, freedom of association, H&S (community / contractors / employees / tenants / supply chain), human rights, human capital, labor standards, stakeholder relations. Verdict: ACCEPTED (0.25 / 0.25 maxed).",
+          "whatLastYearSubmitted": "Westbrook's social risk assessment covers the 17 GRESB-tracked social issues: child labor, community development, customer satisfaction, employee engagement, employee H&W, forced labor, freedom of association, H&S (community / contractors / employees / tenants / supply chain), human rights, human capital, labor standards, stakeholder relations. Verdict: ACCEPTED (0.25 / 0.25 maxed).",
           "gapToMaxSummary": "Defending 0.25 / 0.25 (maxed)",
           "gapToMaxDetail": "Maxed. Defend by confirming the social risk assessment is still current.",
           "defendable": 0.25,
@@ -1175,7 +1175,7 @@
           "ceiling2026": 0.25,
           "max2026": 0.25,
           "confidence": "H",
-          "owner": "IVG / NZA",
+          "owner": "Westbrook / NZA",
           "forecastRationale": "Prefill partial 2025; small lift possible",
           "needed": [],
           "youHave": [],
@@ -1202,7 +1202,7 @@
           "achievable2026": 0.25,
           "clickable": true,
           "pointContribution2026": 0.08,
-          "whatLastYearSubmitted": "IVG's governance risk assessment covers 8 of 9 tracked governance issues: bribery & corruption, cybersecurity, data protection, executive compensation, fiduciary duty, fraud, political contributions, shareholder rights. Verdict: Partially Accepted (0.17 / 0.25).",
+          "whatLastYearSubmitted": "Westbrook's governance risk assessment covers 8 of 9 tracked governance issues: bribery & corruption, cybersecurity, data protection, executive compensation, fiduciary duty, fraud, political contributions, shareholder rights. Verdict: Partially Accepted (0.17 / 0.25).",
           "gapToMaxSummary": "Defending ~0.17 / 0.25",
           "gapToMaxDetail": "Adding the \"Other\" governance issue category (or providing fuller evidence on existing issues) could lift toward 0.25. Marginal gain — defendable as-is.",
           "defendable": 0.17,
@@ -1219,7 +1219,7 @@
           "ceiling2026": 0.25,
           "max2026": 0.25,
           "confidence": "H",
-          "owner": "IVG / NWPF",
+          "owner": "Westbrook / NWPF",
           "forecastRationale": "Prefill; full marks 2025; low acquisition activity post-restructure",
           "needed": [],
           "youHave": [],
@@ -1246,7 +1246,7 @@
           "achievable2026": 0.25,
           "clickable": true,
           "pointContribution2026": 0.0,
-          "whatLastYearSubmitted": "IVG's ESG due diligence process for new acquisitions covers 7+ environmental issues: biodiversity & habitat, building safety, climate change adaptation, compliance with regulatory requirements, contaminated land, energy efficiency, energy supply, water supply, plus governance and social factors. Verdict: ACCEPTED (0.25 / 0.25 maxed).",
+          "whatLastYearSubmitted": "Westbrook's ESG due diligence process for new acquisitions covers 7+ environmental issues: biodiversity & habitat, building safety, climate change adaptation, compliance with regulatory requirements, contaminated land, energy efficiency, energy supply, water supply, plus governance and social factors. Verdict: ACCEPTED (0.25 / 0.25 maxed).",
           "gapToMaxSummary": "Defending 0.25 / 0.25 (maxed)",
           "gapToMaxDetail": "Maxed. Defend by confirming the DD process is still current post-NWPF restructure (acquisition activity has been minimal).",
           "defendable": 0.25,
@@ -1312,7 +1312,7 @@
           "gresbDetail": {
             "description": "Climate resilience strategy",
             "changeNote": "2026: CRREM 2°C scenario retired - use NGFS latest or CRREM 1.5°C",
-            "evidenceType": "IVG-authored strategy referencing Hydrock + CRREM",
+            "evidenceType": "Westbrook-authored strategy referencing Hydrock + CRREM",
             "rfiRef": "—"
           },
           "priority": "action-needed",
@@ -1330,7 +1330,7 @@
           "clickable": true,
           "pointContribution2026": 0.25,
           "validatorReason": "Accepted in 2025 — but on CRREM 2°C transition scenario which is RETIRED for 2026 cycle.",
-          "whatLastYearSubmitted": "Hydrock (Stantec) 2024 work for Bramshott Place, Millbrook, Durrants. UKCP18 climate projections (RCP 2.6, 4.5, 8.5) for physical risk. CRREM 1.5°C transition scenario already used — IVG technically already meets the 2026 standard. Assessment periods up to 2080. Risks: heat stress, flooding, drought, extreme weather. Internal documents only — not publicly disclosed.",
+          "whatLastYearSubmitted": "Hydrock (Stantec) 2024 work for Bramshott Place, Millbrook, Durrants. UKCP18 climate projections (RCP 2.6, 4.5, 8.5) for physical risk. CRREM 1.5°C transition scenario already used — Westbrook technically already meets the 2026 standard. Assessment periods up to 2080. Risks: heat stress, flooding, drought, extreme weather. Internal documents only — not publicly disclosed.",
           "whatWeNeedToDoChecklist": [
             "NZA refreshes the climate resilience strategy citing CRREM 1.5°C (already used in Hydrock work — no change needed) + NGFS scenarios as supplementary.",
             "Extend coverage to all 11 sites (Hydrock 2024 work covered 3 sites).",
@@ -1339,7 +1339,7 @@
           ],
           "openQuestionsForIVG": [],
           "gapToMaxSummary": "Realistic this cycle: 0.5 / 0.5 (defending)",
-          "gapToMaxDetail": "IVG scored 0.5 in 2025 with the Hydrock CRREM 2°C transition assessment + UKCP18 physical projections. CRREM 2°C is RETIRED for 2026 — so the existing assessment needs refreshing to CRREM 1.5°C (which the Hydrock work already used) and/or NGFS scenarios. NZA Workstream D refresh extends coverage from 3 sites to all 11. Defending the 0.5 is the goal — the indicator is binary.",
+          "gapToMaxDetail": "Westbrook scored 0.5 in 2025 with the Hydrock CRREM 2°C transition assessment + UKCP18 physical projections. CRREM 2°C is RETIRED for 2026 — so the existing assessment needs refreshing to CRREM 1.5°C (which the Hydrock work already used) and/or NGFS scenarios. NZA Workstream D refresh extends coverage from 3 sites to all 11. Defending the 0.5 is the goal — the indicator is binary.",
           "defendable": 0.25,
           "target": 0.5,
           "stretch": 0.5,
@@ -1375,7 +1375,7 @@
           "evidenceRequired": {
             "type": "policy-document",
             "validation": "manual",
-            "description": "Transition risk assessment covering all 11 sites + IVG Transition Risk Register + ESGH Steering Committee terms of reference."
+            "description": "Transition risk assessment covering all 11 sites + Westbrook Transition Risk Register + ESGH Steering Committee terms of reference."
           },
           "whatsChanged2026": "Weight DOUBLED — 0.5pt → 1pt",
           "decision2025": "Accepted · 0.5 / 0.5",
@@ -1384,16 +1384,16 @@
           "clickable": true,
           "pointContribution2026": 0.5,
           "validatorReason": "Accepted in 2025 — but only 3 sites covered (Bramshott, Durrants, Millbrook). 11-site portfolio coverage needed to defend at the new weight.",
-          "whatLastYearSubmitted": "IVG's 2025 narrative: *\"Inspired Villages Group (IVG) prioritises transition risks through a structured assessment process, aligned with international best practice and investor expectations. In 2024, IVG commissioned Hydrock (now Stantec) to undertake a CRREM Stranding Risk Assessment across Bramshott, Millbrook, and Durrants. This process evaluates the carbon intensity of each asset against a 1.5°C decarbonisation pathway... IVG's Transition Risk Register consolidates these findings, ranking risks by likelihood and potential impact. High-priority risks include reliance on fossil fuel heating systems, the absence of on-site renewables, and upcoming regulatory deadlines for carbon performance. Prioritised risks are incorporated into IVG's Net Zero Delivery Plan.\"* Verdict: ACCEPTED (0.5 / 0.5 at 2025 weight).",
+          "whatLastYearSubmitted": "Westbrook's 2025 narrative: *\"Westbrook Academies Trust (Westbrook) prioritises transition risks through a structured assessment process, aligned with international best practice and investor expectations. In 2024, Westbrook commissioned Hydrock (now Stantec) to undertake a CRREM Stranding Risk Assessment across Bramshott, Millbrook, and Durrants. This process evaluates the carbon intensity of each asset against a 1.5°C decarbonisation pathway... Westbrook's Transition Risk Register consolidates these findings, ranking risks by likelihood and potential impact. High-priority risks include reliance on fossil fuel heating systems, the absence of on-site renewables, and upcoming regulatory deadlines for carbon performance. Prioritised risks are incorporated into Westbrook's Net Zero Delivery Plan.\"* Verdict: ACCEPTED (0.5 / 0.5 at 2025 weight).",
           "whatWeNeedToDoChecklist": [
             "NZA Workstream D extends Hydrock 2024 transition risk work to all 11 sites.",
-            "Refresh the IVG Transition Risk Register with portfolio-wide assets.",
+            "Refresh the Westbrook Transition Risk Register with portfolio-wide assets.",
             "Document the ESGH Steering Committee oversight structure.",
             "Score should double automatically from 0.5pt → 1pt if 11-site coverage holds."
           ],
           "openQuestionsForIVG": [],
           "gapToMaxSummary": "Realistic this cycle: 1.0 / 1.0 (full — weight doubled from 0.5)",
-          "gapToMaxDetail": "Weight doubled for 2026 (0.5pt → 1pt). IVG scored 0.5 in 2025 with Hydrock's CRREM Stranding Risk Assessment + IVG Transition Risk Register. For full 1pt at the new weight, the assessment + risk register needs to cover all 11 sites (currently 3). NZA Workstream D extends coverage — should defend the doubled weight automatically.",
+          "gapToMaxDetail": "Weight doubled for 2026 (0.5pt → 1pt). Westbrook scored 0.5 in 2025 with Hydrock's CRREM Stranding Risk Assessment + Westbrook Transition Risk Register. For full 1pt at the new weight, the assessment + risk register needs to cover all 11 sites (currently 3). NZA Workstream D extends coverage — should defend the doubled weight automatically.",
           "defendable": 0.5,
           "target": 1.0,
           "stretch": 1.0,
@@ -1437,7 +1437,7 @@
           "achievable2026": 1.0,
           "clickable": true,
           "pointContribution2026": 0.5,
-          "whatLastYearSubmitted": "IVG's 2025 narrative: *\"Inspired Villages Group (IVG) integrates transition risk assessment into its overall risk management through formal climate risk evaluations and ongoing governance oversight... Identified transition risks are consolidated within the IVG Transition Risk Register, which ranks risks by likelihood and financial impact, and assigns mitigation responsibilities. The ESGH Steering Committee oversees transition risk management, reporting directly to the IVG Board, ensuring alignment with corporate governance structures and strategic planning.\"* Additional context: *\"IVG's ongoing climate risk work includes expanding risk assessments across additional villages and incorporating transition risk analysis into development-stage decision-making. The business is also exploring alignment with ISSB standards.\"* Verdict: ACCEPTED (0.5 / 0.5).",
+          "whatLastYearSubmitted": "Westbrook's 2025 narrative: *\"Westbrook Academies Trust (Westbrook) integrates transition risk assessment into its overall risk management through formal climate risk evaluations and ongoing governance oversight... Identified transition risks are consolidated within the Westbrook Transition Risk Register, which ranks risks by likelihood and financial impact, and assigns mitigation responsibilities. The ESGH Steering Committee oversees transition risk management, reporting directly to the Westbrook Board, ensuring alignment with corporate governance structures and strategic planning.\"* Additional context: *\"Westbrook's ongoing climate risk work includes expanding risk assessments across additional villages and incorporating transition risk analysis into development-stage decision-making. The business is also exploring alignment with ISSB standards.\"* Verdict: ACCEPTED (0.5 / 0.5).",
           "gapToMaxSummary": "Defending 0.5 / 0.5",
           "gapToMaxDetail": "Already maxed at current weight. Indicator weight doubled to 1pt for 2026 — defending requires 11-site coverage (NZA Workstream D delivers this).",
           "defendable": 0.5,
@@ -1484,7 +1484,7 @@
           "clickable": true,
           "pointContribution2026": 0.5,
           "validatorReason": "Accepted in 2025 — but only 3 sites. 11-site coverage needed to defend at new weight.",
-          "whatLastYearSubmitted": "IVG's 2025 narrative: *\"IVG commissioned Hydrock to assess physical climate risks across Bramshott, Millbrook, and Durrants Villages, applying the UK Green Building Council (UKGBC) framework and UKCP18 climate projections. Risks were evaluated across short- and long-term timeframes (up to 2080) and multiple climate scenarios (RCP 2.6, 4.5, 8.5).\"* Acute hazards considered: extratropical storm, flash flood, hail, river flood, storm surge, tropical cyclone. Chronic stressors: drought stress, fire weather stress, heat stress, precipitation stress, rising mean temperatures, rising sea levels. Verdict: ACCEPTED (0.5 / 0.5).",
+          "whatLastYearSubmitted": "Westbrook's 2025 narrative: *\"Westbrook commissioned Hydrock to assess physical climate risks across Bramshott, Millbrook, and Durrants Villages, applying the UK Green Building Council (UKGBC) framework and UKCP18 climate projections. Risks were evaluated across short- and long-term timeframes (up to 2080) and multiple climate scenarios (RCP 2.6, 4.5, 8.5).\"* Acute hazards considered: extratropical storm, flash flood, hail, river flood, storm surge, tropical cyclone. Chronic stressors: drought stress, fire weather stress, heat stress, precipitation stress, rising mean temperatures, rising sea levels. Verdict: ACCEPTED (0.5 / 0.5).",
           "whatWeNeedToDoChecklist": [
             "NZA Workstream D extends Hydrock physical risk work to all 11 sites.",
             "Refresh the per-asset physical risk register using UKCP18 (still current).",
@@ -1493,7 +1493,7 @@
           ],
           "openQuestionsForIVG": [],
           "gapToMaxSummary": "Realistic this cycle: 1.0 / 1.0 (full — weight doubled from 0.5)",
-          "gapToMaxDetail": "Weight doubled for 2026 (0.5pt → 1pt). IVG scored 0.5 in 2025 with Hydrock's UKGBC framework + UKCP18 physical risk work across 3 sites. For full 1pt at new weight, extend per-asset risk register to all 11 sites. NZA Workstream D handles this — same workstream as RM6.1.",
+          "gapToMaxDetail": "Weight doubled for 2026 (0.5pt → 1pt). Westbrook scored 0.5 in 2025 with Hydrock's UKGBC framework + UKCP18 physical risk work across 3 sites. For full 1pt at new weight, extend per-asset risk register to all 11 sites. NZA Workstream D handles this — same workstream as RM6.1.",
           "defendable": 0.5,
           "target": 1.0,
           "stretch": 1.0,
@@ -1551,7 +1551,7 @@
           "ceiling2026": 0,
           "max2026": "Not scored",
           "confidence": "H",
-          "owner": "IVG / NZA",
+          "owner": "Westbrook / NZA",
           "forecastRationale": "RM7 non-scored 2026",
           "needed": [],
           "youHave": [],
@@ -1566,7 +1566,7 @@
           },
           "priority": "non-scored",
           "whatItMeans": "Biodiversity and nature-related strategy. Non-scored in 2026 but signalled to score in future cycles (TNFD alignment emerging).",
-          "whatWeNeedToDo": "IVG already has a Nature Strategy with 20% Biodiversity Net Gain target. Reference it in the answer for 2027 readiness; non-scored this cycle.",
+          "whatWeNeedToDo": "Westbrook already has a Nature Strategy with 20% Biodiversity Net Gain target. Reference it in the answer for 2027 readiness; non-scored this cycle.",
           "evidenceRequired": {
             "type": "narrative-only",
             "validation": "none",
@@ -1578,7 +1578,7 @@
           "achievable2026": 0,
           "clickable": true,
           "pointContribution2026": 0,
-          "whatLastYearSubmitted": "IVG's 2025 narrative: *\"IVG has a clear biodiversity strategy integrated into its Net Zero and ESG commitments. All new villages target at least 20% Biodiversity Net Gain in line with UK planning guidance. The Nature Strategy focuses on enhancing habitat quality, promoting sustainable landscapes, and contributing to Nature Positive outcomes by 2030. Biodiversity and ecological enhancements are embedded into development designs and monitored through the planning process.\"* Indicator currently Not Scored — reporting only. Future-cycle scoring signalled (TNFD alignment emerging)."
+          "whatLastYearSubmitted": "Westbrook's 2025 narrative: *\"Westbrook has a clear biodiversity strategy integrated into its Net Zero and ESG commitments. All new villages target at least 20% Biodiversity Net Gain in line with UK planning guidance. The Nature Strategy focuses on enhancing habitat quality, promoting sustainable landscapes, and contributing to Nature Positive outcomes by 2030. Biodiversity and ecological enhancements are embedded into development designs and monitored through the planning process.\"* Indicator currently Not Scored — reporting only. Future-cycle scoring signalled (TNFD alignment emerging)."
         }
       ],
       "score2025": 2.89,
@@ -1613,7 +1613,7 @@
           "ceiling2026": 1.0,
           "max2026": 1,
           "confidence": "L",
-          "owner": "IVG (HR)",
+          "owner": "Westbrook (HR)",
           "forecastRationale": "Floor: no ESG-specific training delivered; Ceiling: roll out ESG/conscious-inclusion training in 2025 and report. Not prefill.",
           "needed": [
             "Records of ESG-specific training delivered to employees during CY2025"
@@ -1630,7 +1630,7 @@
           },
           "priority": "action-needed",
           "whatItMeans": "Training delivered to employees specifically on ESG topics during CY2025. General professional training doesn't qualify — must be ESG-specific. Topics tracked: environmental issues, social issues, governance issues. Multi-select.",
-          "whatWeNeedToDo": "Confirm with HR whether ESG-specific training (e.g. conscious inclusion training that IVG planned to roll out) actually happened in CY2025. If yes, document and submit.",
+          "whatWeNeedToDo": "Confirm with HR whether ESG-specific training (e.g. conscious inclusion training that Westbrook planned to roll out) actually happened in CY2025. If yes, document and submit.",
           "evidenceRequired": {
             "type": "training-records",
             "validation": "manual",
@@ -1665,11 +1665,11 @@
             "CY2025 calendar lockout — if no ESG-specific training happened, structurally lost for this cycle."
           ],
           "openQuestionsForIVG": [
-            "Did IVG deliver any ESG-specific training (environmental, social, or governance topics) to employees during CY2025?",
+            "Did Westbrook deliver any ESG-specific training (environmental, social, or governance topics) to employees during CY2025?",
             "Was the conscious inclusion training rolled out as planned in 2025?"
           ],
           "gapToMaxSummary": "Realistic this cycle: 0.5–1.0 / 1 (depends on whether ESG training ran in 2025)",
-          "gapToMaxDetail": "IVG scored 0.5 because 100% of employees received professional training but 0% received ESG-specific training in CY2024. Max 1.0 requires ESG-specific training delivered to employees during CY2025, covering environmental / social / governance topics. If the planned conscious inclusion training (or any ESG topic training) ran in 2025: 1.0 is achievable. If nothing ran: structurally locked at 0.5. HR (Russell + Steph) to confirm - key question.",
+          "gapToMaxDetail": "Westbrook scored 0.5 because 100% of employees received professional training but 0% received ESG-specific training in CY2024. Max 1.0 requires ESG-specific training delivered to employees during CY2025, covering environmental / social / governance topics. If the planned conscious inclusion training (or any ESG topic training) ran in 2025: 1.0 is achievable. If nothing ran: structurally locked at 0.5. HR (Russell + Steph) to confirm - key question.",
           "defendable": 0.5,
           "target": 0.7,
           "stretch": 1.0,
@@ -1684,8 +1684,8 @@
           "ceiling2026": 0.7,
           "max2026": 1,
           "confidence": "L",
-          "owner": "IVG (HR)",
-          "forecastRationale": "Floor: CY2025 third-party survey did not run (calendar lockout); Ceiling: it did + quantitative metrics supplied. Awaiting IVG.",
+          "owner": "Westbrook (HR)",
+          "forecastRationale": "Floor: CY2025 third-party survey did not run (calendar lockout); Ceiling: it did + quantitative metrics supplied. Awaiting Westbrook.",
           "needed": [
             "Third-party administered employee satisfaction survey distributed before 31/12/2025",
             "Quantitative metrics (NPS / satisfaction score)"
@@ -1740,11 +1740,11 @@
             "For 2027: plan annual Best Companies survey distribution in CY2026."
           ],
           "openQuestionsForIVG": [
-            "Did IVG run a third-party employee satisfaction survey (Best Companies or equivalent) before 31 December 2025?",
+            "Did Westbrook run a third-party employee satisfaction survey (Best Companies or equivalent) before 31 December 2025?",
             "If yes — who was the provider, what was coverage and response rate?"
           ],
           "gapToMaxSummary": "Realistic this cycle: 0.5–1.0 / 1 (depends on whether third-party survey ran in 2025)",
-          "gapToMaxDetail": "IVG scored 0.44 because the 2025 survey was internal (Survey Monkey), not third-party. 83% of peer group uses third-party. Max 1.0 requires: third-party administered survey, 100% coverage, quantitative metrics (NPS + satisfaction). If Best Companies or similar ran in 2025: ~0.85pt. If only internal ran: locked at ~0.44pt. SE2.2 (engagement programme) was MAXED in 2025 at 1pt — that's now consolidated into SE2 so we keep the engagement programme value either way.",
+          "gapToMaxDetail": "Westbrook scored 0.44 because the 2025 survey was internal (Survey Monkey), not third-party. 83% of peer group uses third-party. Max 1.0 requires: third-party administered survey, 100% coverage, quantitative metrics (NPS + satisfaction). If Best Companies or similar ran in 2025: ~0.85pt. If only internal ran: locked at ~0.44pt. SE2.2 (engagement programme) was MAXED in 2025 at 1pt — that's now consolidated into SE2 so we keep the engagement programme value either way.",
           "defendable": 0,
           "target": 0.5,
           "stretch": 0.7,
@@ -1768,7 +1768,7 @@
           "evidence": [],
           "gresbDetail": {
             "description": "RETIRED 2026 - Employee engagement programme",
-            "changeNote": "RETIRED in 2026; IVG scored 1/1 in 2025 → -1pt net loss",
+            "changeNote": "RETIRED in 2026; Westbrook scored 1/1 in 2025 → -1pt net loss",
             "evidenceType": "Do not complete",
             "rfiRef": "—"
           },
@@ -1800,7 +1800,7 @@
           "ceiling2026": 0.75,
           "max2026": 0.75,
           "confidence": "M",
-          "owner": "IVG (HR)",
+          "owner": "Westbrook (HR)",
           "forecastRationale": "Prefill partial; lift via further programme reporting",
           "needed": [],
           "youHave": [],
@@ -1841,7 +1841,7 @@
           "ceiling2026": 1.25,
           "max2026": 1.25,
           "confidence": "H",
-          "owner": "IVG (HR)",
+          "owner": "Westbrook (HR)",
           "forecastRationale": "Maxed 2025; prefill-eligible; defend",
           "needed": [],
           "youHave": [],
@@ -1855,7 +1855,7 @@
             "rfiRef": "—"
           },
           "priority": "defending",
-          "whatItMeans": "Specific health & wellbeing measures implemented (acoustic comfort, biophilic design, healthcare access, etc.) plus monitoring. IVG maxed this in 2025.",
+          "whatItMeans": "Specific health & wellbeing measures implemented (acoustic comfort, biophilic design, healthcare access, etc.) plus monitoring. Westbrook maxed this in 2025.",
           "whatWeNeedToDo": "Confirm 2025 prefill carries. Defend the max score.",
           "evidenceRequired": {
             "type": "programme-description",
@@ -1868,7 +1868,7 @@
           "achievable2026": 1.25,
           "clickable": true,
           "pointContribution2026": 0.0,
-          "whatLastYearSubmitted": "IVG's employee H&W measures monitoring methods: employee surveys (100% of employees), physical / mental health checks, work station / workplace checks (3.5% of employees), feedback sessions with C-suite staff, feedback sessions with separate teams, focus groups. Measures cover: acoustic comfort, biophilic design, healthy eating, indoor air quality, lighting controls, mental healthcare access, physical activity, social interaction, thermal comfort, water quality, working from home, flexible working, inclusive design, paid maternity and paternity. Verdict: ACCEPTED (1.25 / 1.25 MAXED).",
+          "whatLastYearSubmitted": "Westbrook's employee H&W measures monitoring methods: employee surveys (100% of employees), physical / mental health checks, work station / workplace checks (3.5% of employees), feedback sessions with C-suite staff, feedback sessions with separate teams, focus groups. Measures cover: acoustic comfort, biophilic design, healthy eating, indoor air quality, lighting controls, mental healthcare access, physical activity, social interaction, thermal comfort, water quality, working from home, flexible working, inclusive design, paid maternity and paternity. Verdict: ACCEPTED (1.25 / 1.25 MAXED).",
           "defendable": 1.25,
           "target": 1.25,
           "stretch": 1.25,
@@ -1883,7 +1883,7 @@
           "ceiling2026": 0.5,
           "max2026": 0.5,
           "confidence": "M",
-          "owner": "IVG (HR/H&S)",
+          "owner": "Westbrook (HR/H&S)",
           "forecastRationale": "Carry partial; lift via additional safety indicators (lost-day, injury, absentee rates)",
           "needed": [],
           "youHave": [],
@@ -1898,7 +1898,7 @@
           },
           "priority": "standard",
           "whatItMeans": "Employee safety performance indicators (AFR, absentee rate, injury rate, lost-day rate, etc.). Need 4 metrics for full marks (up from 2 in 2024).",
-          "whatWeNeedToDo": "Submit additional safety metrics beyond AFR — IVG already tracks accident frequency rate (34 accidents/6,636,875 hrs in 2024); add absentee, injury and lost-day rates.",
+          "whatWeNeedToDo": "Submit additional safety metrics beyond AFR — Westbrook already tracks accident frequency rate (34 accidents/6,636,875 hrs in 2024); add absentee, injury and lost-day rates.",
           "evidenceRequired": {
             "type": "data-submission",
             "validation": "automated",
@@ -1924,14 +1924,14 @@
           "ceiling2026": 1.2,
           "max2026": 1.5,
           "confidence": "L",
-          "owner": "IVG (HR)",
+          "owner": "Westbrook (HR)",
           "forecastRationale": "SE5 TRIPLED 0.5→1.5pt. Floor: minimal carry under new weight; Ceiling: HR EDI metrics delivered fully in new 2026 format. HIGH-OPPORTUNITY.",
           "needed": [
             "Full EDI metrics for both employees AND governance bodies in new 2026 format",
             "Gender ratio, pay gap, age, \"Other\" gender option, ethnicity where collected"
           ],
           "youHave": [],
-          "gap": "IVG scored 0.25/1.5 in 2025. Weight tripled for 2026. HIGH-OPPORTUNITY indicator. HR to provide.",
+          "gap": "Westbrook scored 0.25/1.5 in 2025. Weight tripled for 2026. HIGH-OPPORTUNITY indicator. HR to provide.",
           "nextYear": "Defend; broaden demographic categories reported",
           "evidence": [],
           "gresbDetail": {
@@ -1942,7 +1942,7 @@
           },
           "priority": "action-needed",
           "whatItMeans": "Diversity, Equity & Inclusion (EDI) metrics for BOTH employees AND governance bodies. Categories: age, gender ratio, gender pay gap, ethnicity / racial diversity, international background, socioeconomic background. Weight TRIPLED in 2026 — major opportunity indicator.",
-          "whatWeNeedToDo": "HR to provide full EDI dataset in GRESB's 2026 categories. IVG already submits gender pay gap data to NWPF — extend to other categories. HIGH-OPPORTUNITY indicator.",
+          "whatWeNeedToDo": "HR to provide full EDI dataset in GRESB's 2026 categories. Westbrook already submits gender pay gap data to NWPF — extend to other categories. HIGH-OPPORTUNITY indicator.",
           "evidenceRequired": {
             "type": "data-submission",
             "validation": "manual",
@@ -1955,7 +1955,7 @@
           "clickable": true,
           "pointContribution2026": 0.95,
           "validatorReason": "Does not support most of the selected human capital metrics for governance bodies. Does not support some of the selected human capital metrics for employees. Evidence provided (but not shared with investors).",
-          "whatLastYearSubmitted": "Governance bodies metrics submitted: gender pay gap (sent to Legal & General), gender ratio (Women: 20%, Men: 80%). Organization's employees: age groups (<30: 15%, 30-50: 42%, >50: 43%), gender pay gap, gender ratio (Women: 60%, Men: 40%). Other context: IVG planning Employee Resource Group, NCU partnership for graduate internships, age diversity / LGBTQ partnerships, disability confident employer plans, conscious inclusion training planned.",
+          "whatLastYearSubmitted": "Governance bodies metrics submitted: gender pay gap (sent to Legal & General), gender ratio (Women: 20%, Men: 80%). Organization's employees: age groups (<30: 15%, 30-50: 42%, >50: 43%), gender pay gap, gender ratio (Women: 60%, Men: 40%). Other context: Westbrook planning Employee Resource Group, NCU partnership for graduate internships, age diversity / LGBTQ partnerships, disability confident employer plans, conscious inclusion training planned.",
           "gresbTrackedIssues": [
             {
               "label": "Age group distribution",
@@ -1998,7 +1998,7 @@
             "Are NCU graduate interns and disability confident employer status in place?"
           ],
           "gapToMaxSummary": "Realistic this cycle: 1.0–1.5 / 1.5 (weight tripled from 0.5)",
-          "gapToMaxDetail": "Weight TRIPLED for 2026 (0.5pt → 1.5pt) — biggest single reweighting. IVG scored 0.25 because most selected human capital metrics for governance bodies weren't supported. Max 1.5 requires comprehensive EDI dataset: age, gender ratio, gender pay gap, ethnicity, international background, socioeconomic — for BOTH governance bodies AND employees. Plus public disclosure. HR (Russell + Steph) to provide CY2025 dataset. Realistic 1.0pt; full 1.5 if disclosure included via RP1.",
+          "gapToMaxDetail": "Weight TRIPLED for 2026 (0.5pt → 1.5pt) — biggest single reweighting. Westbrook scored 0.25 because most selected human capital metrics for governance bodies weren't supported. Max 1.5 requires comprehensive EDI dataset: age, gender ratio, gender pay gap, ethnicity, international background, socioeconomic — for BOTH governance bodies AND employees. Plus public disclosure. HR (Russell + Steph) to provide CY2025 dataset. Realistic 1.0pt; full 1.5 if disclosure included via RP1.",
           "defendable": 0.25,
           "target": 0.8,
           "stretch": 1.2,
@@ -2013,7 +2013,7 @@
           "ceiling2026": 1.5,
           "max2026": 1.5,
           "confidence": "M",
-          "owner": "IVG / NZA",
+          "owner": "Westbrook / NZA",
           "forecastRationale": "Prefill carries 2025; lift via more programme elements/topics",
           "needed": [],
           "youHave": [],
@@ -2040,7 +2040,7 @@
           "achievable2026": 1.5,
           "clickable": true,
           "pointContribution2026": 0.38,
-          "whatLastYearSubmitted": "IVG's supplier code of conduct + procurement policy [ACCEPTED]. Topics covered: business ethics, child labor, environmental process standards, environmental product standards, H&S employees, health & well-being, human health-based product standards, human rights, labor standards. External parties to whom requirements apply: contractors, suppliers, supply chain (beyond tier 1). Verdict: Partially Accepted (1.12 / 1.5).",
+          "whatLastYearSubmitted": "Westbrook's supplier code of conduct + procurement policy [ACCEPTED]. Topics covered: business ethics, child labor, environmental process standards, environmental product standards, H&S employees, health & well-being, human health-based product standards, human rights, labor standards. External parties to whom requirements apply: contractors, suppliers, supply chain (beyond tier 1). Verdict: Partially Accepted (1.12 / 1.5).",
           "gapToMaxSummary": "Defending ~1.12 / 1.5",
           "gapToMaxDetail": "Marginal gain available from adding programme elements (training, regular review/evaluation, feedback sessions). Defendable as-is — uplift not worth significant effort.",
           "defendable": 1.12,
@@ -2057,7 +2057,7 @@
           "ceiling2026": 1.0,
           "max2026": 1,
           "confidence": "L",
-          "owner": "IVG (Operations) / Jez",
+          "owner": "Westbrook (Operations) / Jez",
           "forecastRationale": "Floor: post-NWPF arrangement still 0; Ceiling: arrangement confirmed and reported",
           "needed": [
             "Confirmation of asset-manager monitoring arrangement post-NWPF",
@@ -2074,8 +2074,8 @@
             "rfiRef": "G2"
           },
           "priority": "action-needed",
-          "whatItMeans": "A process for monitoring the ESG performance of property managers / asset managers — in IVG's post-restructure case, NWPF. Process description + reporting required.",
-          "whatWeNeedToDo": "Jez to confirm NWPF-IVG ESG monitoring arrangement — likely quarterly review meetings or formal monitoring agreement. If no formal arrangement exists, set one up before submission.",
+          "whatItMeans": "A process for monitoring the ESG performance of property managers / asset managers — in Westbrook's post-restructure case, NWPF. Process description + reporting required.",
+          "whatWeNeedToDo": "Jez to confirm NWPF-Westbrook ESG monitoring arrangement — likely quarterly review meetings or formal monitoring agreement. If no formal arrangement exists, set one up before submission.",
           "evidenceRequired": {
             "type": "process-description",
             "validation": "manual",
@@ -2087,19 +2087,19 @@
           "achievable2026": 1.0,
           "clickable": true,
           "pointContribution2026": 0.3,
-          "validatorReason": "IVG answered No.",
-          "whatLastYearSubmitted": "IVG answered No — no formal monitoring arrangement.",
+          "validatorReason": "Westbrook answered No.",
+          "whatLastYearSubmitted": "Westbrook answered No — no formal monitoring arrangement.",
           "whatWeNeedToDoChecklist": [
-            "Jez confirms NWPF-IVG ESG monitoring arrangement — likely quarterly review meetings or formal monitoring agreement.",
+            "Jez confirms NWPF-Westbrook ESG monitoring arrangement — likely quarterly review meetings or formal monitoring agreement.",
             "If no formal arrangement exists, set one up with NWPF before submission. Even a documented quarterly review counts.",
             "Document the arrangement: scope, frequency, reporting outputs."
           ],
           "openQuestionsForIVG": [
-            "Does NWPF have a formal ESG monitoring arrangement with IVG? Quarterly review meetings? Written agreement?",
+            "Does NWPF have a formal ESG monitoring arrangement with Westbrook? Quarterly review meetings? Written agreement?",
             "If not, can one be set up and documented before 1 July?"
           ],
           "gapToMaxSummary": "Realistic this cycle: 0.5–1.0 / 1",
-          "gapToMaxDetail": "IVG scored 0 because answered No on having a formal ESG monitoring arrangement with property/asset managers. Max 1.0 requires a documented monitoring process between IVG and NWPF: scope, frequency, reporting outputs. Jess (post-restructure NWPF contact) — if a quarterly review meeting cadence exists or can be set up + minuted, that scores. ~0.5-1.0pt achievable.",
+          "gapToMaxDetail": "Westbrook scored 0 because answered No on having a formal ESG monitoring arrangement with property/asset managers. Max 1.0 requires a documented monitoring process between Westbrook and NWPF: scope, frequency, reporting outputs. Jess (post-restructure NWPF contact) — if a quarterly review meeting cadence exists or can be set up + minuted, that scores. ~0.5-1.0pt achievable.",
           "defendable": 0.7,
           "target": 1.0,
           "stretch": 1.0,
@@ -2114,7 +2114,7 @@
           "ceiling2026": 1.0,
           "max2026": 1,
           "confidence": "M",
-          "owner": "IVG / NZA",
+          "owner": "Westbrook / NZA",
           "forecastRationale": "Prefill partial; lift via more monitoring elements",
           "needed": [],
           "youHave": [],
@@ -2155,7 +2155,7 @@
           "ceiling2026": 0.5,
           "max2026": 0.5,
           "confidence": "H",
-          "owner": "IVG",
+          "owner": "Westbrook",
           "forecastRationale": "Maxed 2025; prefill; defend",
           "needed": [],
           "youHave": [],
@@ -2169,7 +2169,7 @@
             "rfiRef": "—"
           },
           "priority": "defending",
-          "whatItMeans": "A formal stakeholder grievance process covering multiple stakeholder groups. IVG maxed this in 2025.",
+          "whatItMeans": "A formal stakeholder grievance process covering multiple stakeholder groups. Westbrook maxed this in 2025.",
           "whatWeNeedToDo": "Confirm 2025 prefill carries. Defend the max score.",
           "evidenceRequired": {
             "type": "process-description",
@@ -2182,7 +2182,7 @@
           "achievable2026": 0.5,
           "clickable": true,
           "pointContribution2026": 0.0,
-          "whatLastYearSubmitted": "IVG's grievance process characteristics: accessible & easy to understand, anonymous, dialogue based, equitable & rights compatible, improvement based, legitimate & safe, predictable, prohibitive against retaliation, transparent. Applies to: contractors, suppliers, supply chain, clients/customers, community/public, employees, investors/shareholders, regulators/government, special interest groups. Verdict: ACCEPTED (0.5 / 0.5 MAXED).",
+          "whatLastYearSubmitted": "Westbrook's grievance process characteristics: accessible & easy to understand, anonymous, dialogue based, equitable & rights compatible, improvement based, legitimate & safe, predictable, prohibitive against retaliation, transparent. Applies to: contractors, suppliers, supply chain, clients/customers, community/public, employees, investors/shareholders, regulators/government, special interest groups. Verdict: ACCEPTED (0.5 / 0.5 MAXED).",
           "defendable": 0.5,
           "target": 0.5,
           "stretch": 0.5,
@@ -2235,8 +2235,8 @@
             "rfiRef": "—"
           },
           "priority": "action-needed",
-          "whatItMeans": "Risk assessments performed on the standing investments portfolio. Score scales with number of issues claimed AND portfolio coverage % per issue. IVG has assessed many physical risks via Hydrock but only claimed 4 of them — easy uplift to claim the lot.",
-          "whatWeNeedToDo": "Claim additional risk types IVG has actually assessed through Hydrock work (storm surge, sea-level rise, extreme heat, building safety) with 100% coverage stated. Could lift from 2/3 to ~2.6-2.8.",
+          "whatItMeans": "Risk assessments performed on the standing investments portfolio. Score scales with number of issues claimed AND portfolio coverage % per issue. Westbrook has assessed many physical risks via Hydrock but only claimed 4 of them — easy uplift to claim the lot.",
+          "whatWeNeedToDo": "Claim additional risk types Westbrook has actually assessed through Hydrock work (storm surge, sea-level rise, extreme heat, building safety) with 100% coverage stated. Could lift from 2/3 to ~2.6-2.8.",
           "evidenceRequired": {
             "type": "tick-box-narrative",
             "validation": "automated+manual",
@@ -2249,7 +2249,7 @@
           "clickable": true,
           "pointContribution2026": 1.0,
           "validatorReason": "Only 4 risk types claimed at 100% coverage. Many more could be supported by Hydrock work that was performed but not claimed.",
-          "whatLastYearSubmitted": "IVG's 2025 narrative: *\"IVG conducts ESG risk assessments to inform investment planning, resilience improvements, and strategic decision-making across its standing portfolio. A GHG assessment has been undertaken across the REIT and other aspects of IVG's portfolio to support a wider decarbonisation strategy aligned to SBTi's net zero standard... For climate risks, Hydrock (Stantec) completed a Physical Climate Risk and Resilience Assessment for Bramshott Place, Millbrook, and Durrants Villages... Transition risks are assessed using the Carbon Risk Real Estate Monitor (CRREM) tool.\"* Aligned with: GHG Protocol + SBTi (aligned but not validated), UKGBC Climate Resilience Framework, CRREM. Issues claimed at 100% coverage: Climate / Climate change adaptation, Flooding, GHG emissions, Resilience. Verdict: Partially Accepted (2 / 3).",
+          "whatLastYearSubmitted": "Westbrook's 2025 narrative: *\"Westbrook conducts ESG risk assessments to inform investment planning, resilience improvements, and strategic decision-making across its standing portfolio. A GHG assessment has been undertaken across the REIT and other aspects of Westbrook's portfolio to support a wider decarbonisation strategy aligned to SBTi's net zero standard... For climate risks, Hydrock (Stantec) completed a Physical Climate Risk and Resilience Assessment for Bramshott Place, Millbrook, and Durrants Villages... Transition risks are assessed using the Carbon Risk Real Estate Monitor (CRREM) tool.\"* Aligned with: GHG Protocol + SBTi (aligned but not validated), UKGBC Climate Resilience Framework, CRREM. Issues claimed at 100% coverage: Climate / Climate change adaptation, Flooding, GHG emissions, Resilience. Verdict: Partially Accepted (2 / 3).",
           "gresbTrackedIssues": [
             {
               "label": "Biodiversity and habitat",
@@ -2335,7 +2335,7 @@
           ],
           "openQuestionsForIVG": [],
           "gapToMaxSummary": "Realistic this cycle: 2.6–2.8 / 3",
-          "gapToMaxDetail": "IVG scored 2/3 by claiming 4 risk types (Climate/CC adaptation, Flooding, GHG emissions, Resilience) all at 100% coverage. Hydrock's work already covers more risks IVG could claim: Natural hazards (extreme weather), Energy efficiency, Energy supply, Health & well-being, Building safety. Each additional risk type at 100% coverage adds ~0.15pt. Claiming 4-5 more achievable without new work — pushes us to 2.6-2.8pt.",
+          "gapToMaxDetail": "Westbrook scored 2/3 by claiming 4 risk types (Climate/CC adaptation, Flooding, GHG emissions, Resilience) all at 100% coverage. Hydrock's work already covers more risks Westbrook could claim: Natural hazards (extreme weather), Energy efficiency, Energy supply, Health & well-being, Building safety. Each additional risk type at 100% coverage adds ~0.15pt. Claiming 4-5 more achievable without new work — pushes us to 2.6-2.8pt.",
           "defendable": 2.0,
           "target": 2.6,
           "stretch": 3.0,
@@ -2409,7 +2409,7 @@
             "Are the Stage 2b energy surveys complete across the largest sites?"
           ],
           "gapToMaxSummary": "Realistic this cycle: 1.0 / 3 (energy TBAs only — water/waste blocked)",
-          "gapToMaxDetail": "IVG scored 0 — zero TBA coverage across Energy, Water, Waste in 2025. Score is GFA-weighted. Rob's Stage 2b site surveys feed Energy TBA flags. Targeting 5-6 largest sites by GFA achieves disproportionate coverage. Water and Waste TBAs aren't in scope this cycle — no equivalent surveys. Realistic ~1pt from Energy TBAs alone.",
+          "gapToMaxDetail": "Westbrook scored 0 — zero TBA coverage across Energy, Water, Waste in 2025. Score is GFA-weighted. Rob's Stage 2b site surveys feed Energy TBA flags. Targeting 5-6 largest sites by GFA achieves disproportionate coverage. Water and Waste TBAs aren't in scope this cycle — no equivalent surveys. Realistic ~1pt from Energy TBAs alone.",
           "defendable": 0.5,
           "target": 1.5,
           "stretch": 2.0,
@@ -2424,7 +2424,7 @@
           "ceiling2026": 0.5,
           "max2026": 0.5,
           "confidence": "M",
-          "owner": "IVG + NZA audit output",
+          "owner": "Westbrook + NZA audit output",
           "forecastRationale": "Reweighted DOWN — old 1/1.5 pro-rates to ~0.3 at new 0.5 max. Lift via new platform measures.",
           "needed": [],
           "youHave": [],
@@ -2451,7 +2451,7 @@
           "achievable2026": 0.5,
           "clickable": true,
           "pointContribution2026": 0.2,
-          "whatLastYearSubmitted": "IVG's energy efficiency measures implemented in the past 3 years: AMR (100% portfolio), Management systems upgrades (100%), High-efficiency equipment (100%), Systems commissioning (49%). Not implemented: Automation system upgrades, On-site renewables, Occupier engagement, Smart grid technologies, Wall/roof insulation, Window replacements. Verdict: Partially Accepted (1 / 1.5 at 2025 weight). Weight reduced for 2026 (1.5pt → 0.5pt) so this pro-rates to ~0.33pt automatically.",
+          "whatLastYearSubmitted": "Westbrook's energy efficiency measures implemented in the past 3 years: AMR (100% portfolio), Management systems upgrades (100%), High-efficiency equipment (100%), Systems commissioning (49%). Not implemented: Automation system upgrades, On-site renewables, Occupier engagement, Smart grid technologies, Wall/roof insulation, Window replacements. Verdict: Partially Accepted (1 / 1.5 at 2025 weight). Weight reduced for 2026 (1.5pt → 0.5pt) so this pro-rates to ~0.33pt automatically.",
           "defendable": 0.3,
           "target": 0.4,
           "stretch": 0.5,
@@ -2466,7 +2466,7 @@
           "ceiling2026": 0.25,
           "max2026": 0.25,
           "confidence": "M",
-          "owner": "IVG + NZA audit output",
+          "owner": "Westbrook + NZA audit output",
           "forecastRationale": "Floor: no water measures claimed 2025; Ceiling: report whatever exists (low value)",
           "needed": [],
           "youHave": [],
@@ -2507,7 +2507,7 @@
           "ceiling2026": 0.25,
           "max2026": 0.25,
           "confidence": "H",
-          "owner": "IVG + NZA audit output",
+          "owner": "Westbrook + NZA audit output",
           "forecastRationale": "Maxed at new lower weight 0.25 - carry from 0.5/0.5",
           "needed": [],
           "youHave": [],
@@ -2521,7 +2521,7 @@
             "rfiRef": "—"
           },
           "priority": "defending",
-          "whatItMeans": "Waste management measures: composting, recycling, ongoing monitoring, waste stream management/audits. IVG maxed this in 2025.",
+          "whatItMeans": "Waste management measures: composting, recycling, ongoing monitoring, waste stream management/audits. Westbrook maxed this in 2025.",
           "whatWeNeedToDo": "Hold maxed position. Pro-rate from 2025 reweighting (0.5/0.5 → 0.25/0.25).",
           "evidenceRequired": {
             "type": "tick-box-narrative",
@@ -2534,7 +2534,7 @@
           "achievable2026": 0.25,
           "clickable": true,
           "pointContribution2026": 0.0,
-          "whatLastYearSubmitted": "IVG's waste management measures: Composting (22% coverage), Ongoing waste monitoring (49%), Recycling (49%), Waste stream management (49%). Not implemented: Waste stream audit. Verdict: ACCEPTED (0.5 / 0.5 MAXED). Weight reduced for 2026 (0.5pt → 0.25pt) — pro-rates automatically.",
+          "whatLastYearSubmitted": "Westbrook's waste management measures: Composting (22% coverage), Ongoing waste monitoring (49%), Recycling (49%), Waste stream management (49%). Not implemented: Waste stream audit. Verdict: ACCEPTED (0.5 / 0.5 MAXED). Weight reduced for 2026 (0.5pt → 0.25pt) — pro-rates automatically.",
           "defendable": 0.25,
           "target": 0.25,
           "stretch": 0.25,
@@ -2561,7 +2561,7 @@
       "ivgName": "Sustainability Targets",
       "component": "Performance",
       "summary": "Forward-looking improvement targets and the entity Net-Zero commitment.",
-      "playHere": "Fresh IVG/NWPF Net-Zero target (T1.2 scored on existence, no SBTi required) + complete T1.1 portfolio target rows. ~+3pt.",
+      "playHere": "Fresh Westbrook/NWPF Net-Zero target (T1.2 scored on existence, no SBTi required) + complete T1.1 portfolio target rows. ~+3pt.",
       "max2026": 3,
       "indicators": [
         {
@@ -2574,12 +2574,12 @@
           "max2026": 1,
           "confidence": "M",
           "owner": "NZA-delivered / NWPF",
-          "forecastRationale": "Floor: 6 blank rows in portal; Ceiling: 5 of 6 target rows completed from IVG objectives (water-neutrality may not score fully)",
+          "forecastRationale": "Floor: 6 blank rows in portal; Ceiling: 5 of 6 target rows completed from Westbrook objectives (water-neutrality may not score fully)",
           "needed": [
             "Five+ rows of portfolio improvement targets in the GRESB portal (free-form text)"
           ],
           "youHave": [],
-          "gap": "Blank in 2025 — populate from IVG ESG objectives",
+          "gap": "Blank in 2025 — populate from Westbrook ESG objectives",
           "nextYear": "Defend; refresh targets",
           "evidence": [],
           "gresbDetail": {
@@ -2589,8 +2589,8 @@
             "rfiRef": "—"
           },
           "priority": "action-needed",
-          "whatItMeans": "Portfolio improvement targets across Energy, GHG, Water, Waste — or other ESG topics. Minimum 3 targets for max marks (1pt). Free-form text rows in portal — IVG already has internal biodiversity, energy, water, waste targets that can be formalised.",
-          "whatWeNeedToDo": "Populate 3+ target rows from existing IVG objectives. Easy win — IVG already has biodiversity, energy, water, waste targets internally. Format them as portfolio improvement targets in the portal.",
+          "whatItMeans": "Portfolio improvement targets across Energy, GHG, Water, Waste — or other ESG topics. Minimum 3 targets for max marks (1pt). Free-form text rows in portal — Westbrook already has internal biodiversity, energy, water, waste targets that can be formalised.",
+          "whatWeNeedToDo": "Populate 3+ target rows from existing Westbrook objectives. Easy win — Westbrook already has biodiversity, energy, water, waste targets internally. Format them as portfolio improvement targets in the portal.",
           "evidenceRequired": {
             "type": "tick-box-narrative",
             "validation": "manual",
@@ -2605,14 +2605,14 @@
           "validatorReason": "Blank in portal — no targets populated.",
           "whatLastYearSubmitted": "Nothing — left blank.",
           "whatWeNeedToDoChecklist": [
-            "Populate 3+ target rows in the portal from existing IVG objectives.",
+            "Populate 3+ target rows in the portal from existing Westbrook objectives.",
             "Each target needs: scope, baseline year, end year, % improvement, externally communicated Y/N.",
             "Suggested set: GHG (carry from Net Zero target), energy efficiency (carry from Net Zero work), biodiversity (20% BNG target), water consumption, waste diversion.",
             "Easy win — zero new work needed, just formalise existing commitments."
           ],
           "openQuestionsForIVG": [],
           "gapToMaxSummary": "Realistic this cycle: 0.8 / 1",
-          "gapToMaxDetail": "IVG scored 0 — left blank in 2025. Max 1.0 requires 3+ portfolio improvement targets in the portal: scope, baseline year, end year, % improvement, externally communicated Y/N. IVG already has internal targets we can formalise: GHG (carry from Net Zero), energy efficiency, biodiversity (20% BNG), water consumption, waste diversion. NZA populates from existing IVG objectives. Easy win — ~0.8pt achievable, maxes at 1.0 if all targets are externally communicated.",
+          "gapToMaxDetail": "Westbrook scored 0 — left blank in 2025. Max 1.0 requires 3+ portfolio improvement targets in the portal: scope, baseline year, end year, % improvement, externally communicated Y/N. Westbrook already has internal targets we can formalise: GHG (carry from Net Zero), energy efficiency, biodiversity (20% BNG), water consumption, waste diversion. NZA populates from existing Westbrook objectives. Easy win — ~0.8pt achievable, maxes at 1.0 if all targets are externally communicated.",
           "defendable": 0.6,
           "target": 0.8,
           "stretch": 1.0,
@@ -2627,14 +2627,14 @@
           "ceiling2026": 2.0,
           "max2026": 2,
           "confidence": "M",
-          "owner": "NWPF / IVG",
-          "forecastRationale": "Floor: L&G target lapsed with NWPF = 0; Ceiling: fresh IVG Scope 1+2 target scores ~full (no SBTi needed; existence-scored)",
+          "owner": "NWPF / Westbrook",
+          "forecastRationale": "Floor: L&G target lapsed with NWPF = 0; Ceiling: fresh Westbrook Scope 1+2 target scores ~full (no SBTi needed; existence-scored)",
           "needed": [
             "Net Zero target: scope, metric, base year, target year(s), reduction %",
             "Evidence required but NOT validated in 2026 (no SBTi needed for marks)"
           ],
           "youHave": [],
-          "gap": "L&G/SBTi target lapsed with NWPF transfer — need fresh IVG target. Base year (2021 vs 2025) is a critical dependency.",
+          "gap": "L&G/SBTi target lapsed with NWPF transfer — need fresh Westbrook target. Base year (2021 vs 2025) is a critical dependency.",
           "nextYear": "Pursue SBTi validation for future-cycle uplift",
           "evidence": [],
           "gresbDetail": {
@@ -2645,7 +2645,7 @@
           },
           "priority": "action-needed",
           "whatItMeans": "A formal Net-Zero target for the entity. Scored on existence, scope, end year, % portfolio covered, alignment with net-zero framework. Weight DOUBLED for 2026.",
-          "whatWeNeedToDo": "Continue working to the existing L&G/SBTi Net Zero target (2021 baseline, 42% Scope 1+2 reduction by 2030). No formal NWPF termination has been issued, so we carry it forward as IVG's current target. Reputational risk noted but manageable — frame as \"target inherited from L&G, under review with NWPF\" rather than as a fresh IVG commitment. Score on existence — no SBTi re-validation required for marks.",
+          "whatWeNeedToDo": "Continue working to the existing L&G/SBTi Net Zero target (2021 baseline, 42% Scope 1+2 reduction by 2030). No formal NWPF termination has been issued, so we carry it forward as Westbrook's current target. Reputational risk noted but manageable — frame as \"target inherited from L&G, under review with NWPF\" rather than as a fresh Westbrook commitment. Score on existence — no SBTi re-validation required for marks.",
           "evidenceRequired": {
             "type": "policy-document",
             "validation": "manual",
@@ -2661,7 +2661,7 @@
           "whatLastYearSubmitted": "L&G/SBTi target: 2021 baseline, 42% reduction in Scope 1+2 by 2030. Set by L&G originally.",
           "whatWeNeedToDoChecklist": [
             "Continue working to the existing L&G/SBTi target — no formal termination from NWPF has been issued.",
-            "Frame as \"target inherited from L&G, under review with NWPF\" rather than as a fresh IVG commitment.",
+            "Frame as \"target inherited from L&G, under review with NWPF\" rather than as a fresh Westbrook commitment.",
             "Score on existence — no SBTi re-validation required for marks this cycle.",
             "For 2027/2028 uplift: formal NWPF-endorsed Net Zero target + SBTi validation."
           ],
@@ -2693,8 +2693,8 @@
       "name": "Tenants & Community",
       "ivgName": "Resident Experience & Community",
       "component": "Performance",
-      "summary": "How IVG engages residents, supports wellbeing, and contributes to the surrounding community.",
-      "playHere": "Strong already + Residential reweighting moves points TOWARDS IVG strengths. Close TC6.2 (community monitoring) + hold positions = ~+5pt automatic uplift.",
+      "summary": "How Westbrook engages residents, supports wellbeing, and contributes to the surrounding community.",
+      "playHere": "Strong already + Residential reweighting moves points TOWARDS Westbrook strengths. Close TC6.2 (community monitoring) + hold positions = ~+5pt automatic uplift.",
       "max2026": 13.0,
       "indicators": [
         {
@@ -2706,7 +2706,7 @@
           "ceiling2026": 1.0,
           "max2026": 1,
           "confidence": "M",
-          "owner": "IVG (Operations)",
+          "owner": "Westbrook (Operations)",
           "forecastRationale": "Prefill carries; lift via more engagement methods reported",
           "needed": [],
           "youHave": [],
@@ -2720,7 +2720,7 @@
             "rfiRef": "G5"
           },
           "priority": "defending",
-          "whatItMeans": "Resident engagement programme — methods used to engage residents on ESG topics. IVG has multiple methods running already.",
+          "whatItMeans": "Resident engagement programme — methods used to engage residents on ESG topics. Westbrook has multiple methods running already.",
           "whatWeNeedToDo": "Confirm CY2025 engagement activities ran. Likely yes given resident associations + newsletter are continuous. Lift possible by documenting more engagement methods.",
           "evidenceRequired": {
             "type": "programme-description",
@@ -2733,7 +2733,7 @@
           "achievable2026": 1.0,
           "clickable": true,
           "pointContribution2026": 0.5,
-          "whatLastYearSubmitted": "IVG's 2025 narrative: \"Quarterly green energy group meetings held to discuss the roll out of various green initiatives across the portfolio. There is a residents association who the village ops team meet with frequently. Weekly newsletter that goes out to keep them updated. Wider community interaction under Section 106 obligations.\"",
+          "whatLastYearSubmitted": "Westbrook's 2025 narrative: \"Quarterly green energy group meetings held to discuss the roll out of various green initiatives across the portfolio. There is a residents association who the village ops team meet with frequently. Weekly newsletter that goes out to keep them updated. Wider community interaction under Section 106 obligations.\"",
           "whatWeNeedToDoChecklist": [
             "Confirm CY2025 engagement activities ran (quarterly green energy meetings, resident associations, newsletter).",
             "Document additional engagement methods if any (ESG-focused tenant events, training, online platforms).",
@@ -2744,7 +2744,7 @@
             "Any new resident-facing ESG initiatives launched in CY2025 (training, ESG guide, online platform)?"
           ],
           "gapToMaxSummary": "Realistic this cycle: 0.5 / 1 (locked by calendar)",
-          "gapToMaxDetail": "GRESB tracks 9 engagement methods (multi-select). IVG's current activities map to ~4: quarterly green energy meetings, residents association, weekly newsletter, Section 106 obligations. The remaining 5 that would unlock the other 0.5pt: Tenant ESG guide, Tenant ESG training, Tenant events focused on ESG awareness, Providing tenants with energy/water/waste consumption feedback, Social media/online platform with ESG focus. Realistic this cycle: 0.5pt. Adding new methods needs them to have started by Dec 2025 — calendar-locked. Worth scoping the missing 5 for 2027 (easy +0.5pt next cycle).",
+          "gapToMaxDetail": "GRESB tracks 9 engagement methods (multi-select). Westbrook's current activities map to ~4: quarterly green energy meetings, residents association, weekly newsletter, Section 106 obligations. The remaining 5 that would unlock the other 0.5pt: Tenant ESG guide, Tenant ESG training, Tenant events focused on ESG awareness, Providing tenants with energy/water/waste consumption feedback, Social media/online platform with ESG focus. Realistic this cycle: 0.5pt. Adding new methods needs them to have started by Dec 2025 — calendar-locked. Worth scoping the missing 5 for 2027 (easy +0.5pt next cycle).",
           "defendable": 0.5,
           "target": 0.8,
           "stretch": 1.0,
@@ -2759,8 +2759,8 @@
           "ceiling2026": 1.0,
           "max2026": 1,
           "confidence": "L",
-          "owner": "IVG (Operations)",
-          "forecastRationale": "CALENDAR LOCKOUT RISK: if no CY2025 survey distributed before 31/12/2025, drops to 0. Awaiting IVG.",
+          "owner": "Westbrook (Operations)",
+          "forecastRationale": "CALENDAR LOCKOUT RISK: if no CY2025 survey distributed before 31/12/2025, drops to 0. Awaiting Westbrook.",
           "needed": [
             "Resident satisfaction survey distributed before 31/12/2025"
           ],
@@ -2776,7 +2776,7 @@
           },
           "priority": "action-needed",
           "whatItMeans": "Resident satisfaction survey administered during CY2025. Third-party administered scores higher. Quantitative metrics required (NPS, satisfaction).",
-          "whatWeNeedToDo": "Confirm with Rob whether CY2025 Fuze survey ran (or equivalent third-party). IVG MAXED this in 2025 with Fuze — just need 2025 successor.",
+          "whatWeNeedToDo": "Confirm with Rob whether CY2025 Fuze survey ran (or equivalent third-party). Westbrook MAXED this in 2025 with Fuze — just need 2025 successor.",
           "evidenceRequired": {
             "type": "survey-confirmation",
             "validation": "manual",
@@ -2794,14 +2794,14 @@
             "CRITICAL — confirm with Rob whether the CY2025 Fuze survey ran before 31-Dec-2025.",
             "If yes: gather Fuze 2025 results + provider confirmation.",
             "If no: structurally lost for 2026 — calendar lockout. Drop -1pt from achievable.",
-            "IVG MAXED this in 2025 — just need 2025 successor."
+            "Westbrook MAXED this in 2025 — just need 2025 successor."
           ],
           "openQuestionsForIVG": [
             "Did Fuze run the resident satisfaction survey in CY2025?",
             "If yes, when distributed and results available?"
           ],
           "gapToMaxSummary": "Realistic this cycle: 1 / 1 (defending — if Fuze ran in 2025)",
-          "gapToMaxDetail": "IVG MAXED this in 2025 with Fuze (third-party): 100% coverage, 50% response, NPS + satisfaction. For 2026, the question is binary: did Fuze run in CY2025? If yes — defending 1pt. If no — structurally lost (drop -1pt). Rob to confirm - key question.",
+          "gapToMaxDetail": "Westbrook MAXED this in 2025 with Fuze (third-party): 100% coverage, 50% response, NPS + satisfaction. For 2026, the question is binary: did Fuze run in CY2025? If yes — defending 1pt. If no — structurally lost (drop -1pt). Rob to confirm - key question.",
           "defendable": 0,
           "target": 0.7,
           "stretch": 1.0,
@@ -2816,7 +2816,7 @@
           "ceiling2026": 1.0,
           "max2026": 1,
           "confidence": "L",
-          "owner": "IVG (Operations)",
+          "owner": "Westbrook (Operations)",
           "forecastRationale": "Same calendar lockout risk as TC2.1 (programme depends on survey)",
           "needed": [],
           "youHave": [],
@@ -2830,7 +2830,7 @@
             "rfiRef": "G5"
           },
           "priority": "defending",
-          "whatItMeans": "A programme to improve resident satisfaction based on survey results. Action plans, feedback sessions, individual village plans. IVG maxed this in 2025.",
+          "whatItMeans": "A programme to improve resident satisfaction based on survey results. Action plans, feedback sessions, individual village plans. Westbrook maxed this in 2025.",
           "whatWeNeedToDo": "Hold position assuming TC2.1 survey ran. Village-level action plans from Fuze results already in place.",
           "evidenceRequired": {
             "type": "programme-description",
@@ -2843,7 +2843,7 @@
           "achievable2026": 1.0,
           "clickable": true,
           "pointContribution2026": 1.0,
-          "whatLastYearSubmitted": "IVG's 2025 narrative: *\"Fuze survey results are collated and shared with village managers, who then develop an individual plan for their village. This is then discussed at resident association meetings at a village level.\"* Programme elements covered: development of asset-specific action plan, feedback sessions with asset/property managers, feedback sessions with individual tenants. Verdict: ACCEPTED (1 / 1 MAXED).",
+          "whatLastYearSubmitted": "Westbrook's 2025 narrative: *\"Fuze survey results are collated and shared with village managers, who then develop an individual plan for their village. This is then discussed at resident association meetings at a village level.\"* Programme elements covered: development of asset-specific action plan, feedback sessions with asset/property managers, feedback sessions with individual tenants. Verdict: ACCEPTED (1 / 1 MAXED).",
           "defendable": 0,
           "target": 0.7,
           "stretch": 1.0,
@@ -2940,7 +2940,7 @@
           "ceiling2026": 0.75,
           "max2026": 0.75,
           "confidence": "M",
-          "owner": "IVG (Operations)",
+          "owner": "Westbrook (Operations)",
           "forecastRationale": "Floor: pro-rate 0.56/0.75 to new 1.75 = 1.31. Ceiling: full marks via additional programme/measures",
           "needed": [],
           "youHave": [],
@@ -2978,7 +2978,7 @@
             "Are CY2025 monitoring results / outcomes documented?"
           ],
           "gapToMaxSummary": "Realistic this cycle: 1.3–1.75 / 1.75 (weight reweighted UP)",
-          "gapToMaxDetail": "Reweighted UP for residential (0.75pt → 1.75pt). IVG scored 0.56 in 2025 with Inspired Friendships programme having all 4 structural elements (needs assessment, goal setting, action, monitoring). Pro-rated to new weight: ~1.3pt automatic if Inspired Friendships ran in 2025. Full 1.75 needs additional programme elements + topics documented (mental health and well-being, physical activity, healthy eating, social connection). Rob to confirm CY2025 delivery.",
+          "gapToMaxDetail": "Reweighted UP for residential (0.75pt → 1.75pt). Westbrook scored 0.56 in 2025 with Inspired Friendships programme having all 4 structural elements (needs assessment, goal setting, action, monitoring). Pro-rated to new weight: ~1.3pt automatic if Inspired Friendships ran in 2025. Full 1.75 needs additional programme elements + topics documented (mental health and well-being, physical activity, healthy eating, social connection). Rob to confirm CY2025 delivery.",
           "defendable": 0.56,
           "target": 0.7,
           "stretch": 0.75,
@@ -2993,8 +2993,8 @@
           "ceiling2026": 1.25,
           "max2026": 1.25,
           "confidence": "M",
-          "owner": "IVG (Operations)",
-          "forecastRationale": "Floor: pro-rate 1.15/1.25 to new 3.25 = 2.99. Ceiling: full marks - IVG core strength",
+          "owner": "Westbrook (Operations)",
+          "forecastRationale": "Floor: pro-rate 1.15/1.25 to new 3.25 = 2.99. Ceiling: full marks - Westbrook core strength",
           "needed": [],
           "youHave": [],
           "gap": "",
@@ -3020,9 +3020,9 @@
           "achievable2026": 1.25,
           "clickable": true,
           "pointContribution2026": 0.75,
-          "whatLastYearSubmitted": "IVG's resident H&W measures cover: mental health and well-being, physical health and well-being, social health and well-being. Health is promoted through: acoustic comfort, biophilic design, community development, physical activity, healthy eating, hosting health activities for surrounding community, improving infrastructure around assets, inclusive design, indoor air quality, lighting controls, physical & mental healthcare access, social interaction & connection, thermal comfort, water quality. Monitoring through: needs assessment, tenant survey, community engagement, use of secondary data. Verdict: ACCEPTED (1.15 / 1.25 — near max).",
+          "whatLastYearSubmitted": "Westbrook's resident H&W measures cover: mental health and well-being, physical health and well-being, social health and well-being. Health is promoted through: acoustic comfort, biophilic design, community development, physical activity, healthy eating, hosting health activities for surrounding community, improving infrastructure around assets, inclusive design, indoor air quality, lighting controls, physical & mental healthcare access, social interaction & connection, thermal comfort, water quality. Monitoring through: needs assessment, tenant survey, community engagement, use of secondary data. Verdict: ACCEPTED (1.15 / 1.25 — near max).",
           "gapToMaxSummary": "Defending ~2.99 / 3.25 (weight reweighted UP from 1.25 to 3.25)",
-          "gapToMaxDetail": "Reweighted UP for residential — IVG's 1.15 pro-rates to ~2.99 / 3.25 at new weight. The 0.1 gap to full marks is marginal — defendable.",
+          "gapToMaxDetail": "Reweighted UP for residential — Westbrook's 1.15 pro-rates to ~2.99 / 3.25 at new weight. The 0.1 gap to full marks is marginal — defendable.",
           "defendable": 0.5,
           "target": 1.0,
           "stretch": 1.25,
@@ -3037,7 +3037,7 @@
           "ceiling2026": 2.0,
           "max2026": 2,
           "confidence": "H",
-          "owner": "IVG (Operations)",
+          "owner": "Westbrook (Operations)",
           "forecastRationale": "Maxed 2025 at old weight 2; reweighted to 4. If position holds, +2pt automatic uplift.",
           "needed": [],
           "youHave": [],
@@ -3046,7 +3046,7 @@
           "evidence": [],
           "gresbDetail": {
             "description": "Community Engagement Program",
-            "changeNote": "Residential REWEIGHT UP: Performance 2 → Residential 4. IVG maxed 2025 - if holds: +2pt automatic.",
+            "changeNote": "Residential REWEIGHT UP: Performance 2 → Residential 4. Westbrook maxed 2025 - if holds: +2pt automatic.",
             "evidenceType": "Programme description showing community engagement activities",
             "rfiRef": "G5"
           },
@@ -3064,7 +3064,7 @@
           "achievable2026": 2.0,
           "clickable": true,
           "pointContribution2026": 0.0,
-          "whatLastYearSubmitted": "IVG's community engagement programme covers 8 GRESB-tracked topics: community health & well-being, effective communication & process to address community concerns, enhancement programmes for public spaces, employment creation in local communities, research and network activities, resilience (assistance/support in disaster), supporting charities and community groups, ESG education programme. Verdict: ACCEPTED (2 / 2 MAXED).",
+          "whatLastYearSubmitted": "Westbrook's community engagement programme covers 8 GRESB-tracked topics: community health & well-being, effective communication & process to address community concerns, enhancement programmes for public spaces, employment creation in local communities, research and network activities, resilience (assistance/support in disaster), supporting charities and community groups, ESG education programme. Verdict: ACCEPTED (2 / 2 MAXED).",
           "gapToMaxSummary": "Defending 4 / 4 (weight reweighted UP from 2 to 4)",
           "gapToMaxDetail": "Already maxed at 2025 weight. Reweighted UP for residential — defending the doubled weight is automatic.",
           "defendable": 2.0,
@@ -3081,24 +3081,24 @@
           "ceiling2026": 1.0,
           "max2026": 1,
           "confidence": "M",
-          "owner": "IVG (Operations) + NZA",
+          "owner": "Westbrook (Operations) + NZA",
           "forecastRationale": "Floor: 2025 gap (0) not closed; Ceiling: light monitoring framework adds full 1.5pt",
           "needed": [
             "Light monitoring framework around existing community initiatives (track participation/outcomes)"
           ],
           "youHave": [],
-          "gap": "No monitoring process in place 2025 — closeable with light framework, NZA + IVG",
+          "gap": "No monitoring process in place 2025 — closeable with light framework, NZA + Westbrook",
           "nextYear": "Defend",
           "evidence": [],
           "gresbDetail": {
             "description": "Monitoring Impact on Community",
-            "changeNote": "Residential REWEIGHT UP: Performance 1 → Residential 1.5. IVG scored 0 in 2025 (gap) - closing = +1.5pt.",
+            "changeNote": "Residential REWEIGHT UP: Performance 1 → Residential 1.5. Westbrook scored 0 in 2025 (gap) - closing = +1.5pt.",
             "evidenceType": "Light monitoring framework around community initiatives (track participation/outcomes)",
             "rfiRef": "G5"
           },
           "priority": "action-needed",
           "whatItMeans": "A monitoring framework that tracks outcomes from community engagement activities. Reweighted UP for residential 2026 (1pt → 1.5pt).",
-          "whatWeNeedToDo": "Build a light monitoring framework with IVG village managers. Single-page tracker capturing quarterly outcomes from existing community initiatives. NZA + IVG joint work.",
+          "whatWeNeedToDo": "Build a light monitoring framework with Westbrook village managers. Single-page tracker capturing quarterly outcomes from existing community initiatives. NZA + Westbrook joint work.",
           "evidenceRequired": {
             "type": "programme-description",
             "validation": "manual",
@@ -3110,14 +3110,14 @@
           "achievable2026": 1.0,
           "clickable": true,
           "pointContribution2026": 0.4,
-          "validatorReason": "IVG's 2025 response: \"No monitoring process currently in place. Various community initiatives but not official community engagement program in place.\"",
-          "whatLastYearSubmitted": "IVG does community activities (charities supported, employment in local communities, community events) but doesn't formally track outcomes.",
+          "validatorReason": "Westbrook's 2025 response: \"No monitoring process currently in place. Various community initiatives but not official community engagement program in place.\"",
+          "whatLastYearSubmitted": "Westbrook does community activities (charities supported, employment in local communities, community events) but doesn't formally track outcomes.",
           "whatWeNeedToDoChecklist": [
-            "Build a light monitoring framework with IVG village managers:",
+            "Build a light monitoring framework with Westbrook village managers:",
             "  • Define what we count: residents reached, hours volunteered, money raised, partnerships active",
             "  • Capture data quarterly through village managers",
             "  • Aggregate into a portfolio-level dashboard",
-            "NZA + IVG joint work — could be a single-page tracker.",
+            "NZA + Westbrook joint work — could be a single-page tracker.",
             "Highest-leverage easy win remaining at +1.5pt."
           ],
           "openQuestionsForIVG": [
@@ -3125,7 +3125,7 @@
             "Is there existing data on charities supported, partnerships, community events?"
           ],
           "gapToMaxSummary": "Realistic this cycle: 1.5 / 1.5 (full — weight reweighted UP)",
-          "gapToMaxDetail": "Reweighted UP for residential (1pt → 1.5pt). IVG scored 0 in 2025: \"No monitoring process currently in place.\" Max 1.5 requires a light monitoring framework tracking outcomes from community activities (residents reached, hours volunteered, partnerships, charities). IVG already does the activities — just doesn't formally track. Single-page framework + quarterly village manager input. Full marks achievable this cycle.",
+          "gapToMaxDetail": "Reweighted UP for residential (1pt → 1.5pt). Westbrook scored 0 in 2025: \"No monitoring process currently in place.\" Max 1.5 requires a light monitoring framework tracking outcomes from community activities (residents reached, hours volunteered, partnerships, charities). Westbrook already does the activities — just doesn't formally track. Single-page framework + quarterly village manager input. Full marks achievable this cycle.",
           "defendable": 0.6,
           "target": 1.0,
           "stretch": 1.0,
@@ -3152,7 +3152,7 @@
       "ivgName": "Energy Performance",
       "component": "Performance",
       "summary": "Energy consumption coverage, year-on-year performance, and renewable energy.",
-      "playHere": "Defend coverage as IVG expands from 3 to 12 sites. REGO-backed tariff confirmation gives renewable uplift. Arbnco data-nature is a critical dependency.",
+      "playHere": "Defend coverage as Westbrook expands from 3 to 12 sites. REGO-backed tariff confirmation gives renewable uplift. Arbnco data-nature is a critical dependency.",
       "max2026": 14,
       "indicators": [
         {
@@ -3182,7 +3182,7 @@
           },
           "priority": "standard",
           "whatItMeans": "Energy consumption coverage across the portfolio (area-time aggregated), plus year-on-year performance and renewable energy. Scored at asset level with relative scoring against benchmark group.",
-          "whatWeNeedToDo": "Defend ~100% landlord-controlled coverage as IVG expands 3→12 sites. Confirm Ecotricity REGO-backed tariff for renewable uplift. Arbnco data nature (CD4) is critical — must be per-meter actual not apportioned.",
+          "whatWeNeedToDo": "Defend ~100% landlord-controlled coverage as Westbrook expands 3→12 sites. Confirm Ecotricity REGO-backed tariff for renewable uplift. Arbnco data nature (CD4) is critical — must be per-meter actual not apportioned.",
           "evidenceRequired": {
             "type": "asset-spreadsheet",
             "validation": "automated",
@@ -3241,7 +3241,7 @@
           "evidence": [],
           "gresbDetail": {
             "description": "GHG emissions + scope coverage",
-            "changeNote": "GHG Scope reclassification: NO IMPACT for IVG (0% tenant-spaces-landlord-controlled)",
+            "changeNote": "GHG Scope reclassification: NO IMPACT for Westbrook (0% tenant-spaces-landlord-controlled)",
             "evidenceType": "Asset spreadsheet - tCO2e per asset",
             "rfiRef": "A4,A5,A6"
           },
@@ -3402,7 +3402,7 @@
             "Any non-Biffa sites where we need alternative data sourcing?"
           ],
           "gapToMaxSummary": "Realistic this cycle: ~3.3 / 4",
-          "gapToMaxDetail": "IVG scored 1.74 from only 51% portfolio waste coverage. Biffa monthly data lifts coverage from 51% toward 100% — should add ~1.6pt. Cleaner disposal-route split (reducing \"Other/Unknown\" 31% → near zero) adds further. Recycling rate climbs from 49% to ~55%. Full 4pt requires LFL (like-for-like) year-on-year improvement which needs 2 consistent reporting years — that's 2027. Realistic ~3.3pt this cycle.",
+          "gapToMaxDetail": "Westbrook scored 1.74 from only 51% portfolio waste coverage. Biffa monthly data lifts coverage from 51% toward 100% — should add ~1.6pt. Cleaner disposal-route split (reducing \"Other/Unknown\" 31% → near zero) adds further. Recycling rate climbs from 49% to ~55%. Full 4pt requires LFL (like-for-like) year-on-year improvement which needs 2 consistent reporting years — that's 2027. Realistic ~3.3pt this cycle.",
           "defendable": 3.0,
           "target": 3.7,
           "stretch": 4.0,
@@ -3429,7 +3429,7 @@
       "ivgName": "Building Certifications & EPCs",
       "component": "Performance",
       "summary": "Energy Performance Certificates and green-building certifications (BREEAM, etc.).",
-      "playHere": "EPCs (BC2) is the only realistic 2026 play — data IVG already holds. BC1.1/1.2 (green-building certs) is future-cycle build.",
+      "playHere": "EPCs (BC2) is the only realistic 2026 play — data Westbrook already holds. BC1.1/1.2 (green-building certs) is future-cycle build.",
       "max2026": 17.5,
       "indicators": [
         {
@@ -3441,7 +3441,7 @@
           "ceiling2026": 0,
           "max2026": 7,
           "confidence": "H",
-          "owner": "IVG / Third-party",
+          "owner": "Westbrook / Third-party",
           "forecastRationale": "No certs in place; future cycle build (BREEAM In-Use)",
           "needed": [],
           "youHave": [],
@@ -3455,7 +3455,7 @@
             "rfiRef": "G6"
           },
           "priority": "parked",
-          "whatItMeans": "Green building certifications at design/construction (LEED, BREEAM New Construction, etc.). No certs in IVG portfolio — future cycle build.",
+          "whatItMeans": "Green building certifications at design/construction (LEED, BREEAM New Construction, etc.). No certs in Westbrook portfolio — future cycle build.",
           "whatWeNeedToDo": "No action this cycle. Future-cycle path requires actually pursuing certifications on new builds.",
           "evidenceRequired": {
             "type": "asset-spreadsheet",
@@ -3482,7 +3482,7 @@
           "ceiling2026": 0,
           "max2026": 8.5,
           "confidence": "H",
-          "owner": "IVG / Third-party",
+          "owner": "Westbrook / Third-party",
           "forecastRationale": "No certs in place; future cycle build",
           "needed": [],
           "youHave": [],
@@ -3523,7 +3523,7 @@
           "ceiling2026": 2.0,
           "max2026": 2,
           "confidence": "M",
-          "owner": "IVG",
+          "owner": "Westbrook",
           "forecastRationale": "Floor: only some residential EPCs collated; Ceiling: full residential + communal EPC coverage",
           "needed": [
             "EPCs for all reported assets with exact floor area each EPC covers",
@@ -3531,7 +3531,7 @@
             "Residential units consolidated (sum unit floor areas)"
           ],
           "youHave": [],
-          "gap": "EPCs almost certainly exist (IVG targets EPC B minimum) — collate and enter with exact areas. The residential-vs-communal coverage question (CD2) is critical.",
+          "gap": "EPCs almost certainly exist (Westbrook targets EPC B minimum) — collate and enter with exact areas. The residential-vs-communal coverage question (CD2) is critical.",
           "nextYear": "Defend; consider BREEAM In-Use sequencing for BC1.2 future-cycle uplift",
           "evidence": [],
           "gresbDetail": {
@@ -3542,7 +3542,7 @@
           },
           "priority": "action-needed",
           "whatItMeans": "Energy Performance Certificates (EPCs) per asset with exact floor area covered. Up to 5 EPCs per asset (e.g. multiple residential units consolidated).",
-          "whatWeNeedToDo": "Rob to collate EPCs across all reported assets — residential units (very likely all exist given EPC B targeting) + communal/commercial spaces (where IVG operates commercially or where space has been let). Exact floor areas required.",
+          "whatWeNeedToDo": "Rob to collate EPCs across all reported assets — residential units (very likely all exist given EPC B targeting) + communal/commercial spaces (where Westbrook operates commercially or where space has been let). Exact floor areas required.",
           "evidenceRequired": {
             "type": "asset-spreadsheet",
             "validation": "automated",
@@ -3560,14 +3560,14 @@
             "Rob collates EPCs across all 11 sites — residential units (very likely all exist given EPC B targeting) + communal/commercial spaces.",
             "Exact floor areas per EPC required.",
             "Upload EPC PDFs as evidence for higher ratings (B/C ratings score better).",
-            "Major win available at +1.2pt — IVG almost certainly has all the EPCs, just need to collate."
+            "Major win available at +1.2pt — Westbrook almost certainly has all the EPCs, just need to collate."
           ],
           "openQuestionsForIVG": [
             "Rob — can you collate the EPC pack across all 11 sites?",
             "Are there commercial / communal areas requiring separate EPCs?"
           ],
           "gapToMaxSummary": "Realistic this cycle: 1.2–2 / 2",
-          "gapToMaxDetail": "IVG scored 0 — no EPCs reported in 2025. Max 2.0 requires per-asset EPC entries with rating, expiry date, exact floor area. PDFs uploaded as evidence. Higher ratings (A-B) score better than lower (D-G). IVG almost certainly has all property EPCs — Luke Kibble (FM180) is the contact. Realistic 1.2pt; full 2.0 achievable if EPC pack is complete + ratings are mostly B-C. Rob confirmed unlikely to have communal/commercial EPCs.",
+          "gapToMaxDetail": "Westbrook scored 0 — no EPCs reported in 2025. Max 2.0 requires per-asset EPC entries with rating, expiry date, exact floor area. PDFs uploaded as evidence. Higher ratings (A-B) score better than lower (D-G). Westbrook almost certainly has all property EPCs — Luke Kibble (FM180) is the contact. Realistic 1.2pt; full 2.0 achievable if EPC pack is complete + ratings are mostly B-C. Rob confirmed unlikely to have communal/commercial EPCs.",
           "defendable": 1.0,
           "target": 1.5,
           "stretch": 2.0,
@@ -3794,7 +3794,7 @@
           "ceiling2026": 0,
           "max2026": "Not scored",
           "confidence": "H",
-          "owner": "IVG / Anna Sliwa",
+          "owner": "Westbrook / Anna Sliwa",
           "forecastRationale": "RES1 non-scored - reporting only",
           "needed": [],
           "youHave": [],
@@ -3868,7 +3868,7 @@
           "ceiling2026": 0,
           "max2026": "Not scored",
           "confidence": "H",
-          "owner": "IVG / Finance",
+          "owner": "Westbrook / Finance",
           "forecastRationale": "RES3 non-scored",
           "needed": [],
           "youHave": [],
@@ -3883,7 +3883,7 @@
           },
           "priority": "non-scored",
           "whatItMeans": "Affordability of residential offering. Reporting only.",
-          "whatWeNeedToDo": "Brief narrative answer covering IVG's pricing approach. Non-scored.",
+          "whatWeNeedToDo": "Brief narrative answer covering Westbrook's pricing approach. Non-scored.",
           "evidenceRequired": {
             "type": "narrative-only",
             "validation": "none",
@@ -3905,7 +3905,7 @@
           "ceiling2026": 0,
           "max2026": "Not scored",
           "confidence": "H",
-          "owner": "IVG (Operations)",
+          "owner": "Westbrook (Operations)",
           "forecastRationale": "RES4 non-scored",
           "needed": [],
           "youHave": [],
@@ -3942,7 +3942,7 @@
           "ceiling2026": 0,
           "max2026": "Not scored",
           "confidence": "H",
-          "owner": "IVG / NZA",
+          "owner": "Westbrook / NZA",
           "forecastRationale": "RES5 non-scored",
           "needed": [],
           "youHave": [],
@@ -3979,10 +3979,10 @@
           "ceiling2026": 0,
           "max2026": 0,
           "confidence": "L",
-          "owner": "IVG / Legal",
-          "forecastRationale": "RES6 is Residential Standalone Assessment only - 1.5pt max. IVG does not submit to Standalone (voluntary). Adding occupancy clauses now is a 2027 play if IVG ever opts in.",
+          "owner": "Westbrook / Legal",
+          "forecastRationale": "RES6 is Residential Standalone Assessment only - 1.5pt max. Westbrook does not submit to Standalone (voluntary). Adding occupancy clauses now is a 2027 play if Westbrook ever opts in.",
           "needed": [
-            "Review of IVG occupancy agreements for existing ESG/sustainability clauses",
+            "Review of Westbrook occupancy agreements for existing ESG/sustainability clauses",
             "Or sustainability appendix to occupancy agreement (not both per 2026 clarification)"
           ],
           "youHave": [],
@@ -3997,7 +3997,7 @@
           },
           "priority": "action-needed",
           "whatItMeans": "Sustainability clauses in resident occupancy agreements. Energy efficiency expectations, waste sorting requirements, water conservation, sustainability behavioural expectations. Weight DOUBLED+ for 2026 (1.5pt → 3.5pt) — the only scored residential indicator.",
-          "whatWeNeedToDo": "Review IVG occupancy agreements for existing sustainability clauses. If they exist, document; if not, add light clauses going forward. Existing contracts count — no backdating needed since the question is about current agreements.",
+          "whatWeNeedToDo": "Review Westbrook occupancy agreements for existing sustainability clauses. If they exist, document; if not, add light clauses going forward. Existing contracts count — no backdating needed since the question is about current agreements.",
           "evidenceRequired": {
             "type": "lease-contract-clauses",
             "validation": "manual",
@@ -4009,18 +4009,18 @@
           "achievable2026": 0,
           "clickable": true,
           "pointContribution2026": 0,
-          "validatorReason": "IVG did not engage with this indicator in 2025.",
+          "validatorReason": "Westbrook did not engage with this indicator in 2025.",
           "whatLastYearSubmitted": "Nothing.",
           "whatWeNeedToDoChecklist": [
-            "Review IVG occupancy agreements for existing sustainability clauses (energy efficiency, waste, water, behaviour).",
+            "Review Westbrook occupancy agreements for existing sustainability clauses (energy efficiency, waste, water, behaviour).",
             "Existing contracts count — no backdating needed, question is about CURRENT agreements.",
             "If clauses don't exist, add light ones going forward — even a one-line \"expectation of sustainable behaviour\" counts.",
             "Major opportunity given the doubled+ weight: +3.5pt available."
           ],
           "openQuestionsForIVG": [
-            "Do current IVG occupancy / lease agreements contain any sustainability clauses?",
+            "Do current Westbrook occupancy / lease agreements contain any sustainability clauses?",
             "Is there scope to add such clauses to new agreements going forward?",
-            "Who at IVG owns the resident contract template?"
+            "Who at Westbrook owns the resident contract template?"
           ],
           "gapToMaxSummary": "Realistic this cycle: 0–3.5 / 3.5 (depends on existing clauses)",
           "gapToMaxDetail": "Weight DOUBLED+ for 2026 (1.5pt → 3.5pt). Only scored residential-specific indicator. Max 3.5 requires sustainability clauses in occupancy agreements: energy efficiency expectations, waste sorting, water conservation, sustainability behavioural expectations. Existing clauses count — no backdating needed (question is about CURRENT agreements). Louise (Legal) to confirm whether existing tenancy templates contain any of these clauses. If yes (even one line): realistic 1.5-2.5pt. If no: 0pt. Major opportunity given the weight bump.",
@@ -4049,7 +4049,7 @@
   "forwardPlanning": {
     "narrative": {
       "storyHeading": "The multi-year climb",
-      "storyText": "GRESB scoring builds cumulatively — every action stays in the score for future cycles, so this isn't a year-by-year sprint, it's a multi-cycle climb. IVG starts 2026 from a defendable position of 45 points (down from 2025's 52 because of retired indicators) and is targeting 62 — a confident 2-star outcome. Subsequent cycles push toward 3-star and eventually 4-star territory as specialist work and emerging scoring categories land. Below shows where each point comes from.",
+      "storyText": "GRESB scoring builds cumulatively — every action stays in the score for future cycles, so this isn't a year-by-year sprint, it's a multi-cycle climb. Westbrook starts 2026 from a defendable position of 45 points (down from 2025's 52 because of retired indicators) and is targeting 62 — a confident 2-star outcome. Subsequent cycles push toward 3-star and eventually 4-star territory as specialist work and emerging scoring categories land. Below shows where each point comes from.",
       "fivePillarCaveat": "5-star means top 20% of the ~2,200 global participants. With the global average sitting at 79 and rising ~3pts a year, the 5-star cutoff likely lands around 92+ by 2028. Reaching that requires sustained outperformance over many cycles — not something we'd chase prematurely. Strong, defensible 3-4 star outperformance builds more investor confidence than chasing a moving target."
     },
     "waterfall": {
@@ -4158,7 +4158,7 @@
           "note": "Climate workstream (NZA-banked, 11-site extension)"
         },
         {
-          "label": "RM1 — EMS framework (NZA drafts, IVG signs off as in force CY2025)",
+          "label": "RM1 — EMS framework (NZA drafts, Westbrook signs off as in force CY2025)",
           "delta": 1.0,
           "category": "2026",
           "indicator": "RM1",
@@ -4172,7 +4172,7 @@
           "note": "NZA-drafted documents (banked, sign-off pending)"
         },
         {
-          "label": "T1.2 — New IVG/NWPF Net Zero target @ doubled weight",
+          "label": "T1.2 — New Westbrook/NWPF Net Zero target @ doubled weight",
           "delta": 0.8,
           "category": "2026",
           "indicator": "T1.2",
@@ -4211,56 +4211,56 @@
           "delta": 1.3,
           "category": "2026",
           "indicator": "PO2",
-          "note": "Confirmation-dependent (AMBER — pending IVG)"
+          "note": "Confirmation-dependent (AMBER — pending Westbrook)"
         },
         {
           "label": "PO3 — Anna sends formal governance policies (~7 PDFs)",
           "delta": 1.3,
           "category": "2026",
           "indicator": "PO3",
-          "note": "Confirmation-dependent (AMBER — pending IVG)"
+          "note": "Confirmation-dependent (AMBER — pending Westbrook)"
         },
         {
           "label": "RP1 — CY2025 sustainability report (board sign-off pending)",
           "delta": 2.0,
           "category": "2026",
           "indicator": "RP1",
-          "note": "Confirmation-dependent (AMBER — pending IVG)"
+          "note": "Confirmation-dependent (AMBER — pending Westbrook)"
         },
         {
           "label": "BC2 — Luke/Rob collate residential + communal EPCs",
           "delta": 1.5,
           "category": "2026",
           "indicator": "BC2",
-          "note": "Confirmation-dependent (AMBER — pending IVG)"
+          "note": "Confirmation-dependent (AMBER — pending Westbrook)"
         },
         {
           "label": "SE5 — Stephane provides CY2025 EDI dataset (employees + gov bodies)",
           "delta": 0.55,
           "category": "2026",
           "indicator": "SE5",
-          "note": "Confirmation-dependent (AMBER — pending IVG)"
+          "note": "Confirmation-dependent (AMBER — pending Westbrook)"
         },
         {
-          "label": "SE7.1 — Jez confirms IVG monitoring of Inspired Villages Operations",
+          "label": "SE7.1 — Jez confirms Westbrook monitoring of Westbrook Academies Trust Operations",
           "delta": 1.0,
           "category": "2026",
           "indicator": "SE7.1",
-          "note": "Confirmation-dependent (AMBER — pending IVG)"
+          "note": "Confirmation-dependent (AMBER — pending Westbrook)"
         },
         {
           "label": "LE6 — HR confirms ESG-linked bonus criteria existed in CY2025",
           "delta": 0.7,
           "category": "2026",
           "indicator": "LE6",
-          "note": "Confirmation-dependent (AMBER — pending IVG)"
+          "note": "Confirmation-dependent (AMBER — pending Westbrook)"
         },
         {
           "label": "PO1 — Anna sends env-relevant policies (Procurement, Mould&Damp, BCM)",
           "delta": 0.23,
           "category": "2026",
           "indicator": "PO1",
-          "note": "Confirmation-dependent (AMBER — pending IVG)"
+          "note": "Confirmation-dependent (AMBER — pending Westbrook)"
         },
         {
           "label": "SE2.1 — employee survey only counts if distributed in CY2025 before 31-Dec",
@@ -4475,7 +4475,7 @@
     "waterfall2026": {
       "title": "Waterfall: 2025 actual → 2026 outcome",
       "subtitle": "Source: P12 Master Matrix (62 indicators)",
-      "startLabel": "IVG 2025 actual",
+      "startLabel": "Westbrook 2025 actual",
       "startValue": 52,
       "endLabel": "2026 Central target",
       "endValue": 62,
@@ -4597,7 +4597,7 @@
           "items": [
             {
               "code": "RM1",
-              "label": "RM1 — EMS framework (NZA drafts, IVG signs off as in force CY2025)",
+              "label": "RM1 — EMS framework (NZA drafts, Westbrook signs off as in force CY2025)",
               "delta": 1.0
             },
             {
@@ -4607,7 +4607,7 @@
             },
             {
               "code": "T1.2",
-              "label": "T1.2 — New IVG/NWPF Net Zero target @ doubled weight",
+              "label": "T1.2 — New Westbrook/NWPF Net Zero target @ doubled weight",
               "delta": 0.8
             },
             {
@@ -4634,7 +4634,7 @@
         },
         {
           "id": "ivg-confirmations",
-          "label": "Confirmation-dependent (AMBER — pending IVG)",
+          "label": "Confirmation-dependent (AMBER — pending Westbrook)",
           "value": 8.6,
           "type": "positive",
           "items": [
@@ -4665,7 +4665,7 @@
             },
             {
               "code": "SE7.1",
-              "label": "SE7.1 — Jez confirms IVG monitoring of Inspired Villages Operations",
+              "label": "SE7.1 — Jez confirms Westbrook monitoring of Westbrook Academies Trust Operations",
               "delta": 1.0
             },
             {
@@ -4858,7 +4858,7 @@
       "id": "CD1",
       "title": "Residential Component status",
       "shortTitle": "Are we Residential?",
-      "question": "Confirm Residential Component participation in the GRESB portal (≥75% GAV residential — IVG at 100% retirement living should qualify automatically, but needs flagging in portal setup).",
+      "question": "Confirm Residential Component participation in the GRESB portal (≥75% GAV residential — Westbrook at 100% retirement living should qualify automatically, but needs flagging in portal setup).",
       "affects": "TC + BC + RES scoring (~+5pt automatic uplift opportunity)",
       "affectedIndicators": [
         "TC3",
@@ -4889,13 +4889,13 @@
       ],
       "status": "Outstanding",
       "owner": "NZA → Rob/Jez",
-      "actionRequired": "Short question to IVG operations"
+      "actionRequired": "Short question to Westbrook operations"
     },
     {
       "id": "CD3",
       "title": "T1.2 Net Zero target base year",
       "shortTitle": "Target base year?",
-      "question": "Old L&G/SBTi target had 2021 baseline. Should new IVG/NWPF target retain 2021 or rebase to 2025? Choice affects ambition curve and any future SBTi validation path.",
+      "question": "Old L&G/SBTi target had 2021 baseline. Should new Westbrook/NWPF target retain 2021 or rebase to 2025? Choice affects ambition curve and any future SBTi validation path.",
       "affects": "T1.2 target (~2pt) + future-cycle reporting baselines",
       "affectedIndicators": [
         "T1.2"
@@ -4908,7 +4908,7 @@
       "id": "CD4",
       "title": "Arbnco data nature",
       "shortTitle": "Is Arbnco resident data per-meter actual?",
-      "question": "GRESB prohibits apportioned/aggregate estimates above thresholds. If Arbnco resident-data is apportioned (not per-meter actual), IVG's strong coverage position is in jeopardy.",
+      "question": "GRESB prohibits apportioned/aggregate estimates above thresholds. If Arbnco resident-data is apportioned (not per-meter actual), Westbrook's strong coverage position is in jeopardy.",
       "affects": "EN1, GH1 coverage integrity (~5pt swing)",
       "affectedIndicators": [
         "EN1",
@@ -4932,7 +4932,7 @@
         "RM",
         "SE"
       ],
-      "description": "How IVG runs the platform: leadership, policies, reporting, risk management, stakeholder engagement."
+      "description": "How Westbrook runs the platform: leadership, policies, reporting, risk management, stakeholder engagement."
     },
     {
       "code": "Performance",
@@ -4950,7 +4950,7 @@
         "BC",
         "MR"
       ],
-      "description": "How IVG performs: risk assessments, targets, resident engagement, energy/GHG/water/waste data, certifications."
+      "description": "How Westbrook performs: risk assessments, targets, resident engagement, energy/GHG/water/waste data, certifications."
     },
     {
       "code": "Residential",
@@ -4968,7 +4968,7 @@
       {
         "heading": "What you're looking at.",
         "paragraphs": [
-          "GRESB scores IVG across three components:"
+          "GRESB scores Westbrook across three components:"
         ],
         "bullets": [
           "**Management** — 30 pt — policies, processes, leadership",
@@ -5004,7 +5004,7 @@
         "heading": "What is GRESB?",
         "paragraphs": [
           "GRESB (the Global Real Estate Sustainability Benchmark) is the industry-standard ESG scorecard for real estate. Around 2,200 funds submit globally each year.",
-          "Institutional investors — including NWPF — use it to compare ESG performance across their real estate holdings. For IVG, that makes a strong GRESB submission effectively a requirement, not a nice-to-have."
+          "Institutional investors — including NWPF — use it to compare ESG performance across their real estate holdings. For Westbrook, that makes a strong GRESB submission effectively a requirement, not a nice-to-have."
         ]
       },
       {
@@ -5034,9 +5034,9 @@
       {
         "heading": "Last year — where we landed.",
         "paragraphs": [
-          "IVG submitted for the third time in 2025.",
+          "Westbrook submitted for the third time in 2025.",
           "**Score: 52 / 100. Outcome: 1-star — bottom 20% globally.**",
-          "In a peer group of 22 UK residential funds, IVG placed 22nd of 22. The peer cohort averaged 82; the global average was 79."
+          "In a peer group of 22 UK residential funds, Westbrook placed 22nd of 22. The peer cohort averaged 82; the global average was 79."
         ]
       },
       {
@@ -5046,19 +5046,19 @@
           "The 17-point lift mostly comes from a focused set of indicators where the work is one of three things:"
         ],
         "bullets": [
-          "**IVG sharing information they already have** — policies in the Policy Register, EDI metrics from HR, EPCs from facilities",
+          "**Westbrook sharing information they already have** — policies in the Policy Register, EDI metrics from HR, EPCs from facilities",
           "**A handful of reports NZA is writing** — Environmental Management System, Climate Risk Assessment, CY2025 carbon inventory + net-zero report (the environmental sections of the public sustainability disclosure)",
           "**Confirming surveys and programmes that ran during 2025** — Fuze resident survey, employee wellbeing programmes, training"
         ],
         "paragraphsAfterBullets": [
-          "The detail is on the **Aspects page** — every action-needed indicator is laid out there with exactly what we need from IVG.",
+          "The detail is on the **Aspects page** — every action-needed indicator is laid out there with exactly what we need from Westbrook.",
           "If everything lands cleanly we hit 62. If a handful of uncertain items also come back positive, we can push toward 65."
         ]
       },
       {
         "heading": "What this tool does.",
         "paragraphs": [
-          "This page is the central source of truth for IVG's GRESB submission. As policies are confirmed, evidence lands and data flows in, the view updates — replacing the back-and-forth of slide decks and emails with one live picture.",
+          "This page is the central source of truth for Westbrook's GRESB submission. As policies are confirmed, evidence lands and data flows in, the view updates — replacing the back-and-forth of slide decks and emails with one live picture.",
           "By 2027, this tool should be running the cycle: tracking what's required, flagging what's missing, and routing evidence into the right place."
         ]
       }

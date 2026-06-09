@@ -1,45 +1,50 @@
-# IVG ESG Tool
+# decoded-demo
 
-Digital reporting platform for Inspired Villages Group's GRESB submission and GHG inventory.
+A permanent, anonymised demo of the IVG ESG Tool, presented as if
+built for the fictional **Westbrook Academies Trust** — a UK
+Multi-Academy Trust running 11 schools.
+
+**Fictional, not a real client report.** All site names, numbers,
+and supporting prose have been anonymised. Per-site values are
+perturbed ±10 % from the source via a deterministic seed=42
+multiplier so the format is real but the magnitudes are not.
 
 ## Status
 
-Phase 0 — pipeline + minimal shell. See `STATUS.md` for current state.
+Demo template, ongoing. See `STATUS.md` (intentionally minimal in
+the demo) and `CLAUDE.md` (full demo-template provenance + palette
++ school list — populated by Phase 5 of the demo-template brief).
 
-## Local development
+## Running it
 
-Pipeline:
+Double-click `launch.bat` at the repo root. Pulls `main`, runs
+`npm install --silent`, starts Vite on port 5174, opens the
+browser. Requires:
 
-```
-cd pipeline
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-python build.py
-```
+- Python 3.11+
+- Node 20 LTS
 
-Shell:
+The demo runs on a different port (5174) from the source IVG
+production tool (5173) so both can run side by side.
 
-```
-cd eir
-npm install
-npm run dev
-```
+The password gate uses the demo password `NZAI-demo-2026`.
 
-## Sections
+## Stack
 
-### GRESB Visualisation Module
+- React 19 + Vite 8 (shell at `eir/`)
+- Recharts 3.x + framer-motion 12 (charts + transitions)
+- Python 3.11 pandas pipeline (data layer at `pipeline/`)
+- Vercel deployment (separate from the IVG production project)
 
-The `/gresb` chapter is the central source of truth for IVG's GRESB submission. Three sub-tabs replace the slide-deck-and-email cycle:
+## Palette
 
-- **Overview** — five-section explainer narrative (What is GRESB · How it's scored · Last year · This year · What this tool does — Brief 13 v1.4.2) on the left; on the right, a 2025 Result card and a simplified 2026 Forecast card. The forecast card surfaces ONE bold TARGET 62 tick on the star quintile band — no competing inline markers. Below the bar, a horizontal range arrow runs Defendable → Stretch with endpoint values (45 / 65), replacing the prior 3-column legend strip. A single italic caption beneath links through to the Aspects page where the 17-point climb is broken down.
-- **Aspects** — Molson-pattern accordion covering all 68 indicators across Management / Performance / Residential. Per-aspect colour theming; per-indicator 4-panel detail (What it means · Last year · What we need to do · Evidence required). Eight visual enhancements light up conditionally on JSON content: panel-header lucide icons, verdict banners with auto-extracted validator quotes, GRESB-tracked-issues chip grids, numbered action checklists, document-type icons (13 evidence types), "Changed for 2026" amber banners, inline peer-comparison bars, owner/confidence/last-updated metadata footers. Non-scored / retired / parked cards expand on click and surface explainer content rather than being locked. **Brief 13 v1.4.3 — Path to Max:** every action-needed and substantive defending indicator now shows a "PATH TO MAX" subsection at the bottom of the Last Year panel — separated by a 1 px rule, aspect-coloured label, a one-line realistic-cycle summary (`gapToMaxSummary`), and a markdown-flavoured detail paragraph (`gapToMaxDetail`). 18 additional indicators carry verbatim 2025 portal narratives in `whatLastYearSubmitted`. Reader doesn't need to open the GRESB portal or any other document.
-- **Forward planning** — text-left / graphic-right pane (Brief 13 v1.4.3 redesign). Narrative on the left; on the right, three segmented cycle cards (2026 / 2027 / 2028) above a thin animated progress bar with star-tier markers; clicking a cycle spring-animates the fill from 0 to the selected target and swaps the bar colour (coral / teal / green). Below the bar, a scrollable "WHAT LANDS IN {cycle}" panel lists the per-cycle delta items with aspect-coloured dots and the per-item point contribution. 5-star caveat panel and "not pursuing" pills sit as a bottom strip below the 2-col body.
+Anchored in the decodED brand: deep green primary, warm cream
+canvas, orange accent. Full token table in `CLAUDE.md` (added by
+Phase 5).
 
-Data source: `eir/src/data/gresb.json` (v1.4.3, P09 SH-2000 tracker — defendable 45 / target 62 / achievable 62 / stretch 65 / target 2-star, with the v1.4.2 Overview explainer narrative, `forecast2026Card` caption, and v1.4.3 `gapToMaxSummary` / `gapToMaxDetail` on every action-needed indicator + 18 additional verbatim 2025 narratives).
+## Provenance
 
-## Documentation
-
-- `CLAUDE.md` — project rules and structure
-- `STATUS.md` — running log
-- `docs/briefs/` — working briefs (gitignored)
+Forked from `chrisscott06/ivg-esg-tool` at production HEAD. See
+the first commit on `main` ("Initial copy from ...") for the
+exact reference point. Anonymisation pass landed across five
+named phases of the demo-template brief.

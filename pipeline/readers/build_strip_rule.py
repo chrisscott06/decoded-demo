@@ -26,7 +26,7 @@ Sites with neither sub-metering nor a defensible DNO derivation
 subfields and are honestly labelled in the chart legend / tooltip.
 
 Resident gas is intentionally NOT carried as a separate subfield:
-  - At DNO sites, residents have their own gas suppliers — invisible to IVG.
+  - At DNO sites, residents have their own gas suppliers — invisible to Westbrook.
   - At bulk-microgrid sites, resident heat is the right resident category;
     the gas IS the heat-network INPUT which already lives in
     landlord_gas (Scope 1). Surfacing both would double-count.
@@ -49,11 +49,11 @@ DNO_SITES = {
     "durrants-village",
     "great-alne-park",
     "elderswell",      # DNO + Sycous heat
-    "ledian-gardens",  # DNO-IVG-cable + Sycous heat
+    "ledian-gardens",  # DNO-Westbrook-cable + Sycous heat
 }
 
 # Bulk-meter sites with Sycous coverage: resident energy passes through
-# the IVG landlord supply and is sub-billed via Sycous. arbnco's
+# the Westbrook landlord supply and is sub-billed via Sycous. arbnco's
 # resident delta is an artefact and is STRIPPED. Sub-metered figures
 # come from Sycous `annual_total` per service.
 BULK_SITES_WITH_SYCOUS = {

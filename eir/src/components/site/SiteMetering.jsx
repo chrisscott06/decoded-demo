@@ -14,7 +14,7 @@
  *   └──────────────────────┴───────────────────────────────────┘
  *
  * Designer brief: match the portfolio Metering Sankey's visual discipline
- * - IVG NZA palette tokens, no default Recharts colours, no bordered-
+ * - Westbrook NZA palette tokens, no default Recharts colours, no bordered-
  * cell tables, generous breathing room, typographic hierarchy carrying
  * the categorical encoding rather than colour-on-colour clutter.
  *
@@ -60,7 +60,7 @@ const COMMODITY_COLOUR = {
 const COMMODITY_ICON = {
   electricity:   '/icons/ivg-nza-icons_elec-solid.svg',
   gas:           '/icons/ivg-nza-icons_gas-solid.svg',
-  heat:          '/icons/ivg-nza-icons_elec-solid.svg',  /* heat is electric-driven on most IVG sites */
+  heat:          '/icons/ivg-nza-icons_elec-solid.svg',  /* heat is electric-driven on most Westbrook sites */
   'hot-water':   '/icons/ivg-nza-icons_water.svg',
   water:         '/icons/ivg-nza-icons_water.svg',
   'sub-metered': '/icons/ivg-nza-icons_meter.svg',
@@ -657,7 +657,7 @@ function GraphicPane({ mode, setMode, groups, allGroups, activeCategories, platf
               aria-selected={isActive}
               aria-disabled={isDisabled || undefined}
               onClick={() => !isDisabled && setMode(m.key)}
-              title={isDisabled ? 'Spatial view of meters across the site. Pending building footprint data from IVG.' : undefined}
+              title={isDisabled ? 'Spatial view of meters across the site. Pending building footprint data from Westbrook.' : undefined}
               style={{
                 padding: '5px 14px',
                 background: 'transparent',
@@ -1128,7 +1128,7 @@ function SiteMapPlaceholder() {
         Spatial view of meters across the site
       </div>
       <div style={{ fontSize: 11, lineHeight: 1.5, maxWidth: 320 }}>
-        Pending building footprint data from IVG. When the site-plan layer
+        Pending building footprint data from Westbrook. When the site-plan layer
         arrives, every meter will plot on its physical location and the
         category encoding will carry through.
       </div>

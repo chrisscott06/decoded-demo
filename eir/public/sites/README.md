@@ -10,20 +10,20 @@ not stray extraction artefacts. Do not archive or delete without checking with C
 
 | File | What it is |
 |---|---|
-| `hero.jpg` | Village exterior photo — IVG marketing carousel image, max 2000px, JPEG q85 |
+| `hero.jpg` | Village exterior photo — Westbrook marketing carousel image, max 2000px, JPEG q85 |
 | `aerial.png` | 1024×1024 satellite crop, Esri World Imagery, centred on the site coordinate |
 | `site-plan.png` | Masterplan / site-layout drawing rasterised from the NZA drawings folder |
-| `icon.svg` | Village line-art emblem from the IVG "Our villages" menu (`fill: currentColor`) |
+| `icon.svg` | Village line-art emblem from the Westbrook "Our villages" menu (`fill: currentColor`) |
 | `_meta.json` | Provenance — source URLs, coordinates, capture dates, attribution |
 
 ## Coverage
 
-- `hero.jpg` — 12 villages (not Edwalton — head office, no IVG village page)
+- `hero.jpg` — 12 villages (not Edwalton — head office, no Westbrook village page)
 - `aerial.png` — all 13 sites
 - `icon.svg` — 12 villages (not Edwalton — not in the villages menu)
 - `site-plan.png` — 8 villages only. No drawings were available for
   ampfield-meadows, blendworth-hills, millfield-green or sonning-common —
-  see `extraction-log.csv`. These need chasing up with IVG.
+  see `extraction-log.csv`. These need chasing up with Westbrook.
 - `millfield-green/aerial-from-smart-grid-report.jpg` — a pre-extracted
   high-res aerial supplied with the handover.
 

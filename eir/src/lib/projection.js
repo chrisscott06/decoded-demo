@@ -10,10 +10,10 @@
  *
  * Brief 14 Part 1 rewrite - replaces the previous bounding box
  * (lat 50.4–53.4, lon -3.8–1.0) which assumed the SVG covered only
- * central southern England. That bbox spread IVG's southern-English sites
+ * central southern England. That bbox spread Westbrook's southern-English sites
  * across the WHOLE UK silhouette, so e.g. Gifford Lea (Cheshire, lat 53.16)
  * ended up rendered visually over Scotland. The new bbox covers all of
- * the UK landmass shown in the SVG, so IVG sites cluster in the
+ * the UK landmass shown in the SVG, so Westbrook sites cluster in the
  * lower-right of the silhouette (southern/central England) as they should.
  *
  * Method:
@@ -44,7 +44,7 @@ import siteCoordinates from '@pipeline-static/site_coordinates.json'
  * is entirely in southern + central England, so the previous full-UK
  * bbox left the top 55% of the SVG empty (Scotland + N England with no
  * markers). New bbox crops to the Brighton → Liverpool / Cardiff →
- * Norwich window IVG uses on its own marketing site. Markers spread
+ * Norwich window Westbrook uses on its own marketing site. Markers spread
  * across the visible area, no wasted vertical.
  *
  * Coordinates picked against the SVG's equirectangular projection
@@ -64,7 +64,7 @@ export const BBOX = {
  * percentage-points). Chris ask 2026-06-02: equirectangular projection
  * pushes southern sites too far north on this cropped + dotted SVG
  * (the SVG itself uses a Mercator-ish projection). The dy values
- * below compensate site-by-site against the IVG website reference,
+ * below compensate site-by-site against the Westbrook website reference,
  * heaviest in the south, lightest near the top. dx tweaks address
  * coastal precision (Bramshott et al. snap to nearer-coast dots).
  */

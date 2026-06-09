@@ -86,7 +86,7 @@ def read_arbnco(workbook_path: Path, sites: dict[str, dict], log: list[str]) -> 
         asset = _to_str(ws.cell(r, 2).value)
         fund = _to_str(ws.cell(r, 3).value)
 
-        # Portfolio total: Asset blank, Fund "Inspired Villages"
+        # Portfolio total: Asset blank, Fund "Westbrook Academies Trust"
         if asset is None and fund and fund.lower() == "inspired villages":
             portfolio_row = {
                 "total_electricity_meters": _to_int(ws.cell(r, 4).value),

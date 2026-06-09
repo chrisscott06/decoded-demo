@@ -506,8 +506,8 @@ function ConsumptionPanes() {
             honest TBC framing for the three sites with pending splits
             (Millbrook, Millfield, Blendworth). Headers stay as the
             plain noun phrases Brief 24.7 established. */}
-        <NarrativePara title="What IVG used in CY2025.">
-          Inspired Villages operates 13 retirement villages. 2 are out of scope for this GRESB reporting cycle - one is the head office (Edwalton) and the other only became operational in 2026 (Sonning Common, still under construction). Across the remaining 11 sites in CY2025, IVG used{' '}
+        <NarrativePara title="What Westbrook used in CY2025.">
+          Westbrook Academies Trust operates 13 retirement villages. 2 are out of scope for this GRESB reporting cycle - one is the head office (Edwalton) and the other only became operational in 2026 (Sonning Common, still under construction). Across the remaining 11 sites in CY2025, Westbrook used{' '}
           <Token>{fmtGwh(inScopeTotals.total)} GWh</Token> of energy - split as{' '}
           <Token>{fmtGwh(t_elec_total)} GWh</Token> of electricity and{' '}
           <Token>{fmtGwh(t_gas_total)} GWh</Token> of gas. Gas accounts for{' '}
@@ -528,23 +528,23 @@ function ConsumptionPanes() {
         </NarrativePara>
 
         <NarrativePara continuation>
-          <strong>Landlord energy</strong> is the energy on IVG's commercial contracts with Ecotricity - covering communal lighting, lifts, plant rooms, and the gas supplies into the heat networks. Across 8 of the 11 sites where the split is measurable this totals{' '}
-          <Token>{fmtGwh(t_landlord)} GWh</Token> in CY25. IVG is invoiced for this directly, but the cost is recharged to residents proportionally through the service charge. Where a home is vacant, the DevCo absorbs that share of the bill until a new resident takes over.
+          <strong>Landlord energy</strong> is the energy on Westbrook's commercial contracts with Ecotricity - covering communal lighting, lifts, plant rooms, and the gas supplies into the heat networks. Across 8 of the 11 sites where the split is measurable this totals{' '}
+          <Token>{fmtGwh(t_landlord)} GWh</Token> in CY25. Westbrook is invoiced for this directly, but the cost is recharged to residents proportionally through the service charge. Where a home is vacant, the DevCo absorbs that share of the bill until a new resident takes over.
         </NarrativePara>
 
         <NarrativePara continuation>
           <strong>Resident energy</strong> is what people use directly in their homes -{' '}
-          <Token>{fmtGwh(t_resident)} GWh</Token> across the 8 sites with a measurable split. How IVG sees this depends on the site's design:
+          <Token>{fmtGwh(t_resident)} GWh</Token> across the 8 sites with a measurable split. How Westbrook sees this depends on the site's design:
         </NarrativePara>
 
         <NarrativePara continuation>
-          At <strong>bulk-metered sites with Sycous coverage</strong> (Austin Heath, Gifford Lea, Ampfield Meadows), the resident electricity flows through IVG's commercial supply and is sub-metered apartment-by-apartment by Sycous -{' '}
-          <Token>{fmtGwh(t_resident_submetered)} GWh</Token> directly measured. At <strong>standard residential sites</strong> (Bramshott Place, Durrants Village, Great Alne Park, Elderswell, Ledian Gardens), each resident has their own meter and their own supplier. IVG never sees this directly. The figure shown -{' '}
-          <Token>{fmtGwh(t_resident_arbnco)} GWh</Token> - is <em>derived</em> by taking the total flowing into the site (from arbnco) and subtracting IVG's known landlord consumption. The arbnco methodology hasn't been published to NZA.
+          At <strong>bulk-metered sites with Sycous coverage</strong> (Austin Heath, Gifford Lea, Ampfield Meadows), the resident electricity flows through Westbrook's commercial supply and is sub-metered apartment-by-apartment by Sycous -{' '}
+          <Token>{fmtGwh(t_resident_submetered)} GWh</Token> directly measured. At <strong>standard residential sites</strong> (Bramshott Place, Durrants Village, Great Alne Park, Elderswell, Ledian Gardens), each resident has their own meter and their own supplier. Westbrook never sees this directly. The figure shown -{' '}
+          <Token>{fmtGwh(t_resident_arbnco)} GWh</Token> - is <em>derived</em> by taking the total flowing into the site (from arbnco) and subtracting Westbrook's known landlord consumption. The arbnco methodology hasn't been published to NZA.
         </NarrativePara>
 
         <NarrativePara continuation>
-          Three sites currently show TBC on the landlord/resident split. <strong>Millbrook Village</strong> is bulk-metered with no Sycous sub-metering deployed - NZA is working with IVG to deploy coverage. <strong>Millfield Green</strong>'s Sycous readings exceed the bulk meter total, which is physically impossible if both measure electricity - NZA is investigating with IVG and Sycous to resolve the data anomaly. <strong>Blendworth Hills</strong> has Sycous deployed but the sub-meters currently read zero across the site. Their site totals are reliable (the bulk meter tells us what flowed in); only the split between landlord and resident is pending.
+          Three sites currently show TBC on the landlord/resident split. <strong>Millbrook Village</strong> is bulk-metered with no Sycous sub-metering deployed - NZA is working with Westbrook to deploy coverage. <strong>Millfield Green</strong>'s Sycous readings exceed the bulk meter total, which is physically impossible if both measure electricity - NZA is investigating with Westbrook and Sycous to resolve the data anomaly. <strong>Blendworth Hills</strong> has Sycous deployed but the sub-meters currently read zero across the site. Their site totals are reliable (the bulk meter tells us what flowed in); only the split between landlord and resident is pending.
         </NarrativePara>
 
         <NarrativePara continuation>
@@ -1270,7 +1270,7 @@ function Token({ children }) {
 
 /* Brief 24.7 - Coverage table on the Metering sub-tab.
    Minimal styling: no bordered cells, a faint row separator, the
-   header row tinted with the existing IVG palette. */
+   header row tinted with the existing Westbrook palette. */
 function CoverageTable() {
   /* Chris ask 8 Jun: the table rendered as invisible navy-on-navy
      because every text colour was `var(--text-on-cream)` or
@@ -1542,8 +1542,8 @@ function HeatingPanes() {
     <>
       <NarrativePane>
         {/* Brief 24.7 - Heating strategy prose rewrite. */}
-        <NarrativePara title="How IVG heats its homes.">
-          Inspired Villages has developed its sites across multiple years and design eras, with different heating strategies adopted as the portfolio grew. The result is a mixed picture across the 11 sites. Some sites have <strong>central plant</strong> - one large boiler or CHP unit serving every home via a heat network. Others give each home its own <strong>individual unit</strong> - a gas boiler, an air-source heat pump (ASHP), or a ground-source heat pump (GSHP). A few sites combine multiple strategies across different phases.
+        <NarrativePara title="How Westbrook heats its homes.">
+          Westbrook Academies Trust has developed its sites across multiple years and design eras, with different heating strategies adopted as the portfolio grew. The result is a mixed picture across the 11 sites. Some sites have <strong>central plant</strong> - one large boiler or CHP unit serving every home via a heat network. Others give each home its own <strong>individual unit</strong> - a gas boiler, an air-source heat pump (ASHP), or a ground-source heat pump (GSHP). A few sites combine multiple strategies across different phases.
         </NarrativePara>
 
         <NarrativePara continuation>
@@ -1840,7 +1840,7 @@ const POWER_ARRANGEMENT = {
   'elderswell':         'dno',
   'great-alne-park':    'dno',
   'ledian-gardens':     'bno',      /* Brief 18 follow-up (Chris 3 Jun): Ledian is BNO -
-                                       IVG-owned private cable network behind the DNO
+                                       Westbrook-owned private cable network behind the DNO
                                        point of connection. */
   'edwalton-office':    'office',   /* OOS */
 }
@@ -1864,7 +1864,7 @@ const ARR_META = {
     label: 'BNO',
     glyph: '◆',
     color: '#A896C4',
-    desc:  'IVG-owned private cable network behind the DNO point of connection; residents on individual MPANs.',
+    desc:  'Westbrook-owned private cable network behind the DNO point of connection; residents on individual MPANs.',
   },
   office: {
     label: 'Office',
@@ -1894,7 +1894,7 @@ function PowerPanes() {
       const dno = cap?.dno ?? null
       const missingFields = cap?.missing_fields || []
       /* Meter count - landlord HH MPANs per site from mpan_register
-         (the meters IVG directly operates on the landlord side). */
+         (the meters Westbrook directly operates on the landlord side). */
       const meterCount = (mpanRegister[sid] || []).filter(
         (m) => m.category === 'Landlord (HH)'
       ).length || null
@@ -1940,8 +1940,8 @@ function PowerPanes() {
     <>
       <NarrativePane>
         {/* Brief 24.7 - Power strategy prose rewrite. */}
-        <NarrativePara title="How IVG buys energy.">
-          <strong>Ecotricity supplies every IVG site, for both electricity and gas.</strong> A single commercial relationship covers all landlord electricity meters and all gas meters across the portfolio. Ecotricity also supplies properties that are vacant or between residents - those void periods stay on IVG's commercial contract until a new resident takes over their own supply.
+        <NarrativePara title="How Westbrook buys energy.">
+          <strong>Ecotricity supplies every Westbrook site, for both electricity and gas.</strong> A single commercial relationship covers all landlord electricity meters and all gas meters across the portfolio. Ecotricity also supplies properties that are vacant or between residents - those void periods stay on Westbrook's commercial contract until a new resident takes over their own supply.
         </NarrativePara>
 
         <NarrativePara continuation>
@@ -1953,15 +1953,15 @@ function PowerPanes() {
         </NarrativePara>
 
         <NarrativePara continuation>
-          <strong>Bulk-metered (microgrid)</strong> - IVG holds one large commercial supply for the whole site, then distributes power through its own private wire network to each home. Residents are sub-billed through Sycous. <em>Five sites: Austin Heath, Blendworth Hills, Gifford Lea, Millbrook Village, Millfield Green</em> (plus Sonning Common, out of scope).
+          <strong>Bulk-metered (microgrid)</strong> - Westbrook holds one large commercial supply for the whole site, then distributes power through its own private wire network to each home. Residents are sub-billed through Sycous. <em>Five sites: Austin Heath, Blendworth Hills, Gifford Lea, Millbrook Village, Millfield Green</em> (plus Sonning Common, out of scope).
         </NarrativePara>
 
         <NarrativePara continuation>
-          <strong>Standard residential supply</strong> - each resident has their own meter and their own supplier (the standard arrangement on the UK Distribution Network Operator, or DNO). IVG only meters the small landlord supply for communal areas. <em>Four sites: Bramshott Place, Durrants Village, Elderswell, Great Alne Park.</em>
+          <strong>Standard residential supply</strong> - each resident has their own meter and their own supplier (the standard arrangement on the UK Distribution Network Operator, or DNO). Westbrook only meters the small landlord supply for communal areas. <em>Four sites: Bramshott Place, Durrants Village, Elderswell, Great Alne Park.</em>
         </NarrativePara>
 
         <NarrativePara continuation>
-          <strong>Private cable network with individual residents</strong> - a hybrid: IVG owns the cable network on site (a Body of Network Operator, or BNO arrangement), but each resident has their own meter and their own supplier riding on IVG's infrastructure. <em>Two sites: Ampfield Meadows, Ledian Gardens.</em>
+          <strong>Private cable network with individual residents</strong> - a hybrid: Westbrook owns the cable network on site (a Body of Network Operator, or BNO arrangement), but each resident has their own meter and their own supplier riding on Westbrook's infrastructure. <em>Two sites: Ampfield Meadows, Ledian Gardens.</em>
         </NarrativePara>
 
         <NarrativePara continuation>
@@ -2442,12 +2442,12 @@ function MeteringPanes() {
             constants (TopNav + PortfolioEnergy SUB_TABS). The "What
             this means for the rest of the page" section was removed;
             its content is now captured by the coverage table below. */}
-        <NarrativePara title="How IVG sees its portfolio.">
-          Across the 11 sites, IVG has visibility into its energy use through <strong>three data platforms working together</strong>, each playing a different role. The arrangement is different at each site depending on how it was built - some sites give IVG direct visibility into every home, others give visibility only into the communal areas, with resident usage either sub-metered separately or derived indirectly.
+        <NarrativePara title="How Westbrook sees its portfolio.">
+          Across the 11 sites, Westbrook has visibility into its energy use through <strong>three data platforms working together</strong>, each playing a different role. The arrangement is different at each site depending on how it was built - some sites give Westbrook direct visibility into every home, others give visibility only into the communal areas, with resident usage either sub-metered separately or derived indirectly.
         </NarrativePara>
 
         <NarrativePara continuation>
-          This page shows every meter IVG can see, where the data comes from, and where the honest gaps sit.
+          This page shows every meter Westbrook can see, where the data comes from, and where the honest gaps sit.
         </NarrativePara>
 
         <NarrativePara continuation>
@@ -2459,15 +2459,15 @@ function MeteringPanes() {
         </NarrativePara>
 
         <NarrativePara continuation>
-          <strong>Standard residential sites</strong> - IVG only sees its own landlord meters directly. Resident consumption is <em>derived</em> by subtracting landlord usage from the total flowing into the site (sourced from arbnco).
+          <strong>Standard residential sites</strong> - Westbrook only sees its own landlord meters directly. Resident consumption is <em>derived</em> by subtracting landlord usage from the total flowing into the site (sourced from arbnco).
         </NarrativePara>
 
         <NarrativePara continuation>
-          <strong>Private cable sites</strong> (Ampfield Meadows, Ledian Gardens) - IVG owns the cable but residents have their own contracts. Visibility sits between the two.
+          <strong>Private cable sites</strong> (Ampfield Meadows, Ledian Gardens) - Westbrook owns the cable but residents have their own contracts. Visibility sits between the two.
         </NarrativePara>
 
         <NarrativePara title="The three platforms.">
-          <strong>Ecotricity</strong> invoices IVG for every landlord electricity meter (MPAN - Meter Point Administration Number) and every gas meter (MPRN - Meter Point Reference Number). This is the authoritative source for what IVG actually pays - directly measured, no estimation.
+          <strong>Ecotricity</strong> invoices Westbrook for every landlord electricity meter (MPAN - Meter Point Administration Number) and every gas meter (MPRN - Meter Point Reference Number). This is the authoritative source for what Westbrook actually pays - directly measured, no estimation.
         </NarrativePara>
 
         <NarrativePara continuation>

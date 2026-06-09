@@ -10,7 +10,7 @@ import { COLOR_TOOLTIP_BG, METRIC_HEX, COLOR_WEEKDAY, COLOR_WEEKEND } from '../.
  * Both modes render two charts side-by-side:
  *
  *   ALL MONTHS:
- *     Left:  12-month overlay (existing IVG behaviour - 12 colour-ramped
+ *     Left:  12-month overlay (existing Westbrook behaviour - 12 colour-ramped
  *            lines showing mean kW per hour per month).
  *     Right: Weekday vs Weekend across the whole year - two lines, teal
  *            weekday + pink weekend.

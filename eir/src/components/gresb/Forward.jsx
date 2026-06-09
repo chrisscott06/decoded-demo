@@ -396,7 +396,7 @@ function ProgressBar({ target, cycle, score2025 }) {
             borderRadius: 999,
           }}
         />
-        {/* 2025 IVG marker - a small white tick */}
+        {/* 2025 Westbrook marker - a small white tick */}
         <div aria-hidden style={{
           position: 'absolute',
           left: `${ivgPct}%`,
@@ -446,7 +446,7 @@ function ProgressBar({ target, cycle, score2025 }) {
           fontSize: 11,
           color: TEXT_MUTED,
           whiteSpace: 'nowrap',
-        }}>IVG {score2025}</span>
+        }}>Westbrook {score2025}</span>
         <motion.span
           initial={false}
           animate={{ left: `${targetPct}%` }}
@@ -608,7 +608,7 @@ function Header({ title, text, meta }) {
         letterSpacing: 2.2, textTransform: 'uppercase',
         color: 'var(--color-nza-coral)',
       }}>
-        GRESB 2026 · {meta?.entityName || 'Inspired Villages Group'}
+        GRESB 2026 · {meta?.entityName || 'Westbrook Academies Trust'}
         {meta?.submissionDeadline && (
           <> · submission due {meta.submissionDeadline}</>
         )}
@@ -652,7 +652,7 @@ const PAD_LEFT   = 64
 const PAD_RIGHT  = 200
 const PLOT_W = W - PAD_LEFT - PAD_RIGHT
 const PLOT_H = H - PAD_TOP - PAD_BOTTOM
-const SCORE_MIN = 25  /* don't show the empty 0-25 band - IVG's range
+const SCORE_MIN = 25  /* don't show the empty 0-25 band - Westbrook's range
                          starts at ~45 anyway */
 const SCORE_MAX = 95  /* leave 5pt headroom above the 4-star/2028 line */
 
@@ -693,7 +693,7 @@ function WaterfallChart({ blocks, indicatorToAspect }) {
         margin: 0,
         maxWidth: 760,
       }}>
-        Each block is one action contributing to the climb from where IVG
+        Each block is one action contributing to the climb from where Westbrook
         sits today (52) through the defendable floor (45) and up through
         the multi-year cycle plan. Hover any block for detail; click to
         jump to the relevant indicator.

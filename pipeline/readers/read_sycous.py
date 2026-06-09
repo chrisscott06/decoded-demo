@@ -1,8 +1,8 @@
 """Sycous reader — produces dist/eir/sycous.json.
 
-Reads the IVG Sycous workbook (CA-X-1004) and composes per-site sub-metering
+Reads the Westbrook Sycous workbook (CA-X-1004) and composes per-site sub-metering
 coverage. The workbook has four useful sheets:
-- 1. Summary > Network → IVG Site mapping (rows 6-12)
+- 1. Summary > Network → Westbrook Site mapping (rows 6-12)
 - 1. Summary > Site-level overview (rows 17-23): properties + meters + services
 - 1. Summary > Detail by site and service (rows 28-39): per-service stats
 - 3. Reconciliation (rows 5-18): YES/NO + narrative note per site
@@ -69,7 +69,7 @@ def find_workbook(source_data: Path) -> Path:
 
 
 def _read_network_mapping(ws, log: list[str]) -> dict[str, str]:
-    """Rows 6-12: Sycous Network → IVG Site display name. Returns {site_id: network}."""
+    """Rows 6-12: Sycous Network → Westbrook Site display name. Returns {site_id: network}."""
     out: dict[str, str] = {}
     for r in range(6, 13):
         network = _to_str(ws.cell(r, 1).value)
@@ -80,7 +80,7 @@ def _read_network_mapping(ws, log: list[str]) -> dict[str, str]:
         if sid:
             out[sid] = network
         else:
-            log.append(f"  [Sycous] unmapped IVG name in network mapping: {ivg_name!r}")
+            log.append(f"  [Sycous] unmapped Westbrook name in network mapping: {ivg_name!r}")
     return out
 
 

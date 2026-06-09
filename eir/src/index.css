@@ -2,7 +2,7 @@
 
 /* ===== NZA Design System - Tier 1 anchors + Tier 2 theme + Tier 3 methodology =====
    Forklifted from nzai-demo in Brief 6 Part 1. Source: nzai-demo/src/index.css @theme.
-   IVG uses plain CSS (no Tailwind), so tokens live as :root custom properties
+   Westbrook uses plain CSS (no Tailwind), so tokens live as :root custom properties
    rather than Tailwind @theme directives. Names and values are identical to
    nzai-demo so a future Tailwind migration is a mechanical lift. */
 
@@ -193,7 +193,7 @@
   --duration-transition: 500ms;
   --duration-chapter: 700ms;
 
-  /* === IVG-specific layout (preserved from Phase 1B) === */
+  /* === Westbrook-specific layout (preserved from Phase 1B) === */
   --app-content-max-width: 1600px;
   /* Brief 17.5.3 Part 3 - nav-strip content container width. Set to
      match Brief 17.5.2's `.thematic-page-container` (1280px) so the
@@ -206,7 +206,7 @@
      (see docs/audit/17.5_references/01_top_ribbon.md + 02_sub_ribbon.md).
      Three-tier descending visual weight: primary 44 → secondary 36 →
      tertiary pills ~26 (page-local, see PortfolioEnergy). EOC uses
-     49 / 36 / 26 - IVG's primary is a touch slimmer so the secondary
+     49 / 36 / 26 - Westbrook's primary is a touch slimmer so the secondary
      register sits closer visually. Old values: 56 / 48. */
   /* Chris ask 2026-06-03 (post-17.5.3): secondary nav strip dropped
      36 → 30 to claw back vertical space that wasn't earning its keep.
@@ -287,7 +287,7 @@
   /* === Brief 20 (BR-13) Task 2 - GRESB-specific tokens.
         Teal palette evokes the GRESB digital guide (gitbook) aesthetic
         per the brief's Appendix B. NOT GRESB brand assets - we match
-        the look, not the IP. Tokens tuned for dark register (the IVG
+        the look, not the IP. Tokens tuned for dark register (the Westbrook
         tool's primary mode); the indicator/aspect badge contrast pair
         uses teal-500 at low opacity for bg + teal-500 at full for text.
         Status + confidence pills reuse the existing risk tokens
@@ -317,7 +317,7 @@
   --metering-sycous-hhw:    #B4584C;  /* Sycous sub-metered heat & hot water */
   --metering-sycous-hw:     #D86C5A;  /* Sycous sub-metered hot water - red family, matches the heating cluster (Chris ask 4 Jun #4) */
   --metering-sycous-cw:     #4A7BA0;  /* Sycous sub-metered cold water */
-  --metering-invisible:     #3D4860;  /* Resident MPANs invisible to IVG */
+  --metering-invisible:     #3D4860;  /* Resident MPANs invisible to Westbrook */
 
   /* === Legacy aliases - point old Phase 1A/1B token names at the new tokens
         so existing component code keeps working during the Part 2 sweep.
@@ -502,7 +502,7 @@
 }
 
 /* Brief 7 Part 3 - Map marker pulse. Replaces Tailwind's animate-ping
-   (IVG has no Tailwind). The dot scales from 1 → 2.4 while fading to 0
+   (Westbrook has no Tailwind). The dot scales from 1 → 2.4 while fading to 0
    so the halo appears to expand outwards. Use on the halo span only;
    the inner dot stays still. */
 @keyframes nza-pulse {
