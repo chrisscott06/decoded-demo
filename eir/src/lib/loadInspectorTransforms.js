@@ -74,7 +74,7 @@ export function durationCurve(values, maxPoints = 500) {
  *   t=0.50  #D6D680  yellow          (mid-band)
  *   t=0.62  #E0A85F  amber
  *   t=0.75  #D87544  orange
- *   t=0.88  #B8443A  red
+ *   t=0.88  #D94B3D  red
  *   t=1.00  #6E1F16  dark red        (peak demand)
  *
  * Linear interpolation between adjacent stops, perceptually continuous.

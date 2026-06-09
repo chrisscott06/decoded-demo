@@ -985,7 +985,7 @@ function IssueChipGrid({ issues, primary, tint }) {
             borderRadius: 999,
             border: `1px solid color-mix(in srgb, ${primary} 55%, transparent)`,
             background: ivgClaimed ? primary : tint,
-            color: ivgClaimed ? '#0F1629' : TEXT_BODY,
+            color: ivgClaimed ? '#1F3328' : TEXT_BODY,
             fontFamily: 'var(--font-body)',
             fontSize: 11, fontWeight: ivgClaimed ? 600 : 500,
             letterSpacing: 0.1,

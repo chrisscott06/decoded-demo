@@ -81,9 +81,9 @@ export default function TopNav({
   const isCream = theme === 'cream'
   const bg = isCream ? 'var(--color-nza-cream)' : 'var(--color-theme-base)'
   const text = isCream ? 'var(--color-theme-base)' : 'var(--color-theme-body)'
-  const textMuted = isCream ? 'rgba(26, 36, 64, 0.55)' : 'rgba(237, 229, 216, 0.6)'
-  const border = isCream ? 'rgba(26, 36, 64, 0.1)' : 'rgba(237, 229, 216, 0.1)'
-  const subBg = isCream ? 'rgba(26, 36, 64, 0.04)' : 'rgba(237, 229, 216, 0.04)'
+  const textMuted = isCream ? 'rgba(31, 51, 40, 0.55)' : 'rgba(243, 239, 227, 0.6)'
+  const border = isCream ? 'rgba(31, 51, 40, 0.1)' : 'rgba(243, 239, 227, 0.1)'
+  const subBg = isCream ? 'rgba(31, 51, 40, 0.04)' : 'rgba(243, 239, 227, 0.04)'
 
   let subTabs = []
   if (activePrimary === 'site' && currentSiteId) {
@@ -140,7 +140,7 @@ export default function TopNav({
                   className={`topnav-primary-link ${isActive ? 'active' : ''} ${disabled ? 'disabled' : ''}`}
                   style={{
                     color: disabled
-                      ? (isCream ? 'rgba(26,36,64,0.25)' : 'rgba(237,229,216,0.25)')
+                      ? (isCream ? 'rgba(31, 51, 40,0.25)' : 'rgba(243, 239, 227,0.25)')
                       : isActive
                         ? 'var(--color-nza-coral)'
                         : textMuted,
@@ -190,7 +190,7 @@ export default function TopNav({
                     className={`topnav-secondary-link ${isActive ? 'active' : ''} ${disabled ? 'disabled' : ''}`}
                     style={{
                       color: disabled
-                        ? (isCream ? 'rgba(26,36,64,0.25)' : 'rgba(237,229,216,0.25)')
+                        ? (isCream ? 'rgba(31, 51, 40,0.25)' : 'rgba(243, 239, 227,0.25)')
                         : isActive
                           ? 'var(--color-nza-coral)'
                           : textMuted,

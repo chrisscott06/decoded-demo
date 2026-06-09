@@ -4,12 +4,12 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 import { monthlyCoverage } from '../../../lib/loadInspectorTransforms.js'
 import { COLOR_RISK_LOW, COLOR_RISK_MODERATE, COLOR_RISK_MAJOR, COLOR_TOOLTIP_BG } from '../../../tokens/chart-colors.js'
 
-const AXIS_STYLE = { fontFamily: "'Inter', system-ui, sans-serif", fontSize: 11, fill: 'rgba(26,36,64,0.55)' }
+const AXIS_STYLE = { fontFamily: "'Inter', system-ui, sans-serif", fontSize: 11, fill: 'rgba(31, 51, 40,0.55)' }
 const TOOLTIP_STYLE = {
   fontFamily: "'Inter', system-ui, sans-serif",
   fontSize: 12,
   background: COLOR_TOOLTIP_BG,
-  border: '1px solid rgba(26,36,64,0.15)',
+  border: '1px solid rgba(31, 51, 40,0.15)',
   borderRadius: 6,
   padding: '8px 10px',
 }
@@ -19,8 +19,8 @@ const CARD_STYLE = {
   flexDirection: 'column',
   gap: 4,
   padding: '14px 16px',
-  background: 'rgba(26,36,64,0.03)',
-  border: '1px solid rgba(26,36,64,0.08)',
+  background: 'rgba(31, 51, 40,0.03)',
+  border: '1px solid rgba(31, 51, 40,0.08)',
   borderRadius: 8,
 }
 
@@ -32,7 +32,7 @@ function Card({ label, value, unit, helper }) {
         fontSize: 10,
         letterSpacing: 1.5,
         textTransform: 'uppercase',
-        color: 'rgba(26,36,64,0.5)',
+        color: 'rgba(31, 51, 40,0.5)',
         fontWeight: 500,
       }}>{label}</div>
       <div style={{
@@ -44,13 +44,13 @@ function Card({ label, value, unit, helper }) {
         fontWeight: 500,
       }}>
         <span style={{ fontSize: 22, lineHeight: 1 }}>{value}</span>
-        {unit && <span style={{ fontSize: 12, color: 'rgba(26,36,64,0.55)' }}>{unit}</span>}
+        {unit && <span style={{ fontSize: 12, color: 'rgba(31, 51, 40,0.55)' }}>{unit}</span>}
       </div>
       {helper && (
         <div style={{
           fontFamily: 'var(--font-body)',
           fontSize: 11,
-          color: 'rgba(26,36,64,0.55)',
+          color: 'rgba(31, 51, 40,0.55)',
         }}>{helper}</div>
       )}
     </div>
@@ -93,14 +93,14 @@ export default function DataQualityView({ ctx }) {
         <div style={{
           fontFamily: 'var(--font-heading)',
           fontSize: 11,
-          color: 'rgba(26,36,64,0.55)',
+          color: 'rgba(31, 51, 40,0.55)',
           letterSpacing: 1,
           textTransform: 'uppercase',
           marginBottom: 4,
         }}>Monthly coverage - % of expected periods present</div>
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={monthlyCov} margin={{ top: 5, right: 8, left: 8, bottom: 0 }}>
-            <CartesianGrid stroke="rgba(26,36,64,0.06)" />
+            <CartesianGrid stroke="rgba(31, 51, 40,0.06)" />
             <XAxis dataKey="month" tick={AXIS_STYLE} tickLine={false} />
             <YAxis tick={AXIS_STYLE} tickLine={false} axisLine={false} width={40} domain={[0, 100]} tickFormatter={(v) => `${v}%`} />
             <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [`${v}%`, 'Coverage']} />

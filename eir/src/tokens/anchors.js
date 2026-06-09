@@ -3,6 +3,6 @@
 // They live above the theme layer; only governance can change them.
 
 export const anchors = {
-  nzaCoral: '#E8725C',
-  nzaCream: '#EDE5D8',
+  nzaCoral: '#E8743C',
+  nzaCream: '#F3EFE3',
 };

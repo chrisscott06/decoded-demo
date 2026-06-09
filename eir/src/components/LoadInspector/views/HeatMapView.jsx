@@ -45,7 +45,7 @@ export default function HeatMapView({ ctx }) {
       <div style={{
         padding: 24, textAlign: 'center',
         fontFamily: 'var(--font-body)', fontSize: 14,
-        color: 'rgba(26,36,64,0.55)',
+        color: 'rgba(31, 51, 40,0.55)',
       }}>
         No half-hourly data for this meter.
       </div>
@@ -88,7 +88,7 @@ export default function HeatMapView({ ctx }) {
           fontFamily: 'var(--font-body)',
           fontSize: 12.5,
           lineHeight: 1.5,
-          color: 'rgba(26,36,64,0.62)',
+          color: 'rgba(31, 51, 40,0.62)',
           maxWidth: 720,
         }}>
           Every half-hour of every day for CY2025.
@@ -103,7 +103,7 @@ export default function HeatMapView({ ctx }) {
           <span style={{
             fontSize: 10, fontWeight: 600,
             letterSpacing: 1.2, textTransform: 'uppercase',
-            color: 'rgba(26,36,64,0.55)',
+            color: 'rgba(31, 51, 40,0.55)',
           }}>Peak</span>
           <span style={{
             fontFamily: 'var(--font-display)',
@@ -112,7 +112,7 @@ export default function HeatMapView({ ctx }) {
             fontVariantNumeric: 'tabular-nums', lineHeight: 1,
           }}>{(Math.round(max * 10) / 10).toLocaleString('en-GB')}</span>
           <span style={{
-            fontSize: 11, color: 'rgba(26,36,64,0.6)',
+            fontSize: 11, color: 'rgba(31, 51, 40,0.6)',
             fontFamily: 'var(--font-body)',
           }}>kW</span>
         </div>
@@ -139,7 +139,7 @@ export default function HeatMapView({ ctx }) {
             fontFamily="var(--font-heading)"
             fontSize={11}
             fontWeight={500}
-            fill="rgba(26,36,64,0.7)"
+            fill="rgba(31, 51, 40,0.7)"
             letterSpacing={0.6}
           >{mb.label}</text>
         ))}
@@ -153,7 +153,7 @@ export default function HeatMapView({ ctx }) {
             textAnchor="end"
             fontFamily="var(--font-body)"
             fontSize={10}
-            fill="rgba(26,36,64,0.5)"
+            fill="rgba(31, 51, 40,0.5)"
             fontVariantNumeric="tabular-nums"
           >{String(Math.floor(hh / 2)).padStart(2, '0')}</text>
         ))}
@@ -176,7 +176,7 @@ export default function HeatMapView({ ctx }) {
               /* Cells with v=null (pre/post dataset) render as a faint
                  cream-tone so the gap is visible but the colour weight
                  stays on the populated cells. */
-              const fill = v == null ? 'rgba(26,36,64,0.04)' : heatColor(max > 0 ? v / max : 0)
+              const fill = v == null ? 'rgba(31, 51, 40,0.04)' : heatColor(max > 0 ? v / max : 0)
               return (
                 <rect
                   key={`${hhIdx}-${dayIdx}`}
@@ -198,13 +198,13 @@ export default function HeatMapView({ ctx }) {
         gap: 14,
         fontFamily: 'var(--font-body)',
         fontSize: 11,
-        color: 'rgba(26,36,64,0.6)',
+        color: 'rgba(31, 51, 40,0.6)',
       }}>
         <span style={{
           fontFamily: 'var(--font-heading)',
           fontSize: 10, fontWeight: 600,
           letterSpacing: 1, textTransform: 'uppercase',
-          color: 'rgba(26,36,64,0.55)',
+          color: 'rgba(31, 51, 40,0.55)',
         }}>kW</span>
         <span style={{ fontVariantNumeric: 'tabular-nums' }}>0</span>
         <span style={{

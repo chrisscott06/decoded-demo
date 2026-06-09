@@ -4,12 +4,12 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import { durationCurve, percentile } from '../../../lib/loadInspectorTransforms.js'
 import { COLOR_NZA_CORAL, COLOR_THEME_ACCENT_PRIMARY, COLOR_SCOPE_12, COLOR_TOOLTIP_BG } from '../../../tokens/chart-colors.js'
 
-const AXIS_STYLE = { fontFamily: "'Inter', system-ui, sans-serif", fontSize: 11, fill: 'rgba(26,36,64,0.55)' }
+const AXIS_STYLE = { fontFamily: "'Inter', system-ui, sans-serif", fontSize: 11, fill: 'rgba(31, 51, 40,0.55)' }
 const TOOLTIP_STYLE = {
   fontFamily: "'Inter', system-ui, sans-serif",
   fontSize: 12,
   background: COLOR_TOOLTIP_BG,
-  border: '1px solid rgba(26,36,64,0.15)',
+  border: '1px solid rgba(31, 51, 40,0.15)',
   borderRadius: 6,
   padding: '8px 10px',
 }
@@ -43,7 +43,7 @@ export default function DurationCurveView({ ctx }) {
                 <stop offset="100%" stopColor={COLOR_NZA_CORAL} stopOpacity={0.05} />
               </linearGradient>
             </defs>
-            <CartesianGrid stroke="rgba(26,36,64,0.06)" />
+            <CartesianGrid stroke="rgba(31, 51, 40,0.06)" />
             <XAxis
               dataKey="pct"
               tick={AXIS_STYLE}
@@ -53,7 +53,7 @@ export default function DurationCurveView({ ctx }) {
                 value: '% of periods (sorted high to low)',
                 position: 'insideBottom',
                 offset: -2,
-                style: { fontSize: 11, fill: 'rgba(26,36,64,0.55)' },
+                style: { fontSize: 11, fill: 'rgba(31, 51, 40,0.55)' },
               }}
             />
             <YAxis
@@ -65,7 +65,7 @@ export default function DurationCurveView({ ctx }) {
                 value: 'kW',
                 angle: -90,
                 position: 'insideLeft',
-                style: { fontSize: 11, fill: 'rgba(26,36,64,0.55)' },
+                style: { fontSize: 11, fill: 'rgba(31, 51, 40,0.55)' },
               }}
             />
             <Tooltip
@@ -85,7 +85,7 @@ function Stat({ label, value, color }) {
   return (
     <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
       <span style={{ width: 10, height: 10, borderRadius: 2, background: color, display: 'inline-block' }} />
-      <span style={{ color: 'rgba(26,36,64,0.55)' }}>{label}</span>
+      <span style={{ color: 'rgba(31, 51, 40,0.55)' }}>{label}</span>
       <strong style={{ color: 'var(--color-theme-base)', fontWeight: 500 }}>{value}</strong>
     </span>
   )

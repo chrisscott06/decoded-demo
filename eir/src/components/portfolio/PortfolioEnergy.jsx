@@ -1279,7 +1279,7 @@ function CoverageTable() {
      PortfolioEnergy runs on the dark register, so text needs the
      dark-register body colour (`--color-theme-body`, the cream tint
      used for body text on navy). Row separator switched from the dark
-     rgba(26,36,64,0.06) to a light rgba(255,255,255,0.10) for the
+     rgba(31, 51, 40,0.06) to a light rgba(255,255,255,0.10) for the
      same reason. Header row tint bumped from coral 8% to coral 16%
      so it still reads as a band above the body text. */
   const rows = [
@@ -1297,7 +1297,7 @@ function CoverageTable() {
       <div style={{
         display: 'grid', gridTemplateColumns: '1.4fr 1fr 1.2fr 1.2fr',
         padding: '8px 10px',
-        background: 'rgba(232, 114, 92, 0.16)',
+        background: 'rgba(232, 116, 60, 0.16)',
         color: 'var(--color-nza-coral)',
         fontFamily: 'var(--font-heading)',
         fontWeight: 600,
@@ -1341,7 +1341,7 @@ function VoidCallout({ voidCount, voidKwh, voidKwhLabel }) {
     <div style={{
       marginTop: 8,
       padding: '14px 16px',
-      background: 'rgba(232, 114, 92, 0.08)',
+      background: 'rgba(232, 116, 60, 0.08)',
       borderLeft: '3px solid var(--color-nza-coral)',
       borderRadius: 4,
       fontFamily: 'var(--font-body)',
@@ -1418,22 +1418,22 @@ const HEATING_ROW_ORDER = [
    against CHP and Individual variants. */
 const HEATING_SYSTEM_COLOR = {
   'CHP':                  'var(--metric-gas)',           /* #D85F4D coral-red - bulk gas plant */
-  /* Chris ask 4 Jun: --metric-gas rotated to NZA deep red #B8443A -
+  /* Chris ask 4 Jun: --metric-gas rotated to NZA deep red #D94B3D -
      same hex this slot used to occupy. HN gas pushed one step deeper
      to #9C2F25 so the sibling distinction from CHP/landlord gas is
-     preserved (CHP at #B8443A, HN gas at #9C2F25, GRESB-26 OOS at
-     #7A2417 - three-step descending ladder). */
+     preserved (CHP at #D94B3D, HN gas at #9C2F25, GRESB-26 OOS at
+     #8B2A1E - three-step descending ladder). */
   'Heat network (gas)':   '#9C2F25',                     /* deeper red, distinct from CHP */
   'Heat network (ASHP)':  '#C8AA3A',                     /* deeper yellow, distinct from individual ASHP */
-  'Individual gas':       '#E8A13C',                     /* amber - gas appliance per dwelling */
+  'Individual gas':       '#E6B91E',                     /* amber - gas appliance per dwelling */
   'Individual ASHP':      'var(--metric-electricity)',   /* #E8C547 yellow */
   /* Chris ask 4 Jun: theme-waste rotated to teal, theme-carbon to green.
      GSHP repointed to --theme-carbon so the "ground-source green" semantic
      is preserved (the token name carries no meaning at this callsite -
      we're routing the visual green, not the carbon concept). */
-  'Individual GSHP':      'var(--theme-carbon)',         /* #7CC470 ground-source green */
+  'Individual GSHP':      'var(--theme-carbon)',         /* #3D8B5C ground-source green */
   'Mixed':                '#A896C4',                     /* lilac - distinct from Hybrid */
-  'Hybrid':               'var(--theme-energy)',         /* #E5732A orange - gas+electric blend */
+  'Hybrid':               'var(--theme-energy)',         /* #E8743C orange - gas+electric blend */
 }
 
 /* Compact pill label per system. Used inside each cell. */
@@ -1857,7 +1857,7 @@ const ARR_META = {
   dno:    {
     label: 'DNO',
     glyph: '◇',
-    color: '#E8A13C',
+    color: '#E6B91E',
     desc:  'Residents on individual MPANs with their own suppliers.',
   },
   bno:    {
@@ -2127,8 +2127,8 @@ function PowerTableTotals({ rows, rollup }) {
 function _sparePillColor(pct) {
   if (pct == null) return 'var(--text-muted-on-dark)'
   if (pct > 30)  return 'var(--color-risk-low)'       /* #8FCB85 - green */
-  if (pct >= 10) return 'var(--color-risk-moderate)'  /* #E8A13C - amber */
-  return 'var(--color-risk-major)'                    /* #D9464B - red */
+  if (pct >= 10) return 'var(--color-risk-moderate)'  /* #E6B91E - amber */
+  return 'var(--color-risk-major)'                    /* #D94B3D - red */
 }
 
 function PowerTableRow({ row }) {

@@ -26,8 +26,8 @@
  */
 
 const READINESS_COLOUR = {
-  green: '#7CC470',   /* --theme-carbon (Brief 24-rotation green) */
-  amber: '#E8A13C',
+  green: '#3D8B5C',   /* --theme-carbon (Brief 24-rotation green) */
+  amber: '#E6B91E',
   red:   '#D85F4D',
   'n/a': 'rgba(255,255,255,0.18)',
 }

@@ -19,12 +19,12 @@ const ZOOM_OPTIONS = [
   { id: 365, label: 'Year' },
 ]
 
-const AXIS_STYLE = { fontFamily: "'Inter', system-ui, sans-serif", fontSize: 10, fill: 'rgba(26,36,64,0.55)' }
+const AXIS_STYLE = { fontFamily: "'Inter', system-ui, sans-serif", fontSize: 10, fill: 'rgba(31, 51, 40,0.55)' }
 const TOOLTIP_STYLE = {
   fontFamily: "'Inter', system-ui, sans-serif",
   fontSize: 12,
   background: COLOR_TOOLTIP_BG,
-  border: '1px solid rgba(26,36,64,0.15)',
+  border: '1px solid rgba(31, 51, 40,0.15)',
   borderRadius: 6,
   padding: '8px 10px',
 }
@@ -77,7 +77,7 @@ export default function TimeSeriesView({ ctx }) {
     <div style={{ display: 'flex', flexDirection: 'column', gap: 10, flex: 1, minHeight: 0, minWidth: 0 }}>
       {/* Zoom pills */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
-        <div style={{ display: 'flex', gap: 2, padding: 2, background: 'rgba(26,36,64,0.04)', borderRadius: 6 }}>
+        <div style={{ display: 'flex', gap: 2, padding: 2, background: 'rgba(31, 51, 40,0.04)', borderRadius: 6 }}>
           {ZOOM_OPTIONS.map((z) => {
             const isActive = z.id === zoomDays
             return (
@@ -90,7 +90,7 @@ export default function TimeSeriesView({ ctx }) {
                   borderRadius: 4,
                   border: 'none',
                   background: isActive ? 'var(--color-nza-cream)' : 'transparent',
-                  color: isActive ? 'var(--color-nza-coral)' : 'rgba(26,36,64,0.65)',
+                  color: isActive ? 'var(--color-nza-coral)' : 'rgba(31, 51, 40,0.65)',
                   fontFamily: 'var(--font-heading)',
                   fontSize: 11,
                   fontWeight: isActive ? 500 : 400,
@@ -105,7 +105,7 @@ export default function TimeSeriesView({ ctx }) {
         <div style={{
           fontFamily: 'var(--font-body)',
           fontSize: 11,
-          color: 'rgba(26,36,64,0.55)',
+          color: 'rgba(31, 51, 40,0.55)',
         }}>
           Day {startDay + 1} of {totalDays}
         </div>
@@ -121,9 +121,9 @@ export default function TimeSeriesView({ ctx }) {
             style={{
               padding: '2px 8px',
               borderRadius: 4,
-              border: '1px solid rgba(26,36,64,0.12)',
+              border: '1px solid rgba(31, 51, 40,0.12)',
               background: 'transparent',
-              color: 'rgba(26,36,64,0.7)',
+              color: 'rgba(31, 51, 40,0.7)',
               fontFamily: 'var(--font-heading)',
               fontSize: 10,
               cursor: 'pointer',
@@ -167,7 +167,7 @@ export default function TimeSeriesView({ ctx }) {
       <div style={{ flex: 1, minHeight: 200 }}>
         <ResponsiveContainer width="100%" height="100%">
           <LineChart key={zoomDays} data={slice} margin={{ top: 5, right: 8, left: 8, bottom: 0 }}>
-            <CartesianGrid stroke="rgba(26,36,64,0.06)" />
+            <CartesianGrid stroke="rgba(31, 51, 40,0.06)" />
             <XAxis
               dataKey="label"
               tick={AXIS_STYLE}

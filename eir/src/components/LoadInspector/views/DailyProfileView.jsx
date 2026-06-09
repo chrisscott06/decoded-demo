@@ -47,12 +47,12 @@ import { COLOR_TOOLTIP_BG, METRIC_HEX, COLOR_WEEKDAY, COLOR_WEEKEND } from '../.
  * Brief 11 §2.3 origin; Chris 8 Jun rebuild adapted from Pablo handoff.
  */
 
-const AXIS_STYLE = { fontFamily: "'Inter', system-ui, sans-serif", fontSize: 10, fill: 'rgba(26,36,64,0.55)' }
+const AXIS_STYLE = { fontFamily: "'Inter', system-ui, sans-serif", fontSize: 10, fill: 'rgba(31, 51, 40,0.55)' }
 const TOOLTIP_STYLE = {
   fontFamily: "'Inter', system-ui, sans-serif",
   fontSize: 12,
   background: COLOR_TOOLTIP_BG,
-  border: '1px solid rgba(26,36,64,0.15)',
+  border: '1px solid rgba(31, 51, 40,0.15)',
   borderRadius: 6,
   padding: '8px 10px',
 }
@@ -91,7 +91,7 @@ const MONTH_SEASON = [
 
 // Pablo palette - gold for electricity (matches Overview), grey for
 // the wider Min/Max band so the range recedes and the mean reads first.
-const COLOR_MEAN_GOLD  = METRIC_HEX.electricity  // #D4A017 rich gold
+const COLOR_MEAN_GOLD  = METRIC_HEX.electricity  // #E6B91E rich gold
 const COLOR_BAND_RANGE = '#D5D8DC'                // light grey for Min/Max band
 const COLOR_LINE_MAX   = '#BDC3C7'                // slightly darker grey for the Max line
 
@@ -182,7 +182,7 @@ export default function DailyProfileView({ ctx }) {
             {month === null ? (
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={overlayData} margin={{ top: 5, right: 8, left: 8, bottom: 0 }}>
-                  <CartesianGrid stroke="rgba(26,36,64,0.06)" />
+                  <CartesianGrid stroke="rgba(31, 51, 40,0.06)" />
                   <XAxis dataKey="hour" tick={AXIS_STYLE} interval={2} tickLine={false} />
                   <YAxis tick={AXIS_STYLE} tickLine={false} axisLine={false} width={40} />
                   <Tooltip contentStyle={TOOLTIP_STYLE} />
@@ -219,7 +219,7 @@ export default function DailyProfileView({ ctx }) {
                     - cleaner than the cross-cardinality tween glitch we
                     hit on Time Series. */}
                 <ComposedChart key={month} data={bandsData} margin={{ top: 5, right: 8, left: 8, bottom: 0 }}>
-                  <CartesianGrid stroke="rgba(26,36,64,0.06)" />
+                  <CartesianGrid stroke="rgba(31, 51, 40,0.06)" />
                   <XAxis dataKey="label" tick={AXIS_STYLE} interval={2} tickLine={false} />
                   <YAxis tick={AXIS_STYLE} tickLine={false} axisLine={false} width={40} />
                   {/* Custom Tooltip - filter out the *Delta shim series
@@ -233,7 +233,7 @@ export default function DailyProfileView({ ctx }) {
                       const visible = payload.filter(p => !String(p.dataKey).includes('Delta') && p.dataKey !== 'p25' && p.dataKey !== 'min')
                       return (
                         <div style={TOOLTIP_STYLE}>
-                          <div style={{ color: 'rgba(26,36,64,0.55)', fontSize: 11, marginBottom: 4 }}>{label}</div>
+                          <div style={{ color: 'rgba(31, 51, 40,0.55)', fontSize: 11, marginBottom: 4 }}>{label}</div>
                           {visible.map((p, i) => (
                             <div key={i} style={{ color: p.stroke || p.fill, fontSize: 12 }}>
                               {p.name}: {p.value != null ? `${p.value.toFixed(1)} kW` : '-'}
@@ -299,7 +299,7 @@ export default function DailyProfileView({ ctx }) {
                 data={wdWeData}
                 margin={{ top: 5, right: 8, left: 8, bottom: 0 }}
               >
-                <CartesianGrid stroke="rgba(26,36,64,0.06)" />
+                <CartesianGrid stroke="rgba(31, 51, 40,0.06)" />
                 <XAxis dataKey="label" tick={AXIS_STYLE} interval={2} tickLine={false} />
                 <YAxis tick={AXIS_STYLE} tickLine={false} axisLine={false} width={40} />
                 <Tooltip contentStyle={TOOLTIP_STYLE}
@@ -326,7 +326,7 @@ function PaneTitle({ children }) {
       fontFamily: 'var(--font-heading)',
       fontSize: 10, fontWeight: 600,
       letterSpacing: 1.2, textTransform: 'uppercase',
-      color: 'rgba(26,36,64,0.55)',
+      color: 'rgba(31, 51, 40,0.55)',
       marginBottom: 6,
     }}>{children}</div>
   )
@@ -341,9 +341,9 @@ function LayerChip({ label, colour, active, onClick }) {
         display: 'inline-flex', alignItems: 'center', gap: 6,
         padding: '3px 8px',
         borderRadius: 4,
-        border: active ? '1px solid rgba(26,36,64,0.2)' : '1px solid rgba(26,36,64,0.08)',
-        background: active ? 'rgba(255,255,255,0.6)' : 'rgba(26,36,64,0.04)',
-        color: active ? 'rgba(26,36,64,0.85)' : 'rgba(26,36,64,0.45)',
+        border: active ? '1px solid rgba(31, 51, 40,0.2)' : '1px solid rgba(31, 51, 40,0.08)',
+        background: active ? 'rgba(255,255,255,0.6)' : 'rgba(31, 51, 40,0.04)',
+        color: active ? 'rgba(31, 51, 40,0.85)' : 'rgba(31, 51, 40,0.45)',
         fontFamily: 'var(--font-heading)',
         fontSize: 11,
         fontWeight: 400,
@@ -371,7 +371,7 @@ function SeasonLegend() {
       display: 'flex', flexWrap: 'wrap', justifyContent: 'center',
       alignItems: 'center', gap: '4px 10px',
       fontFamily: "'Inter', system-ui, sans-serif",
-      fontSize: 10, color: 'rgba(26,36,64,0.75)',
+      fontSize: 10, color: 'rgba(31, 51, 40,0.75)',
       padding: '4px 8px',
     }}>
       {MONTHS_SHORT.map((m, i) => (
@@ -489,9 +489,9 @@ function pillStyle(isActive) {
   return {
     padding: '4px 10px',
     borderRadius: 4,
-    border: isActive ? '1px solid var(--color-nza-coral)' : '1px solid rgba(26,36,64,0.12)',
-    background: isActive ? 'rgba(232,114,92,0.10)' : 'transparent',
-    color: isActive ? 'var(--color-nza-coral)' : 'rgba(26,36,64,0.7)',
+    border: isActive ? '1px solid var(--color-nza-coral)' : '1px solid rgba(31, 51, 40,0.12)',
+    background: isActive ? 'rgba(232, 116, 60,0.10)' : 'transparent',
+    color: isActive ? 'var(--color-nza-coral)' : 'rgba(31, 51, 40,0.7)',
     fontFamily: 'var(--font-heading)',
     fontSize: 11,
     fontWeight: isActive ? 500 : 400,

@@ -4,12 +4,12 @@ import { ComposedChart, Bar, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 import { MONTHS_SHORT } from '../../../lib/loadInspectorTransforms.js'
 import { COLOR_NZA_CORAL, COLOR_SCOPE_12, COLOR_THEME_ACCENT_PRIMARY, COLOR_TOOLTIP_BG } from '../../../tokens/chart-colors.js'
 
-const AXIS_STYLE = { fontFamily: "'Inter', system-ui, sans-serif", fontSize: 11, fill: 'rgba(26,36,64,0.55)' }
+const AXIS_STYLE = { fontFamily: "'Inter', system-ui, sans-serif", fontSize: 11, fill: 'rgba(31, 51, 40,0.55)' }
 const TOOLTIP_STYLE = {
   fontFamily: "'Inter', system-ui, sans-serif",
   fontSize: 12,
   background: COLOR_TOOLTIP_BG,
-  border: '1px solid rgba(26,36,64,0.15)',
+  border: '1px solid rgba(31, 51, 40,0.15)',
   borderRadius: 6,
   padding: '8px 10px',
 }
@@ -37,7 +37,7 @@ export default function MonthlyView({ ctx }) {
       <div style={{ flex: 1, minHeight: 200 }}>
         <ResponsiveContainer width="100%" height="100%">
           <ComposedChart data={data} margin={{ top: 10, right: 8, left: 8, bottom: 0 }}>
-            <CartesianGrid stroke="rgba(26,36,64,0.06)" />
+            <CartesianGrid stroke="rgba(31, 51, 40,0.06)" />
             <XAxis dataKey="month" tick={AXIS_STYLE} tickLine={false} />
             <YAxis
               yAxisId="kwh"
@@ -79,7 +79,7 @@ function Checkbox({ checked, onChange, label }) {
       gap: 6,
       fontFamily: 'var(--font-body)',
       fontSize: 12,
-      color: 'rgba(26,36,64,0.7)',
+      color: 'rgba(31, 51, 40,0.7)',
       cursor: 'pointer',
     }}>
       <input

@@ -153,7 +153,7 @@ export default function WasteTab({ siteId, site: siteProp }) {
           the waste page visually before the tonnage hero reads.
           Stacks horizontally: icon | tonnage block | diversion ring.
           Chris ask 8 Jun (v2) - tint the tonnage number + contractor
-          name in the same waste purple (`#8B6FB8`) as the icon so the
+          name in the same waste purple (`#8B5CB5`) as the icon so the
           page reads as a single colour story (matches what Water now
           does in blue). The DataStatusBadge keeps its own palette. */}
       <div className="waste-header" style={{ display: 'flex', alignItems: 'center', gap: 32 }}>
@@ -161,7 +161,7 @@ export default function WasteTab({ siteId, site: siteProp }) {
           display: 'inline-block',
           flex: '0 0 140px',
           width: 140, height: 140,
-          backgroundColor: '#8B6FB8',
+          backgroundColor: '#8B5CB5',
           WebkitMaskImage: 'url(/icons/ivg-nza-icons_recycling.svg)',
           maskImage:       'url(/icons/ivg-nza-icons_recycling.svg)',
           WebkitMaskRepeat: 'no-repeat', maskRepeat: 'no-repeat',
@@ -169,11 +169,11 @@ export default function WasteTab({ siteId, site: siteProp }) {
           WebkitMaskSize: 'contain',      maskSize: 'contain',
         }} />
         <div style={{ flex: 1, minWidth: 0 }}>
-          <h2 className="waste-h1" style={{ color: '#8B6FB8' }}>
-            {fmt1(total)}<span className="waste-h1-unit" style={{ color: '#8B6FB8' }}> tonnes</span>
+          <h2 className="waste-h1" style={{ color: '#8B5CB5' }}>
+            {fmt1(total)}<span className="waste-h1-unit" style={{ color: '#8B5CB5' }}> tonnes</span>
           </h2>
           <p className="waste-context">
-            <strong style={{ color: '#8B6FB8' }}>{w.contractor || 'Contractor TBC'}</strong>
+            <strong style={{ color: '#8B5CB5' }}>{w.contractor || 'Contractor TBC'}</strong>
             {' · '}
             <DataStatusBadge status={w.data_status} />
             {' · '}

@@ -9,40 +9,44 @@
  */
 
 // Tier 1 - anchors
-export const COLOR_NZA_CORAL = '#E8725C';
-export const COLOR_NZA_CREAM = '#EDE5D8';
+export const COLOR_NZA_CORAL = '#E8743C';
+export const COLOR_NZA_CREAM = '#F3EFE3';
 
-// Tier 2 - NZA Core theme
-export const COLOR_THEME_BASE = '#1A2440';
-export const COLOR_THEME_ACCENT_PRIMARY = '#F08080';
+// Tier 2 - decodED Core theme (was IVG / NZA Core in the source tool)
+// Note: the source tool had #1A2440 in this JS mirror but the CSS
+// token had moved on to #0F1629. The Phase 2 retune unifies both at
+// decodED's #1F3328 deep-green-tinted surfaceDark.
+export const COLOR_THEME_BASE = '#1F3328';
+export const COLOR_THEME_ACCENT_PRIMARY = '#F4A878';
 export const COLOR_THEME_ACCENT_SECONDARY = '#A896C4';
-export const COLOR_THEME_CTA = '#E8725C';
-export const COLOR_THEME_BODY = '#EDE5D8';
+export const COLOR_THEME_CTA = '#E8743C';
+export const COLOR_THEME_BODY = '#F3EFE3';
 
 // Tier 3 - risk
 export const COLOR_RISK_LOW = '#8FCB85';
-export const COLOR_RISK_MODERATE = '#E8A13C';
-export const COLOR_RISK_MAJOR = '#D9464B';
+export const COLOR_RISK_MODERATE = '#E6B91E';
+export const COLOR_RISK_MAJOR = '#D94B3D';
 export const COLOR_RISK_SEVERE = '#4C3D6B';
 export const COLOR_RISK_NO_DATA = '#A9C5DA';
 
 // Tier 3 - scopes
-export const COLOR_SCOPE_12 = '#5BBFB5';
+export const COLOR_SCOPE_12 = '#4A9C9C';
 export const COLOR_SCOPE_3 = '#534E86';
 
 // Tier 3 - categorical
-export const COLOR_CAT_ESTATE = '#5B7B9A';
-export const COLOR_CAT_TRAVEL = '#F2A93B';
-export const COLOR_CAT_SUPPLY_CHAIN = '#347373';
-export const COLOR_CAT_COMMUTING = '#D4891F';
+export const COLOR_CAT_ESTATE = '#5A8FB5';
+export const COLOR_CAT_TRAVEL = '#E8743C';
+export const COLOR_CAT_SUPPLY_CHAIN = '#2A5A4B';
+export const COLOR_CAT_COMMUTING = '#F4A878';
 
 // Muted text helpers (used in Recharts axis ticks)
 export const COLOR_TEXT_MUTED_ON_DARK = '#8a8a8a';
 export const COLOR_TEXT_MUTED_ON_CREAM = '#666666';
 
-// UK silhouette - lighter navy used for the GB outline on the Phase 1B fallback map
-// (replaced in Brief 6 Part 4 by the dotted SVG). Keep for backward compat.
-export const COLOR_UK_SILHOUETTE = '#1a2632';
+// UK silhouette - lighter shade of the dark canvas. Used for the GB
+// outline on the Phase 1B fallback map (replaced in Brief 6 Part 4 by
+// the dotted SVG). Kept for backward compat.
+export const COLOR_UK_SILHOUETTE = '#2A4035';
 
 // Font family strings (matches CSS --font-heading / --font-body)
 export const FONT_HEADING = 'Stolzl, sans-serif';
@@ -59,13 +63,13 @@ export const FONT_MONO = 'IBM Plex Mono, ui-monospace, monospace';
 //   purple (one step deeper than the existing accent-secondary lilac
 //   so heating-matrix "Mixed" stays distinct).
 export const MAP_THEME_HEX = {
-  overview:    '#5B7B9A', // slate (neutral umbrella)
-  energy:      '#E5732A', // orange
-  water:       '#5BA3D9', // blue
-  waste:       '#8B6FB8', // purple (Chris ask 8 Jun - swapped with meters)
-  carbon:      '#7CC470', // green (was teal; swapped with waste in earlier round)
-  meters:      '#5BBFB5', // teal (Chris ask 8 Jun - swapped with waste)
-  dataQuality: '#347373', // dark teal (distinct from waste's lighter teal)
+  overview:    '#5A6B5F', // muted green-grey (neutral umbrella in decodED family)
+  energy:      '#E8743C', // decodED accent orange
+  water:       '#5A8FB5', // decodED info blue
+  waste:       '#8B5CB5', // decodED metric.waste purple
+  carbon:      '#3D8B5C', // decodED metric.carbon green
+  meters:      '#4A9C9C', // deeper decodED teal
+  dataQuality: '#2A5A4B', // deeper decodED teal-green
 }
 
 // Brief 10 Part 5 - sub-metric tint overrides (a metric in a theme can
@@ -73,12 +77,12 @@ export const MAP_THEME_HEX = {
 // Energy is blue).
 export const METRIC_HEX = {
   // Chris ask 4 Jun: electricity rotated from lemon #E8C547 to richer
-  // amber/gold; gas rotated from coral #D85F4D to NZA deep red #B8443A.
+  // amber/gold; gas rotated from coral #D85F4D to NZA deep red #D94B3D.
   // See index.css :root --metric-electricity + --metric-gas for the
   // designer rationale. This JS mirror feeds the Map markers + month
   // ramp; keep in lockstep with the CSS tokens.
-  electricity: '#D4A017', // rich amber-gold (was lemon #E8C547)
-  gas:         '#B8443A', // NZA deep red (was coral #D85F4D)
+  electricity: '#E6B91E', // rich amber-gold (was lemon #E8C547)
+  gas:         '#D94B3D', // NZA deep red (was coral #D85F4D)
 }
 
 // Chris ask 8 Jun - weekday/weekend pair for the Daily Profile
@@ -94,12 +98,12 @@ export const COLOR_WEEKEND = '#E84393';  // Pablo pink-magenta
 // winter → warm summer). Values mirror the theme tokens where possible.
 export const MONTH_RAMP_HEX = [
   COLOR_CAT_ESTATE,           // Jan
-  '#5BA3D9',                  // Feb - theme-energy
+  '#5A8FB5',                  // Feb - theme-energy
   COLOR_SCOPE_12,             // Mar
-  '#7CC470',                  // Apr - theme-waste
+  '#3D8B5C',                  // Apr - theme-waste
   '#A1C16A',                  // May - green-lime tween
   METRIC_HEX.electricity,     // Jun
-  '#E5732A',                  // Jul - theme-carbon
+  '#E8743C',                  // Jul - theme-carbon
   METRIC_HEX.gas,             // Aug
   '#D49AB0',                  // Sep - theme-meters
   COLOR_THEME_ACCENT_SECONDARY, // Oct - purple

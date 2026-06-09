@@ -51,10 +51,10 @@ const CYCLE_COLOUR = {
   'defendable':          '#8FA1B5',                        // muted slate - defendable floor
   '2026':                'var(--color-nza-coral)',         // coral - this cycle
   '2027':                'var(--gresb-teal-500)',          // teal - next step up
-  '2028':                '#7CC470',                        // green - into 4-star (=--theme-carbon)
+  '2028':                '#3D8B5C',                        // green - into 4-star (=--theme-carbon)
   'target-2026':         'var(--color-nza-coral)',
   'target-2027':         'var(--gresb-teal-500)',
-  'target-2028':         '#7CC470',
+  'target-2028':         '#3D8B5C',
 }
 
 /* Resolve the cycle's primary colour - single helper so ProgressBar,
@@ -971,7 +971,7 @@ function DeltaRow({ row, rowIdx, indicatorToAspect, onHover, onLeave }) {
             width={6 + 8 * firstIndicator.length}
             height={14}
             rx={3}
-            fill={aspectPrimary ? `color-mix(in srgb, ${aspectPrimary} 35%, #0F1629 65%)` : 'rgba(0,0,0,0.45)'}
+            fill={aspectPrimary ? `color-mix(in srgb, ${aspectPrimary} 35%, #1F3328 65%)` : 'rgba(0,0,0,0.45)'}
             stroke={aspectPrimary || 'rgba(255,255,255,0.20)'}
             strokeWidth={1}
           />
@@ -997,7 +997,7 @@ function DeltaRow({ row, rowIdx, indicatorToAspect, onHover, onLeave }) {
             fontSize={12}
             fontWeight={500}
             fontFamily="var(--font-body)"
-            fill="#0F1629"
+            fill="#1F3328"
           >
             {truncate(row.label, 26)}
           </text>
@@ -1007,7 +1007,7 @@ function DeltaRow({ row, rowIdx, indicatorToAspect, onHover, onLeave }) {
             fontSize={11}
             fontWeight={600}
             fontFamily="var(--font-heading)"
-            fill="rgba(15,22,41,0.85)"
+            fill="rgba(31, 51, 40,0.85)"
             fontVariantNumeric="tabular-nums"
           >
             {row.delta > 0 ? `+${row.delta}` : row.delta} pt
@@ -1021,7 +1021,7 @@ function DeltaRow({ row, rowIdx, indicatorToAspect, onHover, onLeave }) {
           fontSize={11}
           fontWeight={500}
           fontFamily="var(--font-body)"
-          fill="#0F1629"
+          fill="#1F3328"
         >
           {truncate(row.label, 24)} · {row.delta > 0 ? `+${row.delta}` : row.delta}
         </text>
@@ -1251,7 +1251,7 @@ function CycleItem({ item, colour, indicatorToAspect }) {
         alignItems: 'baseline',
         gap: 10,
         padding: '8px 10px',
-        background: 'rgba(15,22,41,0.4)',
+        background: 'rgba(31, 51, 40,0.4)',
         borderLeft: `2px solid ${colour}`,
         borderRadius: 4,
         cursor: firstIndicator ? 'pointer' : 'default',

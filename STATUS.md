@@ -31,7 +31,19 @@ placeholder. Root `STATUS.md` and `README.md` and `CLAUDE.md` rewritten
 to demo-template scope (deep palette + school list + provenance polish
 deferred to Phase 5).
 
-### Phase 2 — apply decodED palette (pending)
+### Phase 2 — apply decodED palette (2026-06-10)
+Token values in `eir/src/index.css` retuned to decodED's deep-green +
+cream + orange family: --color-nza-coral → #E8743C, --color-nza-cream
+→ #F3EFE3, --color-theme-base → #1F3328 deep green-tinted surfaceDark,
+--metric-gas + --metric-electricity locked to decodED's standardised
+metric values. Thematic section colours (energy / water / waste /
+carbon / meters) retuned to live in the same decodED family while
+staying mutually distinct. Token NAMES kept (sole --color-westbrook-*
+aliases added at the bottom of @theme to give future authors the
+role-named surface the brief asked for). Hex-literal sweep across
+eir/src updated 26 files, 231 substitutions, catching case variants
+and rgba/rgb decimal triples. chart-colors.js JS mirror brought into
+lockstep with the CSS.
 ### Phase 3 — anonymise site names (pending)
 ### Phase 4 — randomise headline numbers ±10 % deterministic (pending)
 ### Phase 5 — metadata polish + final sweep (pending)

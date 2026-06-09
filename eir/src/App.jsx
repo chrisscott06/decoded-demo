@@ -726,8 +726,8 @@ function SiteEnergyMonthlyOverview({ siteId, readyCount, pendingCount, totalHhMp
       : totalHhMpans > 0
         ? { label: `Half-hourly: pending`, tone: 'amber' }
         : { label: `No half-hourly meter on this site`, tone: 'muted' }
-  const HH_TONE_BG = { green: 'rgba(124,196,112,0.16)', amber: 'rgba(232,161,60,0.16)', muted: 'rgba(26,36,64,0.06)' }
-  const HH_TONE_FG = { green: '#3F8C3A', amber: '#A86F1D', muted: 'rgba(26,36,64,0.55)' }
+  const HH_TONE_BG = { green: 'rgba(124,196,112,0.16)', amber: 'rgba(232,161,60,0.16)', muted: 'rgba(31, 51, 40,0.06)' }
+  const HH_TONE_FG = { green: '#3F8C3A', amber: '#A86F1D', muted: 'rgba(31, 51, 40,0.55)' }
 
   /* Brief 24 r3: "a nice big bar chart, a nice big donut chart, a
      little bit of breathing space between the two. Don't be afraid
@@ -779,14 +779,14 @@ function SiteEnergyMonthlyOverview({ siteId, readyCount, pendingCount, totalHhMp
         <div className="site-energy-bars-wrap">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={data} margin={{ top: 8, right: 16, bottom: 14, left: 0 }} barCategoryGap="22%">
-              <CartesianGrid stroke="rgba(26,36,64,0.06)" vertical={false} />
-              <XAxis dataKey="month" tick={{ fill: 'rgba(26,36,64,0.6)', fontSize: 12, fontFamily: 'var(--font-body)' }} axisLine={false} tickLine={false} dy={6} />
+              <CartesianGrid stroke="rgba(31, 51, 40,0.06)" vertical={false} />
+              <XAxis dataKey="month" tick={{ fill: 'rgba(31, 51, 40,0.6)', fontSize: 12, fontFamily: 'var(--font-body)' }} axisLine={false} tickLine={false} dy={6} />
               <YAxis tickFormatter={(v) => v >= 1e6 ? `${(v/1e6).toFixed(1)}M` : v >= 1e3 ? `${Math.round(v/1e3)}k` : v}
-                tick={{ fill: 'rgba(26,36,64,0.55)', fontSize: 10, fontFamily: 'var(--font-body)' }}
+                tick={{ fill: 'rgba(31, 51, 40,0.55)', fontSize: 10, fontFamily: 'var(--font-body)' }}
                 axisLine={false} tickLine={false} width={52} />
               <Tooltip
-                cursor={{ fill: 'rgba(26,36,64,0.04)' }}
-                contentStyle={{ background: 'var(--color-nza-cream)', border: '1px solid rgba(26,36,64,0.15)', borderRadius: 6, fontFamily: 'var(--font-body)', fontSize: 12 }}
+                cursor={{ fill: 'rgba(31, 51, 40,0.04)' }}
+                contentStyle={{ background: 'var(--color-nza-cream)', border: '1px solid rgba(31, 51, 40,0.15)', borderRadius: 6, fontFamily: 'var(--font-body)', fontSize: 12 }}
                 labelStyle={{ color: 'var(--color-theme-base)', fontWeight: 600 }}
                 formatter={(v, name) => [`${fmtKwh(v)}`, name]}
               />
@@ -827,7 +827,7 @@ function SiteEnergyMonthlyOverview({ siteId, readyCount, pendingCount, totalHhMp
                 display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
                 pointerEvents: 'none' }}>
                 <span style={{ fontFamily: 'var(--font-heading)', fontSize: 10, fontWeight: 600,
-                  letterSpacing: 1.2, textTransform: 'uppercase', color: 'rgba(26,36,64,0.55)' }}>Total CY25</span>
+                  letterSpacing: 1.2, textTransform: 'uppercase', color: 'rgba(31, 51, 40,0.55)' }}>Total CY25</span>
                 <span style={{ fontFamily: 'var(--font-display)', fontSize: 34, fontWeight: 400,
                   color: 'var(--color-theme-base)', lineHeight: 1.1, marginTop: 8 }}>{fmtMwhCompact(grandTotal)}</span>
               </div>
@@ -836,7 +836,7 @@ function SiteEnergyMonthlyOverview({ siteId, readyCount, pendingCount, totalHhMp
                   bumped 18 -> 36 px so they really stand out. */}
               <div style={{ position: 'absolute', bottom: 6, left: 0, right: 0,
                 display: 'flex', justifyContent: 'center', gap: 28,
-                fontFamily: 'var(--font-body)', fontSize: 12, color: 'rgba(26,36,64,0.75)' }}>
+                fontFamily: 'var(--font-body)', fontSize: 12, color: 'rgba(31, 51, 40,0.75)' }}>
                 {donut.map((d) => (
                   <span key={d.name} style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
                     <ScopeIcon url={d.iconUrl} tint={d.fill} size={36} />
@@ -846,7 +846,7 @@ function SiteEnergyMonthlyOverview({ siteId, readyCount, pendingCount, totalHhMp
               </div>
             </>
           ) : (
-            <div style={{ color: 'rgba(26,36,64,0.55)', fontSize: 12, fontStyle: 'italic' }}>No CY25 monthly data.</div>
+            <div style={{ color: 'rgba(31, 51, 40,0.55)', fontSize: 12, fontStyle: 'italic' }}>No CY25 monthly data.</div>
           )}
         </div>
       </div>
@@ -888,7 +888,7 @@ function HeadlineFigure({ label, value, colour, iconUrl }) {
         }} />
       )}
       <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-        <span style={{ fontFamily: 'var(--font-heading)', fontSize: 10, fontWeight: 600, letterSpacing: 1.2, textTransform: 'uppercase', color: 'rgba(26,36,64,0.55)' }}>{label}</span>
+        <span style={{ fontFamily: 'var(--font-heading)', fontSize: 10, fontWeight: 600, letterSpacing: 1.2, textTransform: 'uppercase', color: 'rgba(31, 51, 40,0.55)' }}>{label}</span>
         <span style={{ fontFamily: 'var(--font-display)', fontSize: 26, fontWeight: 400, color: colour, lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>{value}</span>
       </div>
     </div>
@@ -1081,10 +1081,10 @@ function SiteEnergyTabBar({ active, onChange, hhAvailable }) {
     <div style={{ display: 'flex', justifyContent: 'center', padding: '4px 0' }}>
       <div role="tablist" aria-label="Site energy views" style={{
         display: 'inline-flex',
-        background: 'rgba(26,36,64,0.06)',
+        background: 'rgba(31, 51, 40,0.06)',
         borderRadius: 999,
         padding: 4,
-        border: '1px solid rgba(26,36,64,0.05)',
+        border: '1px solid rgba(31, 51, 40,0.05)',
       }}>
         {SITE_ENERGY_VIEWS.map((v) => {
           const isActive = active === v.id
@@ -1111,8 +1111,8 @@ function SiteEnergyTabBar({ active, onChange, hhAvailable }) {
                 fontFamily: 'var(--font-heading)',
                 fontSize: 'var(--text-caption)', fontWeight: 500, letterSpacing: 0.3,
                 color: isActive ? 'var(--color-nza-cream)'
-                       : isDisabled ? 'rgba(26,36,64,0.25)'
-                       : 'rgba(26,36,64,0.62)',
+                       : isDisabled ? 'rgba(31, 51, 40,0.25)'
+                       : 'rgba(31, 51, 40,0.62)',
                 cursor: isDisabled ? 'not-allowed' : 'pointer',
                 opacity: isDisabled ? 0.5 : 1,
                 transition: 'color 220ms ease',
@@ -1150,8 +1150,8 @@ function SiteEnergyHHView({ view, ctx, loading, readyMpans, pendingCount, totalH
       <div style={{
         padding: 36, textAlign: 'center',
         fontFamily: 'var(--font-body)', fontSize: 14,
-        color: 'rgba(26,36,64,0.55)',
-        background: 'rgba(26,36,64,0.03)',
+        color: 'rgba(31, 51, 40,0.55)',
+        background: 'rgba(31, 51, 40,0.03)',
         borderRadius: 10,
       }}>
         No half-hourly meter on this site. Ecotricity monthly billing is recorded but no HH meter is installed.
@@ -1163,8 +1163,8 @@ function SiteEnergyHHView({ view, ctx, loading, readyMpans, pendingCount, totalH
       <div style={{
         padding: 36, textAlign: 'center',
         fontFamily: 'var(--font-body)', fontSize: 14,
-        color: 'rgba(26,36,64,0.55)',
-        background: 'rgba(26,36,64,0.03)',
+        color: 'rgba(31, 51, 40,0.55)',
+        background: 'rgba(31, 51, 40,0.03)',
         borderRadius: 10,
       }}>
         Half-hourly data is pending. The Stark export for this site hasn't been pulled yet.
@@ -1176,7 +1176,7 @@ function SiteEnergyHHView({ view, ctx, loading, readyMpans, pendingCount, totalH
       <div style={{
         padding: 36, textAlign: 'center',
         fontFamily: 'var(--font-body)', fontSize: 13,
-        color: 'rgba(26,36,64,0.55)',
+        color: 'rgba(31, 51, 40,0.55)',
       }}>
         Loading half-hourly data...
       </div>
@@ -1203,7 +1203,7 @@ function SiteEnergyHHView({ view, ctx, loading, readyMpans, pendingCount, totalH
           fontFamily: 'var(--font-heading)',
           fontSize: 10, fontWeight: 600,
           letterSpacing: 1.2, textTransform: 'uppercase',
-          color: 'rgba(26,36,64,0.5)',
+          color: 'rgba(31, 51, 40,0.5)',
         }}>Electric only{readyMpans.length > 1 ? ` · ${readyMpans.length} meters` : ''}</span>
 
         {readyMpans.length > 1 && (
@@ -1219,9 +1219,9 @@ function SiteEnergyHHView({ view, ctx, loading, readyMpans, pendingCount, totalH
                     padding: '4px 10px',
                     borderRadius: 4,
                     border: '1px solid',
-                    borderColor: isActive ? 'var(--color-nza-coral)' : 'rgba(26,36,64,0.12)',
-                    background: isActive ? 'rgba(232,114,92,0.10)' : 'transparent',
-                    color: isActive ? 'var(--color-nza-coral)' : 'rgba(26,36,64,0.7)',
+                    borderColor: isActive ? 'var(--color-nza-coral)' : 'rgba(31, 51, 40,0.12)',
+                    background: isActive ? 'rgba(232, 116, 60,0.10)' : 'transparent',
+                    color: isActive ? 'var(--color-nza-coral)' : 'rgba(31, 51, 40,0.7)',
                     fontFamily: 'var(--font-heading)',
                     fontSize: 11, fontWeight: isActive ? 500 : 400,
                     cursor: 'pointer',
@@ -1235,7 +1235,7 @@ function SiteEnergyHHView({ view, ctx, loading, readyMpans, pendingCount, totalH
         {pendingCount > 0 && (
           <span style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 11, color: 'rgba(26,36,64,0.5)',
+            fontSize: 11, color: 'rgba(31, 51, 40,0.5)',
             fontStyle: 'italic',
           }}>{pendingCount} more meter{pendingCount === 1 ? '' : 's'} pending Stark export</span>
         )}
@@ -1243,7 +1243,7 @@ function SiteEnergyHHView({ view, ctx, loading, readyMpans, pendingCount, totalH
         <span style={{
           marginLeft: 'auto',
           fontFamily: 'var(--font-body)',
-          fontSize: 11, color: 'rgba(26,36,64,0.45)',
+          fontSize: 11, color: 'rgba(31, 51, 40,0.45)',
           fontVariantNumeric: 'tabular-nums',
         }}>{eyebrowCtx.startDate} → {eyebrowCtx.endDate}</span>
       </div>
@@ -1361,7 +1361,7 @@ function _LegacyHHPanel() {
                     fontSize: 11,
                     letterSpacing: 1,
                     textTransform: 'uppercase',
-                    color: 'rgba(26,36,64,0.55)',
+                    color: 'rgba(31, 51, 40,0.55)',
                   }}>
                     Meter
                   </span>
@@ -1376,9 +1376,9 @@ function _LegacyHHPanel() {
                           padding: '4px 10px',
                           borderRadius: 4,
                           border: '1px solid',
-                          borderColor: isActive ? 'var(--color-nza-coral)' : 'rgba(26,36,64,0.12)',
-                          background: isActive ? 'rgba(232,114,92,0.10)' : 'transparent',
-                          color: isActive ? 'var(--color-nza-coral)' : 'rgba(26,36,64,0.7)',
+                          borderColor: isActive ? 'var(--color-nza-coral)' : 'rgba(31, 51, 40,0.12)',
+                          background: isActive ? 'rgba(232, 116, 60,0.10)' : 'transparent',
+                          color: isActive ? 'var(--color-nza-coral)' : 'rgba(31, 51, 40,0.7)',
                           fontFamily: 'var(--font-heading)',
                           fontSize: 11,
                           fontWeight: isActive ? 500 : 400,
@@ -1395,7 +1395,7 @@ function _LegacyHHPanel() {
                 <div style={{
                   fontFamily: 'var(--font-body)',
                   fontSize: 11,
-                  color: 'rgba(26,36,64,0.55)',
+                  color: 'rgba(31, 51, 40,0.55)',
                   fontStyle: 'italic',
                 }}>
                   {pendingMpans.length} meter{pendingMpans.length === 1 ? '' : 's'} pending - Stark export not yet pulled
@@ -1411,8 +1411,8 @@ function _LegacyHHPanel() {
               textAlign: 'center',
               fontFamily: 'var(--font-body)',
               fontSize: 14,
-              color: 'rgba(26,36,64,0.55)',
-              background: 'rgba(26,36,64,0.03)',
+              color: 'rgba(31, 51, 40,0.55)',
+              background: 'rgba(31, 51, 40,0.03)',
               borderRadius: 8,
             }}>
               No half-hourly meter on this site - Ecotricity monthly billing is recorded but no HH meter is installed.
@@ -1423,8 +1423,8 @@ function _LegacyHHPanel() {
               textAlign: 'center',
               fontFamily: 'var(--font-body)',
               fontSize: 14,
-              color: 'rgba(26,36,64,0.55)',
-              background: 'rgba(26,36,64,0.03)',
+              color: 'rgba(31, 51, 40,0.55)',
+              background: 'rgba(31, 51, 40,0.03)',
               borderRadius: 8,
             }}>
               Half-hourly data is pending - the Stark export for this site hasn't been pulled yet.
@@ -1435,7 +1435,7 @@ function _LegacyHHPanel() {
               textAlign: 'center',
               fontFamily: 'var(--font-body)',
               fontSize: 14,
-              color: 'rgba(26,36,64,0.55)',
+              color: 'rgba(31, 51, 40,0.55)',
             }}>
               Loading half-hourly data…
             </div>
@@ -1640,7 +1640,7 @@ function SiteCarbon({ siteId, site }) {
                 display: 'inline-block',
                 width: 80, height: 80,
                 marginBottom: -12,
-                backgroundColor: 'rgba(26,36,64,0.32)',
+                backgroundColor: 'rgba(31, 51, 40,0.32)',
                 WebkitMaskImage: 'url(/icons/ivg-nza-icons_co2.svg)',
                 maskImage: 'url(/icons/ivg-nza-icons_co2.svg)',
                 WebkitMaskRepeat: 'no-repeat', maskRepeat: 'no-repeat',
@@ -1657,7 +1657,7 @@ function SiteCarbon({ siteId, site }) {
                 fontFamily: 'var(--font-body)',
                 fontSize: 11,
                 marginTop: 2,
-                color: 'rgba(26,36,64,0.55)',
+                color: 'rgba(31, 51, 40,0.55)',
               }}>tonnes of CO₂e</div>
             </div>
 
@@ -1666,7 +1666,7 @@ function SiteCarbon({ siteId, site }) {
                 tint matches each scope's GHG-palette segment fill. */}
             <div style={{ position: 'absolute', bottom: 6, left: 0, right: 0,
               display: 'flex', justifyContent: 'center', gap: 28,
-              fontFamily: 'var(--font-body)', fontSize: 12, color: 'rgba(26,36,64,0.75)' }}>
+              fontFamily: 'var(--font-body)', fontSize: 12, color: 'rgba(31, 51, 40,0.75)' }}>
               {data.map((d, i) => (
                 <span key={d.name} style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
                   <ScopeIcon
@@ -2139,7 +2139,7 @@ function GresbPage({ currentSiteId, subTab, drillCode }) {
           paddingTop: 24,
           fontFamily: 'var(--font-body)',
           fontSize: 10,
-          color: 'rgba(237, 229, 216, 0.32)',
+          color: 'rgba(243, 239, 227, 0.32)',
           letterSpacing: 0.3,
         }}>
           Last updated {meta.lastUpdated}

@@ -5,27 +5,27 @@
 
 export const risk = {
   low: '#8FCB85',
-  moderate: '#E8A13C',
-  major: '#D9464B',
+  moderate: '#E6B91E',
+  major: '#D94B3D',
   severe: '#4C3D6B',
   noData: '#A9C5DA',
 };
 
 export const scopes = {
-  scope12: '#5BBFB5',
+  scope12: '#4A9C9C',
   scope3: '#534E86',
 };
 
 export const dq = {
   activityBased: '#22C55E',
   supplierSpecific: '#3B82F6',
-  industryAverage: '#F2A93B',
+  industryAverage: '#E8743C',
   proxy: '#EF4444',
 };
 
 export const categoricalThemes = {
-  estate: '#5B7B9A',
-  travel: '#F2A93B',
-  supplyChain: '#347373',
-  commuting: '#D4891F',
+  estate: '#5A8FB5',
+  travel: '#E8743C',
+  supplyChain: '#2A5A4B',
+  commuting: '#F4A878',
 };

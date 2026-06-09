@@ -14,8 +14,8 @@ const CARD_STYLE = {
   flexDirection: 'column',
   gap: 4,
   padding: '14px 16px',
-  background: 'rgba(26,36,64,0.03)',
-  border: '1px solid rgba(26,36,64,0.08)',
+  background: 'rgba(31, 51, 40,0.03)',
+  border: '1px solid rgba(31, 51, 40,0.08)',
   borderRadius: 8,
 }
 
@@ -27,7 +27,7 @@ function Card({ label, value, unit, helper }) {
         fontSize: 10,
         letterSpacing: 1.5,
         textTransform: 'uppercase',
-        color: 'rgba(26,36,64,0.5)',
+        color: 'rgba(31, 51, 40,0.5)',
         fontWeight: 500,
       }}>{label}</div>
       <div style={{
@@ -39,25 +39,25 @@ function Card({ label, value, unit, helper }) {
         fontWeight: 500,
       }}>
         <span style={{ fontSize: 22, lineHeight: 1 }}>{value}</span>
-        {unit && <span style={{ fontSize: 12, color: 'rgba(26,36,64,0.55)' }}>{unit}</span>}
+        {unit && <span style={{ fontSize: 12, color: 'rgba(31, 51, 40,0.55)' }}>{unit}</span>}
       </div>
       {helper && (
         <div style={{
           fontFamily: 'var(--font-body)',
           fontSize: 11,
-          color: 'rgba(26,36,64,0.55)',
+          color: 'rgba(31, 51, 40,0.55)',
         }}>{helper}</div>
       )}
     </div>
   )
 }
 
-const AXIS_STYLE = { fontFamily: "'Inter', system-ui, sans-serif", fontSize: 11, fill: 'rgba(26,36,64,0.55)' }
+const AXIS_STYLE = { fontFamily: "'Inter', system-ui, sans-serif", fontSize: 11, fill: 'rgba(31, 51, 40,0.55)' }
 const TOOLTIP_STYLE = {
   fontFamily: "'Inter', system-ui, sans-serif",
   fontSize: 12,
   background: COLOR_TOOLTIP_BG,
-  border: '1px solid rgba(26,36,64,0.15)',
+  border: '1px solid rgba(31, 51, 40,0.15)',
   borderRadius: 6,
   padding: '8px 10px',
 }
@@ -104,14 +104,14 @@ export default function OverviewView({ ctx }) {
         <div style={{
           fontFamily: 'var(--font-heading)',
           fontSize: 11,
-          color: 'rgba(26,36,64,0.55)',
+          color: 'rgba(31, 51, 40,0.55)',
           letterSpacing: 1,
           textTransform: 'uppercase',
           marginBottom: 4,
         }}>Daily peak & mean (kW)</div>
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={dailySeries} margin={{ top: 5, right: 8, left: 8, bottom: 0 }}>
-            <CartesianGrid stroke="rgba(26,36,64,0.06)" />
+            <CartesianGrid stroke="rgba(31, 51, 40,0.06)" />
             <XAxis
               dataKey="datetime"
               tick={AXIS_STYLE}
@@ -141,7 +141,7 @@ export default function OverviewView({ ctx }) {
         <div style={{
           fontFamily: 'var(--font-heading)',
           fontSize: 11,
-          color: 'rgba(26,36,64,0.55)',
+          color: 'rgba(31, 51, 40,0.55)',
           letterSpacing: 1,
           textTransform: 'uppercase',
           marginBottom: 4,
@@ -154,7 +154,7 @@ export default function OverviewView({ ctx }) {
                 <stop offset="100%" stopColor={COLOR_NZA_CORAL} stopOpacity={0.05} />
               </linearGradient>
             </defs>
-            <CartesianGrid stroke="rgba(26,36,64,0.06)" />
+            <CartesianGrid stroke="rgba(31, 51, 40,0.06)" />
             <XAxis
               dataKey="pct"
               tick={AXIS_STYLE}

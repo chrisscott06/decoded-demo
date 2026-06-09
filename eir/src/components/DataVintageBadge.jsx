@@ -33,8 +33,8 @@ export default function DataVintageBadge({ theme = 'dark' }) {
 
   const isCream = theme === 'cream'
   const colour = isCream
-    ? 'rgba(26, 36, 64, 0.55)'
-    : 'rgba(237, 229, 216, 0.55)'
+    ? 'rgba(31, 51, 40, 0.55)'
+    : 'rgba(243, 239, 227, 0.55)'
 
   return (
     <div

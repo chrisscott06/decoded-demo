@@ -92,24 +92,33 @@
   --text-subheading: 18px;
   --text-subheading-lh: 1.3;
 
-  /* === Tier 1 - anchors === */
-  --color-nza-coral: #E8725C;
-  --color-nza-cream: #EDE5D8;
-  /* Chris ask 8 Jun - lighter cream for the main content area on
-     site pages so the page register reads softer than the nav
-     strips. Sits roughly halfway between --color-nza-cream and
-     pure white; keeps a hint of warmth so it doesn't drift cool.
-     Currently consumed only by `.theme-cream-page .dashboard-main`
-     below. */
-  --color-nza-cream-light: #F6F1E7;
+  /* === Tier 1 - anchors ===
+   *
+   * decodED palette swap (Phase 2 of demo-template setup): values retuned
+   * to the decodED brand family (deep green + warm cream + orange accent)
+   * while keeping the existing --color-nza-* token NAMES so the hundreds
+   * of consuming components don't all need rename. Original IVG-era
+   * values appear in comments alongside each new one for traceability.
+   */
+  --color-nza-coral:       #E8743C;  /* was #E8725C — decodED accent orange */
+  --color-nza-cream:       #F3EFE3;  /* was #EDE5D8 — decodED canvas (warm cream) */
+  /* Lighter cream for the main content area on site pages so the page
+     register reads softer than the nav strips. Sits roughly halfway
+     between --color-nza-cream and pure white; keeps a hint of warmth
+     so it doesn't drift cool. Currently consumed only by
+     `.theme-cream-page .dashboard-main` below. */
+  --color-nza-cream-light: #FAF6EB;  /* was #F6F1E7 — decodED canvasElevated */
 
-  /* === Tier 2 - Active theme: NZA Core === */
-  /* Brief 10 Part 4: deepened from #1A2440 to #0F1629 so white + coral pop. */
-  --color-theme-base: #0F1629;
-  --color-theme-accent-primary: #F08080;
-  --color-theme-accent-secondary: #A896C4;
-  --color-theme-cta: #E8725C;
-  --color-theme-body: #EDE5D8;
+  /* === Tier 2 - Active theme: decodED Core === */
+  /* Dark canvas / nav chrome — was a deep navy in the IVG tool, now
+     decodED's surfaceDark (#1F3328): a deep green-tinted near-black
+     that anchors the lockup in the decodED brand family while staying
+     dark enough for cream + accent to pop. */
+  --color-theme-base:            #1F3328;  /* was #0F1629 — decodED surfaceDark */
+  --color-theme-accent-primary:  #F4A878;  /* was #F08080 — decodED accentLight (softer orange) */
+  --color-theme-accent-secondary:#A896C4;  /* kept — used by heating-matrix "Mixed" pill etc. */
+  --color-theme-cta:             #E8743C;  /* was #E8725C — decodED accent orange */
+  --color-theme-body:            #F3EFE3;  /* was #EDE5D8 — decodED canvas (cream-on-dark text) */
 
   /* === Brief 10 Part 5 - Portfolio Map theme accents (Chris inline palette) ===
    *   Energy → blue, Water → teal (kept), Waste → green, Carbon → orange,
@@ -117,7 +126,7 @@
    *   Electricity → yellow, Gas → red.
    * These tokens drive the pill tint + leaderboard bar fill + map dot colour
    * for non-gridBar metrics. Hex mirrors live in tokens/chart-colors.js. */
-  --theme-overview:    #5B7B9A;
+  --theme-overview:    #5A6B5F;  /* was #5B7B9A — decodED textSecondary green-grey (overview reads as muted/neutral) */
   /* Map theme accents - NZA inline palette (Brief 10 Part 5) with two
      further rotations:
        Chris ask 2026-06-02: Energy ⇄ Carbon (Energy orange, Carbon teal),
@@ -133,12 +142,12 @@
          waste page is tinted to that hue; purple settles it. Meters
          picks up the teal - works for the Sankey ribbons and the
          metering header colour story. */
-  --theme-energy:      #E5732A;  /* orange */
-  --theme-water:       #5BA3D9;  /* blue */
-  --theme-waste:       #8B6FB8;  /* purple (Chris ask 8 Jun - swapped with meters) */
-  --theme-carbon:      #7CC470;  /* green (was teal; swapped with waste) */
-  --theme-meters:      #5BBFB5;  /* teal (Chris ask 8 Jun - swapped with waste) */
-  --theme-dq:          #347373;  /* dark teal - distinct from waste's lighter teal */
+  --theme-energy:      #E8743C;  /* was #E5732A — decodED accent orange (energy = orange semantic) */
+  --theme-water:       #5A8FB5;  /* was #5BA3D9 — decodED info blue (water = blue universal) */
+  --theme-waste:       #8B5CB5;  /* was #8B6FB8 — decodED metric.waste purple (locked) */
+  --theme-carbon:      #3D8B5C;  /* was #7CC470 — decodED metric.carbon green (locked) */
+  --theme-meters:      #4A9C9C;  /* was #5BBFB5 — deeper teal sits more confidently in decodED family */
+  --theme-dq:          #2A5A4B;  /* was #347373 — deeper decodED teal-green */
   /* Chris ask 4 Jun: electricity rotated from lemon #E8C547 to a richer
      amber/gold #D4A017. The lemon was reading playful/cheap against the
      dark navy register and not pairing harmoniously with the coral-red
@@ -150,7 +159,7 @@
        --color-energy-elec-resident-estimated  (alias + hatch base)
        --metering-* electricity tokens (manual, see below)
      Map-marker hue for the Electricity metric updates automatically. */
-  --metric-electricity: #D4A017;
+  --metric-electricity: #E6B91E;  /* was #D4A017 — decodED metric.electricity amber/yellow (LOCKED standardised across all NZA tools) */
   /* Chris ask 4 Jun (round 2): gas rotated from coral #D85F4D to the NZA
      deep red #B8443A - already vetted in the codebase as the heating-
      matrix HN-gas hex ("deeper red, distinct from CHP"). Now that gas
@@ -159,30 +168,60 @@
      + rich gold = "fossil resource family"). The HN-gas heating-matrix
      entry is pushed one step deeper to maintain its sibling distinction
      from CHP/landlord-gas (see PortfolioEnergy heating palette). */
-  --metric-gas:         #B8443A;
+  --metric-gas:         #D94B3D;  /* was #B8443A — decodED metric.gas red (LOCKED standardised across all NZA tools) */
 
   /* === Tier 3 - methodology (risk) === */
-  --color-risk-low: #8FCB85;
-  --color-risk-moderate: #E8A13C;
-  --color-risk-major: #D9464B;
-  --color-risk-severe: #4C3D6B;
-  --color-risk-no-data: #A9C5DA;
+  --color-risk-low:       #8FCB85;  /* kept — semantic green-for-OK */
+  --color-risk-moderate:  #E6B91E;  /* was #E8A13C — aligned to decodED amber */
+  --color-risk-major:     #D94B3D;  /* was #D9464B — aligned to decodED red */
+  --color-risk-severe:    #4C3D6B;  /* kept — deep purple for catastrophic */
+  --color-risk-no-data:   #A9C5DA;  /* kept — light blue-grey for absent */
 
   /* === Tier 3 - methodology (scopes) === */
-  --color-scope-12: #5BBFB5;
-  --color-scope-3: #534E86;
+  --color-scope-12: #4A9C9C;  /* was #5BBFB5 — kept aligned with --theme-meters */
+  --color-scope-3:  #534E86;  /* kept — deep purple, semantic for scope 3 */
 
   /* === Tier 3 - methodology (data quality) === */
-  --color-dq-activity-based: #22C55E;
-  --color-dq-supplier-specific: #3B82F6;
-  --color-dq-industry-average: #F2A93B;
-  --color-dq-proxy: #EF4444;
+  --color-dq-activity-based:    #22C55E;  /* kept — semantic green */
+  --color-dq-supplier-specific: #5A8FB5;  /* was #3B82F6 — softer decodED info blue */
+  --color-dq-industry-average:  #E6B91E;  /* was #F2A93B — decodED amber */
+  --color-dq-proxy:             #D94B3D;  /* was #EF4444 — decodED red */
 
   /* === Tier 3 - categorical themes === */
-  --color-categorical-estate: #5B7B9A;
-  --color-categorical-travel: #F2A93B;
-  --color-categorical-supply-chain: #347373;
-  --color-categorical-commuting: #D4891F;
+  --color-categorical-estate:       #5A8FB5;  /* was #5B7B9A — decodED info blue */
+  --color-categorical-travel:       #E8743C;  /* was #F2A93B — decodED accent orange */
+  --color-categorical-supply-chain: #2A5A4B;  /* was #347373 — deeper decodED teal */
+  --color-categorical-commuting:    #F4A878;  /* was #D4891F — decodED accentLight */
+
+  /* === decodED role-named tokens (Phase 2 of demo-template setup) ===
+   *
+   * The demo-template brief asked for tokens named with the trust
+   * namespace + role (`--color-westbrook-primary` etc.) and dark/light
+   * bg shorthands. The source IVG tool used --color-nza-* names which
+   * are kept here intact (renaming the hundreds of consuming utility
+   * classes would balloon the phase 2 diff). These aliases pointing to
+   * the existing tokens give a future component author the role-named
+   * surface to write against if they want it, without breaking
+   * anything that's already written.
+   *
+   * The "primary" colour deserves a fresh hex: decodED's brand is
+   * built around deep green `#0F5D43` for big shapes (lockup, logos,
+   * buttons). The source IVG tool's "brand colour" was coral, which
+   * we've already remapped to decodED's accent orange. A separate
+   * --color-westbrook-primary deep-green token sits available for
+   * components that want to assert "this is the brand mark." Currently
+   * no consumer in the demo uses it — left ready for future polish.
+   */
+  --color-westbrook-primary:        #0F5D43;  /* decodED brand primary deep green — NEW for the demo */
+  --color-westbrook-primary-light:  #3A8867;  /* decodED brand primary lighter green */
+  --color-westbrook-accent:         var(--color-nza-coral);       /* orange accent */
+  --color-westbrook-secondary:      var(--theme-carbon);          /* positive/secondary trend = green */
+  --color-westbrook-warning:        var(--color-risk-major);      /* warning state = red */
+  --color-westbrook-text-cream:     var(--color-theme-body);      /* cream-on-dark text */
+  --color-westbrook-text-navy:      var(--color-theme-base);      /* dark text on cream */
+  --color-westbrook-text-muted:     var(--text-muted-on-cream);   /* muted text on cream */
+  --color-dark-bg:                  var(--color-theme-base);      /* dark page background */
+  --color-light-bg:                 var(--color-nza-cream);       /* light page background */
 
   /* === Motion === */
   --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
@@ -254,19 +293,19 @@
    *   Falsifiability gate (Part 3 close): any hardcoded electricity-
    *   yellow or gas-red hex inside eir/src/components/portfolio/
    *   Energy* should be removed by Part 3 close. */
-  --color-energy-elec-landlord:            var(--metric-electricity); /* #D4A017 - rich gold */
+  --color-energy-elec-landlord:            var(--metric-electricity); /* now #E6B91E — decodED metric.electricity */
   /* Chris ask 4 Jun: resident-submetered yellow re-derived as a paler
      sibling of the new richer gold (was #F4E08E lemon-pale, now a
      warm pale gold) so the submetered swatch sits visibly in the same
      family as the landlord above it. */
-  --color-energy-elec-resident-submetered: #E5C76B;                   /* pale warm gold */
+  --color-energy-elec-resident-submetered: #EFD675;                   /* pale warm amber (derived from new #E6B91E base) */
   --color-energy-elec-resident-estimated:  var(--metric-electricity); /* base + <pattern> fill */
-  --color-energy-gas-landlord:             var(--metric-gas);         /* #B8443A - NZA deep red */
+  --color-energy-gas-landlord:             var(--metric-gas);         /* now #D94B3D — decodED metric.gas red */
   /* Chris ask 4 Jun (round 2): gas-resident-submetered re-derived as a
      paler sibling of the new deep-red base (was #E89A8E paler-coral,
      now a warmer pale brand-red) so the submetered swatch stays in the
      same family as the landlord above it. */
-  --color-energy-gas-resident-submetered:  #D78D7F;                   /* pale brand-red */
+  --color-energy-gas-resident-submetered:  #E58A7E;                   /* pale brand-red (derived from new #D94B3D base) */
   --color-energy-gas-resident-estimated:   var(--metric-gas);         /* base + <pattern> fill */
   --opacity-in-scope:        1;
   --opacity-out-of-scope:  0.4;
@@ -277,12 +316,12 @@
      rather than washed-out at 0.4 opacity. Sonning Common + Edwalton
      Office render as 2-segment bars (total gas + total elec) using
      these tokens - no internal party-type breakdown. */
-  --color-gresb26-gas:  #7A2417;  /* darker than --metric-gas #B8443A - still distinct after the gas rotation */
+  --color-gresb26-gas:  #8B2A1E;  /* darker than --metric-gas (now #D94B3D) — out-of-scope sites read as visually present but distinctly darker */
   /* Chris ask 4 Jun: stepped down from #8A7320 → #6B500B so the OOS
      elec swatch stays distinctly darker than the new richer-gold
      landlord base (#D4A017). Same proportional value drop the gas
      family uses (D85F4D → 7A2417). */
-  --color-gresb26-elec: #6B500B;  /* darker than --metric-electricity #D4A017 */
+  --color-gresb26-elec: #7A5E0B;  /* darker than --metric-electricity (now #E6B91E) */
 
   /* === Brief 20 (BR-13) Task 2 - GRESB-specific tokens.
         Teal palette evokes the GRESB digital guide (gitbook) aesthetic
@@ -296,7 +335,7 @@
   --gresb-teal-700:    #0F766E;  /* darker teal - strong text on light bg */
   --gresb-teal-900:    #134E4A;  /* deepest - page titles on light bg */
   --gresb-band-management:   var(--gresb-teal-500);
-  --gresb-band-performance:  #5B7B9A;  /* NZA blue (matches existing palette) */
+  --gresb-band-performance:  #5A8FB5;  /* was #5B7B9A — decodED info blue (matches updated --theme-water etc.) */
   --gresb-band-residential:  #10B981;  /* green (matches GRESB residential mark) */
 
   /* === Brief 21 - Metering Sankey commodity palette.
@@ -327,8 +366,10 @@
   /* --bg-forest removed Brief 7 Part 0 (zero remaining usages; speculative) */
   --text-on-dark: var(--color-theme-body);
   --text-on-cream: var(--color-theme-base);
-  --text-muted-on-dark: rgba(237, 229, 216, 0.6);
-  --text-muted-on-cream: rgba(26, 36, 64, 0.65);
+  /* rgba forms tracking --color-theme-body (now #F3EFE3 = rgb(243, 239, 227))
+     and --color-theme-base (now #1F3328 = rgb(31, 51, 40)) respectively. */
+  --text-muted-on-dark:   rgba(243, 239, 227, 0.6);   /* was rgba(237, 229, 216, 0.6) */
+  --text-muted-on-cream:  rgba(31, 51, 40, 0.65);     /* was rgba(26, 36, 64, 0.65) */
   --coral: var(--color-nza-coral);
   --coral-dark: var(--color-theme-accent-primary);
   /* --coral-soft removed Brief 7 Part 0 (zero remaining usages) */

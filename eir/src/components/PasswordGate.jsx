@@ -103,7 +103,7 @@ export default function PasswordGate({ children }) {
         </h1>
         <p style={{
           fontSize: 14,
-          color: 'rgba(26,36,64,0.55)',
+          color: 'rgba(31, 51, 40,0.55)',
           textAlign: 'center',
           margin: '0 0 32px',
         }}>
@@ -122,7 +122,7 @@ export default function PasswordGate({ children }) {
               style={{
                 flex: 1,
                 background: '#FFFFFF',
-                border: '1px solid rgba(26,36,64,0.15)',
+                border: '1px solid rgba(31, 51, 40,0.15)',
                 borderRadius: 6,
                 padding: '12px 14px',
                 fontSize: 14,
@@ -131,7 +131,7 @@ export default function PasswordGate({ children }) {
                 outline: 'none',
               }}
               onFocus={(e) => e.target.style.borderColor = 'var(--color-nza-coral)'}
-              onBlur={(e) => e.target.style.borderColor = 'rgba(26,36,64,0.15)'}
+              onBlur={(e) => e.target.style.borderColor = 'rgba(31, 51, 40,0.15)'}
             />
             <button
               type="submit"
@@ -165,7 +165,7 @@ export default function PasswordGate({ children }) {
         {/* Demo footer note. */}
         <p style={{
           fontSize: 10,
-          color: 'rgba(26,36,64,0.32)',
+          color: 'rgba(31, 51, 40,0.32)',
           textAlign: 'center',
           margin: '40px 0 0',
           lineHeight: 1.5,

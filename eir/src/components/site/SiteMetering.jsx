@@ -38,20 +38,20 @@ import {
 } from '../../lib/siteDerivations.js'
 
 const READINESS_COLOUR = {
-  green: '#7CC470',
-  amber: '#E8A13C',
+  green: '#3D8B5C',
+  amber: '#E6B91E',
   red:   '#D85F4D',
   'n/a': 'rgba(255,255,255,0.18)',
 }
 
 const COMMODITY_COLOUR = {
-  electricity:   'var(--metric-electricity)',   /* #D4A017 amber-gold */
-  gas:           'var(--metric-gas)',            /* #B8443A NZA deep red */
+  electricity:   'var(--metric-electricity)',   /* #E6B91E amber-gold */
+  gas:           'var(--metric-gas)',            /* #D94B3D NZA deep red */
   heat:          '#C4625C',                      /* metering-sycous-heat */
   'hot-water':   '#D86C5A',                      /* metering-sycous-hw */
   water:         '#4A7BA0',                      /* metering-sycous-cw */
   'sub-metered': '#E8C870',                      /* metering-sycous-elec */
-  waste:         '#8B6FB8',                      /* --theme-waste purple (Chris ask 8 Jun) */
+  waste:         '#8B5CB5',                      /* --theme-waste purple (Chris ask 8 Jun) */
 }
 
 /* Brief 24.5 r2 - commodity icons for table rows. Mask-painted in the
@@ -88,8 +88,8 @@ const PLATFORM_LABEL = {
    the cream consistency"). Tokens below are the cream-register
    equivalents - dark navy text on cream bg, muted navy rule lines. */
 const TEXT_BODY  = 'var(--color-theme-base)'        /* navy body text */
-const TEXT_MUTED = 'rgba(26,36,64,0.55)'             /* muted navy */
-const RULE       = 'rgba(26,36,64,0.12)'             /* hairline navy rule */
+const TEXT_MUTED = 'rgba(31, 51, 40,0.55)'             /* muted navy */
+const RULE       = 'rgba(31, 51, 40,0.12)'             /* hairline navy rule */
 
 /* ============================================================ */
 
@@ -228,7 +228,7 @@ function HeadlineStrip({ counts, platforms, dq, readiness, onReadinessClick }) {
     <div style={{
       display: 'grid',
       gridTemplateColumns: 'repeat(4, minmax(0, 1fr))',
-      background: 'rgba(26,36,64,0.03)',
+      background: 'rgba(31, 51, 40,0.03)',
       border: `1px solid ${RULE}`,
       borderRadius: 10,
       padding: '14px 20px',
@@ -396,9 +396,9 @@ function FilterPills({ filter, setFilter, search, setSearch }) {
               display: 'inline-flex', alignItems: 'center', gap: 6,
               padding: '5px 12px',
               borderRadius: 999,
-              border: `1px solid ${isActive ? 'var(--color-nza-coral)' : 'rgba(26,36,64,0.10)'}`,
+              border: `1px solid ${isActive ? 'var(--color-nza-coral)' : 'rgba(31, 51, 40,0.10)'}`,
               background: isActive ? 'var(--color-nza-coral)' : 'transparent',
-              color: isActive ? '#0F1629' : TEXT_MUTED,
+              color: isActive ? '#1F3328' : TEXT_MUTED,
               fontFamily: 'var(--font-heading)',
               fontSize: 11, fontWeight: 500, letterSpacing: 0.3,
               cursor: 'pointer',
@@ -410,7 +410,7 @@ function FilterPills({ filter, setFilter, search, setSearch }) {
               <span aria-hidden style={{
                 display: 'inline-block',
                 width: 12, height: 12,
-                backgroundColor: isActive ? '#0F1629' : TEXT_MUTED,
+                backgroundColor: isActive ? '#1F3328' : TEXT_MUTED,
                 WebkitMaskImage: `url("${f.iconUrl}")`, maskImage: `url("${f.iconUrl}")`,
                 WebkitMaskRepeat: 'no-repeat', maskRepeat: 'no-repeat',
                 WebkitMaskPosition: 'center', maskPosition: 'center',
@@ -426,7 +426,7 @@ function FilterPills({ filter, setFilter, search, setSearch }) {
         marginLeft: 'auto',
         display: 'inline-flex', alignItems: 'center', gap: 6,
         padding: '4px 8px',
-        background: 'rgba(26,36,64,0.04)',
+        background: 'rgba(31, 51, 40,0.04)',
         border: '1px solid rgba(255,255,255,0.08)',
         borderRadius: 6,
       }}>
@@ -506,7 +506,7 @@ function MeterTable({ groups, expanded, setExpanded, selection, onSelect }) {
                 display: 'grid', gridTemplateColumns: '1fr auto auto auto',
                 gap: 16, alignItems: 'center',
                 width: '100%', padding: '14px 14px',
-                background: isSelected ? 'rgba(232,114,92,0.10)' : (i % 2 === 0 ? 'transparent' : 'rgba(26,36,64,0.018)'),
+                background: isSelected ? 'rgba(232, 116, 60,0.10)' : (i % 2 === 0 ? 'transparent' : 'rgba(31, 51, 40,0.018)'),
                 border: 'none',
                 borderLeft: `2px solid ${isSelected ? 'var(--color-nza-coral)' : 'transparent'}`,
                 cursor: 'pointer',
@@ -668,7 +668,7 @@ function GraphicPane({ mode, setMode, groups, allGroups, activeCategories, platf
                 fontFamily: 'var(--font-heading)',
                 fontSize: 12, fontWeight: 500,
                 color: isActive ? 'var(--color-nza-coral)'
-                       : isDisabled ? 'rgba(26,36,64,0.20)'
+                       : isDisabled ? 'rgba(31, 51, 40,0.20)'
                        : TEXT_MUTED,
                 cursor: isDisabled ? 'not-allowed' : 'pointer',
                 letterSpacing: 0.3,
@@ -680,7 +680,7 @@ function GraphicPane({ mode, setMode, groups, allGroups, activeCategories, platf
       </div>
 
       <div style={{
-        background: 'rgba(26,36,64,0.02)',
+        background: 'rgba(31, 51, 40,0.02)',
         border: `1px solid ${RULE}`,
         borderRadius: 10,
         padding: 18,
@@ -869,7 +869,7 @@ function SankeyView({ groups, activeCategories, selection, onSelect }) {
         {layout.nodes.map((n) => {
           const fillCol = n.kind === 'left'  ? (COMMODITY_COLOUR[n.commodity] || TEXT_MUTED)
                         : n.kind === 'right' ? (COMMODITY_COLOUR[n.commodity] || TEXT_MUTED)
-                        : 'rgba(26,36,64,0.30)'
+                        : 'rgba(31, 51, 40,0.30)'
           const outOfFilterNode = n.kind === 'right' && activeCategories && !activeCategories.has(n.category)
           const dimmed = outOfFilterNode || (selection && n.kind === 'right' && selection.category !== n.category)
           const handleClick = () => {
@@ -1040,11 +1040,11 @@ function TreemapCell(props) {
       {width > 80 && height > 40 && (
         <>
           <text x={x + 12} y={y + 22}
-            fontFamily="var(--font-body)" fontSize={13} fontWeight={600} fill="#0F1629">
+            fontFamily="var(--font-body)" fontSize={13} fontWeight={600} fill="#1F3328">
             {cleanName}
           </text>
           <text x={x + 12} y={y + 40}
-            fontFamily="var(--font-heading)" fontSize={11} fontWeight={500} fill="rgba(15,22,41,0.75)"
+            fontFamily="var(--font-heading)" fontSize={11} fontWeight={500} fill="rgba(31, 51, 40,0.75)"
             fontVariantNumeric="tabular-nums" letterSpacing={0.3}>
             {meterCount} {meterCount === 1 ? 'meter' : 'meters'}
           </text>
@@ -1053,7 +1053,7 @@ function TreemapCell(props) {
       {width >= 40 && height >= 24 && width <= 80 && (
         <text x={x + width / 2} y={y + height / 2 + 4}
           textAnchor="middle"
-          fontFamily="var(--font-heading)" fontSize={11} fontWeight={600} fill="#0F1629">
+          fontFamily="var(--font-heading)" fontSize={11} fontWeight={600} fill="#1F3328">
           {meterCount}
         </text>
       )}
@@ -1081,7 +1081,7 @@ function BarsView({ groups, activeCategories, selection, onSelect }) {
           width={160}
         />
         <Tooltip
-          cursor={{ fill: 'rgba(26,36,64,0.04)' }}
+          cursor={{ fill: 'rgba(31, 51, 40,0.04)' }}
           contentStyle={{
             background: 'var(--color-theme-base)',
             border: `1px solid ${RULE}`,
@@ -1168,8 +1168,8 @@ function SiteBanner({ siteId, siteName, summary, counts, platforms, dq, readines
       gridTemplateColumns: 'minmax(0, 1fr) auto',
       gap: 32,
       padding: '16px 22px',
-      background: 'rgba(232, 114, 92, 0.04)',
-      border: '1px solid rgba(232, 114, 92, 0.18)',
+      background: 'rgba(232, 116, 60, 0.04)',
+      border: '1px solid rgba(232, 116, 60, 0.18)',
       borderRadius: 10,
       alignItems: 'start',
     }}>
@@ -1239,8 +1239,8 @@ function SiteBanner({ siteId, siteName, summary, counts, platforms, dq, readines
               <span key={i} style={{
                 padding: '2px 9px',
                 borderRadius: 999,
-                background: 'rgba(26,36,64,0.05)',
-                border: '1px solid rgba(26,36,64,0.08)',
+                background: 'rgba(31, 51, 40,0.05)',
+                border: '1px solid rgba(31, 51, 40,0.08)',
                 color: TEXT_BODY,
                 fontFamily: 'var(--font-body)',
                 fontSize: 10.5, fontWeight: 500,
@@ -1373,8 +1373,8 @@ function NarrativeCard({ siteName, summary }) {
     <section style={{
       display: 'flex', flexDirection: 'column', gap: 10,
       padding: '16px 22px',
-      background: 'rgba(232, 114, 92, 0.04)',
-      border: '1px solid rgba(232, 114, 92, 0.18)',
+      background: 'rgba(232, 116, 60, 0.04)',
+      border: '1px solid rgba(232, 116, 60, 0.18)',
       borderRadius: 10,
     }}>
       <div style={{ display: 'flex', alignItems: 'baseline', gap: 14, flexWrap: 'wrap' }}>
@@ -1408,8 +1408,8 @@ function NarrativeCard({ siteName, summary }) {
             <span key={i} style={{
               padding: '4px 10px',
               borderRadius: 999,
-              background: 'rgba(26,36,64,0.05)',
-              border: '1px solid rgba(26,36,64,0.10)',
+              background: 'rgba(31, 51, 40,0.05)',
+              border: '1px solid rgba(31, 51, 40,0.10)',
               color: TEXT_BODY,
               fontFamily: 'var(--font-body)',
               fontSize: 11, fontWeight: 500,

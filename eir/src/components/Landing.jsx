@@ -56,8 +56,8 @@ function HomeTile({ icon: Icon, iconUrl, iconScale = 1, meaning, value, unit, li
   return (
     <div
       style={{
-        background: 'rgba(26, 36, 64, 0.03)',
-        border: '1px solid rgba(26, 36, 64, 0.10)',
+        background: 'rgba(31, 51, 40, 0.03)',
+        border: '1px solid rgba(31, 51, 40, 0.10)',
         borderRadius: 12,
         padding: '12px 14px',
         minHeight: 92,
@@ -108,7 +108,7 @@ function HomeTile({ icon: Icon, iconUrl, iconScale = 1, meaning, value, unit, li
           fontWeight: 500,
           letterSpacing: 0.6,
           textTransform: 'uppercase',
-          color: 'rgba(26,36,64,0.55)',
+          color: 'rgba(31, 51, 40,0.55)',
           lineHeight: 1.3,
           minWidth: 0,
           whiteSpace: 'nowrap',
@@ -125,7 +125,7 @@ function HomeTile({ icon: Icon, iconUrl, iconScale = 1, meaning, value, unit, li
         }}>
           <span style={{ fontSize: 26, fontWeight: 500 }}>{value}</span>
           {unit && (
-            <span style={{ fontSize: 12, color: 'rgba(26,36,64,0.55)', fontWeight: 400 }}>
+            <span style={{ fontSize: 12, color: 'rgba(31, 51, 40,0.55)', fontWeight: 400 }}>
               {unit}
             </span>
           )}
@@ -134,7 +134,7 @@ function HomeTile({ icon: Icon, iconUrl, iconScale = 1, meaning, value, unit, li
           fontFamily: 'var(--font-body)',
           fontSize: 11,
           lineHeight: 1.35,
-          color: 'rgba(26,36,64,0.62)',
+          color: 'rgba(31, 51, 40,0.62)',
           marginTop: 2,
         }}>
           {line3}
@@ -310,7 +310,7 @@ export default function Landing({ navigate, currentSiteId }) {
               fontFamily: 'var(--font-body)',
               fontSize: 13,
               lineHeight: 1.55,
-              color: 'rgba(26,36,64,0.70)',
+              color: 'rgba(31, 51, 40,0.70)',
               margin: 0,
               marginBottom: 10,
               maxWidth: 520,
@@ -327,7 +327,7 @@ export default function Landing({ navigate, currentSiteId }) {
               fontFamily: 'var(--font-body)',
               fontSize: 13,
               lineHeight: 1.55,
-              color: 'rgba(26,36,64,0.70)',
+              color: 'rgba(31, 51, 40,0.70)',
               margin: 0,
               marginBottom: 24,
               maxWidth: 520,

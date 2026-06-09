@@ -8,7 +8,7 @@ export const theme = {
   name: 'nza-core',
   base: '#1A2440',
   accents: {
-    primary: '#F08080',
+    primary: '#F4A878',
     secondary: '#A896C4',
   },
   cta: anchors.nzaCoral,

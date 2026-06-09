@@ -102,7 +102,7 @@ export default class ErrorBoundary extends Component {
             style={{
               padding: '6px 14px',
               borderRadius: 4,
-              border: `1px solid ${isCream ? 'rgba(26,36,64,0.2)' : 'rgba(237,229,216,0.2)'}`,
+              border: `1px solid ${isCream ? 'rgba(31, 51, 40,0.2)' : 'rgba(243, 239, 227,0.2)'}`,
               background: 'transparent',
               color: isCream ? 'var(--text-on-cream)' : 'var(--text-on-dark)',
               fontFamily: 'var(--font-heading)',

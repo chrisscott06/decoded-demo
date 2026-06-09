@@ -39,13 +39,13 @@ const TEXT_BODY = 'var(--color-theme-body)'
 const TEXT_MUTED = 'var(--text-muted-on-dark)'
 /* Brief 23 (v1.3): target = achievable = 62 - no buffer. The 56px target
    number rotates from coral to confident green to communicate
-   "achievable, committed." Token: --theme-carbon = #7CC470 (post-4 Jun
+   "achievable, committed." Token: --theme-carbon = #3D8B5C (post-4 Jun
    palette rotation where Carbon took the green slot). */
 const GREEN_CONFIDENT = 'var(--theme-carbon)'
 
 /* Star band → solid colour. Coral (struggling) → deep teal (leader).
    Picked so each tier is visually distinct on the dark register
-   (#0F1729) without translucency. */
+   (#1F3328) without translucency. */
 const STAR_COLORS = {
   0: '#5A3530',  // <1★ - dark coral-brown
   1: '#C44A2C',  // 1★  - coral (where Westbrook sits in 2025)
@@ -520,8 +520,8 @@ function QuintileBand({ thresholds, markers = [], span = null, annotations = nul
           const tint = span?.tint || 'white'
           const noBorder = tint === 'coral-no-border'
           const useCoral = tint === 'coral' || tint === 'coral-no-border'
-          const bg     = useCoral ? 'rgba(232, 114, 92, 0.18)' : 'rgba(255,255,255,0.18)'
-          const border = useCoral ? 'rgba(232, 114, 92, 0.55)' : 'rgba(255,255,255,0.4)'
+          const bg     = useCoral ? 'rgba(232, 116, 60, 0.18)' : 'rgba(255,255,255,0.18)'
+          const border = useCoral ? 'rgba(232, 116, 60, 0.55)' : 'rgba(255,255,255,0.4)'
           return (
             <div style={{
               position: 'absolute', top: 0, bottom: 0,

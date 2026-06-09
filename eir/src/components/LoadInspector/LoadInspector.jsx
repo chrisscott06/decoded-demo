@@ -55,7 +55,7 @@ export default function LoadInspector({ data, meterLabel }) {
         textAlign: 'center',
         fontFamily: 'var(--font-body)',
         fontSize: 14,
-        color: 'rgba(26,36,64,0.55)',
+        color: 'rgba(31, 51, 40,0.55)',
       }}>
         No half-hourly data for this meter.
       </div>
@@ -98,7 +98,7 @@ export default function LoadInspector({ data, meterLabel }) {
         flexWrap: 'wrap',
         gap: 12,
         paddingBottom: 8,
-        borderBottom: '1px solid rgba(26,36,64,0.08)',
+        borderBottom: '1px solid rgba(31, 51, 40,0.08)',
       }}>
         <div>
           <div style={{
@@ -124,7 +124,7 @@ export default function LoadInspector({ data, meterLabel }) {
         <div style={{
           fontFamily: 'var(--font-body)',
           fontSize: 11,
-          color: 'rgba(26,36,64,0.55)',
+          color: 'rgba(31, 51, 40,0.55)',
         }}>
           {ctx.startDate} → {ctx.endDate} · {ctx.stats.period_count?.toLocaleString('en-GB')} periods · {ctx.yearsCovered.toFixed(2)} yr
         </div>
@@ -136,7 +136,7 @@ export default function LoadInspector({ data, meterLabel }) {
         flexWrap: 'wrap',
         gap: 2,
         padding: 3,
-        background: 'rgba(26,36,64,0.04)',
+        background: 'rgba(31, 51, 40,0.04)',
         borderRadius: 6,
       }}>
         {VIEWS.map((v) => {
@@ -156,7 +156,7 @@ export default function LoadInspector({ data, meterLabel }) {
                 border: 'none',
                 borderRadius: 4,
                 background: isActive ? 'var(--color-nza-cream)' : 'transparent',
-                color: isActive ? 'var(--color-nza-coral)' : 'rgba(26,36,64,0.7)',
+                color: isActive ? 'var(--color-nza-coral)' : 'rgba(31, 51, 40,0.7)',
                 fontFamily: 'var(--font-heading)',
                 fontSize: 13,
                 fontWeight: isActive ? 500 : 400,
