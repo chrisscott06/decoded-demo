@@ -66,5 +66,38 @@ files structurally-pruned + renamed; 27 text files renamed (236
 substitutions); narrative copy in PortfolioEnergy + Landing edited
 by hand where it referenced "13 retirement villages" or the OOS
 sites by name.
-### Phase 4 — randomise headline numbers ±10 % deterministic (pending)
+### Phase 4 — randomise headline numbers ±10 % deterministic (2026-06-10)
+Per-site multipliers in [0.90, 1.10] generated via random.seed(42).
+Applied to every numeric energy / carbon / water / waste value across
+seven dist files. Portfolio rollups recomputed from perturbed per-site
+values. portfolio.json's stale top-level headcounts (site_count=13,
+village_count=12, office_count=1, gresb_oos_site_ids=[..2..]) reset
+to reflect the demo's 11-school estate (11/11/0/[]). Site identity
+fields (GIA, units, occupancy %) NOT perturbed — factual descriptors,
+not measurements. GRESB scores NOT perturbed — abstract indicator
+points, not real-world measurements.
+
+Per-site multipliers (stable across regenerations with seed=42):
+  austin-heath × 1.0279
+  gifford-lea × 0.9050
+  bramshott-place × 0.9550
+  millbrook-village × 0.9446
+  durrants-village × 1.0473
+  great-alne-park × 1.0353
+  ledian-gardens × 1.0784
+  elderswell × 0.9174
+  millfield-green × 0.9844
+  ampfield-meadows × 0.9060
+  blendworth-hills × 0.9437
+  mean = 0.9768
+
+Honest headline shift: -2.6 % on portfolio total energy consumption
+(17,669 → 17,203 MWh), -1.6 % on actual emissions (2,615 → 2,573 tCO2e).
+Per-site shifts span -9.5 % to +7.8 % so per-site charts WILL look
+visibly different — the magnitude story per site changes meaningfully
+even though the portfolio total doesn't move dramatically. Per the
+brief's honest-by-default rule: this matches the "headline barely
+moves but per-site shape shifts" pattern Chris flagged. Did NOT
+layer a global shift on top to push the headline further away from
+the source — defer to Chris if he wants that.
 ### Phase 5 — metadata polish + final sweep (pending)

@@ -5,13 +5,13 @@
     "retailer": "WaterPlus",
     "meters_known": 3,
     "meters_with_cy2025_data": 3,
-    "consumption_m3": 8548,
-    "annual_estimate_m3": 8548,
+    "consumption_m3": 8850,
+    "annual_estimate_m3": 8850,
     "data_quality": "Estimated",
     "data_status": "partial",
-    "cy2025_coverage": "Feb 25 – Jan 26",
+    "cy2025_coverage": "Feb 25 â€“ Jan 26",
     "completeness": "100%",
-    "key_gaps": "All readings estimated by WaterPlus. Cricket Club meter static (0 m³). No actual reads. Cross-charges water to residents (Laura confirmed).",
+    "key_gaps": "All readings estimated by WaterPlus. Cricket Club meter static (0 mÂ³). No actual reads. Cross-charges water to residents (Laura confirmed).",
     "arbnco_meters": 5
   },
   "ampfield-meadows": {
@@ -20,14 +20,14 @@
     "retailer": "Southern Water",
     "meters_known": 1,
     "meters_with_cy2025_data": 1,
-    "consumption_m3": 4815,
+    "consumption_m3": 4362,
     "annual_estimate_m3": null,
     "data_quality": "Actual",
     "data_status": "confirmed",
-    "cy2025_coverage": "Mar 25 – Jan 26",
+    "cy2025_coverage": "Mar 25 â€“ Jan 26",
     "completeness": "~83%",
-    "key_gaps": "Bills cover 10 of 12 months. \"Fire Supply\" label — confirm if whole-site or fire system only. Very high volume.",
-    "arbnco_meters": 8
+    "key_gaps": "Bills cover 10 of 12 months. \"Fire Supply\" label â€” confirm if whole-site or fire system only. Very high volume.",
+    "arbnco_meters": 7
   },
   "gifford-lea": {
     "id": "gifford-lea",
@@ -35,14 +35,14 @@
     "retailer": "WaterPlus",
     "meters_known": 2,
     "meters_with_cy2025_data": 1,
-    "consumption_m3": 1835,
-    "annual_estimate_m3": 1835,
+    "consumption_m3": 1661,
+    "annual_estimate_m3": 1661,
     "data_quality": "Estimated",
     "data_status": "partial",
-    "cy2025_coverage": "Jan – Dec 25",
+    "cy2025_coverage": "Jan â€“ Dec 25",
     "completeness": "100%",
-    "key_gaps": "All 12 monthly reads estimated. Maintenance Building meter (C22LU188694) has no historical data — Laura's account.",
-    "arbnco_meters": 7
+    "key_gaps": "All 12 monthly reads estimated. Maintenance Building meter (C22LU188694) has no historical data â€” Laura's account.",
+    "arbnco_meters": 6
   },
   "millbrook-village": {
     "id": "millbrook-village",
@@ -50,13 +50,13 @@
     "retailer": "South West Water",
     "meters_known": 6,
     "meters_with_cy2025_data": 6,
-    "consumption_m3": 1649,
+    "consumption_m3": 1558,
     "annual_estimate_m3": null,
     "data_quality": "Mixed",
     "data_status": "partial",
     "cy2025_coverage": "2 billing periods",
     "completeness": "~50%",
-    "key_gaps": "Annualised from Oct–Jan quarters only. 10 unmetered Exeter accounts excluded. 1 SWW account still unchecked (40639995). 2 meters show zero.",
+    "key_gaps": "Annualised from Octâ€“Jan quarters only. 10 unmetered Exeter accounts excluded. 1 SWW account still unchecked (40639995). 2 meters show zero.",
     "arbnco_meters": 4
   },
   "ledian-gardens": {
@@ -65,13 +65,13 @@
     "retailer": "South East Water",
     "meters_known": 2,
     "meters_with_cy2025_data": 1,
-    "consumption_m3": 231,
+    "consumption_m3": 249,
     "annual_estimate_m3": null,
     "data_quality": "Mixed",
     "data_status": "partial",
     "cy2025_coverage": "Partial",
     "completeness": "~5%",
-    "key_gaps": "Residential meter (231 m³) = full year actual. Bulk meter (24JE045348) only Jun–Aug data (899 m³ in 70 days). Need remaining bills. Unified Register estimates ~5,300 m³ site total.",
+    "key_gaps": "Residential meter (231 mÂ³) = full year actual. Bulk meter (24JE045348) only Junâ€“Aug data (899 mÂ³ in 70 days). Need remaining bills. Unified Register estimates ~5,300 mÂ³ site total.",
     "arbnco_meters": 6
   },
   "elderswell": {
@@ -80,13 +80,13 @@
     "retailer": "Various",
     "meters_known": 4,
     "meters_with_cy2025_data": 4,
-    "consumption_m3": 438,
+    "consumption_m3": 402,
     "annual_estimate_m3": null,
     "data_quality": "Actual",
     "data_status": "confirmed",
-    "cy2025_coverage": "Apr 25 – Mar 26",
+    "cy2025_coverage": "Apr 25 â€“ Mar 26",
     "completeness": "~90%",
-    "key_gaps": "Guest Room (5 m³) + Kite Vale (93 m³) from Anglian. Spa Pool (339 m³) + Hobbswick (1 m³) from SE Water. Wave Utilities blocked by 2FA — may hold 3 more meters.",
+    "key_gaps": "Guest Room (5 mÂ³) + Kite Vale (93 mÂ³) from Anglian. Spa Pool (339 mÂ³) + Hobbswick (1 mÂ³) from SE Water. Wave Utilities blocked by 2FA â€” may hold 3 more meters.",
     "arbnco_meters": 3
   },
   "bramshott-place": {
@@ -95,13 +95,13 @@
     "retailer": "Castle Water / SE Water",
     "meters_known": 7,
     "meters_with_cy2025_data": 5,
-    "consumption_m3": 343,
+    "consumption_m3": 328,
     "annual_estimate_m3": null,
     "data_quality": "Actual",
     "data_status": "confirmed",
     "cy2025_coverage": "Full year",
     "completeness": "~70%",
-    "key_gaps": "5 of 7 meters captured (343 m³ from data, 339 m³ = sprinkler). Burghley + Cavendish B2 session expired. Castle Water (Holdenbury) not attempted — credentials available.",
+    "key_gaps": "5 of 7 meters captured (343 mÂ³ from data, 339 mÂ³ = sprinkler). Burghley + Cavendish B2 session expired. Castle Water (Holdenbury) not attempted â€” credentials available.",
     "arbnco_meters": 2
   },
   "austin-heath": {
@@ -116,7 +116,7 @@
     "data_status": "missing",
     "cy2025_coverage": "None",
     "completeness": "0%",
-    "key_gaps": "Never billed since 2016. 3 internal meters found (Phase 1, Phase 2&3 serial 17022104, Pool/Gym 17JE093793 reading 02282). Bin Store supply has no meter — needs installation. Residents pay own STW bills.",
+    "key_gaps": "Never billed since 2016. 3 internal meters found (Phase 1, Phase 2&3 serial 17022104, Pool/Gym 17JE093793 reading 02282). Bin Store supply has no meter â€” needs installation. Residents pay own STW bills.",
     "arbnco_meters": 9
   },
   "durrants-village": {
@@ -131,7 +131,7 @@
     "data_status": "missing",
     "cy2025_coverage": "None",
     "completeness": "0%",
-    "key_gaps": "Cross-charges water to residents (confirmed by Laura). No credentials. LoA sent to Southern Water — awaiting response.",
+    "key_gaps": "Cross-charges water to residents (confirmed by Laura). No credentials. LoA sent to Southern Water â€” awaiting response.",
     "arbnco_meters": 5
   },
   "millfield-green": {
@@ -146,7 +146,7 @@
     "data_status": "missing",
     "cy2025_coverage": "None",
     "completeness": "0%",
-    "key_gaps": "Meter dispute: Affinity claims outside Itron (22MF030413) is theirs. IVG disputes. Joint site visit 17 Apr 2026 — outcome pending. Account 686/0/00472/7020. Reading anomaly (decreases).",
+    "key_gaps": "Meter dispute: Affinity claims outside Itron (22MF030413) is theirs. IVG disputes. Joint site visit 17 Apr 2026 â€” outcome pending. Account 686/0/00472/7020. Reading anomaly (decreases).",
     "arbnco_meters": 6
   },
   "blendworth-hills": {
@@ -163,5 +163,8 @@
     "completeness": "0%",
     "key_gaps": "7 communal IWN meters confirmed (Blocks 4, 5, 11, 12, 13, 14, 16). 27+ individual unit meters also exist. IWN overdue accounts from previous operator. No readings obtained.",
     "arbnco_meters": 4
+  },
+  "_meta": {
+    "_demo_note": "Demo template. Per-site multipliers in [0.90, 1.10] applied with seed=42. Totals and per-category roll-ups recomputed from perturbed per-site values so the data is internally consistent. Not a real client footprint."
   }
 }

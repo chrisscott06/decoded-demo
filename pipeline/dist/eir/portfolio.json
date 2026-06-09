@@ -1,17 +1,17 @@
 {
-  "site_count": 13,
-  "village_count": 12,
-  "office_count": 1,
+  "site_count": 11,
+  "village_count": 11,
+  "office_count": 0,
   "total_gia_m2": 217314.0,
   "total_landlord_gia_m2": 38087.0,
   "total_units_completed": 961,
   "energy": {
-    "total_electricity_kwh": 8315414.2,
-    "total_gas_kwh": 9353853.0,
-    "total_consumption_kwh": 17669267.2,
-    "total_emissions_actual_tco2e": 2615.08,
-    "total_emissions_national_avg_tco2e": 3630.98,
-    "sites_with_data": 12
+    "total_electricity_kwh": 8088597.2,
+    "total_gas_kwh": 9114656.6,
+    "total_consumption_kwh": 17203253.8,
+    "total_emissions_actual_tco2e": 2573.46,
+    "total_emissions_national_avg_tco2e": 3559.47,
+    "sites_with_data": 11
   },
   "water": {
     "total_consumption_m3": 17859,
@@ -51,11 +51,11 @@
     "total_landlord_gia_m2": 38087.0,
     "total_units_completed": 961,
     "energy": {
-      "total_electricity_kwh": 8235123.6,
-      "total_gas_kwh": 9353853.0,
-      "total_consumption_kwh": 17588976.6,
-      "total_emissions_actual_tco2e": 2613.19,
-      "total_emissions_national_avg_tco2e": 3616.76,
+      "total_electricity_kwh": 8088597.2,
+      "total_gas_kwh": 9114656.6,
+      "total_consumption_kwh": 17203253.8,
+      "total_emissions_actual_tco2e": 2573.46,
+      "total_emissions_national_avg_tco2e": 3559.47,
       "sites_with_data": 11,
       "derived_resident_gwh": 6.943,
       "derived_resident_breakdown_kwh": {
@@ -80,10 +80,7 @@
       "sites_not_applicable": 0
     }
   },
-  "gresb_out_of_scope_site_ids": [
-    "edwalton-office",
-    "sonning-common"
-  ],
+  "gresb_out_of_scope_site_ids": [],
   "metering_sankey": {
     "commodities": {
       "gas": 12,
@@ -290,8 +287,11 @@
       "invisible_to_ivg_estimate": 828
     },
     "notes": {
-      "estimation": "resident MPAN counts are READ FROM RECONCILIATION (arb_meters - eco_meters per site, electric + gas). NOT estimated from planned units — these are the actual arbnco meter counts. Includes both resident-electric and resident-gas where present (Bramshott has 140 resident gas MPANs in addition to 153 resident electric).",
+      "estimation": "resident MPAN counts are READ FROM RECONCILIATION (arb_meters - eco_meters per site, electric + gas). NOT estimated from planned units â€” these are the actual arbnco meter counts. Includes both resident-electric and resident-gas where present (Bramshott has 140 resident gas MPANs in addition to 153 resident electric).",
       "scope": "All counts are for in-scope sites only (11 of 13). Sonning Common (FY26 launch) and Edwalton Office are excluded. DNO/BNO detection is data-driven: a site is in-channel iff arbnco reports more meters than Ecotricity."
     }
+  },
+  "_meta": {
+    "_demo_note": "Demo template. Per-site multipliers in [0.90, 1.10] applied with seed=42 across energy / carbon / water / waste data files. Portfolio totals recomputed from perturbed per-site values. site_count / village_count / office_count reset to reflect the demo's 11 schools (the 2 OOS sites from the source tool are dropped). Not a real client footprint."
   }
 }

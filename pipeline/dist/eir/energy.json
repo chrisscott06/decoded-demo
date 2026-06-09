@@ -6,19 +6,19 @@
       "gas": 0
     },
     "consumption_kwh": {
-      "electricity": 659269.19,
+      "electricity": 597297.8861,
       "gas": null,
-      "total": 659269.19
+      "total": 597297.8861
     },
     "emissions_actual_tco2e": {
-      "electricity": 80.41,
+      "electricity": 72.8515,
       "gas": null,
-      "total": 80.41
+      "total": 72.8515
     },
     "emissions_national_avg_tco2e": {
-      "electricity": 116.69,
+      "electricity": 105.7211,
       "gas": null,
-      "total": 116.69
+      "total": 105.7211
     },
     "source_arbnco_notes": null,
     "data_period": "CY2025",
@@ -31,19 +31,19 @@
       "gas": 2
     },
     "consumption_kwh": {
-      "electricity": 423541.69,
-      "gas": 2582255.0,
-      "total": 3005796.69
+      "electricity": 435358.5032,
+      "gas": 2654299.9145,
+      "total": 3089658.4177
     },
     "emissions_actual_tco2e": {
       "electricity": 0.0,
-      "gas": 919.47,
-      "total": 919.47
+      "gas": 945.1232,
+      "total": 945.1232
     },
     "emissions_national_avg_tco2e": {
-      "electricity": 74.97,
-      "gas": 919.47,
-      "total": 994.44
+      "electricity": 77.0617,
+      "gas": 945.1232,
+      "total": 1022.1849
     },
     "source_arbnco_notes": null,
     "data_period": "CY2025",
@@ -56,9 +56,9 @@
       "gas": 0
     },
     "consumption_kwh": {
-      "electricity": 548470.69,
+      "electricity": 517591.7902,
       "gas": null,
-      "total": 548470.69
+      "total": 517591.7902
     },
     "emissions_actual_tco2e": {
       "electricity": 0.0,
@@ -66,9 +66,9 @@
       "total": 0.0
     },
     "emissions_national_avg_tco2e": {
-      "electricity": 97.08,
+      "electricity": 91.6144,
       "gas": null,
-      "total": 97.08
+      "total": 91.6144
     },
     "source_arbnco_notes": null,
     "data_period": "CY2025",
@@ -77,23 +77,23 @@
   "bramshott-place": {
     "id": "bramshott-place",
     "meters": {
-      "electricity": 199,
-      "gas": 143
+      "electricity": 190,
+      "gas": 137
     },
     "consumption_kwh": {
-      "electricity": 783105.19,
-      "gas": 1936238.0,
-      "total": 2719343.19
+      "electricity": 747865.4564,
+      "gas": 1849107.29,
+      "total": 2596972.7464
     },
     "emissions_actual_tco2e": {
-      "electricity": 145.02,
-      "gas": 354.22,
-      "total": 499.24
+      "electricity": 138.4941,
+      "gas": 338.2801,
+      "total": 476.7742
     },
     "emissions_national_avg_tco2e": {
-      "electricity": 138.67,
-      "gas": 354.22,
-      "total": 492.89
+      "electricity": 132.4298,
+      "gas": 338.2801,
+      "total": 470.7099
     },
     "source_arbnco_notes": null,
     "data_period": "CY2025",
@@ -102,23 +102,23 @@
   "durrants-village": {
     "id": "durrants-village",
     "meters": {
-      "electricity": 181,
+      "electricity": 190,
       "gas": 0
     },
     "consumption_kwh": {
-      "electricity": 1285363.29,
+      "electricity": 1346160.9736,
       "gas": null,
-      "total": 1285363.29
+      "total": 1346160.9736
     },
     "emissions_actual_tco2e": {
-      "electricity": 62.51,
+      "electricity": 65.4667,
       "gas": null,
-      "total": 62.51
+      "total": 65.4667
     },
     "emissions_national_avg_tco2e": {
-      "electricity": 227.48,
+      "electricity": 238.2398,
       "gas": null,
-      "total": 227.48
+      "total": 238.2398
     },
     "source_arbnco_notes": null,
     "data_period": "CY2025",
@@ -127,23 +127,23 @@
   "elderswell": {
     "id": "elderswell",
     "meters": {
-      "electricity": 82,
+      "electricity": 75,
       "gas": 1
     },
     "consumption_kwh": {
-      "electricity": 405964.08,
-      "gas": 986236.0,
-      "total": 1392200.08
+      "electricity": 372431.447,
+      "gas": 904772.9064,
+      "total": 1277204.3534
     },
     "emissions_actual_tco2e": {
-      "electricity": 1.86,
-      "gas": 180.44,
-      "total": 182.3
+      "electricity": 1.7064,
+      "gas": 165.5357,
+      "total": 167.242
     },
     "emissions_national_avg_tco2e": {
-      "electricity": 72.62,
-      "gas": 180.44,
-      "total": 253.06
+      "electricity": 66.6216,
+      "gas": 165.5357,
+      "total": 232.1572
     },
     "source_arbnco_notes": null,
     "data_period": "CY2025",
@@ -156,19 +156,19 @@
       "gas": 1
     },
     "consumption_kwh": {
-      "electricity": 630707.69,
-      "gas": 2448995.0,
-      "total": 3079702.69
+      "electricity": 570790.4594,
+      "gas": 2216340.475,
+      "total": 2787130.9345
     },
     "emissions_actual_tco2e": {
       "electricity": 0.0,
-      "gas": 448.07,
-      "total": 448.07
+      "gas": 405.5034,
+      "total": 405.5034
     },
     "emissions_national_avg_tco2e": {
-      "electricity": 111.63,
-      "gas": 448.07,
-      "total": 559.7
+      "electricity": 101.0251,
+      "gas": 405.5034,
+      "total": 506.5285
     },
     "source_arbnco_notes": null,
     "data_period": "CY2025",
@@ -177,23 +177,23 @@
   "great-alne-park": {
     "id": "great-alne-park",
     "meters": {
-      "electricity": 132,
+      "electricity": 137,
       "gas": 0
     },
     "consumption_kwh": {
-      "electricity": 1047047.4,
+      "electricity": 1084008.1732,
       "gas": null,
-      "total": 1047047.4
+      "total": 1084008.1732
     },
     "emissions_actual_tco2e": {
-      "electricity": 32.78,
+      "electricity": 33.9371,
       "gas": null,
-      "total": 32.78
+      "total": 33.9371
     },
     "emissions_national_avg_tco2e": {
-      "electricity": 185.34,
+      "electricity": 191.8825,
       "gas": null,
-      "total": 185.34
+      "total": 191.8825
     },
     "source_arbnco_notes": null,
     "data_period": "CY2025",
@@ -202,23 +202,23 @@
   "ledian-gardens": {
     "id": "ledian-gardens",
     "meters": {
-      "electricity": 116,
+      "electricity": 125,
       "gas": 5
     },
     "consumption_kwh": {
-      "electricity": 514522.99,
-      "gas": 1252423.0,
-      "total": 1766945.99
+      "electricity": 554861.5924,
+      "gas": 1350612.9632,
+      "total": 1905474.5556
     },
     "emissions_actual_tco2e": {
-      "electricity": 67.37,
-      "gas": 229.14,
-      "total": 296.51
+      "electricity": 72.6518,
+      "gas": 247.1046,
+      "total": 319.7564
     },
     "emissions_national_avg_tco2e": {
-      "electricity": 91.11,
-      "gas": 229.14,
-      "total": 320.25
+      "electricity": 98.253,
+      "gas": 247.1046,
+      "total": 345.3576
     },
     "source_arbnco_notes": null,
     "data_period": "CY2025",
@@ -227,23 +227,23 @@
   "millbrook-village": {
     "id": "millbrook-village",
     "meters": {
-      "electricity": 174,
+      "electricity": 164,
       "gas": 1
     },
     "consumption_kwh": {
-      "electricity": 1122643.69,
-      "gas": 147706.0,
-      "total": 1270349.69
+      "electricity": 1060449.2296,
+      "gas": 139523.0876,
+      "total": 1199972.3172
     },
     "emissions_actual_tco2e": {
-      "electricity": 64.88,
-      "gas": 27.02,
-      "total": 91.9
+      "electricity": 61.2856,
+      "gas": 25.5231,
+      "total": 86.8087
     },
     "emissions_national_avg_tco2e": {
-      "electricity": 198.65,
-      "gas": 27.02,
-      "total": 225.67
+      "electricity": 187.6448,
+      "gas": 25.5231,
+      "total": 213.1679
     },
     "source_arbnco_notes": null,
     "data_period": "CY2025",
@@ -256,9 +256,9 @@
       "gas": 0
     },
     "consumption_kwh": {
-      "electricity": 814487.7,
+      "electricity": 801781.6919,
       "gas": null,
-      "total": 814487.7
+      "total": 801781.6919
     },
     "emissions_actual_tco2e": {
       "electricity": 0.0,
@@ -266,9 +266,9 @@
       "total": 0.0
     },
     "emissions_national_avg_tco2e": {
-      "electricity": 144.16,
+      "electricity": 141.9111,
       "gas": null,
-      "total": 144.16
+      "total": 141.9111
     },
     "source_arbnco_notes": null,
     "data_period": "CY2025",
@@ -288,5 +288,8 @@
     "total_gas_national_avg_tco2e": 2158.36,
     "data_period": "CY2025",
     "sites_with_data": 12
+  },
+  "_meta": {
+    "_demo_note": "Demo template. Per-site multipliers in [0.90, 1.10] applied with seed=42. Totals and per-category roll-ups recomputed from perturbed per-site values so the data is internally consistent. Not a real client footprint."
   }
 }

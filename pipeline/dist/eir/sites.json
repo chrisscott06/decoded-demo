@@ -44,7 +44,7 @@
       "elec_void": "Scope 2",
       "has_gas": true,
       "sycous_deduction": true,
-      "notes": "Bulk gas supply — all gas is IVG Scope 1. Bulk elec — communal is S2, resi is S3."
+      "notes": "Bulk gas supply â€” all gas is IVG Scope 1. Bulk elec â€” communal is S2, resi is S3."
     },
     "phasing": {
       "open_year": 2014,
@@ -162,7 +162,7 @@
       "elec_void": "Scope 2",
       "has_gas": true,
       "sycous_deduction": true,
-      "notes": "CHP site — gas drives both heat and power. All gas = S1."
+      "notes": "CHP site â€” gas drives both heat and power. All gas = S1."
     },
     "phasing": {
       "open_year": 2016,
@@ -280,7 +280,7 @@
       "elec_void": "Scope 2",
       "has_gas": true,
       "sycous_deduction": false,
-      "notes": "Individual gas boilers — occupied resi gas = resident's fuel = S3. Void gas = IVG."
+      "notes": "Individual gas boilers â€” occupied resi gas = resident's fuel = S3. Void gas = IVG."
     },
     "phasing": {
       "open_year": 2017,
@@ -439,7 +439,7 @@
       "modelled_gas_eui_kwh_m2": 195.0,
       "gas_vs_model": 0.035418809813273486,
       "tm54_benchmark": "55-65 (resi)",
-      "notes": "Low gas — mostly ASHP?"
+      "notes": "Low gas â€” mostly ASHP?"
     },
     "notes": null,
     "gresb_in_scope": true,
@@ -752,7 +752,7 @@
       "elec_void": "Scope 2",
       "has_gas": true,
       "sycous_deduction": true,
-      "notes": "Bulk gas supply — all gas is IVG S1. 430kWp PV reduces grid import."
+      "notes": "Bulk gas supply â€” all gas is IVG S1. 430kWp PV reduces grid import."
     },
     "phasing": {
       "open_year": 2019,
@@ -1026,7 +1026,7 @@
       "tm54_benchmark": "55-65 (resi)",
       "notes": "All-electric microgrid."
     },
-    "notes": "Flagship microgrid model. Largest GIA (24.6k m²).",
+    "notes": "Flagship microgrid model. Largest GIA (24.6k mÂ²).",
     "gresb_in_scope": true,
     "heating_by_phase": {
       "vc_p1": {
@@ -1101,7 +1101,7 @@
       "elec_void": "Scope 2",
       "has_gas": false,
       "sycous_deduction": true,
-      "notes": "All-electric (GSHP/ASHP). Bulk supply — all S2. Sycous deduction for GRESB landlord split."
+      "notes": "All-electric (GSHP/ASHP). Bulk supply â€” all S2. Sycous deduction for GRESB landlord split."
     },
     "phasing": {
       "open_year": 2024,
@@ -1192,7 +1192,7 @@
       "management_entity": "Pennington Pre-Prep & Junior Management Ltd"
     },
     "archetype": {
-      "primary_heating": "ASHP (×48 Samsung)",
+      "primary_heating": "ASHP (Ã—48 Samsung)",
       "hot_water": "Individual ASHPs",
       "chp": "No",
       "heat_network": "No",
@@ -1219,7 +1219,7 @@
       "elec_void": "Scope 2",
       "has_gas": false,
       "sycous_deduction": true,
-      "notes": "All-electric (48 ASHPs). Bulk supply — all S2. Sycous deduction needed."
+      "notes": "All-electric (48 ASHPs). Bulk supply â€” all S2. Sycous deduction needed."
     },
     "phasing": {
       "open_year": 2024,
@@ -1262,7 +1262,7 @@
       "tm54_benchmark": "55-65 (resi)",
       "notes": "48 ASHPs. All-electric."
     },
-    "notes": "48 individual ASHPs — ownership boundary TBC",
+    "notes": "48 individual ASHPs â€” ownership boundary TBC",
     "gresb_in_scope": true,
     "heating_by_phase": {
       "vc_p1": {
@@ -1291,5 +1291,8 @@
         "note": null
       }
     }
+  },
+  "_meta": {
+    "_demo_note": "Demo template. Site identity fields (units, GIA, occupancy %) are NOT perturbed — they're factual descriptors. Energy / carbon / water / waste measurements have per-site multipliers in [0.90, 1.10] applied with seed=42 (see energy.json / carbon.json / etc.)."
   }
 }
