@@ -23,7 +23,7 @@ launch.bat
 port **8174**, and opens the browser. Demo password (set in
 `eir/src/components/PasswordGate.jsx`):
 
-  `NZAI-demo-2026`
+  `demo`
 
 Requires Python 3.11+ and Node 20 LTS.
 

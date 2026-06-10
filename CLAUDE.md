@@ -55,7 +55,7 @@ and starts a fresh vite.
 
 Set in `eir/src/components/PasswordGate.jsx`:
 
-  `CORRECT_PASSWORD = 'NZAI-demo-2026'`
+  `CORRECT_PASSWORD = 'demo'`
 
 sessionStorage key is `westbrook-demo-auth` so the gate clears on
 tab close.

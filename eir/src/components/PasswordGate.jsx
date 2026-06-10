@@ -13,7 +13,7 @@
  */
 import { useState } from 'react'
 
-const CORRECT_PASSWORD = 'NZAI-demo-2026'
+const CORRECT_PASSWORD = 'demo'
 const STORAGE_KEY = 'westbrook-demo-auth'
 
 export default function PasswordGate({ children }) {
