@@ -1,5 +1,36 @@
 import { Zap, Flame, Droplets, Recycle, ArrowRight, MapPin, Activity } from 'lucide-react'
+import { motion } from 'framer-motion'
 import BodyPageLayout from './BodyPageLayout.jsx'
+
+/* AnimatedUnderlineWord — a noun in the NZA tagline that draws a coral
+ * underline beneath itself, staggered after page mount. Uses
+ * framer-motion's scaleX from 0→1 with transformOrigin: left so the
+ * underline "draws in" left-to-right, matching the reading direction.
+ * The line sits just under the text baseline (bottom: -3) so it reads
+ * as an emphasis mark, not a heading underline. */
+function AnimatedUnderlineWord({ children, delay }) {
+  return (
+    <span style={{ position: 'relative', display: 'inline-block', whiteSpace: 'nowrap' }}>
+      {children}
+      <motion.span
+        aria-hidden
+        initial={{ scaleX: 0 }}
+        animate={{ scaleX: 1 }}
+        transition={{ delay, duration: 0.45, ease: [0.4, 0, 0.2, 1] }}
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          bottom: -3,
+          height: 2,
+          background: 'var(--color-nza-coral)',
+          transformOrigin: 'left center',
+          borderRadius: 1,
+        }}
+      />
+    </span>
+  )
+}
 
 import portfolio from '@pipeline-data/portfolio.json'
 import energy   from '@pipeline-data/energy.json'
@@ -305,6 +336,27 @@ export default function Landing({ navigate, currentSiteId }) {
           >
             A single view of energy, water and waste across the Westbrook portfolio.
           </h1>
+          {/* NZA tagline. Three nouns draw a coral underline in
+              sequence on page mount — buildings, then energy, then
+              climate — about 400 ms apart so the reader's eye is
+              pulled across the phrase as each one resolves. */}
+          <p
+            style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 15,
+              lineHeight: 1.4,
+              color: 'var(--color-theme-base)',
+              fontWeight: 500,
+              margin: 0,
+              marginBottom: 24,
+              maxWidth: 480,
+            }}
+          >
+            We are specialists in{' '}
+            <AnimatedUnderlineWord delay={0.5}>buildings</AnimatedUnderlineWord>,{' '}
+            <AnimatedUnderlineWord delay={0.9}>energy</AnimatedUnderlineWord>, and{' '}
+            <AnimatedUnderlineWord delay={1.3}>climate</AnimatedUnderlineWord>.
+          </p>
           <p
             style={{
               fontFamily: 'var(--font-body)',
