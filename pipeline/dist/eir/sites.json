@@ -1291,8 +1291,5 @@
         "note": null
       }
     }
-  },
-  "_meta": {
-    "_demo_note": "Demo template. Site identity fields (units, GIA, occupancy %) are NOT perturbed — they're factual descriptors. Energy / carbon / water / waste measurements have per-site multipliers in [0.90, 1.10] applied with seed=42 (see energy.json / carbon.json / etc.)."
   }
 }

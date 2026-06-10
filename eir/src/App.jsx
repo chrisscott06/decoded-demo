@@ -1925,7 +1925,12 @@ function SitePage({ siteId, subTab, currentSiteId }) {
      transition has duration 0 (instant swap). */
   const reducedMotion = useReducedMotion()
 
-  const allCanonical = Object.values(sites).map((s) => ({ id: s.id, display_name: s.display_name }))
+  // Filter to entries with an actual `id` field — defensive against any
+  // top-level meta key (e.g. `_meta` / `_demo_note`) that might pollute
+  // sites.json. The demo-template's Phase 4 perturbation script
+  // previously stamped a top-level _meta which broke the Sidebar by
+  // rendering an entry with undefined id + display_name.
+  const allCanonical = Object.values(sites).filter((s) => s && s.id).map((s) => ({ id: s.id, display_name: s.display_name }))
 
   if (!site) {
     return (
