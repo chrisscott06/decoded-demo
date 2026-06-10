@@ -32,18 +32,24 @@ JSON file in `pipeline/dist/eir/`).
   at `pipeline/.venv/`.
 - Node: 20 LTS for the shell. `eir/package.json` (`"name":
   "westbrook-trust-demo"`).
-- Vite dev port: **5174** (source IVG production is on 5173 — both
-  can run side by side without colliding).
+- Vite dev port: **8174** (deliberately well away from vite's default
+  5173+ range so it never collides with the source IVG production or
+  any other vite project that auto-roams 5173 → 5174 → 5175).
 
 ## Launching locally
 
 Double-click `launch.bat` at the repo root. It:
 
-1. `cd`s into the demo's `eir/` dev project.
-2. Runs `git pull origin main`.
-3. Runs `npm install --silent`.
-4. Starts the Vite dev server (`npm run dev`) in a new window.
-5. Opens `http://localhost:5174/` in the default browser after 5s.
+1. `git pull origin main` (silent).
+2. Force-kills any process LISTENING on port 8174 (with `/T` for child
+   process trees — npm → node chains).
+3. Runs `npm install --silent` only if `node_modules` is missing.
+4. Starts the Vite dev server (`npm run dev`) in a new cmd window.
+5. Opens `http://localhost:8174/` in the default browser after 3s.
+6. Launcher window auto-closes (no "press any key" prompt).
+
+Re-running the launcher is idempotent — it always kills what's there
+and starts a fresh vite.
 
 ## Demo password
 
