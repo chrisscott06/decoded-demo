@@ -179,3 +179,16 @@ codebase comments at the components that implement them. They
 describe the UI shell, not the client engagement, so they carry
 across unchanged. Search the codebase for "Hard Rule 11" /
 "Rule 11.x" / "Brief 17.5.3" comments for the canonical references.
+
+## API keys / environment
+
+Copy `.env.example` → `.env` and fill in values. Never commit real keys. New NZA
+devs: ask Chris for the shared keys.
+
+| Var | Service | Cost | Scope | Where to get it |
+|-----|---------|------|-------|-----------------|
+| `EPC_API_KEY` | EPC Open Data (energy certificates) | Free (registration) | Server | [epc.opendatacommunities.org](https://epc.opendatacommunities.org/) → register → API key |
+| `EPC_EMAIL` | EPC Open Data (registered account email) | Free | Server | The email you registered with above |
+
+One EPC registration covers this **and** `decoded`'s `reference/decode-backend`
+(`DEC_API_*`) — it is the same account.
